@@ -15,7 +15,7 @@ export function todosReducer(
 
   switch (action.type) {
 
-    case TodoListModule.ActionTypes.INIT_TODOS :
+    case TodoListModule.ActionTypes.INIT_TODOS:
         return {
             ...state,
             data: [
@@ -30,6 +30,12 @@ export function todosReducer(
                 ...state.data,
                 action.payload
             ]
+        };
+
+    case TodoListModule.ActionTypes.DELETE_TODO:
+        return {
+            ...state,
+            data : state.data.filter(todo => todo.id !== action.payload)
         };
 
     default:
