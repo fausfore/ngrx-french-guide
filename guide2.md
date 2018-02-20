@@ -247,7 +247,7 @@ Pour React  => **react-redux**
 Pour Vue  => **vuex**
 Pour Angular  => **Ngrx**
 
-Il est donc inutile de créer un store from scratch. Nous allons créer une aon va partir sur une app Angular donc prenont **Ngrx**.
+Il est donc inutile de créer un store from scratch. Nous allons créer une application Angular donc prenont **Ngrx**.
 Cette librairie est donc une implémentation reduxienne mais pas que elle prend une bonne couche de **RxJS** comme Angular lui-même et utilise les **Observables** pour populer les states dans les composants Angular.
 
 ## Installation
@@ -1552,5 +1552,5 @@ Voilà une manière de charger la donnée avant même de charger un composant un
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNTgwMDkxXX0=
+eyJoaXN0b3J5IjpbLTUyNzY5NjcwMV19
 -->
