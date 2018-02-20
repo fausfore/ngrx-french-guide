@@ -27,9 +27,9 @@ Comme Angular peut être utilisé avec **typescript** , Ngrx profite également 
 </p>
 <center>Le Modèle MVC (ce que nous souhaitons éviter)</center>
 
-## Redux kesako ?!
+## Redux, kesako ?!
 
-C’est un pattern née de **Flux**, une architecture crée chez Facebook, elle apporte un worflow de données unidirectionnelle distribué par un dispatcher qui recueille des actions données par le serveur ou par l’utilisateur et conserve la nouvelle instance d’une donnée dans un store ou des stores qui mettent à jour la vue.
+C’est un pattern née de **Flux**, une architecture crée chez Facebook, il apporte un worflow de données unidirectionnelle distribué par un dispatcher qui recueille des actions données par le serveur ou par l’utilisateur et conserve la nouvelle instance d’une donnée dans un store ou des stores qui mettent à jour la vue.
 <p align="center">
   <img src="https://julienrenaux.fr/talks-src/2016/redux-angular2/img/flux-simple-f8-diagram-with-client-action-1300w_stores_views.png">
 </p>
@@ -1547,5 +1547,5 @@ Voilà une manière de charger la donnée avant même de charger un composant un
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIwNTYyNTA4XX0=
+eyJoaXN0b3J5IjpbLTEwNjQ5NTU5OTddfQ==
 -->
