@@ -63,13 +63,7 @@ C'est quoi un store en au final, le store est juste une fonction qui contient l'
 
 Voilà un exemple de store *from scratch simplifié* :
 
-***
-
-
-----------
-
-
-***
+***Ne pas reproduire***
 
 ```javascript
 class Store {
@@ -1558,5 +1552,5 @@ Voilà une manière de charger la donnée avant même de charger un composant un
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgwNDgxODE4XX0=
+eyJoaXN0b3J5IjpbLTMzMDk0MjI2Ml19
 -->
