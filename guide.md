@@ -1,51 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>store</title>
-  <link rel="stylesheet" href="https://stackedit.io/style.css" />
-</head>
-
-<body class="stackedit">
-  <div class="stackedit__left">
-    <div class="stackedit__toc">
-      
-<ul>
-<li><a href="#angular--redux--ngrx">Angular + Redux = NGRX</a>
-<ul>
-<li><a href="#redux-kesako-">Redux kesako ?!</a></li>
-<li><a href="#pourquoi-redux-alors-">Pourquoi Redux alors ?!</a></li>
-<li><a href="#le-versus-flux--redux">Le versus Flux / Redux</a></li>
-<li><a href="#le-store-la-base-de-tout">Le Store la base de tout</a></li>
-<li><a href="#le-root-reducer">Le root reducer</a></li>
-<li><a href="#le-schéma">Le schéma</a></li>
-<li><a href="#les-actions">Les actions</a></li>
-<li><a href="#action-creator">Action creator</a></li>
-</ul>
-</li>
-<li><a href="#de-redux-à-ngrx">De Redux à Ngrx</a>
-<ul>
-<li><a href="#installation">Installation</a></li>
-<li><a href="#architecture-folder">Architecture Folder</a></li>
-<li><a href="#set-up">Set up</a></li>
-<li><a href="#states-selectors">States Selectors</a></li>
-<li><a href="#ajouter-une-todo">Ajouter une todo</a></li>
-<li><a href="#supprimer-une-todo">Supprimer une todo</a></li>
-<li><a href="#refacto-time-">Refacto Time !</a></li>
-<li><a href="#update-todo">Update Todo</a></li>
-<li><a href="#routes-get">Routes GET</a></li>
-<li><a href="#routes-post">Routes POST</a></li>
-</ul>
-</li>
-</ul>
-
-    </div>
-  </div>
-  <div class="stackedit__right">
-    <div class="stackedit__html">
-      <h1 id="angular--redux--ngrx">Angular + Redux = NGRX</h1>
+<h1 id="angular--redux--ngrx">Angular + Redux = NGRX</h1>
 <p>Dans cette article on va voir comment utiliser la pattern redux dans une application Angular via Ngrx, proposant un autre manière de développer son application avec une conception autour d’action utilisateur et serveur on retirent les différentes mutations de données des composants, services Angular pour les centraliser dans un objet global mutable uniquement par des actions typées.</p>
 <blockquote>
 <p>Pour le développent sur Angular utilisé <strong>Visual studio code</strong> et<br>
@@ -1446,8 +1399,3 @@ On a rajouter en plus un template de chargement qui s’affichera entre le <stro
 <h2 id="routes-post">Routes POST</h2>
 <p>Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l’initialisation</p>
 
-    </div>
-  </div>
-</body>
-
-</html>
