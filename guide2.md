@@ -2,6 +2,29 @@
 
 ### Sommaire
 
+Introduction
+ 1. List item
+ 2.  Redux, kesako ?!
+ 3. Pourquoi Redux alors ?!
+ 4. Flux vs Redux
+ 5. Le Store la base de tout
+ 6. Le root reducer
+ 7. Le schéma
+ 8. Les actions
+ 9. Action creator
+ 10. **De Redux à Ngrx**
+ 11. Installation
+ 12. Architecture Folder
+ 13. Set up
+ 14. States Selectors
+ 15. Ajouter une todo
+ 16. Supprimer une todo
+ 17. Refacto Time !
+ 18. Update Todo
+ 19. Routes GET
+ 20. BONUS TIME !!
+ 21. Routes POST
+
 
 
 ### Introduction
@@ -1552,5 +1575,5 @@ Voilà une manière de charger la donnée avant même de charger un composant un
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc1NjkzNTc4XX0=
+eyJoaXN0b3J5IjpbLTk5OTA3OTA2Nl19
 -->
