@@ -178,7 +178,7 @@ const counterReducer = (state = initialState, action) => {
 ```
 Les reducers ne fonctionnent que avec des fonctions pures, elle ne doit ** jamais** modifié directement l'état mais renvoyé un nouvelle état a partir de celui-ci.
 ## Le schéma
-Voilà on voit bien que les reducers encapsules les différentes logiques de mutation et le store contient le résultat de chaque reducer comme deux objets miroir synchronisés à chaque action.
+Voilà, on voit bien que les reducers encapsules les différentes logiques de mutation et le store contient le résultat de chaque reducer comme deux objets miroir synchronisés à chaque action.
 ```javascript
 const store = {
 	counter: 0
@@ -1552,5 +1552,5 @@ Voilà une manière de charger la donnée avant même de charger un composant un
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjU2MTUxOV19
+eyJoaXN0b3J5IjpbLTE5NjA5Nzg4NDVdfQ==
 -->
