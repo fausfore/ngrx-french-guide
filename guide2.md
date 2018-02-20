@@ -14,7 +14,7 @@ Ce dernier proposant une conception du développement  d'application autour d'ac
 
 **Intéret de NGRX**
 
-- Le 1er avantage est le modèle unidirectionnelle avec lequel nous travaillerons, ce qui n'est pas le cas du standard MVC qui de son coté est bidirectionnelle.
+- Le 1er avantage est le modèle **unidirectionnelle** avec lequel nous travaillerons, ce qui n'est pas le cas du standard MVC qui de son coté est bidirectionnelle.
 - Le 2eme avantage est "l'historisation" :  comme tout les changement transitent par le store, chaque update/modification est loggé. De ce fait nous pouvons revenir dans l'historique, trouvé quelle mutation a créé un bug:  c'est en quelque sorte une state machine.
 
 Comme Angular peut être utilisé avec typescript , Ngrx profite également du typage qui va verrouiller nos actions et ainsi lever plus tôt les erreurs en cours de développement.
@@ -1556,5 +1556,5 @@ Voilà une manière de charger la donnée avant même de charger un composant un
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MTMxMjczNF19
+eyJoaXN0b3J5IjpbNDI2NTUxMzk0XX0=
 -->
