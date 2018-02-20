@@ -16,12 +16,21 @@ export function todosReducer(
   switch (action.type) {
 
     case TodoListModule.ActionTypes.INIT_TODOS :
-    return {
-        ...state,
-        data: [
-            ...todosMock
-        ]
-    };
+        return {
+            ...state,
+            data: [
+                ...todosMock
+            ]
+        };
+
+    case TodoListModule.ActionTypes.CREATE_TODO:
+        return {
+            ...state,
+            data: [
+                ...state.data,
+                action.payload
+            ]
+        };
 
     default:
         return state;
