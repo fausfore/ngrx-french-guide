@@ -1,9 +1,15 @@
----
+<!DOCTYPE html>
+<html>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>store</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
 
----
-
-<h1 id="angular--redux--ngrx">Angular + Redux = NGRX</h1>
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="angular--redux--ngrx">Angular + Redux = NGRX</h1>
 <p>Dans cette article on va voir comment utiliser la pattern redux dans une application Angular via Ngrx, proposant un autre manière de développer son application avec une conception autour d’action utilisateur et serveur on retirent les différentes mutations de données des composants, services Angular pour les centraliser dans un objet global mutable uniquement par des actions typées.</p>
 <blockquote>
 <p>Pour le développent sur Angular utilisé <strong>Visual studio code</strong> et<br>
@@ -1403,4 +1409,7 @@ On a rajouter en plus un template de chargement qui s’affichera entre le <stro
 <p>Voilà une manière de charger la donnée avant même de charger un composant une idée de sortir encore plus le component de la logique.</p>
 <h2 id="routes-post">Routes POST</h2>
 <p>Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l’initialisation</p>
+</div>
+</body>
 
+</html>
