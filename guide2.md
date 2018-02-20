@@ -59,7 +59,7 @@ Grâce à la programmation fonctionnelles, le dispatcher est complètement retir
 |Etats mutables|Etats immuables|
 
 ## Le Store la base de tout
-C'est quoi un store en au final, le store est juste une fonction qui contient l'états des reducers, un getter, un dispatcher et des subscribers.
+C'est quoi un store en au final, le store est juste une fonction qui contient l'état des reducers, un getter, un dispatcher et des subscribers.
 
 Voilà un exemple de store *from scratch simplifié* :
 
@@ -1552,5 +1552,5 @@ Voilà une manière de charger la donnée avant même de charger un composant un
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzMDk0MjI2Ml19
+eyJoaXN0b3J5IjpbLTEwNjU2MTUxOV19
 -->
