@@ -1,5 +1,22 @@
 # Angular + Redux = NGRX
 
+### Sommaire
+
+
+
+### Introduction
+
+Dans cette article, nous allons voir comment utiliser le pattern redux dans une application Angular via Ngrx.
+Ce dernier proposant une conception du developement son application avec une conception centrée autour d'actions utilisateurs et serveurs. Le but étant de supprimer les différentes mutations de données des composants et services Angular pour les centraliser dans un objet global, qui serait mutable uniquement par des actions typées.
+
+Pour le développement sur Angular Visual studio code est fortement recommandé. Vous devrez aussi installer Angular sur votre machine avec un npm i -g @angular/cli.
+
+**Intéret de NGRX**
+
+- Le 1er avantage est le modèle unidirectionnelle avec lequel nous travaillerons, ce qui n'est pas le cas du standard MVC qui de son coté est bidirectionnelle.
+- Le 2eme avantage est "l'historisation" :  comme tout les changement transitent par le store, chaque update/modification est loggé. De ce fait nous pouvons revenir dans l'historique, trouvé quelle mutation a créé un bug:  c'est en quelque sorte une state machine.
+
+Comme Angular peut être utilisé avec typescript , Ngrx profite également du typage qui va verrouiller nos actions et ainsi lever plus tôt les erreurs en cours de développement.
 
 
 
@@ -1542,5 +1559,5 @@ Voilà une manière de charger la donnée avant même de charger un composant un
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NjEyOTgzMV19
+eyJoaXN0b3J5IjpbMzA0NDMxMjhdfQ==
 -->
