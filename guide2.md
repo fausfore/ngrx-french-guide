@@ -22,23 +22,14 @@ Comme Angular peut être utilisé avec **typescript** , Ngrx profite également 
 
 
 
-
-
-
-Le 1er avantage c'est qu'on est sur un modèle **unidirectionnelle** pas comme le standard MVC qui lui est **bidirectionnelle**.
-
-Le 2eme avantage c'est que comme tout les changement transit par le store, chaque update est logé ainsi on peut revenir dans l'historique trouvé quelle mutation a créer un bug comme une **state machine**.
-
-Comme Angular embarque le **typescript** , Ngrx  profite également du typage qui va verrouiller les actions ainsi éviter les erreurs en cours de développement.
-
 <p align="center">
   <img src="https://cdn-images-1.medium.com/max/1600/1*xORdWwOFLR-6D4ghvUa6AA.png">
 </p>
-<center>Le Modèle MVC</center>
+<center>Le Modèle MVC (ce que nous souhaitons éviter)</center>
 
 ## Redux kesako ?!
 
-C’est pattern née de Flux une architecture crée chez Facebook, elle apporte un worflow de données unidirectionnelle distribué par un dispatcher qui recueille des actions données par le serveur ou par l’utilisateur et conserve la nouvelle instance d’une donnée dans un store ou des stores qui mettent à jour la vue.
+C’est un pattern née de **Flux**, une architecture crée chez Facebook, elle apporte un worflow de données unidirectionnelle distribué par un dispatcher qui recueille des actions données par le serveur ou par l’utilisateur et conserve la nouvelle instance d’une donnée dans un store ou des stores qui mettent à jour la vue.
 <p align="center">
   <img src="https://julienrenaux.fr/talks-src/2016/redux-angular2/img/flux-simple-f8-diagram-with-client-action-1300w_stores_views.png">
 </p>
@@ -1556,5 +1547,5 @@ Voilà une manière de charger la donnée avant même de charger un composant un
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY4NDAzMjk4XX0=
+eyJoaXN0b3J5IjpbOTIwNTYyNTA4XX0=
 -->
