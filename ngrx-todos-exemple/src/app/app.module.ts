@@ -1,11 +1,11 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { StoreModule} from '@ngrx/store';
-
-import { getReducers, REDUCER_TOKEN } from './store';
-import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { StoreModule } from '@ngrx/store';
 
 import { AppComponent } from './app.component';
+import { appRouting } from './app.routing';
+import { getReducers, REDUCER_TOKEN } from './store';
+
 
 
 @NgModule({
@@ -13,8 +13,7 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    ReactiveFormsModule,
-    FormsModule,
+    appRouting,
     BrowserModule,
     StoreModule.forRoot(REDUCER_TOKEN)
   ],

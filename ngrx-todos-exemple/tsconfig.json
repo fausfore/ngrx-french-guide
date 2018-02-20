@@ -14,6 +14,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "baseUrl": "./src",
+    "paths": {
+      "@Models/*": ["app/models/*"],
+        "@StoreConfig": ["app/store/index.ts"],
+          "@Actions/*": ["app/store/actions/*"],
+          "@Reducers/*": ["app/store/reducers/*"],
+          "@Selectors/*": ["app/store/selectors/*"]
+      }
   }
 }
