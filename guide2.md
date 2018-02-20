@@ -1,5 +1,11 @@
 # Angular + Redux = NGRX
 
+
+
+
+
+
+
 Dans cette article on va voir comment utiliser la pattern redux dans une application Angular via Ngrx, proposant un autre manière de développer son application avec une conception autour d'action utilisateur et serveur on retirent les différentes mutations de données des composants, services Angular pour les centraliser dans un objet global mutable uniquement par des actions typées.
 
 > Pour le développent sur Angular utilisé **Visual studio code** et
@@ -1535,3 +1541,6 @@ Voilà une manière de charger la donnée avant même de charger un composant un
 ## Routes POST
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTU3NjEyOTgzMV19
+-->
