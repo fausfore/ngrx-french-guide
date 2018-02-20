@@ -39,7 +39,10 @@ L'architecture de flux présente peut contenir plusieurs structures de données 
 Chaque action passe par le dispatcher qui la transmet au store ciblé par l'action.   
 
 ## Pourquoi Redux alors ?!
-Redux est une version plus simple de Flux, il se distingue par le fait qu’il y est qu’un store donc une seule source de donnée, des états immuables et pas de dispatcher. Grâce à la programmation fonctionnelles le dispatcher est complètement retiré du schéma qui rend plus simple le développement.  
+Redux est une version moins compliqué de Flux, il s'en distingue par le fait
+- qu’il y est qu’un store donc une seule source de donnée, 
+- des états immuables 
+- et pas de dispatcher. Grâce à la programmation fonctionnelles le dispatcher est complètement retiré du schéma qui rend plus simple le développement.  
 <center>
 	<img width="600" src="https://wecodetheweb.com/2015/09/29/functionally-managing-state-with-redux/redux-cycle.png"/>
 </center>
@@ -1547,5 +1550,5 @@ Voilà une manière de charger la donnée avant même de charger un composant un
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjQ5NTU5OTddfQ==
+eyJoaXN0b3J5IjpbLTE0NDk5NDM1NDhdfQ==
 -->
