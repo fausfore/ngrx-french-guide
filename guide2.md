@@ -1961,11 +1961,12 @@ createTodo(todo: Todo) {
       userId: 1, // userId au pif
       id: this.todosLength + 1
     };
+    // this.store.dispatch(new TodoListModule.CreateTodo(payload));
     this.store.dispatch(new TodoListModule.LoadCreateTodo(payload));
     this.todoForm.reset();
   }
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Njg2OTc4NV19
+eyJoaXN0b3J5IjpbNDk2MTQ2OTIxXX0=
 -->
