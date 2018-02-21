@@ -497,10 +497,11 @@ import { OnInit, Component } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { TodoListModule } from './store/actions/todo-list.action';
 import { AppState } from './store';
-import { Todo } from 'models/todo';
+import { Todo } from './models/todo';
 
 @Component({
   selector: 'app-root',
+  styleUrls: ['./app.component.scss'],
   template: `
     <h1>la todolist redux style !</h1>
     <ul>
@@ -512,19 +513,20 @@ import { Todo } from 'models/todo';
 	</ul>
   `
 })
-export class MyAppComponent implements OnInit {
+export class AppComponent implements OnInit {
+
   todos$: Observable<Todo[]>;
 
   constructor(
-	  private store: Store<AppState>
+    private store: Store<AppState>
   ) {
     this.todos$ = store.pipe(select('todos'));
-    
+
     /* A éviter
 	this.todo$.subscribe((todos) => {
 		this.todos = todos;
 	});
-	
+
     Dans ce cas de figure on ne fait pas de mutation sur la liste
     de todos dans le composant et cela évite de faire
     un unsubscribe dans le OnDestroy
@@ -533,11 +535,12 @@ export class MyAppComponent implements OnInit {
 
   }
 
-  ngOnInit(){
-    this.store.dispatch(new TodoListModule.InitTodos() );
+  ngOnInit() {
+    this.store.dispatch(new TodoListModule.InitTodos());
   }
 
 }
+
 ```
 
 ### Fin de la branche step-1 
@@ -1673,5 +1676,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMTE4MzUyM119
+eyJoaXN0b3J5IjpbLTI0MzQ1NjgwOF19
 -->
