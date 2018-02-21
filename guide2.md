@@ -1642,6 +1642,8 @@ A partir de la vous devez checkout la **step-6** pour avoir le styles qui a ét�
 
 ## BONUS TIME !!
 
+### Début de la branche step-7
+
 Pour le moment c'est toujours **AllTodosComponent** qui a la main sur le **LoadInitTodos** mais on peut l'extraire également et l'intégrée a un **Guard Angular** qui vérifiera si la donnée est déjà chargée ( vérifiable par la propriété loaded ) dans le cas ou il n'y a pas de donnée, il enverra l'action **LoadInitTodos**.
 
 *Générer un guard*
@@ -1743,9 +1745,13 @@ export class AppModule { }
 
 L'outils permet de voir chaque changement de state, de garder l'historique, de exporté le state global et inversement et des charts sur les l'états de notre App.
 
+### Début de la branche step-7
+
 ## Routes POST
+
+### Début de la branche step-8
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzYyNDgzMjA4XX0=
+eyJoaXN0b3J5IjpbLTEwMDkwMjc3ODFdfQ==
 -->
