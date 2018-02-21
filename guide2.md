@@ -947,24 +947,24 @@ export const todoListRouting: ModuleWithProviders = RouterModule.forChild(routes
  *modules/todo-list/todo-list.module.ts*  
 ```javascript
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { AllTodosComponent } from './components/all-todos/all-todos.component';
+import { CommonModule } from '@angular/common';
+import { TodoListComponent } from './todo-list.component';
 import { SelectTodoComponent } from './components/select-todo/select-todo.component';
-
-import { routing } from './todo-list.routing';
+import { AllTodosComponent } from './components/all-todos/all-todos.component';
+import { todoListRouting } from './todo-list.routing';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
-	  ReactiveFormsModule,
-	  FormsModule,
-	  routing
+    CommonModule,
+    todoListRouting,
+    ReactiveFormsModule,
+    FormsModule
   ],
-  declarations: [
-	  SelectTodoComponent,
-	  AllTodosComponent
-  ]
+  declarations: [TodoListComponent, SelectTodoComponent, AllTodosComponent]
 })
-export class TodoListModule{ }
+
+export class TodoListModule { }
 ```
 le **TodoListComponent** va servir de parent qui va lier nos deux autres components avec un autre **router-outlet**
  *modules/todo-list/todo-list.component.ts*  
@@ -987,75 +987,81 @@ export class TodoListComponent {}
 
  *modules/todo-list/components/all-todos/all-todo.component.ts*  
 ```javascript
-import { Store, OnInit } from '@ngrx/store';
-import { tap } from 'rxjs/operators';
-import { Observable } from 'rxjs/Observable';
-import { Component, Inject } from '@angular/core';
+import { Store, select } from '@ngrx/store';
+import { OnInit, Component, Inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { AppState } from '../../../../store';
-import { selectTodos$ } from '../../../../store/selectors/todo-list.selector';
-import { TodoListModule } from '../../../../store/actions/todo-list.action';
+import { Observable } from 'rxjs/Observable';
+import { TodoListModule } from '@Actions/todo-list.action';
+import { AppState } from '@StoreConfig';
+import { Todo } from '@Models/todo';
+import { selectTodos$ } from '@Selectors/todo-list.selector';
+import { tap } from 'rxjs/operators';
 
 @Component({
-template: `
+  selector: 'app-all-todos',
+  templateUrl: './all-todos.component.html',
+  template: `
     <h1>la todolist redux style !</h1>
-    <form [formGroup]="todoForm" (ngSubmit)="CreateTodo(todoForm.value)">
-	    <label>Titre :</label>
-	    <input type="text" formControlName="title" placeholder="Title"/>
-	    <label>Est-elle terminé ? :</label>
-	    <input type="checkbox" formControlName="completed"/>
-	    <button>Créer</button>
+    <form [formGroup]="todoForm" (ngSubmit)="createTodo(todoForm.value)">
+      <label>Titre :</label>
+      <input type="text" formControlName="title" placeholder="Title"/>
+      <label>Est-elle terminé ? :</label>
+      <input type="checkbox" formControlName="completed"/>
+      <button>Créer</button>
     </form>
     <ul>
 		<li *ngFor="let todo of todos$ | async">
 			<label>{{ todo.title }}</label>
-			<input type="checkbox" [value]="todo.completed"/>
-			<button (click)="DeleteTodo(todo.id)">Supprimer</button>
+			<input type="checkbox" [ngModel]="todo.completed"/>
+			<button (click)="deleteTodo(todo.id)">Supprimer</button>
 		</li>
 	</ul>
-    `
+  `
 })
 export class AllTodosComponent implements OnInit {
-    public todoForm: FormGroup;
-    private todoslength : number;
-    public todos$: Observable<Todo[]>;
-	constructor(
-		private store: Store<AppState>
-		@Inject(FormBuilder) fb: FormBuilder
-	) {
-		this.todos$ = store
-			.pipe(
-				select(selectTodos$),
-				tap((todos) => {
-					this.todoslength = todos.length;
-				})
-			);
-			
-	    this.todoForm= fb.group({
-	      title: ['', Validators.required],
-	      completed: [false, Validators]
-	    });
-	  }
-	  
-	  ngOnInit(){
-	    this.store.dispatch(new TodoListModule.InitTodos() );
-	  }
 
-	  DeleteTodo(id: number){
-		  this.store.dispatch(new TodoListModule.DeleteTodo(id));
-	  }
-	  
-	  CreateTodo(todo: Todo){
-		  const payload = {
-			  ...todo,
-			  userId: 1, // userId au pif
-			  id: this.todoslength
-		  };
-		  this.store.dispatch(new TodoListModule.CreateTodo(payload));
-		  this.todoForm.reset();
-	  }
+  public todos$: Observable<Todo[]>;
+  public todoForm: FormGroup;
+  private todosLength: number;
+
+  constructor(
+    private store: Store<AppState>,
+    @Inject(FormBuilder) fb: FormBuilder
+  ) {
+    this.todos$ = store
+      .pipe(
+        select(selectTodos$),
+        tap((todos) => {
+          this.todosLength = todos.length;
+        })
+    );
+
+    this.todoForm = fb.group({
+      title: ['', Validators.required],
+      completed: [false, Validators]
+    });
+  }
+
+  ngOnInit() {
+    this.store.dispatch(new TodoListModule.InitTodos());
+  }
+
+  createTodo(todo: Todo) {
+    const payload = {
+      ...todo,
+      userId: 1, // userId au pif
+      id: this.todosLength + 1
+    };
+    this.store.dispatch(new TodoListModule.CreateTodo(todo));
+    this.todoForm.reset();
+  }
+
+  deleteTodo(id: number) {
+    this.store.dispatch(new TodoListModule.DeleteTodo(id));
+  }
 
 }
+
 ```
 Petite pause avec la nouvelle architecture le dossier **store/** commence à être vraiment loin de nos composants , résultat les imports ressemble plus à rien.
 Pour palier ce problème on peut créer les **alias** via le **tsconfig.json** :
@@ -1724,5 +1730,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTU1MTYxNTVdfQ==
+eyJoaXN0b3J5IjpbLTEyMzkwODMyNjFdfQ==
 -->
