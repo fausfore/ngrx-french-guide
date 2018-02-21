@@ -1452,11 +1452,12 @@ export const selectTodosLoaded$ =
 	createSelector(selectTodoListState$,(todos) => todos.loaded);
 ```
 Et importer le module d"effect dans le rootModule en lui passant notre array de effects :
+
+*app.module.ts*
 ```javascript
 // ... other
 import { EffectsModule } from '@ngrx/effects';
 import { appEffects, getReducers, REDUCER_TOKEN } from './store';
-
 
 @NgModule({
   // ... other
@@ -1624,5 +1625,5 @@ export class AppModule { }
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI2NDAzMjMyXX0=
+eyJoaXN0b3J5IjpbLTE3NTE4MTQwMDZdfQ==
 -->
