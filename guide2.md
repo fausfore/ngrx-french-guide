@@ -1168,66 +1168,76 @@ Cette fonctionnalité va être mis dans le **SelectTodoComponent** avec un formu
 
  *modules/todo-list/components/select-todo/select-todo.component.ts*  
 ```javascript
-import { Store } from '@ngrx/store';
+import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
-import { map} from 'rxjs/operators';
-import { Component, Inject } from '@angular/core';
+import { tap } from 'rxjs/operators';
+import { Component, Inject, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AppState } from '@StoreConfig';
-import { selectTodoListState$ } from '@Selectors/todo-list.selector';
+import { selectTodoSelected$ } from '@Selectors/todo-list.selector';
 import { TodoListModule } from '@Actions/todo-list.action';
-import { TodoListState } from '@Models/todo-list';
+import { TodoListState, Todo } from '@Models/todo';
+import { Router } from '@angular/router';
 
 @Component({
-template: `
-    <h1>Mettre à jour la todo</h1>
-    <form [formGroup]="updateTodoForm" (ngSubmit)="CreateTodo(updateTodoForm.value)">
-	    <label>Titre :</label>
-	    <input type="text" formControlName="title" placeholder="Title"/>
-	    <label>Est-elle terminé ? :</label>
-	    <input type="checkbox" formControlName="completed"/>
-	    <button>Modifier</button>
+  selector: 'app-select-todo',
+  styleUrls: ['./select-todo.component.scss'],
+  template: `
+      <h1>Mettre à jour la todo</h1>
+      <form *ngIf="selectTodo$ | async; else NoElement" [formGroup]="updateTodoForm" (ngSubmit)="updateTodo(updateTodoForm.value)">
+          <label>Titre :</label>
+          <input type="text" formControlName="title" placeholder="Title"/>
+          <label>Est-elle terminé ? :</label>
+          <input type="checkbox" formControlName="completed"/>
+          <button>Mettre à jour</button>
     </form>
-    `
+    <ng-template #NoElement>Pas de todo séléctionner<ng-template>
+  `
 })
-export class SelectTodoComponent {
+export class SelectTodoComponent implements OnInit {
+
     public updateTodoForm: FormGroup;
-    public todos$: Observable<TodoListState>
-    public selectTodos: Todo;
-	constructor(
-		private store: Store<AppState>
-		@Inject(FormBuilder) fb: FormBuilder
-	) {
-		this.todos$ = store
-			.pipe(
-				select(selectTodoListState$),
-				map(todoListState => {
-					return todoListState.data.filter(todos => {
-						if (todos.id === todoListState.selectTodo){
-							this.selectTodos = todos
-						}
-					})
-				})
-			);
-			
-	    this.updateTodoForm= fb.group({
-	      title: ['', Validators.required],
-	      completed: [false, Validators]
-	    });
-	  }
-	  ngOnInit () {
-		  this.updateTodoForm.patchValue({
-			  title: this.selectTodos.title,
-		      completed: this.selectTodos.completed
-		  });
-	  }
-	  
-	  UpdateTodo(){
-	  const payload = Object.assign(this.selectTodos, this.updateTodoForm);
-		  this.store.dispatch(new TodoListModule.UpdateTodo(payload));
-	  }
-	  
+    public selectTodo$: Observable<Todo>;
+    public selectTodo: Todo;
+
+  constructor(
+    private store: Store<AppState>,
+    private router: Router,
+    @Inject(FormBuilder) fb: FormBuilder
+  ) {
+  this.selectTodo$ = store
+  .pipe(
+    select(selectTodoSelected$),
+    tap(selectTodos => {
+      this.selectTodo = selectTodos;
+    })
+  );
+
+  this.selectTodo$.subscribe();
+
+    this.updateTodoForm = fb.group({
+      title: ['', Validators.required],
+      completed: [false, Validators]
+    });
+  }
+  ngOnInit() {
+    if (this.selectTodo) {
+      this.updateTodoForm.patchValue({
+        title: this.selectTodo.title,
+        completed: this.selectTodo.completed
+      });
+    }
+  }
+
+  updateTodo(formValue) {
+    const payload = Object.assign(this.selectTodo, formValue);
+    this.store.dispatch(new TodoListModule.UpdateTodo(payload));
+    return this.router.navigate(['/todo-list/all-todos']);
+  }
+
 }
+
+
 ```
 
 Voilà on a maintenant toutes nos fonctionnalités : **Create, Update, Delete** on va pouvoir commencer a inclure les requêtes **http**, pour cela on va prendre le module npm de  **[JsonPlaceholder](https://jsonplaceholder.typicode.com/)** avec **npm install -g json-server**.
@@ -1731,5 +1741,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDkxNDcwNzhdfQ==
+eyJoaXN0b3J5IjpbNzc4NTA2OTM3XX0=
 -->
