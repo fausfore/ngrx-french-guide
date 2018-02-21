@@ -264,7 +264,7 @@ store.dispatch(new CounterActions.SetNewValue(6))
 ```
 # De Redux à Ngrx
 
-### Début sur la branche step-1 
+### Début de la branche step-1 
 
 Redux est un pattern déjà bien implémenter sur les principaux frameworks/librairies javascript du moment.
 Pour React  => **react-redux**
@@ -535,6 +535,8 @@ export class MyAppComponent implements OnInit {
 
 
 ## States Selectors
+
+### Début de la branche step-2
 
 > Le **pipe async** souscrit à un Observable ou une Promise et renvoie la dernière valeur qu'il a émise. Lorsqu'une nouvelle valeur est émise, le canal asynchrone marque un composant afin de vérifier les modifications. Lorsque le composant est détruit, **le pipe async se désinscrit automatiquement pour éviter les fuites de mémoire potentielles**.
 
@@ -1662,5 +1664,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTg1MjkzMjddfQ==
+eyJoaXN0b3J5IjpbLTgyMTEwNTY3M119
 -->
