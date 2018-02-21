@@ -1570,9 +1570,10 @@ Avec le guard plus besoin de charger l'action depuis le component :
 ```
 Voilà une manière de charger la donnée avant même de charger un composant une idée de sortir encore plus le component de la logique.
 
+
 ## Routes POST
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NjgwMjI1OSw0MTczMzE5MzFdfQ==
+eyJoaXN0b3J5IjpbLTE3MTg1NzcwODcsNDE3MzMxOTMxXX0=
 -->
