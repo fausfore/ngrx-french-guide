@@ -1222,7 +1222,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./select-todo.component.scss'],
   template: `
       <h1>Mettre à jour la todo</h1>
-      <form *ngIf="selectTodo$ | async; else NoElement" [formGroup]="updateTodoForm" (ngSubmit)="updateTodo(updateTodoForm.value)">
+      <form *ngIf="selectTodo$ | async; else NoElement"
+      [formGroup]="updateTodoForm"
+      (ngSubmit)="updateTodo(updateTodoForm.value)">
           <label>Titre :</label>
           <input type="text" formControlName="title" placeholder="Title"/>
           <label>Est-elle terminé ? :</label>
@@ -1813,5 +1815,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2MTk4ODk0OV19
+eyJoaXN0b3J5IjpbNjg4NTY3MjUxXX0=
 -->
