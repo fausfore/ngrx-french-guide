@@ -1163,6 +1163,7 @@ export function todosReducer(
 		
 // ... other      
 ```
+Mettre à jour le all-todos pour ajouter 
 ```javascript
 import { Store, select } from '@ngrx/store';
 import { OnInit, Component, Inject } from '@angular/core';
@@ -1861,5 +1862,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MjI4NzUwOV19
+eyJoaXN0b3J5IjpbLTIyNTEyMTEwNl19
 -->
