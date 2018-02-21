@@ -669,7 +669,7 @@ export class AppComponent implements OnInit {
       userId: 1, // userId au pif
       id: 8 // id au pif
     };
-    this.store.dispatch(new TodoListModule.CreateTodo(todo));
+    this.store.dispatch(new TodoListModule.CreateTodo(payload));
     this.todoForm.reset();
   }
 
@@ -1703,5 +1703,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Mjc1MDU0MDVdfQ==
+eyJoaXN0b3J5IjpbMTAxNjg4NjUwOV19
 -->
