@@ -1167,15 +1167,7 @@ Mettre à jour le all-todos pour ajouter un bouton selectTodo qui va lançer l'a
 
 *all-todos.ts*
 ```javascript
-import { Store, select } from '@ngrx/store';
-import { OnInit, Component, Inject } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Observable } from 'rxjs/Observable';
-import { TodoListModule } from '@Actions/todo-list.action';
-import { AppState } from '@StoreConfig';
-import { Todo } from '@Models/todo';
-import { selectTodos$, selectTodoSelected$ } from '@Selectors/todo-list.selector';
-import { tap } from 'rxjs/operators';
+// ... Other
 import { Router } from '@angular/router';
 
 @Component({
@@ -1192,36 +1184,20 @@ import { Router } from '@angular/router';
   `
 })
 export class AllTodosComponent implements OnInit {
-
-  public todos$: Observable<Todo[]>;
-  public todoForm: FormGroup;
-  private todosLength: number;
-
+  // ... Other
   constructor(
 	// ... Other
     private router: Router) {
     // ... Other
   }
 
-  createTodo(todo: Todo) {
-    const payload = {
-      ...todo,
-      userId: 1, // userId au pif
-      id: this.todosLength + 1
-    };
-    this.store.dispatch(new TodoListModule.CreateTodo(payload));
-    this.todoForm.reset();
-  }
-
+  // ... Other
   selectTodo(todo) {
     console.log('select', todo);
     this.store.dispatch(new TodoListModule.SelectTodo(todo));
     return this.router.navigate(['/todo-list/select-todo']);
   }
-
-  deleteTodo(id: number) {
-    this.store.dispatch(new TodoListModule.DeleteTodo(id));
-  }
+  // ... Other
 }
 ```
 
@@ -1837,5 +1813,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNjgyODYxNV19
+eyJoaXN0b3J5IjpbMTkxMjM0NzQzMV19
 -->
