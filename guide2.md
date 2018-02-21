@@ -1570,11 +1570,11 @@ Avec le guard plus besoin de charger l'action depuis le component :
 ```
 Voilà une manière de charger la donnée avant même de charger un composant une idée de sortir encore plus le component de la logique.
 ## Redux Devtools
-Il existe une super extension Chrome pour le dev avec redux: Red 
+Il existe une super extension Chrome pour le dev avec redux: Redux DevTools 
 
 ## Routes POST
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc3ODkzNzY0LDQxNzMzMTkzMV19
+eyJoaXN0b3J5IjpbLTE4ODYzMzY5NDEsNDE3MzMxOTMxXX0=
 -->
