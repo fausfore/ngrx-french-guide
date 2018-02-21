@@ -1542,7 +1542,7 @@ export class IsTodosLoadedGuard implements CanActivate {
 ```
 Ajouter le guard au niveau des routes :
 
- *modules/todo-list/todo-list.routing.ts*  
+ *app.routing.ts*  
 ```javascript
 // ...Other
 import { IsTodosLoadedGuard } from './guards/is-todos-loaded/is-todos-loaded.guard';
@@ -1599,5 +1599,5 @@ export class AppModule { }
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2ODUxMDUyNyw0MTczMzE5MzFdfQ==
+eyJoaXN0b3J5IjpbLTE0NTExNTUzNzUsNDE3MzMxOTMxXX0=
 -->
