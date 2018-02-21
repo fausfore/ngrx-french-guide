@@ -855,23 +855,23 @@ app
 Une config de router pour du lazy-loading avec le **loadChildren**.
  *app.routing.ts*  
 ```javascript
-import { Routes, RouterModule } from '@angular/router';
+import { Route, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 
-const routes: Routes[] = [
-	{
-		path:'',
-		pathMatch: 'full',
-		redirectTo: 'todo-list'
-	},
-	{
-		path:'todo-list',
-		loadChildren: './modules/todo-list/todo-list.module#TodoListModule'
-	},
-	{
-		path:'**',
-		redirectTo: 'todo-list'
-	},
+const routes: Route[] = [
+    {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: 'todo-list'
+    },
+    {
+        path: 'todo-list',
+        loadChildren: './modules/todo-list/todo-list.module#TodoListModule'
+    },
+    {
+        path: '**',
+        redirectTo: 'todo-list'
+    }
 ];
 
 export const appRouting: ModuleWithProviders = RouterModule.forRoot(routes);
@@ -909,36 +909,40 @@ export class AppComponent{ }
 
  *modules/todo-list/todo-list.routing.ts*  
 ```javascript
-import { Routes, RouterModule } from '@angular/router';
+import { Route, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
+import { TodoListComponent } from './todo-list.component';
+import { AllTodosComponent } from './components/all-todos/all-todos.component';
+import { SelectTodoComponent } from './components/select-todo/select-todo.component';
 
-const routes: Routes[] = [
-	{
-		path:'',
-		component: todoListComponent,
-		children: [
-			{
-				path: '',
-				pathMatch: 'full',
-				redirectTo: 'all-todos'
-			},
-			{
-				path: 'all-todos',
-				component: AllTodosComponent
-			},
-			{
-				path: 'select-todo',
-				component: SelectTodoComponent
-			},
-			{
-				path: '**',
-				redirectTo: 'all-todos'
-			},
-		]
-	}
+
+const routes: Route[] = [
+    {
+        path: '',
+        component: TodoListComponent,
+        children: [
+            {
+                path: '',
+                pathMatch: 'full',
+                redirectTo: 'all-todos'
+            },
+            {
+                path: 'all-todos',
+                component: AllTodosComponent
+            },
+            {
+                path: 'select-todo',
+                component: SelectTodoComponent
+            },
+            {
+                path: '**',
+                redirectTo: 'all-todos'
+            },
+        ]
+    }
 ];
 
-export const appRouting: ModuleWithProviders = RouterModule.forChild(routes);
+export const todoListRouting: ModuleWithProviders = RouterModule.forChild(routes);
 ```
  *modules/todo-list/todo-list.module.ts*  
 ```javascript
@@ -1720,5 +1724,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMTY1NjM3OF19
+eyJoaXN0b3J5IjpbLTEyMTU1MTYxNTVdfQ==
 -->
