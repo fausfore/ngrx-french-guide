@@ -1181,13 +1181,14 @@ json-server path-of-json
 le port 3000 va s'ouvrir, allez sur **localhost:3000/todos** et hop une Api rest prête à l'emploi easy.
 
 ## Routes GET 
-Et générer un service vous pouvez le faire depuis la console : 
+On va générer un service depuis la console : 
 ```bash
 ng g service services/todo-list
 ```
 Voilà maintenant plus qu'a créer notre service avant tout il vous faudra importé le module http de Angular :
+Attention a déclarer le service dans le provider de appModule
 
-*/modules/todo-list/todo-list.module.ts*
+*app.module.ts*
 ```javascript
 // ..other
 import { HttpClientModule } from '@angular/common/http';
@@ -1199,20 +1200,6 @@ import { TodoListService } from './services/todo-list.service';
 	  HttpClientModule 
   ],
   providers: [TodoListService]
-})
-export class TodoListModule { }
-```
-
-Attention a déclarer le service dans le provider de appModule:
-```javascript
-// ..other
-import { HttpClientModule } from '@angular/common/http';
-
-@NgModule({
-  imports: [
-	  // ..other
-	  HttpClientModule 
-  ],
 })
 export class TodoListModule { }
 ```
@@ -1642,5 +1629,5 @@ export class AppModule { }
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwODA3NTgzM119
+eyJoaXN0b3J5IjpbLTY2OTUyODQ5N119
 -->
