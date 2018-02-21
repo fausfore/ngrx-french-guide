@@ -1182,19 +1182,10 @@ import { Router } from '@angular/router';
   selector: 'app-all-todos',
   styleUrls: ['./all-todos.component.scss'],
   template: `
-    <h1>la todolist redux style !</h1>
-    <form [formGroup]="todoForm" (ngSubmit)="createTodo(todoForm.value)">
-      <label>Titre :</label>
-      <input type="text" formControlName="title" placeholder="Title"/>
-      <label>Est-elle terminé ? :</label>
-      <input type="checkbox" formControlName="completed"/>
-      <button>Créer</button>
-    </form>
+    <!-- reste -->
     <ul>
       <li *ngFor="let todo of todos$ | async; let i = index" >
-        <label>{{ i }} - {{ todo.title }}</label>
-        <input type="checkbox" [ngModel]="todo.completed"/>
-        <button (click)="deleteTodo(todo.id)">Supprimer</button>
+        <!-- reste -->
         <button (click)="selectTodo(todo)">Modifier</button>
       </li>
     </ul>
@@ -1864,5 +1855,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU2NjQ0OThdfQ==
+eyJoaXN0b3J5IjpbMTkwOTc4OTkxMl19
 -->
