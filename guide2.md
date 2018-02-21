@@ -1827,24 +1827,12 @@ export namespace TodoListModule {
         // CREATE_TODO = '[todoList] Create Todo',
     }
 	// ... Other
-    export class LoadInitTodos {
-        readonly type = ActionTypes.LOAD_INIT_TODOS;
-    }
-
-    export class SuccessInitTodos {
-        readonly type = ActionTypes.SUCCESS_INIT_TODOS;
-        constructor(public payload: Todo[]) {}
-    }
-
-    export class ErrorInitTodos {
-        readonly type = ActionTypes.ERROR_INIT_TODOS;
-    }
-
-
+	/*
     export class CreateTodo {
         readonly type = ActionTypes.CREATE_TODO;
         constructor(public payload: Todo) {}
     }
+    */
 
     export class LoadCreateTodo {
         readonly type = ActionTypes.LOAD_CREATE_TODO;
@@ -1852,6 +1840,11 @@ export namespace TodoListModule {
     }
 
     export class SuccessCreateTodo {
+        readonly type = ActionTypes.SUCCESS_CREATE_TODO;
+        constructor(public payload: Todo) {}
+    }
+    
+    export class ErrorCreateTodo {
         readonly type = ActionTypes.SUCCESS_CREATE_TODO;
         constructor(public payload: Todo) {}
     }
@@ -1884,5 +1877,5 @@ export namespace TodoListModule {
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTIzMzA5OTRdfQ==
+eyJoaXN0b3J5IjpbLTE3MTY3MDI2NDFdfQ==
 -->
