@@ -1581,12 +1581,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-
-import { AppComponent } from './app.component';
-import { appRouting } from './app.routing';
-import { IsTodosLoadedGuard } from './guards/is-todos-loaded/is-todos-loaded.guard';
-import { TodoListService } from './services/todo-list.service';
-import { appEffects, getReducers, REDUCER_TOKEN } from './store';
 import { environment } from 'environments/environment';
 
 
@@ -1619,5 +1613,5 @@ export class AppModule { }
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwODI1NjIzOSw0MTczMzE5MzFdfQ==
+eyJoaXN0b3J5IjpbLTE4OTA2MjQ4MzMsNDE3MzMxOTMxXX0=
 -->
