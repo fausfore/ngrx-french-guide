@@ -1649,6 +1649,7 @@ Pour le moment c'est toujours **AllTodosComponent** qui a la main sur le **LoadI
 *Générer un guard*
 ```bash
 ng g guard guards/is-todos-loaded/is-todos-loaded
+
 ```
 *guards/is-todos-loaded/is-todos-loaded.guard*
 
@@ -1753,5 +1754,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MjExNTIyMV19
+eyJoaXN0b3J5IjpbODc2OTA0MjgxXX0=
 -->
