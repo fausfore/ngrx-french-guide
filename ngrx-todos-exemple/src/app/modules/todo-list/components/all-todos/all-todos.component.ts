@@ -38,7 +38,6 @@ import { Router } from '@angular/router';
         </div>
       </li>
     </ul>
-    <ng-template #NoElement>Pas de todo séléctionner<ng-template>
   `
 })
 export class AllTodosComponent implements OnInit {
