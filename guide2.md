@@ -531,6 +531,11 @@ export class MyAppComponent implements OnInit {
 }
 ```
 
+### Fin de la branche step-1 
+
+
+## States Selectors
+
 > Le **pipe async** souscrit à un Observable ou une Promise et renvoie la dernière valeur qu'il a émise. Lorsqu'une nouvelle valeur est émise, le canal asynchrone marque un composant afin de vérifier les modifications. Lorsque le composant est détruit, **le pipe async se désinscrit automatiquement pour éviter les fuites de mémoire potentielles**.
 
 > Voilà nos todos s'affiche bien dans la vue mais faire ce serait mieux de renvoyer directement
@@ -543,8 +548,6 @@ export class MyAppComponent implements OnInit {
 this.todos$ = store.pipe(select((state) => state.todos.data));
 ```
 De cette manière on ne renvoie que ce que l'on souhaite s'afficher dans le composant cela ouvre la voie au concept des **states selectors**.
-
-## States Selectors
 
 Comme son nom le précise on va pouvoir sélectionner une partie d'un state voir même pouvoir renvoyer une itération modifié du state grâce au traitement de RxJs sur les Observables car oui nos states sont des observables et bénéficie de l'énorme api RxJs pour faire du traitement sur nos données.
 Pour voir un peu les différentes méthodes : http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html
@@ -1659,5 +1662,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODMzMzY4OTZdfQ==
+eyJoaXN0b3J5IjpbLTEyNTg1MjkzMjddfQ==
 -->
