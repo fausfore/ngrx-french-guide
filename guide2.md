@@ -615,41 +615,68 @@ On va créer un formulaire pour créer une todo grâce au formsbuilder d'Angular
 
 */app.component.ts*
 ```javascript
-import {..., Inject} from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-// Other things ...
- template: `
+import { Store, select } from '@ngrx/store';
+import { OnInit, Component, Inject } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Observable } from 'rxjs/Observable';
+import { TodoListModule } from './store/actions/todo-list.action';
+import { AppState } from './store';
+import { Todo } from './models/todo';
+import { selectTodos$ } from './store/selectors/todo-list.selector';
+
+@Component({
+  selector: 'app-root',
+  styleUrls: ['./app.component.scss'],
+  template: `
     <h1>la todolist redux style !</h1>
-    <form [formGroup]="todoForm" (ngSubmit)="CreateTodo(todoForm.value)">
-	    <label>Titre :</label>
-	    <input type="text" formControlName="title" placeholder="Title"/>
-	    <label>Est-elle terminé ? :</label>
-	    <input type="checkbox" formControlName="completed"/>
-	    <button>Créer</button>
+    <form [formGroup]="todoForm" (ngSubmit)="createTodo(todoForm.value)">
+      <label>Titre :</label>
+      <input type="text" formControlName="title" placeholder="Title"/>
+      <label>Est-elle terminé ? :</label>
+      <input type="checkbox" formControlName="completed"/>
+      <button>Créer</button>
     </form>
     <ul>
-    Other things ...
-    `
-    public todoForm: FormGroup;
-    // Other things ...
+		<li *ngFor="let todo of todos$ | async">
+			<label>{{ todo.title }}</label>
+			<input type="checkbox" [ngModel]="todo.completed"/>
+			<button>Supprimer</button>
+		</li>
+	</ul>
+  `
+})
+export class AppComponent implements OnInit {
+
+  todos$: Observable<Todo[]>;
+  public todoForm: FormGroup;
+
   constructor(
-	  ...
-	  @Inject(FormBuilder) fb: FormBuilder
+    private store: Store<AppState>,
+    @Inject(FormBuilder) fb: FormBuilder
   ) {
-    this.todoForm= fb.group({
+    this.todos$ = store.pipe(select(selectTodos$));
+
+    this.todoForm = fb.group({
       title: ['', Validators.required],
       completed: [false, Validators]
     });
+
   }
-  CreateTodo(todo: Todo){
-	  const payload = {
-		  ...todo,
-		  userId: 1, // userId au pif
-		  id: 8 // id au pif
-	  };
-	  this.store.dispatch(new TodoListModule.CreateTodo(todo));
-	  this.todoForm.reset();
+
+  createTodo(todo: Todo) {
+    const payload = {
+      ...todo,
+      userId: 1, // userId au pif
+      id: 8 // id au pif
+    };
+    this.store.dispatch(new TodoListModule.CreateTodo(todo));
+    this.todoForm.reset();
   }
+
+  ngOnInit() {
+    this.store.dispatch(new TodoListModule.InitTodos());
+  }
+
 }
 ```
 Ne pas oublier de charger les modules forms de Angular.
@@ -1676,5 +1703,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0MzQ1NjgwOF19
+eyJoaXN0b3J5IjpbLTE1Mjc1MDU0MDVdfQ==
 -->
