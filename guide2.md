@@ -1574,5 +1574,5 @@ Voilà une manière de charger la donnée avant même de charger un composant un
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE3MzMxOTMxXX0=
+eyJoaXN0b3J5IjpbMTc5NjgwMjI1OSw0MTczMzE5MzFdfQ==
 -->
