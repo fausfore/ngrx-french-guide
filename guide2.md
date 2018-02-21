@@ -1431,6 +1431,30 @@ export class TodoListEffects {
   ) {}
 }
 ```
+```javascript
+import { ActionReducerMap } from '@ngrx/store';
+import { InjectionToken } from '@angular/core';
+
+import { todosReducer } from './reducers/todo-list.reducer';
+import { TodoListState } from '../models/todo';
+import { TodoListEffects } from '@Effects/todo-list.effect';
+
+const reducers = {
+    todos: todosReducer
+};
+
+export const appEffects = [TodoListEffects];
+
+export interface AppState {
+    todos: TodoListState;
+}
+
+export function getReducers() {
+    return reducers;
+}
+
+export const REDUCER_TOKEN = new InjectionToken<ActionReducerMap<AppState>>('Registered Reducers');
+```
 On ajoute 2 autre selectors pour le loading et le loaded state.
 
 *store/selectors/todo-list.selector.ts*
@@ -1599,5 +1623,5 @@ export class AppModule { }
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2MzE4NDMzOCw0MTczMzE5MzFdfQ==
+eyJoaXN0b3J5IjpbLTE2OTgwMTE3MTIsNDE3MzMxOTMxXX0=
 -->
