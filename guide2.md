@@ -1956,13 +1956,15 @@ export class TodoListEffects {
 Maintenant reste plus que a changer l'action lors du click et retirer la notion de id car le serveur donnera son propre id
 *all-todos.ts*
 ```javascript
+// private todosLength: number;
+// ... Other
 this.todos$ = store
       .pipe(
         select(selectTodos$),
-        tap((todos) => {
+        /*tap((todos) => {
           console.log('selectTodos', todos);
           this.todosLength = todos.length;
-        })
+        }) */
     );
 // ... Other
 createTodo(todo: Todo) {
@@ -1978,5 +1980,5 @@ createTodo(todo: Todo) {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3MDU1MDgzM119
+eyJoaXN0b3J5IjpbOTQwNTMxNDc3XX0=
 -->
