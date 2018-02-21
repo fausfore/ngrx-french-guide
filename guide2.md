@@ -1113,12 +1113,12 @@ export namespace TodoListModule {
 	export enum ActionTypes {
 		// ... other
 		SELECT_TODO = '[todoList] Select Todo',
-		UPDATE_TODO= '[todoList] UpdateTodo'
+		UPDATE_TODO = '[todoList] Update Todo'
 	}
 	// ... other
 	export class SelectTodo {
 		readonly type = ActionTypes.SELECT_TODO;
-		constructor(payload: number){}
+		constructor(payload: Todo){}
 	}
 	
 	export class UpdateTodo {
@@ -1155,11 +1155,8 @@ export function todosReducer(
 	case TodoListModule.ActionTypes.UPDATE_TODO:
 	    return {
 			...state,
-			data: state.data.map((todos) => {
-				if (todos.id === action.payload.id) {
-					return action.payload
-				}
-				return todos 
+			data: state.data
+                .map(todo => action.payload.id === todo.id ? action.payload : todo)
 			})
 		};
 	
@@ -1734,5 +1731,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MDExNTQxOF19
+eyJoaXN0b3J5IjpbLTE0NDkxNDcwNzhdfQ==
 -->
