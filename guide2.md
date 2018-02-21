@@ -1860,19 +1860,10 @@ export namespace TodoListModule {
 }
 
 ```
-
+On update le reducer avec les nouvelles actions:
 ```javascript
-import { TodoListModule } from '../actions/todo-list.action';
-import { TodoListState  } from '../../models/todo';
-
-const initialState: TodoListState = {
-    data: [],
-    loading: false,
-    loaded: false,
-    selectedTodo: undefined
-};
-
-export function todosReducer(
+// ...Other
+todosReducer(
     state: TodoListState = initialState,
     action: TodoListModule.Actions
 ): TodoListState {
@@ -1925,5 +1916,5 @@ export function todosReducer(
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIxOTcyODYzXX0=
+eyJoaXN0b3J5IjpbMjUwNTc2MDg2XX0=
 -->
