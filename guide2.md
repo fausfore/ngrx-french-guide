@@ -1693,10 +1693,10 @@ Ajouter le guard au niveau des routes :
 import { IsTodosLoadedGuard } from './guards/is-todos-loaded/is-todos-loaded.guard';
 // ...Other
 			{
-				path: 'all-todos',
-				component: AllTodosComponent,
-				canActivate:[IsTodosLoadedGuard]
-			},
+		        path: 'todo-list',
+		        loadChildren: './modules/todo-list/todo-list.module#TodoListModule',
+		        canActivate: [IsTodosLoadedGuard]
+		    },
 // ...Other
 ```
 Avec le guard plus besoin de charger l'action depuis le component :
@@ -1753,5 +1753,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDkwMjc3ODFdfQ==
+eyJoaXN0b3J5IjpbLTg1MjExNTIyMV19
 -->
