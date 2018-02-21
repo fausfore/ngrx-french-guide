@@ -827,7 +827,11 @@ Voilà l'id s’incrémentera au fur est mesure que la collection grandit pour c
 Le truc intéressant aussi c'est que l'on a pu récupérer cette valeur **sans faire un subscribe sur l'observable selectTodos$** propre.
 Voilà la suppression completed !
 
+### Fin de la branche step-3
+
 ## Refacto Time !
+
+### Dé de la branche step-4
 
 Avant de se lancer sur l'update de todo on va changer un peu l'architecture du projet et mettre en place un peu de routing.
 
@@ -1716,5 +1720,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMyMjEwMzc4XX0=
+eyJoaXN0b3J5IjpbLTE0NjY2MjU4ODddfQ==
 -->
