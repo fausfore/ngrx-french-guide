@@ -1931,7 +1931,29 @@ export class TodoListService {
 ```
 On ajoute un effect qui listen l'action de LOAD_CREATE_TODO:
 
+```javascript
+// ...Other
+
+@Injectable()
+export class TodoListEffects {
+  // ...Other
+
+    @Effect() LoadCreateTodo$: Observable<TodoListModule.Actions> = this.actions$
+      .pipe(
+          ofType<TodoListModule.LoadCreateTodo>(TodoListModule.ActionTypes.LOAD_CREATE_TODO),
+          switchMap(action => this.todoListService.createTodo(action.payload)),
+          map(todo => new TodoListModule.SuccessCreateTodo(todo)),
+          catchError(() => of(new TodoListModule.ErrorInitTodos()))
+      );
+
+  constructor(
+    private todoListService: TodoListService,
+    private actions$: Actions
+  ) {}
+}
+
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzE2NTIwODJdfQ==
+eyJoaXN0b3J5IjpbNzk5NjQ3OTgxXX0=
 -->
