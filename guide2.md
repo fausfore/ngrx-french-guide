@@ -772,11 +772,11 @@ export namespace TodoListModule {
 */store/reducers/todo-list.reducer.ts*
 ```javascript
 	// ... reste
-    case TodoListModule.ActionTypes.DELETE_TODO :
-	    return {
-			...state,
-			data : state.data.filter(todo => todo.id !== action.payload)
-		};
+    case TodoListModule.ActionTypes.DELETE_TODO:
+        return {
+            ...state,
+            data : state.data.filter(todo => todo.id !== action.payload)
+        };
 	// ...reste
 ```
 
@@ -787,7 +787,7 @@ export namespace TodoListModule {
     <!-- reste -->
 	<li *ngFor="let todo of todos$ | async">
 		<!-- reste -->
-		<button (click)="DeleteTodo(todo.id)">Supprimer</button>
+		<button (click)="deleteTodo(todo.id)">Supprimer</button>
 	</li>
   `
     // Other things ...
@@ -1716,5 +1716,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NTYzNTA1Nl19
+eyJoaXN0b3J5IjpbMjExMDkzMjkyMl19
 -->
