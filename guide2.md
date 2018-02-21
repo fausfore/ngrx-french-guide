@@ -1573,7 +1573,7 @@ Voilà une manière de charger la donnée avant même de charger un composant un
 Il existe une super extension Chrome pour le dev avec redux: [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=fr) 
 pour l'installer sur le projet, il vous faut le package [@ngrx/store-devtools](https://github.com/ngrx/platform/blob/master/docs/store-devtools/README.md)
 
-
+Et l'importer dans le root module: 
 ```javascript
 // ... reste
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
@@ -1599,5 +1599,5 @@ export class AppModule { }
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODEwNzE0NDIsNDE3MzMxOTMxXX0=
+eyJoaXN0b3J5IjpbMjA2ODUxMDUyNyw0MTczMzE5MzFdfQ==
 -->
