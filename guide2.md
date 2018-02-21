@@ -1198,27 +1198,9 @@ export class AllTodosComponent implements OnInit {
   private todosLength: number;
 
   constructor(
-    private router: Router,
-    private store: Store<AppState>,
-    @Inject(FormBuilder) fb: FormBuilder
-  ) {
-    this.todos$ = store
-      .pipe(
-        select(selectTodos$),
-        tap((todos) => {
-          console.log('selectTodos', todos);
-          this.todosLength = todos.length;
-        })
-    );
-
-    this.todoForm = fb.group({
-      title: ['', Validators.required],
-      completed: [false, Validators]
-    });
-  }
-
-  ngOnInit() {
-    this.store.dispatch(new TodoListModule.InitTodos());
+	// ... Other
+    private router: Router) {
+    // ... Other
   }
 
   createTodo(todo: Todo) {
@@ -1855,5 +1837,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwOTc4OTkxMl19
+eyJoaXN0b3J5IjpbMjAzNjgyODYxNV19
 -->
