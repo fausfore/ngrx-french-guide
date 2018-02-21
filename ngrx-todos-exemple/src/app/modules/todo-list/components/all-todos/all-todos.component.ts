@@ -29,7 +29,6 @@ import { Router } from '@angular/router';
         <button (click)="selectTodo(todo)">Modifier</button>
       </li>
     </ul>
-    <ng-template #NoElement>Pas de todo séléctionner<ng-template>
   `
 })
 export class AllTodosComponent implements OnInit {
