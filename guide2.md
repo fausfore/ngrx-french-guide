@@ -1853,15 +1853,12 @@ export namespace TodoListModule {
     export type Actions = DeleteTodo
         | LoadCreateTodo
         | SuccessCreateTodo
-        | UpdateTodo
-        | SelectTodo
-        //| CreateTodo
-        | LoadInitTodos
-        | SuccessInitTodos
-        | ErrorInitTodos;
+        | ErrorCreateTodo
+        // ... Other
+        //| CreateTodo;
 }
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwODk3MzYzNF19
+eyJoaXN0b3J5IjpbLTUzMzU1NTU5N119
 -->
