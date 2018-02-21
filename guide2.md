@@ -1073,7 +1073,7 @@ Pour palier ce problème on peut créer les **alias** via le **tsconfig.json** :
     "baseUrl": "./src",
     "paths": {
 	  "@Models/*": ["app/models/*"],
-      "@StoreConfig/*": ["app/store/index.ts"],
+      "@StoreConfig": ["app/store/index.ts"],
 	      "@Actions/*": ["app/store/actions/*"],
 	      "@Reducers/*": ["app/store/reducers/*"],
 	      "@Selectors/*": ["app/store/selectors/*"],
@@ -1730,5 +1730,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzkwODMyNjFdfQ==
+eyJoaXN0b3J5IjpbLTIwOTc2Mzg2MTZdfQ==
 -->
