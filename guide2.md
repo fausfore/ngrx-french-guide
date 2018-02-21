@@ -1650,6 +1650,7 @@ Pour le moment c'est toujours **AllTodosComponent** qui a la main sur le **LoadI
 ```bash
 ng g guard guards/is-todos-loaded/is-todos-loaded
 ```
+Et le déclarer dans le AppModule :
 
 ```javascript
 // ... Other
@@ -1775,5 +1776,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTcyMTUwNTVdfQ==
+eyJoaXN0b3J5IjpbMTkzNjE3MzY2M119
 -->
