@@ -1237,7 +1237,7 @@ On ajoute le service dans le component et au **resolve** de la requête on lui p
  *modules/todo-list/components/all-todos/all-todo.component.ts*  
 ```javascript
 // ...other
-import { TodoListService } from '../services/todo-list';
+import { TodoListService } from '@Services/todo-list';
 
 // ...other
 export class AllTodosComponent {
@@ -1641,5 +1641,5 @@ export class AppModule { }
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MjA0Nzk5Ml19
+eyJoaXN0b3J5IjpbLTEzNzY2NzIxNTFdfQ==
 -->
