@@ -1638,7 +1638,7 @@ On a rajouter en plus un template de chargement qui s'affichera entre le **LoadI
 
 ### Fin de la branche step-6
 
-A partir de la vous devez checkout la **step-6
+A partir de la vous devez checkout la **step-6** pour avoir le 
 
 ## BONUS TIME !!
 
@@ -1747,5 +1747,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4ODU5ODQ2XX0=
+eyJoaXN0b3J5IjpbLTE4NTYxNjE0NzZdfQ==
 -->
