@@ -386,14 +386,16 @@ Un petit mock pour tester.
 *store/actions/todo-list.action.ts*
 ```javascript
 export namespace TodoListModule {
-	export enum ActionTypes {
-		INIT_TODOS = '[todoList] Initialisation'
-	}
-	export class InitTodos {
-		readonly type = ActionTypes.INIT_TODO;
-	}
-	
-	export type Actions = InitTodos 
+
+    export enum ActionTypes {
+        INIT_TODOS = '[todoList] Init Todos'
+    }
+
+    export class InitTodos {
+        readonly type = ActionTypes.INIT_TODOS;
+    }
+
+    export type Actions = InitTodos;
 }
 ```
 Question pratique je préfère encapsulé le tout dans un **namespace** pour simplifié les import, libre à vous de ne pas le faire.
@@ -1664,5 +1666,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMTEwNTY3M119
+eyJoaXN0b3J5IjpbMTY2ODAxMjUxOV19
 -->
