@@ -1599,14 +1599,13 @@ template: `
 	    <input type="checkbox" formControlName="completed"/>
 	    <button>Créer</button>
     </form>
-    <ul *ngIf="!(todosLoading) | async; else loading">
+    <ul>
 		<li *ngFor="let todo of todos$ | async">
 			<label>{{ todo.title }}</label>
 			<input type="checkbox" [value]="todo.completed"/>
 			<button (click)="DeleteTodo(todo.id)">Supprimer</button>
 		</li>
 	</ul>
-	<ng-template #loading>En cours de chargement</ng-template>
     `
 })
 
@@ -1744,5 +1743,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk4MTk0ODc1XX0=
+eyJoaXN0b3J5IjpbLTEzMzMxMzYxNjVdfQ==
 -->
