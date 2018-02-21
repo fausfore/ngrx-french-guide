@@ -1198,7 +1198,7 @@ export class TodoListModule { }
 ```
 Et générer un service vous pouvez le faire depuis la console : 
 ```bash
-ng g service modules/todo-list/services/todo-list
+ng g service services/todo-list
 ```
 Normalement il sera automatiquement déclarer dans le module TodoListModule.
 ```javascript
@@ -1626,5 +1626,5 @@ export class AppModule { }
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjUzOTY0MjQyXX0=
+eyJoaXN0b3J5IjpbMTUwNjAyNjA4NF19
 -->
