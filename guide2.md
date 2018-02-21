@@ -1503,7 +1503,7 @@ Pour le moment c'est toujours **AllTodosComponent** qui a la main sur le **LoadI
 
 *Générer un guard*
 ```bash
-ng g guard modules/todo-list/guards/is-todos-loaded/is-todos-loaded
+ng g guard guards/is-todos-loaded/is-todos-loaded
 ```
 *guards/is-todos-loaded/is-todos-loaded.guard*
 
@@ -1599,5 +1599,5 @@ export class AppModule { }
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODM5NDY1Miw0MTczMzE5MzFdfQ==
+eyJoaXN0b3J5IjpbMTg2MzE4NDMzOCw0MTczMzE5MzFdfQ==
 -->
