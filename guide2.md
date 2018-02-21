@@ -1200,7 +1200,7 @@ Et générer un service vous pouvez le faire depuis la console :
 ```bash
 ng g service services/todo-list
 ```
-Normalement il sera automatiquement déclarer dans le module TodoListModule.
+Attention 
 ```javascript
 // ... other
 import { HttpClient } from '@angular/common/http';
@@ -1626,5 +1626,5 @@ export class AppModule { }
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNjAyNjA4NF19
+eyJoaXN0b3J5IjpbMTgyMjA1OTE4MF19
 -->
