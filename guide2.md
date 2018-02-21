@@ -1228,7 +1228,7 @@ Un petit alias :
     "paths": {
 		// ... reste
 		"@Services/*": ["app/services/*"],
-		"@Env/*": ["app/environments/environment.ts/*"],
+		"@Env/*": ["environments/environment.ts/*"],
     }
   }
 }
@@ -1642,5 +1642,5 @@ export class AppModule { }
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTcwMzgyNTddfQ==
+eyJoaXN0b3J5IjpbLTE5OTA5MjY5MTVdfQ==
 -->
