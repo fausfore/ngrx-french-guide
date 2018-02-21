@@ -461,21 +461,28 @@ export const REDUCER_TOKEN = new InjectionToken<ActionReducerMap<AppState>>('Reg
 
 */app.module.ts*
 ```javascript
-import { NgModule} from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 import { StoreModule} from '@ngrx/store';
-
 import { getReducers, REDUCER_TOKEN } from './store';
+import { AppComponent } from './app.component';
+
 
 @NgModule({
+  declarations: [
+    AppComponent
+  ],
   imports: [
-    StoreModule.forRoot(REDUCER_TOKEN),
+    BrowserModule,
+    StoreModule.forRoot(REDUCER_TOKEN)
   ],
   providers: [
     {
       provide: REDUCER_TOKEN,
       useFactory: getReducers
     }
-  ]
+  ],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
 ```
@@ -1666,5 +1673,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1NDkyODkwMl19
+eyJoaXN0b3J5IjpbLTkxMTE4MzUyM119
 -->
