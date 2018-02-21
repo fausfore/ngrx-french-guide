@@ -1201,6 +1201,7 @@ Et générer un service vous pouvez le faire depuis la console :
 ng g service services/todo-list
 ```
 Attention a déclarer le service dans le provider de appModule:
+
 ```javascript
 // ... other
 import { HttpClient } from '@angular/common/http';
@@ -1626,5 +1627,5 @@ export class AppModule { }
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzI5MTQ0ODddfQ==
+eyJoaXN0b3J5IjpbLTEwOTA4NDY4MV19
 -->
