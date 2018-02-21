@@ -1505,7 +1505,7 @@ Pour le moment c'est toujours **AllTodosComponent** qui a la main sur le **LoadI
 ```bash
 ng g guard modules/todo-list/guards/is-todos-loaded/is-todos-loaded
 ```
-*modules/todo-list/guards/is-todos-loaded/is-todos-loaded.guard*
+*guards/is-todos-loaded/is-todos-loaded.guard*
 
 ```javascript
 import { Observable } from 'rxjs/Observable';
@@ -1514,7 +1514,7 @@ import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot, Router } from
 import { select, Store } from '@ngrx/store';
 import { AppState } from '@StoreConfig';
 import { map } from 'rxjs/operators';
-import { selectTodosLoaded$ } from '@Selectors/todo-list.selector'; 
+import { selectTodosLoaded$ } from '@Selectors/todo-list.selector';
 import { TodoListModule } from '@Actions/todo-list.action';
 
 @Injectable()
@@ -1532,7 +1532,7 @@ export class IsTodosLoadedGuard implements CanActivate {
         select(selectTodosLoaded$),
         map(isLoaded => {
           if (!isLoaded) {
-	          this.store.dispatch( new TodoListModule.LoadInitTodos() )
+            this.store.dispatch(new TodoListModule.LoadInitTodos());
           }
           return true;
         })
@@ -1599,5 +1599,5 @@ export class AppModule { }
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTExNTUzNzUsNDE3MzMxOTMxXX0=
+eyJoaXN0b3J5IjpbLTE2ODM5NDY1Miw0MTczMzE5MzFdfQ==
 -->
