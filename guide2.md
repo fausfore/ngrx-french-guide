@@ -1091,7 +1091,11 @@ import { TodoListModule } from '@Actions/todo-list.action';
 ```
 Plutôt cool non si votre IDE indique une erreur redémarrer-le. Voilà le point refacto est terminé passons à l'update de todo !
 
+### Fin de la branche step-4
+
 ## Update Todo
+
+### Début de la branche step-5
 
 On va rajouter un propriété dans le **TodoListState** afin de garder l'id d'une todo, on va modifier l'interface, les actions et le reducer pour pouvoir ajouter cette logique.
 
@@ -1730,5 +1734,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTc2Mzg2MTZdfQ==
+eyJoaXN0b3J5IjpbLTE1OTgyODgxMDBdfQ==
 -->
