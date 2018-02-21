@@ -1815,6 +1815,7 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation donc au lieu s'avoir que une action CREATE_TODO, on aura un **LOAD_CREATE_TODO** et un **SUCCESS_CREATE_TODO**
 
+*todo-list.action.ts*
 ```javascript
 import { Todo } from '../../models/todo';
 
@@ -1860,5 +1861,5 @@ export namespace TodoListModule {
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzMzU1NTU5N119
+eyJoaXN0b3J5IjpbLTY5MjA0MTI4M119
 -->
