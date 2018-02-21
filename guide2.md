@@ -1227,7 +1227,7 @@ Un petit alias :
     "baseUrl": "./src",
     "paths": {
 		// ... reste
-		"@Effects/*": ["app/store/effects/*"],
+		"@Services/*": ["app/services/*"],
     }
   }
 }
@@ -1641,5 +1641,5 @@ export class AppModule { }
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODY4NzA1OTRdfQ==
+eyJoaXN0b3J5IjpbMTM5MjA0Nzk5Ml19
 -->
