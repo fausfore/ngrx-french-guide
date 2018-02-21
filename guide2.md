@@ -1573,20 +1573,44 @@ Voilà une manière de charger la donnée avant même de charger un composant un
 Il existe une super extension Chrome pour le dev avec redux: [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=fr) 
 pour l'installer sur le projet, il vous faut le package [@ngrx/store-devtools](https://github.com/ngrx/platform/blob/master/docs/store-devtools/README.md)
 
+
 ```javascript
-// ... reste
+import { HttpClientModule } from '@angular/common/http';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { EffectsModule } from '@ngrx/effects';
+import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import { environment } from '../environments/environment'; // Angular CLI environemnt
+
+import { AppComponent } from './app.component';
+import { appRouting } from './app.routing';
+import { IsTodosLoadedGuard } from './guards/is-todos-loaded/is-todos-loaded.guard';
+import { TodoListService } from './services/todo-list.service';
+import { appEffects, getReducers, REDUCER_TOKEN } from './store';
+import { environment } from 'environments/environment';
+
 
 @NgModule({
+  declarations: [
+    AppComponent
+  ],
   imports: [
-    StoreModule.forRoot(reducers),
-    // Instrumentation must be imported after importing StoreModule (config is optional)
+	// ... other
     StoreDevtoolsModule.instrument({
+      name: '[TODOLIST]',
       maxAge: 25, // Retains last 25 states
       logOnly: environment.production // Restrict extension to log-only mode
     })
-  ]
+  ],
+  providers: [
+    {
+      provide: REDUCER_TOKEN,
+      useFactory: getReducers
+    },
+    TodoListService,
+    IsTodosLoadedGuard
+  ],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
 ```
@@ -1595,5 +1619,5 @@ export class AppModule { }
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NzMyMzkwNiw0MTczMzE5MzFdfQ==
+eyJoaXN0b3J5IjpbMTgwODI1NjIzOSw0MTczMzE5MzFdfQ==
 -->
