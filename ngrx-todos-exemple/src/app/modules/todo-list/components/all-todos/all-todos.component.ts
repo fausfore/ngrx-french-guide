@@ -74,7 +74,7 @@ export class AllTodosComponent implements OnInit {
   selectTodo(todo) {
     console.log('select', todo);
     this.store.dispatch(new TodoListModule.SelectTodo(todo));
-    return this.router.navigate(['/todo-list/select-todo']);
+    this.router.navigate(['/todo-list/select-todo']);
   }
 
   deleteTodo(id: number) {
