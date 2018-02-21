@@ -1,0 +1,22 @@
+h1 {
+	font-size: 18px;
+	text-align: center;
+	padding: 25px;
+}
+
+form {
+	display: flex;
+	width: 90%;
+	padding: 25px 5%;
+	justify-content: space-around;
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	padding: 0 5%;
+	li {
+		padding: 15px 0;
+	}
+}

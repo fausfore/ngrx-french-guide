@@ -1,0 +1,18 @@
+header {
+	background: #777;
+	width: 100%;
+	nav {
+		display: flex;
+		align-items: center;
+		align-items: stretch;
+		padding: 20px 10px;
+		a {
+			flex: 2;
+			color: #fff;
+			text-align: center;
+			&.active {
+				color: red;
+			}
+		}
+	}
+}

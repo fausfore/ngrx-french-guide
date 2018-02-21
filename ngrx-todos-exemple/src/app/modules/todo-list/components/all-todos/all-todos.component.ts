@@ -5,12 +5,13 @@ import { Observable } from 'rxjs/Observable';
 import { TodoListModule } from '@Actions/todo-list.action';
 import { AppState } from '@StoreConfig';
 import { Todo } from '@Models/todo';
-import { selectTodos$ } from '@Selectors/todo-list.selector';
+import { selectTodos$, selectTodoSelected$ } from '@Selectors/todo-list.selector';
 import { tap } from 'rxjs/operators';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-all-todos',
-  templateUrl: './all-todos.component.html',
+  styleUrls: ['./all-todos.component.scss'],
   template: `
     <h1>la todolist redux style !</h1>
     <form [formGroup]="todoForm" (ngSubmit)="createTodo(todoForm.value)">
@@ -21,12 +22,14 @@ import { tap } from 'rxjs/operators';
       <button>Créer</button>
     </form>
     <ul>
-		<li *ngFor="let todo of todos$ | async">
-			<label>{{ todo.title }}</label>
-			<input type="checkbox" [ngModel]="todo.completed"/>
-			<button (click)="deleteTodo(todo.id)">Supprimer</button>
-		</li>
-	</ul>
+      <li *ngFor="let todo of todos$ | async; let i = index" >
+        <label>{{ i }} - {{ todo.title }}</label>
+        <input type="checkbox" [ngModel]="todo.completed"/>
+        <button (click)="deleteTodo(todo.id)">Supprimer</button>
+        <button (click)="selectTodo(todo)">Modifier</button>
+      </li>
+    </ul>
+    <ng-template #NoElement>Pas de todo séléctionner<ng-template>
   `
 })
 export class AllTodosComponent implements OnInit {
@@ -36,6 +39,7 @@ export class AllTodosComponent implements OnInit {
   private todosLength: number;
 
   constructor(
+    private router: Router,
     private store: Store<AppState>,
     @Inject(FormBuilder) fb: FormBuilder
   ) {
@@ -43,6 +47,7 @@ export class AllTodosComponent implements OnInit {
       .pipe(
         select(selectTodos$),
         tap((todos) => {
+          console.log('selectTodos', todos);
           this.todosLength = todos.length;
         })
     );
@@ -63,8 +68,14 @@ export class AllTodosComponent implements OnInit {
       userId: 1, // userId au pif
       id: this.todosLength + 1
     };
-    this.store.dispatch(new TodoListModule.CreateTodo(todo));
+    this.store.dispatch(new TodoListModule.CreateTodo(payload));
     this.todoForm.reset();
+  }
+
+  selectTodo(todo) {
+    console.log('select', todo);
+    this.store.dispatch(new TodoListModule.SelectTodo(todo));
+    return this.router.navigate(['/todo-list/select-todo']);
   }
 
   deleteTodo(id: number) {

@@ -26,7 +26,7 @@ const routes: Route[] = [
             {
                 path: '**',
                 redirectTo: 'all-todos'
-            },
+            }
         ]
     }
 ];

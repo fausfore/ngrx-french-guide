@@ -5,7 +5,8 @@ import { todosMock } from '../../mocks/todo-list-data';
 const initialState: TodoListState = {
     data: [],
     loading: false,
-    loaded: false
+    loaded: false,
+    selectedTodo: undefined
 };
 
 export function todosReducer(
@@ -16,11 +17,26 @@ export function todosReducer(
   switch (action.type) {
 
     case TodoListModule.ActionTypes.INIT_TODOS:
+        const todos = state.loaded ? state.data : todosMock;
         return {
             ...state,
+            loaded: true,
             data: [
-                ...todosMock
+                ...todos,
             ]
+        };
+
+    case TodoListModule.ActionTypes.SELECT_TODO:
+        return {
+            ...state,
+            selectedTodo: action.payload
+        };
+
+    case TodoListModule.ActionTypes.UPDATE_TODO:
+        return {
+            ...state,
+            data: state.data
+                .map(todo => action.payload.id === todo.id ? action.payload : todo)
         };
 
     case TodoListModule.ActionTypes.CREATE_TODO:

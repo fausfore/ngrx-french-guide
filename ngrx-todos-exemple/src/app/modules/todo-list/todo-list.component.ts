@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   template: `
 	  <header>
 		  <nav>
-			  <a routerLink="all-todos">all todos</a>
-			  <a routerLink="select-todo">select todo</a>
+			  <a routerLink="all-todos" routerLinkActive="active">all todos</a>
+			  <a routerLink="select-todo" routerLinkActive="active">select todo</a>
 		  </nav>
 	  </header>
 	  <router-outlet></router-outlet>
