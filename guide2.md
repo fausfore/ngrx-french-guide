@@ -1202,7 +1202,7 @@ import { TodoListService } from './services/todo-list.service';
 })
 export class TodoListModule { }
 ```
-
+*services/todo-list.service*
 ```javascript
 // ... other
 import { HttpClient } from '@angular/common/http';
@@ -1217,6 +1217,19 @@ export class TodoListService {
     getTodos(): Observable<Todo[]> {
         return this.http.get<Todo[]>('/todos');
     }
+}
+```
+Un petit alias :
+ *tsconfig.json*  
+```json
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+		// ... reste
+		"@Effects/*": ["app/store/effects/*"],
+    }
+  }
 }
 ```
 On ajoute le service dans le component et au **resolve** de la requête on lui passe le dispatch **InitTodos**
@@ -1628,5 +1641,5 @@ export class AppModule { }
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4NTk3OTM5NF19
+eyJoaXN0b3J5IjpbLTE3ODY4NzA1OTRdfQ==
 -->
