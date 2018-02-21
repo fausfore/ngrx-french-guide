@@ -2,8 +2,7 @@
 
 ### Sommaire
 
-Introduction
- 1. List item
+ 1. **Présentation**
  2.  Redux, kesako ?!
  3. Pourquoi Redux alors ?!
  4. Flux vs Redux
@@ -1575,5 +1574,5 @@ Voilà une manière de charger la donnée avant même de charger un composant un
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5OTA3OTA2Nl19
+eyJoaXN0b3J5IjpbNDE3MzMxOTMxXX0=
 -->
