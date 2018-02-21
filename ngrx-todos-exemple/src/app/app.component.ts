@@ -52,7 +52,7 @@ export class AppComponent implements OnInit {
       userId: 1, // userId au pif
       id: 8 // id au pif
     };
-    this.store.dispatch(new TodoListModule.CreateTodo(todo));
+    this.store.dispatch(new TodoListModule.CreateTodo(payload));
     this.todoForm.reset();
   }
 
