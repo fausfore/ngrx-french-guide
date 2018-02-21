@@ -748,21 +748,24 @@ Même procédé que pour la création, cette fois on va passer l'id de la todo a
 
 *store/actions/todo-list.action.ts*
 ```javascript
-import { Todo } from '../../models/todo';
-	// ... reste
-	export enum ActionTypes {
-		// ...reste
-		DELETE_TODO = '[todoList] Delete Todo',
-	}
-	// ...reste
-	export class DeleteTodo {
-		readonly type = this.Types.DELETE_TODO 
-		constructor(public payload: number){}
-	}
-	
-	export type Actions = InitTodos
-	| CreateTodo
-	| DeleteTodo 
+// ... Other
+export namespace TodoListModule {
+
+    export enum ActionTypes {
+        // ... Other
+        DELETE_TODO = '[todoList] Delete Todo',
+    }
+
+	// ... Other
+
+    export class DeleteTodo {
+        readonly type = ActionTypes.DELETE_TODO;
+        constructor(public payload: number) {}
+    }
+
+    export type Actions = InitTodos
+        | CreateTodo
+        | DeleteTodo;
 }
 ```
 
@@ -1713,5 +1716,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc2NjI4NDkyXX0=
+eyJoaXN0b3J5IjpbMTA3NTYzNTA1Nl19
 -->
