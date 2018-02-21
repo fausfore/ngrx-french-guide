@@ -1,6 +1,5 @@
 import { TodoListModule } from '../actions/todo-list.action';
 import { TodoListState  } from '../../models/todo';
-import { todosMock } from '../../mocks/todo-list-data';
 
 const initialState: TodoListState = {
     data: [],
@@ -16,14 +15,28 @@ export function todosReducer(
 
   switch (action.type) {
 
-    case TodoListModule.ActionTypes.INIT_TODOS:
-        const todos = state.loaded ? state.data : todosMock;
+    case TodoListModule.ActionTypes.LOAD_INIT_TODOS:
+        // Passe le loading a true
         return {
             ...state,
+            loading: true
+        };
+
+    case TodoListModule.ActionTypes.SUCCESS_INIT_TODOS:
+        // Bind state.data avec les todos du server
+        // Passe le loaded a true et le loading a false
+        return {
+            ...state,
+            loading: false,
             loaded: true,
-            data: [
-                ...todos,
-            ]
+            data: action.payload
+        };
+
+    case TodoListModule.ActionTypes.ERROR_INIT_TODOS:
+        // Error rend le loading a false
+        return {
+            ...state,
+            loading: false
         };
 
     case TodoListModule.ActionTypes.SELECT_TODO:

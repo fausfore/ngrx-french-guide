@@ -5,15 +5,21 @@ import { SelectTodoComponent } from './components/select-todo/select-todo.compon
 import { AllTodosComponent } from './components/all-todos/all-todos.component';
 import { todoListRouting } from './todo-list.routing';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { TodoListService } from './services/todo-list.service';
 
 @NgModule({
   imports: [
+    HttpClientModule,
     CommonModule,
     todoListRouting,
     ReactiveFormsModule,
     FormsModule
   ],
-  declarations: [TodoListComponent, SelectTodoComponent, AllTodosComponent]
+  declarations: [TodoListComponent, SelectTodoComponent, AllTodosComponent],
+  providers: [
+    TodoListService
+  ]
 })
 
 export class TodoListModule { }

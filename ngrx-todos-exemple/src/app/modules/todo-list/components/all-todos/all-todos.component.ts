@@ -8,6 +8,7 @@ import { Todo } from '@Models/todo';
 import { selectTodos$, selectTodoSelected$ } from '@Selectors/todo-list.selector';
 import { tap } from 'rxjs/operators';
 import { Router } from '@angular/router';
+import { TodoListService } from '../../services/todo-list.service';
 
 @Component({
   selector: 'app-all-todos',
@@ -50,7 +51,8 @@ export class AllTodosComponent implements OnInit {
   constructor(
     private router: Router,
     private store: Store<AppState>,
-    @Inject(FormBuilder) fb: FormBuilder
+    @Inject(FormBuilder) fb: FormBuilder,
+    private todoListService: TodoListService
   ) {
     this.todos$ = store
       .pipe(
@@ -68,7 +70,11 @@ export class AllTodosComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.store.dispatch(new TodoListModule.InitTodos());
+    this.todoListService.getTodos()
+      .subscribe((todos) => {
+        this.store.dispatch(new TodoListModule.LoadInitTodos());
+      });
+
   }
 
   createTodo(todo: Todo) {
