@@ -1816,7 +1816,73 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation donc au lieu s'avoir que une action CREATE_TODO, on aura un **LOAD_CREATE_TODO** et un **SUCCESS_CREATE_TODO**
 
 ```javascript
+import { Todo } from '../../models/todo';
+
+export namespace TodoListModule {
+
+    export enum ActionTypes {
+	    // ... Other
+        LOAD_CREATE_TODO = '[todoList] Load Create Todo',
+        SUCCESS_CREATE_TODO = '[todoList] Success Create Todo',
+        // CREATE_TODO = '[todoList] Create Todo',
+    }
+	// ... Other
+    export class LoadInitTodos {
+        readonly type = ActionTypes.LOAD_INIT_TODOS;
+    }
+
+    export class SuccessInitTodos {
+        readonly type = ActionTypes.SUCCESS_INIT_TODOS;
+        constructor(public payload: Todo[]) {}
+    }
+
+    export class ErrorInitTodos {
+        readonly type = ActionTypes.ERROR_INIT_TODOS;
+    }
+
+
+    export class CreateTodo {
+        readonly type = ActionTypes.CREATE_TODO;
+        constructor(public payload: Todo) {}
+    }
+
+    export class LoadCreateTodo {
+        readonly type = ActionTypes.LOAD_CREATE_TODO;
+        constructor(public payload: Todo) {}
+    }
+
+    export class SuccessCreateTodo {
+        readonly type = ActionTypes.SUCCESS_CREATE_TODO;
+        constructor(public payload: Todo) {}
+    }
+
+    export class SelectTodo {
+        readonly type = ActionTypes.SELECT_TODO;
+        constructor(public payload: Todo) {}
+    }
+
+    export class UpdateTodo {
+        readonly type = ActionTypes.UPDATE_TODO;
+        constructor(public payload: Todo) {}
+    }
+
+    export class DeleteTodo {
+        readonly type = ActionTypes.DELETE_TODO;
+        constructor(public payload: number) {}
+    }
+
+    export type Actions = DeleteTodo
+        | LoadCreateTodo
+        | SuccessCreateTodo
+        | UpdateTodo
+        | SelectTodo
+        | CreateTodo
+        | LoadInitTodos
+        | SuccessInitTodos
+        | ErrorInitTodos;
+}
+
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODY5Mzg1NTJdfQ==
+eyJoaXN0b3J5IjpbLTE2MTIzMzA5OTRdfQ==
 -->
