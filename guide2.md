@@ -1559,7 +1559,7 @@ export class AppModule { }
 ```javascript
 // ...other
 import { TodoListService } from '../services/todo-list';
-import { selectTodoListState$, selectTodos$ } from '@Selectors/todo-list.selector'; 
+import { selectTodoListState$, selectTodosLoading$, selectTodos$ } from '@Selectors/todo-list.selector'; 
 
 @Component({
 template: `
@@ -1591,7 +1591,7 @@ public todosLoading: Observable<boolean>;
 		// a supprimer private todoListService: TodoListService 
 	) {
 	// ...other
-	this.todosLoading = store.pipe(select(selectTodoListState$));
+	this.todosLoading = store.pipe(select(selectTodosLoading$));
 	}
 	  
 	  ngOnInit(){
@@ -1716,5 +1716,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExMDkzMjkyMl19
+eyJoaXN0b3J5IjpbMTI3NzM0NDkzXX0=
 -->
