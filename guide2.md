@@ -1569,11 +1569,11 @@ Avec le guard plus besoin de charger l'action depuis le component :
 // ...other
 ```
 Voilà une manière de charger la donnée avant même de charger un composant une idée de sortir encore plus le component de la logique.
-## Devtools
+## Redux Devtools
 
 ## Routes POST
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTYyOTAyNTksNDE3MzMxOTMxXX0=
+eyJoaXN0b3J5IjpbLTE4OTIxMTIzNTEsNDE3MzMxOTMxXX0=
 -->
