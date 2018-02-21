@@ -1953,13 +1953,14 @@ export class TodoListEffects {
 }
 
 ```
+Maintenant reste plus que a changer l'action lors du click et retirer la notion de id car le serveur donnera son propre id
 *all-todos.ts*
 ```javascript
 createTodo(todo: Todo) {
     const payload = {
       ...todo,
       userId: 1, // userId au pif
-      id: this.todosLength + 1
+      // id: this.todosLength + 1
     };
     // this.store.dispatch(new TodoListModule.CreateTodo(payload));
     this.store.dispatch(new TodoListModule.LoadCreateTodo(payload));
@@ -1968,5 +1969,5 @@ createTodo(todo: Todo) {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk2MTQ2OTIxXX0=
+eyJoaXN0b3J5IjpbMTYxMTY0MTcxNF19
 -->
