@@ -1287,7 +1287,7 @@ Un petit alias :
     "paths": {
 		// ... reste
 		"@Services/*": ["app/services/*"],
-		"@Env": ["environments/environment.ts/*"],
+		"@Env": ["environments/environment.ts"],
     }
   }
 }
@@ -1716,5 +1716,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg3ODI3MDYxXX0=
+eyJoaXN0b3J5IjpbLTc0Mjg0MTU3NF19
 -->
