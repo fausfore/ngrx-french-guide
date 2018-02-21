@@ -406,55 +406,55 @@ Le dernier export Actions servira pour le typage du reducer uniquement.
 ```javascript
 import { TodoListModule } from '../actions/todo-list.action';
 import { TodoListState  } from '../../models/todo';
-import { todosMock } from '../../mocks/todo-list';
+import { todosMock } from '../../mocks/todo-list-data';
 
 const initialState: TodoListState = {
-	data: [],
-	loading: false,
-	loaded: false
+    data: [],
+    loading: false,
+    loaded: false
 };
 
 export function todosReducer(
-	state: TodoListState = initialState,
-	action: TodoListModule.Actions
+    state: TodoListState = initialState,
+    action: TodoListModule.Actions
 ): TodoListState {
+
   switch (action.type) {
 
     case TodoListModule.ActionTypes.INIT_TODOS :
-	    return {
-			...state,
-			data: [
-				...todosMock
-			]
-		};
-      
+    return {
+        ...state,
+        data: [
+            ...todosMock
+        ]
+    };
+
     default:
-      return state;
-  }
-};
+        return state;
+    }
+}
 ```
 *exemple : /store/index.ts*
 ```javascript
 import { ActionReducerMap } from '@ngrx/store';
-import { InjectionToken } from '@angular/core'; 
+import { InjectionToken } from '@angular/core';
 
 import { todosReducer } from './reducers/todo-list.reducer';
 import { TodoListState } from '../models/todo';
 
 const reducers = {
-	todos: todosReducer 
-}
+    todos: todosReducer
+};
 
 export interface AppState {
-	todos: TodoListState
+    todos: TodoListState;
 }
 
-export function getReducers(){
-	return reducers
+export function getReducers() {
+    return reducers;
 }
 
 export const REDUCER_TOKEN = new InjectionToken<ActionReducerMap<AppState>>('Registered Reducers');
-
 ```
 
 > Le mode Ahead of Time (AoT) Compilation de Angular exige que tous les symboles référencés dans les métadonnées du décorateur soient analysables statiquement. Pour cette raison, nous ne pouvons pas injecter dynamiquement l'état à l'exécution avec AoT sauf si nous fournissons notre **reducers** en tant que fonction. 
@@ -1666,5 +1666,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2ODAxMjUxOV19
+eyJoaXN0b3J5IjpbMTY1NDkyODkwMl19
 -->
