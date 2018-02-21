@@ -263,7 +263,8 @@ store.dispatch(new CounterActions.SetNewValue(6))
 // resultat => { counter : 6 }
 ```
 # De Redux à Ngrx
-## Début du step-1
+
+### Début sur la branche step-1 
 
 Redux est un pattern déjà bien implémenter sur les principaux frameworks/librairies javascript du moment.
 Pour React  => **react-redux**
@@ -1658,5 +1659,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjEwMDU5Ml19
+eyJoaXN0b3J5IjpbLTE0ODMzMzY4OTZdfQ==
 -->
