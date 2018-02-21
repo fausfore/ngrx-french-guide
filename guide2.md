@@ -1953,7 +1953,19 @@ export class TodoListEffects {
 }
 
 ```
+*all-todos.ts*
+```javascript
+createTodo(todo: Todo) {
+    const payload = {
+      ...todo,
+      userId: 1, // userId au pif
+      id: this.todosLength + 1
+    };
+    this.store.dispatch(new TodoListModule.LoadCreateTodo(payload));
+    this.todoForm.reset();
+  }
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk5NjQ3OTgxXX0=
+eyJoaXN0b3J5IjpbLTE5Njg2OTc4NV19
 -->
