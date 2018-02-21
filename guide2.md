@@ -1187,6 +1187,25 @@ Voilà maintenant plus qu'a créer notre service avant tout il vous faudra impor
 ```javascript
 // ..other
 import { HttpClientModule } from '@angular/common/http';
+import { TodoListService } from './'  
+
+@NgModule({
+  imports: [
+	  // ..other
+	  HttpClientModule 
+  ],
+  providers: [TodoListService]
+})
+export class TodoListModule { }
+```
+Et générer un service vous pouvez le faire depuis la console : 
+```bash
+ng g service services/todo-list
+```
+Attention a déclarer le service dans le provider de appModule:
+```javascript
+// ..other
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
@@ -1196,11 +1215,6 @@ import { HttpClientModule } from '@angular/common/http';
 })
 export class TodoListModule { }
 ```
-Et générer un service vous pouvez le faire depuis la console : 
-```bash
-ng g service services/todo-list
-```
-Attention a déclarer le service dans le provider de appModule:
 
 ```javascript
 // ... other
@@ -1627,5 +1641,5 @@ export class AppModule { }
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTA4NDY4MV19
+eyJoaXN0b3J5IjpbLTExODY1NDU3MzNdfQ==
 -->
