@@ -699,18 +699,24 @@ Maintenant créons l'action côté Store et reducer :
 *store/actions/todo-list.action.ts*
 ```javascript
 import { Todo } from '../../models/todo';
-	// ... reste
-	export enum ActionTypes {
-		// ...reste
-		CREATE_TODO = '[todoList] Create Todo',
-	}
-	// ...reste
-	export class CreateTodo {
-		readonly type = this.Types.CREATE_TODO
-		constructor(public payload: Todo){}
-	}
-	
-	export type Actions = InitTodos | CreateTodo 
+
+export namespace TodoListModule {
+
+    export enum ActionTypes {
+        INIT_TODOS = '[todoList] Init Todos',
+        CREATE_TODO = '[todoList] Create Todo',
+    }
+
+    export class InitTodos {
+        readonly type = ActionTypes.INIT_TODOS;
+    }
+
+    export class CreateTodo {
+        readonly type = ActionTypes.CREATE_TODO;
+        constructor(public payload: Todo) {}
+    }
+
+    export type Actions = InitTodos | CreateTodo;
 }
 ```
 
@@ -731,6 +737,8 @@ import { Todo } from '../../models/todo';
 	// ...reste
 ```
 Voilà notre action **createTodo** est terminé pour le moment il reste des chose a revoir comme la gestion des ids mais ce soucis se réglera seule quand on écrira le service Http.
+
+### Fin de la branche step-2
 
 ## Supprimer une todo
 
@@ -1703,5 +1711,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNjg4NjUwOV19
+eyJoaXN0b3J5IjpbLTEwMzk3OTc1ODhdfQ==
 -->
