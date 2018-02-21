@@ -1636,7 +1636,11 @@ public todosLoading: Observable<boolean>;
 Voilà le côté service est déplacer vers le Effect qui via le **LoadInitTodos()** va utiliser le service **todoListService.getTodos()** qui dispatchera la nouvelle valeur de todos dans le Store.
 On a rajouter en plus un template de chargement qui s'affichera entre le **LoadInitTodos()** et le **SuccessInitTodos()**
 
-### BONUS TIME !!
+### Fin de la branche step-6
+
+A partir de la vous devez 
+
+## BONUS TIME !!
 
 Pour le moment c'est toujours **AllTodosComponent** qui a la main sur le **LoadInitTodos** mais on peut l'extraire également et l'intégrée a un **Guard Angular** qui vérifiera si la donnée est déjà chargée ( vérifiable par la propriété loaded ) dans le cas ou il n'y a pas de donnée, il enverra l'action **LoadInitTodos**.
 
@@ -1743,5 +1747,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzMxMzYxNjVdfQ==
+eyJoaXN0b3J5IjpbMTUxNDQ1ODI4NF19
 -->
