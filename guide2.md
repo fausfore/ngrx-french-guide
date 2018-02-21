@@ -20,9 +20,9 @@
  16. Supprimer une todo [step-3]
  17. Refacto Time ! [step-4]
  18. Update Todo [step-5]
- 19. Routes GET
- 20. BONUS TIME !!
- 21. Routes POST
+ 19. Routes GET [step-6]
+ 20. BONUS TIME !! [step-7]
+ 21. Routes POST [step-8]
 
 
 
@@ -1775,5 +1775,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjEzMjY3NTNdfQ==
+eyJoaXN0b3J5IjpbLTEyODc5MzUyNjldfQ==
 -->
