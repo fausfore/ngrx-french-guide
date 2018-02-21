@@ -1,5 +1,6 @@
 import { Route, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
+import { IsTodosLoadedGuard } from './guards/is-todos-loaded/is-todos-loaded.guard';
 
 const routes: Route[] = [
     {
@@ -9,7 +10,8 @@ const routes: Route[] = [
     },
     {
         path: 'todo-list',
-        loadChildren: './modules/todo-list/todo-list.module#TodoListModule'
+        loadChildren: './modules/todo-list/todo-list.module#TodoListModule',
+        canActivate: [IsTodosLoadedGuard]
     },
     {
         path: '**',
