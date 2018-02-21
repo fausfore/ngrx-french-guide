@@ -12,10 +12,10 @@
  8. Les actions
  9. Action creator
  10. **De Redux à Ngrx**
- 11. Installation
+ 11. Installation [step-1]
  12. Architecture Folder
  13. Set up
- 14. States Selectors
+ 14. States Selectors [step-2]
  15. Ajouter une todo
  16. Supprimer une todo
  17. Refacto Time !
@@ -1775,5 +1775,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk4MDk5MjcxXX0=
+eyJoaXN0b3J5IjpbMjAxNDIwMDUwMl19
 -->
