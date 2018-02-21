@@ -1237,8 +1237,11 @@ export class SelectTodoComponent implements OnInit {
 
 }
 
-
 ```
+### Fin de la branche step-5
+## API
+### Début de la branche step-6
+
 
 Voilà on a maintenant toutes nos fonctionnalités : **Create, Update, Delete** on va pouvoir commencer a inclure les requêtes **http**, pour cela on va prendre le module npm de  **[JsonPlaceholder](https://jsonplaceholder.typicode.com/)** avec **npm install -g json-server**.
 Le fichier va ajouter un nouveaux dossier **/server** au même niveau que **/app** et mettre un json :
@@ -1741,5 +1744,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc4NTA2OTM3XX0=
+eyJoaXN0b3J5IjpbMjk4MTk0ODc1XX0=
 -->
