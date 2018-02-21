@@ -1931,6 +1931,7 @@ export class TodoListService {
 ```
 On ajoute un effect qui listen l'action de LOAD_CREATE_TODO:
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4MjE3MTQyNF19
+eyJoaXN0b3J5IjpbLTE3NzE2NTIwODJdfQ==
 -->
