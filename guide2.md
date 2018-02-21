@@ -791,8 +791,8 @@ export namespace TodoListModule {
 	</li>
   `
     // Other things ...
-  DeleteTodo(id: number){
-	  this.store.dispatch(new TodoListModule.DeleteTodo(id));
+  deleteTodo(id: number) {
+    this.store.dispatch(new TodoListModule.DeleteTodo(id));
   }
 }
 ```
@@ -1716,5 +1716,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0Mjg0MTU3NF19
+eyJoaXN0b3J5IjpbNzMyMjEwMzc4XX0=
 -->
