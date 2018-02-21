@@ -831,7 +831,7 @@ Voilà la suppression completed !
 
 ## Refacto Time !
 
-### Dé de la branche step-4
+### Début de la branche step-4
 
 Avant de se lancer sur l'update de todo on va changer un peu l'architecture du projet et mettre en place un peu de routing.
 
@@ -1720,5 +1720,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjY2MjU4ODddfQ==
+eyJoaXN0b3J5IjpbMTEzMTY1NjM3OF19
 -->
