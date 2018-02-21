@@ -1813,7 +1813,7 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 ### Début de la branche step-8
 
-Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
+Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation donc au lieu s'avoir que une action CREATE_TODO, on aura un LOAD_CREATE_TODO et un SUCCESS_CREATE_TODO**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg4NTY3MjUxXX0=
+eyJoaXN0b3J5IjpbNTA3NjcxODUzXX0=
 -->
