@@ -1672,7 +1672,6 @@ import { IsTodosLoadedGuard } from './guards/is-todos-loaded/is-todos-loaded.gua
   // ... Other
 ```
 
-```
 *guards/is-todos-loaded/is-todos-loaded.guard*
 
 ```javascript
@@ -1776,5 +1775,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MzE1MTU4NV19
+eyJoaXN0b3J5IjpbMzk4MDk5MjcxXX0=
 -->
