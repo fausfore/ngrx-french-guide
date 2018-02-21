@@ -32,8 +32,8 @@ export class SelectTodoComponent implements OnInit {
 
   constructor(
     private store: Store<AppState>,
-    private router: Router
-    @Inject(FormBuilder) fb: FormBuilder
+    private router: Router,
+    @Inject(FormBuilder) fb: FormBuilder,
   ) {
   this.selectTodo$ = store
   .pipe(
