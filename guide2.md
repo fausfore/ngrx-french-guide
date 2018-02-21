@@ -1915,22 +1915,13 @@ todosReducer(
 }
 
 ```
-
+On créer un service de post: 
 ```javascript
-import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
-import { Todo } from '@Models/todo';
-import { HttpClient } from '@angular/common/http';
-import { environment } from 'environments/environment';
-
+// ... Other
 @Injectable()
 export class TodoListService {
 
-  constructor(private http: HttpClient) { }
-
-  getTodos(): Observable<Todo[]> {
-    return this.http.get<Todo[]>(`${environment.apiUrl}/todos`);
-  }
+ // ... Other
 
   createTodo(body): Observable<Todo> {
     return this.http.post<Todo>(`${environment.apiUrl}/todos`, body);
@@ -1938,6 +1929,8 @@ export class TodoListService {
 
 }
 ```
+On ajoute un effect qui listen l'action de LOAD_CREATE_TODO:
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjE5NjA1MTNdfQ==
+eyJoaXN0b3J5IjpbLTQ4MjE3MTQyNF19
 -->
