@@ -1581,9 +1581,7 @@ import { environment } from 'environments/environment';
 
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  // ... other
   imports: [
 	// ... other
     StoreDevtoolsModule.instrument({
@@ -1592,15 +1590,7 @@ import { environment } from 'environments/environment';
       logOnly: environment.production // Restrict extension to log-only mode
     })
   ],
-  providers: [
-    {
-      provide: REDUCER_TOKEN,
-      useFactory: getReducers
-    },
-    TodoListService,
-    IsTodosLoadedGuard
-  ],
-  bootstrap: [AppComponent]
+  // ... other
 })
 export class AppModule { }
 ```
@@ -1609,5 +1599,5 @@ export class AppModule { }
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzU3MzkxOTAsNDE3MzMxOTMxXX0=
+eyJoaXN0b3J5IjpbLTEyODEwNzE0NDIsNDE3MzMxOTMxXX0=
 -->
