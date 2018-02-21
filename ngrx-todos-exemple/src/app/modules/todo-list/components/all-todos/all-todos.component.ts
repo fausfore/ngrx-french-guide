@@ -8,7 +8,6 @@ import { Todo } from '@Models/todo';
 import { selectTodos$, selectTodoSelected$ } from '@Selectors/todo-list.selector';
 import { tap } from 'rxjs/operators';
 import { Router } from '@angular/router';
-import { TodoListService } from '../../services/todo-list.service';
 
 @Component({
   selector: 'app-all-todos',
@@ -42,7 +41,7 @@ import { TodoListService } from '../../services/todo-list.service';
     <ng-template #NoElement>Pas de todo séléctionner<ng-template>
   `
 })
-export class AllTodosComponent implements OnInit {
+export class AllTodosComponent {
 
   public todos$: Observable<Todo[]>;
   public todoForm: FormGroup;
@@ -52,7 +51,6 @@ export class AllTodosComponent implements OnInit {
     private router: Router,
     private store: Store<AppState>,
     @Inject(FormBuilder) fb: FormBuilder,
-    private todoListService: TodoListService
   ) {
     this.todos$ = store
       .pipe(
@@ -67,14 +65,6 @@ export class AllTodosComponent implements OnInit {
       title: ['', Validators.required],
       completed: [false, Validators]
     });
-  }
-
-  ngOnInit() {
-    this.todoListService.getTodos()
-      .subscribe((todos) => {
-        this.store.dispatch(new TodoListModule.LoadInitTodos());
-      });
-
   }
 
   createTodo(todo: Todo) {

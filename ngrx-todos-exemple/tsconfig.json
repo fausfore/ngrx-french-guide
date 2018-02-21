@@ -22,7 +22,7 @@
           "@Actions/*": ["app/store/actions/*"],
           "@Reducers/*": ["app/store/reducers/*"],
           "@Selectors/*": ["app/store/selectors/*"],
-          "@Effects/*": ["app/store/effects/*"],
+          "@Effects/*": ["app/store/effects/*"]
       }
   }
 }

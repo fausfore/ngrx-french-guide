@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/Observable';
 import { catchError, map, switchMap } from 'rxjs/operators';
 import { of } from 'rxjs/observable/of';
 import { TodoListModule } from '@Actions/todo-list.action';
-import { TodoListService } from '../../modules/todo-list/services/todo-list.service';
+import { TodoListService } from '../../services/todo-list.service';
 
 @Injectable()
 export class TodoListEffects {
