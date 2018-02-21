@@ -1208,14 +1208,14 @@ export class TodoListModule { }
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import { Todo } from '@Models/todo';
- 
+import { environment } from '@Env';
 @Injectable()
 export class TodoListService {
  
     constructor(private http:HttpClient) {}
  
     getTodos(): Observable<Todo[]> {
-        return this.http.get<Todo[]>('/todos');
+        return this.http.get<Todo[]>(`${environment.apiUrl}`'/todos');
     }
 }
 ```
@@ -1652,5 +1652,5 @@ export class AppModule { }
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MTAwMDU5Nl19
+eyJoaXN0b3J5IjpbLTY0NjY0NDcyNl19
 -->
