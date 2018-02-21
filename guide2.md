@@ -1185,7 +1185,7 @@ On va générer un service depuis la console :
 ```bash
 ng g service services/todo-list
 ```
-Voilà maintenant plus qu'a créer notre service avant tout il vous faudra importé le module http de Angular :
+Voilà maintenant plus qu'a le importé dans le AppModule et également vu que l'on va faire des requête Http de importé module le module http de Angular :
 Attention a déclarer le service dans le provider de appModule
 
 *app.module.ts*
@@ -1629,5 +1629,5 @@ export class AppModule { }
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2OTUyODQ5N119
+eyJoaXN0b3J5IjpbLTE3NTU2NzEyNjFdfQ==
 -->
