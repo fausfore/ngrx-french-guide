@@ -742,6 +742,8 @@ Voilà notre action **createTodo** est terminé pour le moment il reste des chos
 
 ## Supprimer une todo
 
+### Fin de la branche step-3
+
 Même procédé que pour la création, cette fois on va passer l'id de la todo a supprimer dans le reducer avec un **filter()** le tour est jouer.
 
 *store/actions/todo-list.action.ts*
@@ -1711,5 +1713,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 Maintenant on modifier notre action de création de todo pour inclure un appel serveur de la même façon de l'initialisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzk3OTc1ODhdfQ==
+eyJoaXN0b3J5IjpbLTIwOTIyODkzM119
 -->
