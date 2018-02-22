@@ -2434,6 +2434,17 @@ const initialState: TodoListState = {
     // ... other
     logs: undefined
 };
+
+case TodoListModule.ActionTypes.SUCCESS_CREATE_TODO:
+     return {
+         ...state,
+         logs: { type: 'SUCCESS', message: 'La todo à été crée avec succès' },
+         data: [
+             ...state.data,
+             action.payload
+         ]
+     };
+        
 case TodoListModule.ActionTypes.ERROR_LOAD_ACTION:
     return {
         ...state,
@@ -2501,5 +2512,5 @@ export class TodoListComponent {
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMTUyMTMzM119
+eyJoaXN0b3J5IjpbLTMwODQxNzk0N119
 -->
