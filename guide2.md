@@ -2213,6 +2213,17 @@ patchTodo(changes: Partial<Todo>, id: number): Observable<Todo> {
     return this.http.patch<Todo>(`${environment.apiUrl}/todos/${id}`, changes);
 }
 ```
+Et on change l'action dans 
+*select-todo.component.ts*
+```javascript
+// ... other
+updateTodo(formValue) {
+    console.log(formValue);
+    const payload = Object.assign(this.selectTodo, formValue);
+    this.store.dispatch(new TodoListModule.LoadUpdateTodo(payload));
+    return this.router.navigate(['/todo-list/all-todos']);
+  }
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk1MDg4Mzk0XX0=
+eyJoaXN0b3J5IjpbMTc2MzA3NTU4OF19
 -->
