@@ -2443,7 +2443,7 @@ On aura besoin d'un selector pour le logs:
 export const selectTodosErrors$ =
     createSelector(selectTodoListState$, (todos) => todos.errorLog);
 ```
-Maintenant on installe le module [ngx-toastr](https://github.com/scttcper/ngx-toastr)
+Maintenant on installe le module [ngx-toastr](https://github.com/scttcper/ngx-toastr) et une fois que vous aurez tout bien installer allez dans le **TodoListComponent**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2OTQ2MTIyNF19
+eyJoaXN0b3J5IjpbLTE2NjQyNzYwMDldfQ==
 -->
