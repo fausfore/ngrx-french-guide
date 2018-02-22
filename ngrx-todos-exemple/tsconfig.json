@@ -1,0 +1,28 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "baseUrl": "./src",
+    "paths": {
+      "@Models/*": ["app/models/*"],
+        "@StoreConfig": ["app/store/index.ts"],
+          "@Actions/*": ["app/store/actions/*"],
+          "@Reducers/*": ["app/store/reducers/*"],
+          "@Selectors/*": ["app/store/selectors/*"],
+          "@Effects/*": ["app/store/effects/*"]
+      }
+  }
+}

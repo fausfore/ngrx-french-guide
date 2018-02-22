@@ -1,0 +1,46 @@
+@import '../../../../../assets/styles/colors';
+
+h1 {
+	font-size: 22px;
+	text-align: center;
+	padding: 25px;
+	background: $base-dark;
+}
+
+form {
+	width: 40%;
+	padding: 25px 5%;
+	margin: 0 auto;
+	button {
+		float: right;
+	}
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	padding: 0 5%;
+	li {
+		padding: 15px 240px 15px 20px;
+		display: flex;
+		position: relative;
+		align-items: center;
+		background: #fff;
+		border: solid 1px #777;
+		margin: 10px 0;
+		label, p {
+			font-size: 16px;
+			&.isDone {
+				padding-left: 20px;
+				
+			}
+			&.clear {
+				color: $valid-dark;
+			}
+		}
+		.button-area {
+			right: 20px;
+		}
+	}
+}

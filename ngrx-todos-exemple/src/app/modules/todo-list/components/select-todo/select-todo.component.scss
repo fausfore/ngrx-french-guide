@@ -1,0 +1,26 @@
+@import '../../../../../assets/styles/colors';
+
+.select-todo-content {
+    position: relative;
+    height: calc(100vh - 56px);
+    h1 {
+        font-size: 22px;
+        text-align: center;
+        padding: 25px;
+        background: $base-dark;
+    }
+    
+    h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    form {
+        width: 90%;
+        padding: 25px 5%;
+        button {
+            float: right;
+        }
+    }
+}
+
