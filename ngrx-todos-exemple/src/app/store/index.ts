@@ -1,8 +1,7 @@
 import { ActionReducerMap } from '@ngrx/store';
 import { InjectionToken } from '@angular/core';
 
-import { todosReducer } from './reducers/todo-list.reducer';
-import { TodoListState } from '../models/todo';
+import { todosReducer, TodoListStateEntity } from './reducers/todo-list.reducer';
 import { TodoListEffects } from '@Effects/todo-list.effect';
 
 const reducers = {
@@ -12,7 +11,7 @@ const reducers = {
 export const appEffects = [TodoListEffects];
 
 export interface AppState {
-    todos: TodoListState;
+    todos: TodoListStateEntity;
 }
 
 export function getReducers() {
