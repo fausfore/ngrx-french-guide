@@ -2232,7 +2232,7 @@ updateTodo(formValue) {
 
 ### Début de la branche step-11
 
-Voilà le mvp de la todo-
+Voilà le mvp de la todoList est ter
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0MTkzODIxOV19
+eyJoaXN0b3J5IjpbMTU1MTkxMzY0NV19
 -->
