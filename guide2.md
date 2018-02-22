@@ -1998,7 +1998,8 @@ export namespace TodoListModule {
         // Delete Todo
         // DELETE_TODO = '[todoList] Delete Todo',
         LOAD_DELETE_TODO = '[todoList] Load Delete Todo',
-        SUCCESS_DELETE_TODO = '[todoList] Success Delete Todo'
+        SUCCESS_DELETE_TODO = '[todoList] Success Delete Todo',
+        ERROR_DELETE_TODO = '[todoList] Success Delete Todo',
         // ...Other
     }
 
@@ -2021,16 +2022,15 @@ export namespace TodoListModule {
         readonly type = ActionTypes.SUCCESS_DELETE_TODO;
         constructor(public payload: number) {}
     }
+    
+	export class ErrorDeleteTodo {
+	    readonly type = ActionTypes.ERROR_DELETE_TODO;
+	}
 
     export type Actions = LoadInitTodos
-        | SuccessInitTodos
-        | ErrorInitTodos
-        | LoadCreateTodo
-        | SuccessCreateTodo
-        | ErrorCreateTodo
-        | SelectTodo
-        | UpdateTodo
+        // ... other
         | LoadDeleteTodo
+        | ErrorDeleteTodo
         | SuccessDeleteTodo;
         // | DeleteTodo;
 
@@ -2190,5 +2190,5 @@ export namespace TodoListModule {
 // ... other
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODc4MDM4XX0=
+eyJoaXN0b3J5IjpbMjEyMzY0OTE5XX0=
 -->
