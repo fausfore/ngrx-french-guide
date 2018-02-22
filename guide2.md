@@ -2398,6 +2398,14 @@ catchError((err) => of(new TodoListModule.ErrorLoadAction()))
 ```
 Donc on peut récupérer cette erreur pour afficher le message dans un la view avec avec un **toastr**
 
+*todo-list.action.ts*
+```javascript
+export class ErrorLoadAction {
+    readonly type = ActionTypes.ERROR_LOAD_ACTION;
+    constructor(public payload: any) {}
+}
+```
+et pa
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MTgyMDg4MV19
+eyJoaXN0b3J5IjpbLTg3MjYyOTg1OV19
 -->
