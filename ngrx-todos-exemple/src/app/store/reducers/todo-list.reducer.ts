@@ -79,23 +79,28 @@ export function todosReducer(
                 .map(todo => action.payload.id === todo.id ? action.payload : todo)
         };
 
-        /*
-    case TodoListModule.ActionTypes.CREATE_TODO:
-        return {
-            ...state,
-            data: [
-                ...state.data,
-                action.payload
-            ]
-        };
-        */
 
     // DELETE TODO
+
+    case TodoListModule.ActionTypes.LOAD_DELETE_TODO:
+        return {
+            ...state,
+            loading: true
+        };
+
+    case TodoListModule.ActionTypes.SUCCESS_DELETE_TODO:
+        return {
+            ...state,
+            data : state.data.filter(todo => todo.id !== action.payload)
+        };
+    /*
     case TodoListModule.ActionTypes.DELETE_TODO:
         return {
             ...state,
             data : state.data.filter(todo => todo.id !== action.payload)
         };
+
+    */
 
     default:
         return state;

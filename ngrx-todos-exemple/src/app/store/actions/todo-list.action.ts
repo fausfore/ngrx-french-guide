@@ -8,9 +8,12 @@ export namespace TodoListModule {
         SUCCESS_CREATE_TODO = '[todoList] Success Create Todo',
         ERROR_CREATE_TODO = '[todoList] Error Create Todo',
         // Patch Todo
-        DELETE_TODO = '[todoList] Delete Todo',
         SELECT_TODO = '[todoList] Select Todo',
         UPDATE_TODO = '[todoList] Update Todo',
+        // Delete Todo
+        // DELETE_TODO = '[todoList] Delete Todo',
+        LOAD_DELETE_TODO = '[todoList] Load Delete Todo',
+        SUCCESS_DELETE_TODO = '[todoList] Success Delete Todo',
         // Get Todos
         LOAD_INIT_TODOS = '[todoList] Load Init Todos',
         SUCCESS_INIT_TODOS = '[todoList] Success Init Todos',
@@ -61,9 +64,20 @@ export namespace TodoListModule {
     }
 
     // DELETE TODO
-
+    /*
     export class DeleteTodo {
         readonly type = ActionTypes.DELETE_TODO;
+        constructor(public payload: number) {}
+    }
+    */
+
+    export class LoadDeleteTodo {
+        readonly type = ActionTypes.LOAD_DELETE_TODO;
+        constructor(public payload: number) {}
+    }
+
+    export class SuccessDeleteTodo {
+        readonly type = ActionTypes.SUCCESS_DELETE_TODO;
         constructor(public payload: number) {}
     }
 
@@ -75,6 +89,8 @@ export namespace TodoListModule {
         | ErrorCreateTodo
         | SelectTodo
         | UpdateTodo
-        | DeleteTodo;
+        | LoadDeleteTodo
+        | SuccessDeleteTodo;
+        // | DeleteTodo;
 
 }

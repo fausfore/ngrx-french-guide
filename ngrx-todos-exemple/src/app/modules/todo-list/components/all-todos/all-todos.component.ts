@@ -84,7 +84,7 @@ export class AllTodosComponent {
   }
 
   deleteTodo(id: number) {
-    this.store.dispatch(new TodoListModule.DeleteTodo(id));
+    this.store.dispatch(new TodoListModule.LoadDeleteTodo(id));
   }
 
 }
