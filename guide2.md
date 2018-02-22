@@ -1982,8 +1982,11 @@ createTodo(todo: Todo) {
 
 ## DELETE TODO
 
-Maintenant voyons la suppression avec un vrai delete serveur comme pour le post il nous faudra un effect 
+Maintenant voyons la suppression avec un vrai delete serveur comme pour le post il nous faudra un effect, ajouter un action de type **Load**
+
+Les actions :
+*t* 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI3ODU4NjldfQ==
+eyJoaXN0b3J5IjpbMjA1NDA1OTUyXX0=
 -->
