@@ -2432,13 +2432,13 @@ Ajoutez cette propriété dans le reducer:
 ```javascript
 const initialState: TodoListState = {
     // ... other
-    errorLog: undefined
+    logs: undefined
 };
 case TodoListModule.ActionTypes.ERROR_LOAD_ACTION:
     return {
         ...state,
         loading: false,
-        errorLog: action.payload
+        logs: { type: 'ERROR', message: action.payload.message },
     };
 ```
 On aura besoin d'un selector pour le logs: 
@@ -2469,5 +2469,5 @@ import { Component } from '@angular/core';
 export class TodoListComponent { }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDA2NDA3OTJdfQ==
+eyJoaXN0b3J5IjpbODYzMjkxNjM2XX0=
 -->
