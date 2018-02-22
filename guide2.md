@@ -2435,6 +2435,22 @@ const initialState: TodoListState = {
     logs: undefined
 };
 
+case TodoListModule.ActionTypes.SUCCESS_DELETE_TODO:
+        return {
+            ...state,
+            data : state.data.filter(todo => todo.id !== action.payload),
+            logs: { type: 'SUCCESS', message: 'La todo à été suprimmé avec succès' }
+        };
+
+case TodoListModule.ActionTypes.SUCCESS_UPDATE_TODO:
+        return {
+            ...state,
+            loading: false,
+            logs: { type: 'SUCCESS', message: 'La todo à été mise à jour avec succès' },
+            data: state.data
+                .map(todo => action.payload.id === todo.id ? action.payload : todo)
+        };
+
 case TodoListModule.ActionTypes.SUCCESS_CREATE_TODO:
      return {
          ...state,
@@ -2512,5 +2528,5 @@ export class TodoListComponent {
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwODQxNzk0N119
+eyJoaXN0b3J5IjpbMTg5Mjk5MTg4MF19
 -->
