@@ -2263,79 +2263,33 @@ export namespace TodoListModule {
         ERROR_LOAD_ACTION = '[todoList] Error Load Action'
     }
 
-    // GET TODOS
-
-    export class LoadInitTodos {
-        readonly type = ActionTypes.LOAD_INIT_TODOS;
-    }
-
-    export class SuccessInitTodos {
-        readonly type = ActionTypes.SUCCESS_INIT_TODOS;
-        constructor(public payload: Todo[]) {}
-    }
+	// ... Other
     /*
     export class ErrorInitTodos {
         readonly type = ActionTypes.ERROR_INIT_TODOS;
     }
-    */
-
-    // POST TODO
-    export class LoadCreateTodo {
-        readonly type = ActionTypes.LOAD_CREATE_TODO;
-        constructor(public payload: Todo) {}
-    }
-
-    export class SuccessCreateTodo {
-        readonly type = ActionTypes.SUCCESS_CREATE_TODO;
-        constructor(public payload: Todo) {}
-    }
+    // ... Other
     /*
     export class ErrorCreateTodo {
         readonly type = ActionTypes.ERROR_CREATE_TODO;
     }
     */
-
-    // SELECT TODO
-    export class SelectTodo {
-        readonly type = ActionTypes.SELECT_TODO;
-        constructor(public payload: Todo) {}
-    }
-
-    // PATCH TODO
+	// ... Other
     /*
     export class UpdateTodo {
         readonly type = ActionTypes.UPDATE_TODO;
         constructor(public payload: Todo) {}
     }
     */
-
-    export class LoadUpdateTodo {
-        readonly type = ActionTypes.LOAD_UPDATE_TODO;
-        constructor(public payload: Todo) {}
-    }
-
-    export class SuccessUpdateTodo {
-        readonly type = ActionTypes.SUCCESS_UPDATE_TODO;
-        constructor(public payload: Todo) {}
-    }
-
+	// ... Other
     /*
     export class ErrorUpdateTodo {
         readonly type = ActionTypes.ERROR_UPDATE_TODO;
     }
     */
 
-    // DELETE TODO
-
-    export class LoadDeleteTodo {
-        readonly type = ActionTypes.LOAD_DELETE_TODO;
-        constructor(public payload: number) {}
-    }
-
-    export class SuccessDeleteTodo {
-        readonly type = ActionTypes.SUCCESS_DELETE_TODO;
-        constructor(public payload: number) {}
-    }
+    // ... Other
+    
     /*
     export class ErrorDeleteTodo {
         readonly type = ActionTypes.ERROR_DELETE_TODO;
@@ -2359,5 +2313,5 @@ export namespace TodoListModule {
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjY1OTYxNTBdfQ==
+eyJoaXN0b3J5IjpbLTM0NTE0MTI0M119
 -->
