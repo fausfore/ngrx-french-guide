@@ -1985,8 +1985,10 @@ createTodo(todo: Todo) {
 Maintenant voyons la suppression avec un vrai delete serveur comme pour le post il nous faudra un effect, ajouter un action de type **Load**
 
 Les actions :
-*t* 
+*todo-list.action.ts*
+
+ 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NDA1OTUyXX0=
+eyJoaXN0b3J5IjpbODg1NjAyMTg2XX0=
 -->
