@@ -18,12 +18,16 @@ export class TodoListService {
     return this.http.post<Todo>(`${environment.apiUrl}/todos`, body);
   }
 
-  deleteTodo(id): Observable<number> {
+  patchTodo(changes: Partial<Todo>, id: number): Observable<Todo> {
+    return this.http.patch<Todo>(`${environment.apiUrl}/todos/${id}`, changes);
+  }
+
+  deleteTodo(id: number): Observable<number> {
     return this.http.delete<Todo>(`${environment.apiUrl}/todos/${id}`)
     // Le pipe va nous renvoyer l'id de la todo si la suppression
     // est réussi
       .pipe(
-        map((response) => id)
+        map(response => id)
       );
   }
 

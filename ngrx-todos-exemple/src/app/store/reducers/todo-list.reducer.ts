@@ -72,11 +72,33 @@ export function todosReducer(
         };
 
     // PATCH TODO
+    /*
     case TodoListModule.ActionTypes.UPDATE_TODO:
         return {
             ...state,
             data: state.data
                 .map(todo => action.payload.id === todo.id ? action.payload : todo)
+        };
+        */
+
+    case TodoListModule.ActionTypes.LOAD_UPDATE_TODO:
+        return {
+            ...state,
+            loading: true
+        };
+
+    case TodoListModule.ActionTypes.SUCCESS_UPDATE_TODO:
+        return {
+            ...state,
+            loading: false,
+            data: state.data
+                .map(todo => action.payload.id === todo.id ? action.payload : todo)
+        };
+
+    case TodoListModule.ActionTypes.ERROR_UPDATE_TODO:
+        return {
+            ...state,
+            loading: false
         };
 
 
@@ -93,14 +115,12 @@ export function todosReducer(
             ...state,
             data : state.data.filter(todo => todo.id !== action.payload)
         };
-    /*
-    case TodoListModule.ActionTypes.DELETE_TODO:
+
+    case TodoListModule.ActionTypes.ERROR_DELETE_TODO:
         return {
             ...state,
-            data : state.data.filter(todo => todo.id !== action.payload)
+            loading: false
         };
-
-    */
 
     default:
         return state;
