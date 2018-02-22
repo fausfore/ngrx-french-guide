@@ -2092,7 +2092,13 @@ deleteTodo(id): Observable<number> {
 ```
 Voilà pour la suppression.
 
+### Fin de la branche step-9
+
+## PATCH TODO
+
+### Début de la branche step-10
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUyMzk3MjAxXX0=
+eyJoaXN0b3J5IjpbLTE2ODU5MDg4MzBdfQ==
 -->
