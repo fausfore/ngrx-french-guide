@@ -15,11 +15,11 @@
 
 ## [POST TODO](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-8.md)
 
-## [Refacto Time !](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-9.md)
+## [DELETE TODO](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-9.md)
 
 ## [Refacto Time !](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-10.md)
 
 ## [Refacto Time !](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-11.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM4NDA5MTFdfQ==
+eyJoaXN0b3J5IjpbNzI5MDg0NDg4XX0=
 -->
