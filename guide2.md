@@ -2358,16 +2358,9 @@ export namespace TodoListModule {
 }
 
 ```
-*todo-list.reducer.ts*
+*todo-list.effect.ts*
 ```javascript
-import { Injectable } from '@angular/core';
-import { Actions, Effect, ofType } from '@ngrx/effects';
-import { Observable } from 'rxjs/Observable';
-import { catchError, map, switchMap } from 'rxjs/operators';
-import { of } from 'rxjs/observable/of';
-import { TodoListModule } from '@Actions/todo-list.action';
-import { TodoListService } from '../../services/todo-list.service';
-
+// ... other
 @Injectable()
 export class TodoListEffects {
   // Listen les actions passées dans le Store
@@ -2394,14 +2387,11 @@ export class TodoListEffects {
       // ... other
           catchError(() => of(new TodoListModule.ErrorLoadAction()))
       );
-
-  constructor(
-    private todoListService: TodoListService,
-    private actions$: Actions
-  ) {}
+  // ... other
 }
 
 ```
+Voilà on a purger un peu de code inutile mais 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNjc4MDYzXX0=
+eyJoaXN0b3J5IjpbLTE4NjE4Mzk4NjBdfQ==
 -->
