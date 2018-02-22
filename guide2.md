@@ -2225,6 +2225,12 @@ updateTodo(formValue) {
     return this.router.navigate(['/todo-list/all-todos']);
   }
 ```
+
+### Fin de la branche step-10
+
+## BONUS
+
+### Début de la branche step-11
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MTI5NDI1NF19
+eyJoaXN0b3J5IjpbLTIwNDUyNzQxNzNdfQ==
 -->
