@@ -1,6 +1,28 @@
 import { TodoListModule } from '../actions/todo-list.action';
-import { TodoListState  } from '../../models/todo';
+import { TodoListState, Todo  } from '../../models/todo';
+import { createEntityAdapter, EntityAdapter, EntityState } from '@ngrx/entity';
 
+export interface TodoListStateEntity extends EntityState<Todo> {
+    loading: boolean;
+    loaded: boolean;
+    selectedTodo: Todo;
+    logs: {
+        type: string;
+        message: string;
+    };
+}
+
+export const TodoListAdapter: EntityAdapter<Todo> = createEntityAdapter<Todo>({
+    sortComparer: false
+});
+
+export const initialState: TodoListStateEntity = TodoListAdapter.getInitialState({
+    loading: false,
+    loaded: false,
+    selectedTodo: undefined,
+    logs: undefined
+});
+/*
 const initialState: TodoListState = {
     data: [],
     loading: false,
@@ -8,11 +30,23 @@ const initialState: TodoListState = {
     selectedTodo: undefined,
     logs: undefined
 };
+*/
+export const {
+    // select the array of user ids
+    selectIds: selectTodosIds,
+    // select the dictionary of user entities
+    selectEntities: selectTodosEntities,
+    // select the array of users
+    selectAll: selectTodos,
+    // select the total user count
+    selectTotal: selectTotalTodos
+  } = TodoListAdapter.getSelectors();
+
 
 export function todosReducer(
-    state: TodoListState = initialState,
+    state = initialState,
     action: TodoListModule.Actions
-): TodoListState {
+): TodoListStateEntity {
 
   switch (action.type) {
 
@@ -28,10 +62,9 @@ export function todosReducer(
         // Bind state.data avec les todos du server
         // Passe le loaded a true et le loading a false
         return {
-            ...state,
+            ...TodoListAdapter.addMany(action.payload, state),
             loading: false,
-            loaded: true,
-            data: action.payload
+            loaded: true
         };
 
     // POST TODO
@@ -44,12 +77,9 @@ export function todosReducer(
 
     case TodoListModule.ActionTypes.SUCCESS_CREATE_TODO:
         return {
-            ...state,
-            logs: { type: 'SUCCESS', message: 'La todo à été crée avec succès' },
-            data: [
-                ...state.data,
-                action.payload
-            ]
+            ...TodoListAdapter.addOne(action.payload, state),
+            loading: false,
+            logs: { type: 'SUCCESS', message: 'La todo à été crée avec succès' }
         };
 
     // SELECT TODO
@@ -68,12 +98,11 @@ export function todosReducer(
         };
 
     case TodoListModule.ActionTypes.SUCCESS_UPDATE_TODO:
+        const { id, ...changes } = action.payload;
         return {
-            ...state,
+            ...TodoListAdapter.updateOne({id: id, changes: changes}, state),
             loading: false,
-            logs: { type: 'SUCCESS', message: 'La todo à été mise à jour avec succès' },
-            data: state.data
-                .map(todo => action.payload.id === todo.id ? action.payload : todo)
+            logs: { type: 'SUCCESS', message: 'La todo à été mise à jour avec succès' }
         };
 
     // DELETE TODO
@@ -86,8 +115,7 @@ export function todosReducer(
 
     case TodoListModule.ActionTypes.SUCCESS_DELETE_TODO:
         return {
-            ...state,
-            data : state.data.filter(todo => todo.id !== action.payload),
+            ...TodoListAdapter.removeOne(action.payload, state),
             logs: { type: 'SUCCESS', message: 'La todo à été suprimmé avec succès' }
         };
 

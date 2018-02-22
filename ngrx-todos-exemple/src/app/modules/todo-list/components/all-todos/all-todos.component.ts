@@ -1,13 +1,13 @@
-import { Store, select } from '@ngrx/store';
-import { OnInit, Component, Inject } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Observable } from 'rxjs/Observable';
 import { TodoListModule } from '@Actions/todo-list.action';
-import { AppState } from '@StoreConfig';
-import { Todo } from '@Models/todo';
-import { selectTodos$, selectTodoSelected$ } from '@Selectors/todo-list.selector';
-import { tap } from 'rxjs/operators';
+import { Component, Inject } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { Todo } from '@Models/todo';
+import { select, Store } from '@ngrx/store';
+import { selectTodoListEntitiesConverted$ } from '@Selectors/todo-list.selector';
+import { AppState } from '@StoreConfig';
+import { Observable } from 'rxjs/Observable';
+import { tap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-all-todos',
@@ -54,7 +54,7 @@ export class AllTodosComponent {
   ) {
     this.todos$ = store
       .pipe(
-        select(selectTodos$),
+        select(selectTodoListEntitiesConverted$),
         tap((todos) => {
           console.log('selectTodos', todos);
           this.todosLength = todos.length;

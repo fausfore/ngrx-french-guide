@@ -1,6 +1,15 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AllTodosComponent } from './all-todos.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { todoListRouting } from '../../todo-list.routing';
+import { TodoListComponent } from '../../todo-list.component';
+import { SelectTodoComponent } from '../select-todo/select-todo.component';
+import { appRouting } from '../../../../app.routing';
+import { APP_BASE_HREF } from '@angular/common';
+import { StoreModule } from '@ngrx/store';
+import { REDUCER_TOKEN, getReducers, StoreModuleApply } from '@StoreConfig';
+import * as FromTodoListModule from '../../todo-list.module';
 
 describe('AllTodosComponent', () => {
   let component: AllTodosComponent;
@@ -8,7 +17,18 @@ describe('AllTodosComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AllTodosComponent ]
+      imports: [
+        ...FromTodoListModule.imports,
+        appRouting,
+        ...StoreModuleApply.imports
+      ],
+      declarations: [
+        ...FromTodoListModule.declarations
+      ],
+      providers: [
+        { provide: APP_BASE_HREF, useValue: '/'},
+        ...StoreModuleApply.providers
+      ]
     })
     .compileComponents();
   }));

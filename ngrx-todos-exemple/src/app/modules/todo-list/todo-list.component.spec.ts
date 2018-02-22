@@ -1,6 +1,17 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TodoListComponent } from './todo-list.component';
+import { todoListRouting } from './todo-list.routing';
+import { appRouting } from '../../app.routing';
+import { AllTodosComponent } from './components/all-todos/all-todos.component';
+import { SelectTodoComponent } from './components/select-todo/select-todo.component';
+import { APP_BASE_HREF } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ToastrModule } from 'ngx-toastr';
+import { REDUCER_TOKEN, getReducers } from '@StoreConfig';
+import { StoreModule } from '@ngrx/store';
+import * as FromTodoListModule from './todo-list.module';
+import { StoreModuleApply } from '@StoreConfig';
 
 describe('TodoListComponent', () => {
   let component: TodoListComponent;
@@ -8,7 +19,19 @@ describe('TodoListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TodoListComponent ]
+      imports: [
+        FromTodoListModule.imports,
+        appRouting,
+        ToastrModule.forRoot(),
+        ...StoreModuleApply.imports
+      ],
+      declarations: [
+        ...FromTodoListModule.declarations
+       ],
+      providers: [
+        ...StoreModuleApply.providers,
+        { provide: APP_BASE_HREF, useValue: '/'}
+      ]
     })
     .compileComponents();
   }));
