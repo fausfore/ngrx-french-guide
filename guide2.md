@@ -2413,6 +2413,7 @@ et passer l'erreur sur chaque actions dans les effects :
 catchError((err) => of(new TodoListModule.ErrorLoadAction(err)))
 ```
 On ajoute une autre propriété qui permettra de garder les erreurs: 
+
 *models/todo.ts*
 ```javascript
 export interface TodoListState {
@@ -2420,6 +2421,20 @@ export interface TodoListState {
     errorLog: any;
 }
 ```
+
+*todo-list.reducer.ts*
+```javascript
+const initialState: TodoListState = {
+    // ... other
+    errorLog: undefined
+};
+case TodoListModule.ActionTypes.ERROR_LOAD_ACTION:
+    return {
+        ...state,
+        loading: false,
+        errorLog: action.payload
+    };
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2OTc3MDg0Ml19
+eyJoaXN0b3J5IjpbMTA2ODE3OTMwXX0=
 -->
