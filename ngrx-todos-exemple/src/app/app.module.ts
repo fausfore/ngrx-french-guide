@@ -11,7 +11,9 @@ import { IsTodosLoadedGuard } from './guards/is-todos-loaded/is-todos-loaded.gua
 import { TodoListService } from './services/todo-list.service';
 import { appEffects, getReducers, REDUCER_TOKEN } from './store';
 import { environment } from 'environments/environment';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { environment } from 'environments/environment';
     appRouting,
     BrowserModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
     StoreModule.forRoot(REDUCER_TOKEN),
     EffectsModule.forRoot(appEffects),
     StoreDevtoolsModule.instrument({

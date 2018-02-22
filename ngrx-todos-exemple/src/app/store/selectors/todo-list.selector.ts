@@ -11,3 +11,6 @@ export const selectTodoSelected$ =
 
 export const selectTodosLoaded$ =
     createSelector(selectTodoListState$, (todos) => todos.loaded);
+
+export const selectTodosErrors$ =
+    createSelector(selectTodoListState$, (todos) => todos.logs);

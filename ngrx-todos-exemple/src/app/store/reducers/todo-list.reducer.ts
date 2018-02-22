@@ -5,7 +5,8 @@ const initialState: TodoListState = {
     data: [],
     loading: false,
     loaded: false,
-    selectedTodo: undefined
+    selectedTodo: undefined,
+    logs: undefined
 };
 
 export function todosReducer(
@@ -33,13 +34,6 @@ export function todosReducer(
             data: action.payload
         };
 
-    case TodoListModule.ActionTypes.ERROR_INIT_TODOS:
-        // Error rend le loading a false
-        return {
-            ...state,
-            loading: false
-        };
-
     // POST TODO
     case TodoListModule.ActionTypes.LOAD_CREATE_TODO:
         // Passe le loading a true
@@ -51,17 +45,11 @@ export function todosReducer(
     case TodoListModule.ActionTypes.SUCCESS_CREATE_TODO:
         return {
             ...state,
+            logs: { type: 'SUCCESS', message: 'La todo à été crée avec succès' },
             data: [
                 ...state.data,
                 action.payload
             ]
-        };
-
-    case TodoListModule.ActionTypes.ERROR_CREATE_TODO:
-        // Passe le loading a true
-        return {
-            ...state,
-            loading: false
         };
 
     // SELECT TODO
@@ -72,14 +60,6 @@ export function todosReducer(
         };
 
     // PATCH TODO
-    /*
-    case TodoListModule.ActionTypes.UPDATE_TODO:
-        return {
-            ...state,
-            data: state.data
-                .map(todo => action.payload.id === todo.id ? action.payload : todo)
-        };
-        */
 
     case TodoListModule.ActionTypes.LOAD_UPDATE_TODO:
         return {
@@ -91,16 +71,10 @@ export function todosReducer(
         return {
             ...state,
             loading: false,
+            logs: { type: 'SUCCESS', message: 'La todo à été mise à jour avec succès' },
             data: state.data
                 .map(todo => action.payload.id === todo.id ? action.payload : todo)
         };
-
-    case TodoListModule.ActionTypes.ERROR_UPDATE_TODO:
-        return {
-            ...state,
-            loading: false
-        };
-
 
     // DELETE TODO
 
@@ -113,13 +87,15 @@ export function todosReducer(
     case TodoListModule.ActionTypes.SUCCESS_DELETE_TODO:
         return {
             ...state,
-            data : state.data.filter(todo => todo.id !== action.payload)
+            data : state.data.filter(todo => todo.id !== action.payload),
+            logs: { type: 'SUCCESS', message: 'La todo à été suprimmé avec succès' }
         };
 
-    case TodoListModule.ActionTypes.ERROR_DELETE_TODO:
+    case TodoListModule.ActionTypes.ERROR_LOAD_ACTION:
         return {
             ...state,
-            loading: false
+            loading: false,
+            logs: { type: 'ERROR', message: action.payload.message }
         };
 
     default:

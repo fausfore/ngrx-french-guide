@@ -10,4 +10,8 @@ export interface TodoListState {
     loading: boolean;
     loaded: boolean;
     selectedTodo: Todo;
+    logs: {
+        type: string;
+        message: string;
+    };
 }

@@ -71,7 +71,6 @@ export class AllTodosComponent {
     const payload = {
       ...todo,
       userId: 1, // userId au pif
-      id: this.todosLength + 1
     };
     this.store.dispatch(new TodoListModule.LoadCreateTodo(payload));
     this.todoForm.reset();
