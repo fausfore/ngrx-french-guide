@@ -2394,8 +2394,8 @@ export class TodoListEffects {
 Voilà on a purger un peu de code inutile mais on peu créer un système de logs en cas d'erreur, il faut savoir que dans le catchError, il peut prendre en argument l'erreur 
 
 ```javascript
-catchError(() => of(new TodoListModule.ErrorLoadAction()))
+catchError((err) => of(new TodoListModule.ErrorLoadAction()))
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEzOTQxNTkzXX0=
+eyJoaXN0b3J5IjpbMTc3NDExODQ2OF19
 -->
