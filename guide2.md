@@ -2444,6 +2444,11 @@ export const selectTodosErrors$ =
     createSelector(selectTodoListState$, (todos) => todos.errorLog);
 ```
 Maintenant on installe le module [ngx-toastr](https://github.com/scttcper/ngx-toastr) et une fois que vous aurez tout bien installer allez dans le **TodoListComponent**
+
+```javascript
+export const selectTodosErrors$ =
+    createSelector(selectTodoListState$, (todos) => todos.errorLog);
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjQyNzYwMDldfQ==
+eyJoaXN0b3J5IjpbLTIxMjA5ODM4MjJdfQ==
 -->
