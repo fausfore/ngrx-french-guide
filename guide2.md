@@ -2213,7 +2213,8 @@ patchTodo(changes: Partial<Todo>, id: number): Observable<Todo> {
     return this.http.patch<Todo>(`${environment.apiUrl}/todos/${id}`, changes);
 }
 ```
-Et on change l'action dans le compoennt
+Et on change l'action dans le component: 
+
 *select-todo.component.ts*
 ```javascript
 // ... other
@@ -2225,5 +2226,5 @@ updateTodo(formValue) {
   }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU3MzQwNDI4XX0=
+eyJoaXN0b3J5IjpbLTg2MTI5NDI1NF19
 -->
