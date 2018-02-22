@@ -135,27 +135,13 @@ export function todosReducer(
 
 ```
 ```javascript
-import { ActionReducerMap } from '@ngrx/store';
-import { InjectionToken } from '@angular/core';
-
-import { todosReducer, TodoListStateEntity } from './reducers/todo-list.reducer';
-import { TodoListEffects } from '@Effects/todo-list.effect';
-
-const reducers = {
-    todos: todosReducer
-};
-
-export const appEffects = [TodoListEffects];
+// ... other
 
 export interface AppState {
     todos: TodoListStateEntity;
 }
 
-export function getReducers() {
-    return reducers;
-}
-
-export const REDUCER_TOKEN = new InjectionToken<ActionReducerMap<AppState>>('Registered Reducers');
+// ... other
 
 ```
 
@@ -163,7 +149,7 @@ export const REDUCER_TOKEN = new InjectionToken<ActionReducerMap<AppState>>('Reg
 import { createSelector } from '@ngrx/store';
 import { AppState } from '..';
 
-export const selectTodoListState$ = (state: AppState) => state.todos;
+/export const selectTodoListState$ = (state: AppState) => state.todos;
 
 /*
 export const selectTodos$ =
@@ -214,5 +200,5 @@ import { selectTodoListEntitiesConverted$ } from '@Selectors/todo-list.selector'
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTQ1MjM4NjFdfQ==
+eyJoaXN0b3J5IjpbLTIwMTg3MDk3NDRdfQ==
 -->
