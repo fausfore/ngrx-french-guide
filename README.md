@@ -24,6 +24,8 @@
 ## [11 - ERROR LOG](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-11.md)
 
 ## [12 - NGRX - ENTITY](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-12.md)
+
+## [13 - EXTRAS](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-13.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3ODI5MDYxNV19
+eyJoaXN0b3J5IjpbMTU2NzMzMTY0MiwxNjc4MjkwNjE1XX0=
 -->
