@@ -2234,6 +2234,7 @@ updateTodo(formValue) {
 
 Voilà le **mvp** de la todoList est terminé, sur la suite du tutoriel on va voir comment optimiser notre code et le 1er point c'est concernant les actions d'erreurs qui dans le reducer sont répété in fine par action, on pourrait les fusionné pour n'avoir que un state d'erreur todo-list :
 
+*todo-list.action.ts*
 ```javascript
 // ... Other
 export namespace TodoListModule {
@@ -2357,6 +2358,50 @@ export namespace TodoListModule {
 }
 
 ```
+*todo-list.reducer.ts*
+```javascript
+import { Injectable } from '@angular/core';
+import { Actions, Effect, ofType } from '@ngrx/effects';
+import { Observable } from 'rxjs/Observable';
+import { catchError, map, switchMap } from 'rxjs/operators';
+import { of } from 'rxjs/observable/of';
+import { TodoListModule } from '@Actions/todo-list.action';
+import { TodoListService } from '../../services/todo-list.service';
+
+@Injectable()
+export class TodoListEffects {
+  // Listen les actions passées dans le Store
+    @Effect() LoadTodos$: Observable<TodoListModule.Actions> = this.actions$
+      .pipe(
+          // ... other
+          catchError(() => of(new TodoListModule.ErrorLoadAction()))
+      );
+
+    @Effect() LoadCreateTodo$: Observable<TodoListModule.Actions> = this.actions$
+      .pipe(
+          // ... other
+          catchError(() => of(new TodoListModule.ErrorLoadAction()))
+      );
+
+    @Effect() LoadDeleteTodo$: Observable<TodoListModule.Actions> = this.actions$
+      .pipe(
+          // ... other
+          catchError(() => of(new TodoListModule.ErrorLoadAction()))
+      );
+
+    @Effect() LoadUpdateTodo$: Observable<TodoListModule.Actions> = this.actions$
+      .pipe(
+      // ... other
+          catchError(() => of(new TodoListModule.ErrorLoadAction()))
+      );
+
+  constructor(
+    private todoListService: TodoListService,
+    private actions$: Actions
+  ) {}
+}
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MzI5NjYwNV19
+eyJoaXN0b3J5IjpbMTcyNjc4MDYzXX0=
 -->
