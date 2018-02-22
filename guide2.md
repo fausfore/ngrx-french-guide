@@ -2421,7 +2421,7 @@ export interface TodoListState {
     errorLog: any;
 }
 ```
-
+Ajoutez 
 *todo-list.reducer.ts*
 ```javascript
 const initialState: TodoListState = {
@@ -2436,5 +2436,5 @@ case TodoListModule.ActionTypes.ERROR_LOAD_ACTION:
     };
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2ODE3OTMwXX0=
+eyJoaXN0b3J5IjpbLTExNjMzMjY2NTJdfQ==
 -->
