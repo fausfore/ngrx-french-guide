@@ -1987,8 +1987,9 @@ Maintenant voyons la suppression avec un vrai delete serveur comme pour le post 
 Les actions :
 *todo-list.action.ts*
 
- 
+```javascript
+``` 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg1NjAyMTg2XX0=
+eyJoaXN0b3J5IjpbMjU4NjE0NzYzXX0=
 -->
