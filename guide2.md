@@ -2035,7 +2035,7 @@ export namespace TodoListModule {
 }
 
 ``` 
-Créer les reducers correspondante
+Créer les reducers correspondante: 
 ```javascript
 // ... Other
     // DELETE TODO
@@ -2063,5 +2063,5 @@ Créer les reducers correspondante
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU4ODUyNDg1XX0=
+eyJoaXN0b3J5IjpbMTkyMDkxMTU5NV19
 -->
