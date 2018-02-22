@@ -2421,7 +2421,22 @@ export interface TodoListState {
     errorLog: any;
 }
 ```
-Ajoutez 
+Ajoutez cette propriété dans le reducer: 
+
+*todo-list.reducer.ts*
+```javascript
+const initialState: TodoListState = {
+    // ... other
+    errorLog: undefined
+};
+case TodoListModule.ActionTypes.ERROR_LOAD_ACTION:
+    return {
+        ...state,
+        loading: false,
+        errorLog: action.payload
+    };
+```
+
 *todo-list.reducer.ts*
 ```javascript
 const initialState: TodoListState = {
@@ -2436,5 +2451,5 @@ case TodoListModule.ActionTypes.ERROR_LOAD_ACTION:
     };
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjMzMjY2NTJdfQ==
+eyJoaXN0b3J5IjpbMjAxNjMxMDgwXX0=
 -->
