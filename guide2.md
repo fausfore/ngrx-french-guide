@@ -2073,6 +2073,21 @@ deleteTodo(id: number) {
 
 ```
 
+*todo-list.service.ts*
+```javascript
+// ... other
+deleteTodo(id): Observable<number> {
+    return this.http.delete<Todo>(`${environment.apiUrl}/todos/${id}`)
+    // Le pipe va nous renvoyer l'id de la todo si la suppression
+    // est réussi
+      .pipe(
+        map((response) => id)
+      );
+  }
+// ... other
+
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjQ4ODA0OTJdfQ==
+eyJoaXN0b3J5IjpbLTk4Njc2Mjk0Nl19
 -->
