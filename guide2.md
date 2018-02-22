@@ -2208,8 +2208,8 @@ Le service de patch:
 // ... other
 patchTodo(changes: Partial<Todo>, id: number): Observable<Todo> {
     return this.http.patch<Todo>(`${environment.apiUrl}/todos/${id}`, changes);
-  }
+}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU1MTYzMjI5XX0=
+eyJoaXN0b3J5IjpbMTQ4MjM0MDQ0NV19
 -->
