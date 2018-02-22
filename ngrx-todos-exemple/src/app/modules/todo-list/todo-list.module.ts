@@ -6,14 +6,24 @@ import { AllTodosComponent } from './components/all-todos/all-todos.component';
 import { todoListRouting } from './todo-list.routing';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
+export const imports = [
+  CommonModule,
+  todoListRouting,
+  ReactiveFormsModule,
+  FormsModule
+];
+
+export const declarations = [
+  TodoListComponent,
+  SelectTodoComponent,
+  AllTodosComponent
+];
+
 @NgModule({
   imports: [
-    CommonModule,
-    todoListRouting,
-    ReactiveFormsModule,
-    FormsModule
+    ...imports
   ],
-  declarations: [TodoListComponent, SelectTodoComponent, AllTodosComponent]
+  declarations: [...declarations]
 
 })
 

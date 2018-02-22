@@ -9,37 +9,46 @@ import { AppComponent } from './app.component';
 import { appRouting } from './app.routing';
 import { IsTodosLoadedGuard } from './guards/is-todos-loaded/is-todos-loaded.guard';
 import { TodoListService } from './services/todo-list.service';
-import { appEffects, getReducers, REDUCER_TOKEN } from './store';
+import { StoreModuleApply, appEffects } from '@StoreConfig';
 import { environment } from 'environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToastrModule } from 'ngx-toastr';
 
+export const declarations = [
+  AppComponent
+];
+
+export const imports = [
+  ...StoreModuleApply.imports,
+  appRouting,
+  BrowserModule,
+  HttpClientModule,
+  BrowserAnimationsModule,
+  ToastrModule.forRoot(),
+  EffectsModule.forRoot(appEffects),
+  StoreDevtoolsModule.instrument({
+    name: '[TODOLIST]',
+    maxAge: 25, // Retains last 25 states
+    logOnly: environment.production // Restrict extension to log-only mode
+  })
+];
+
+export const providers = [
+  ...StoreModuleApply.providers,
+  TodoListService,
+  IsTodosLoadedGuard
+];
+
 @NgModule({
   declarations: [
-    AppComponent
+    ...declarations
   ],
   imports: [
-    appRouting,
-    BrowserModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    ToastrModule.forRoot(),
-    StoreModule.forRoot(REDUCER_TOKEN),
-    EffectsModule.forRoot(appEffects),
-    StoreDevtoolsModule.instrument({
-      name: '[TODOLIST]',
-      maxAge: 25, // Retains last 25 states
-      logOnly: environment.production // Restrict extension to log-only mode
-    })
+    ...imports
   ],
   providers: [
-    {
-      provide: REDUCER_TOKEN,
-      useFactory: getReducers
-    },
-    TodoListService,
-    IsTodosLoadedGuard
+    ...providers
   ],
   bootstrap: [AppComponent]
 })
