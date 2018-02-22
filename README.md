@@ -1,3 +1,5 @@
+# Sommaire
+
 ## [0 - Introduction](https://github.com/fausfore/ngrx-guide/blob/master/documentations/introduction.md)
 ## [1 - De Redux à Ngrx](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-1.md)
 
@@ -23,5 +25,5 @@
 
 ## [12 - NGRX - ENTITY](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-11.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMTE1OTg4OF19
+eyJoaXN0b3J5IjpbMTY0NzI3MDgwOF19
 -->
