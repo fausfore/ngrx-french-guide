@@ -2533,6 +2533,8 @@ export class TodoListComponent {
 ## NGRX - ENTITY
 
 ### Début de la branche step-12
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNDM3NzYxN119
+eyJoaXN0b3J5IjpbLTUyNTE2NTMzMV19
 -->
