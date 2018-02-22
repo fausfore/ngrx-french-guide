@@ -2053,6 +2053,13 @@ Créer les reducers correspondante:
             ...state,
             data : state.data.filter(todo => todo.id !== action.payload)
         };
+        
+    case TodoListModule.ActionTypes.ERROR_UPDATE_TODO:
+        return {
+            ...state,
+            loading: false
+        };
+        
     /*
     case TodoListModule.ActionTypes.DELETE_TODO:
         return {
@@ -2183,5 +2190,5 @@ export namespace TodoListModule {
 // ... other
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzk4MjgyOV19
+eyJoaXN0b3J5IjpbLTEyODc4MDM4XX0=
 -->
