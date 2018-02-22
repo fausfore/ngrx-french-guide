@@ -2098,7 +2098,22 @@ Voilà pour la suppression.
 
 ### Début de la branche step-10
 
+Vous commencez à être habitué, on modifie l'action:
 
+*todo-list.action.ts*
+```javascript
+// ... other
+deleteTodo(id): Observable<number> {
+    return this.http.delete<Todo>(`${environment.apiUrl}/todos/${id}`)
+    // Le pipe va nous renvoyer l'id de la todo si la suppression
+    // est réussi
+      .pipe(
+        map((response) => id)
+      );
+  }
+// ... other
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODU5MDg4MzBdfQ==
+eyJoaXN0b3J5IjpbMzk0NzYxOTM1XX0=
 -->
