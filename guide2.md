@@ -2061,7 +2061,13 @@ Créer les reducers correspondante:
     */
 // ... Other
 ```
+Modifier l'action passé dans le template :
+
+*all-todos.component.ts*
+```javascript
+
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMDkxMTU5NV19
+eyJoaXN0b3J5IjpbLTIxODk0ODEwXX0=
 -->
