@@ -2190,6 +2190,7 @@ export namespace TodoListModule {
 ```
 Le nouveau effect: 
 ```javascript
+// ... other
  @Effect() LoadUpdateTodo$: Observable<TodoListModule.Actions> = this.actions$
       .pipe(
           ofType<TodoListModule.LoadUpdateTodo>(TodoListModule.ActionTypes.LOAD_UPDATE_TODO),
@@ -2201,6 +2202,14 @@ Le nouveau effect:
           catchError(() => of(new TodoListModule.ErrorCreateTodo()))
       );
 ```
+Le service de patch: 
+
+```javascript
+// ... other
+	patchTodo(changes: Partial<Todo>, id: number): Observable<Todo> {
+	    return this.http.patch<Todo>(`${environment.apiUrl}/todos/${id}`, changes);
+    }
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4MjIwMDA3Ml19
+eyJoaXN0b3J5IjpbMTg1NzIzNDA3N119
 -->
