@@ -11,10 +11,16 @@ npm install @ngrx/entity --save OR yarn add @ngrx/entity --dev
 ```
 
 ```javascript
-import { TodoListModule } from '../actions/todo-list.action';
-import { TodoListState, Todo  } from '../../models/todo';
-import { createEntityAdapter, EntityAdapter, EntityState } from '@ngrx/entity';
+import { T*todoL-listModule } from '../actions/todo-list.action';
+import { TodoListState, Todo  } from '../../models/todo';.reducer.ts*
+```javascript
+// ... other
+import { 
+	createEntityAdapter, 
+	EntityAdapter, 
+	EntityState } from '@ngrx/entity';
 
+// Une nouvelle interface
 export interface TodoListStateEntity extends EntityState<Todo> {
     loading: boolean;
     loaded: boolean;
@@ -24,18 +30,22 @@ export interface TodoListStateEntity extends EntityState<Todo> {
         message: string;
     };
 }
-
-export const TodoListAdapter: EntityAdapter<Todo> = createEntityAdapter<Todo>({
-    sortComparer: false
-});
-
-export const initialState: TodoListStateEntity = TodoListAdapter.getInitialState({
-    loading: false,
-    loaded: false,
-    selectedTodo: undefined,
-    logs: undefined
-});
+// Création de l'entity adapter
+export const TodoListAdapter: EntityAdapter<Todo> = 
+	createEntityAdapter<Todo>({
+	    sortComparer: false
+	});
+	
+// Injecte les données par default
+export const initialState: TodoListStateEntity = 
+	TodoListAdapter.getInitialState({
+	    loading: false,
+	    loaded: false,
+	    selectedTodo: undefined,
+	    logs: undefined
+	});
 /*
+Ancien interface
 const initialState: TodoListState = {
     data: [],
     loading: false,
@@ -54,7 +64,15 @@ export function todosReducer(
 
     // GET TODOS
     case TodoListModule.ActionTypes.LOAD_INIT_TODOS:
-        // Passe le loading a true
+    // Getters de l'entity
+export const {
+    // select the array of todo ids
+    selectIds: selectTodosIds,
+    // select the dictionary of todo entities
+    selectEntities: selectTodosEntities,
+    // select the array of todos
+    selectAll: selectTodos,
+    // Passe le loading a true
         return {
             ...state,
             loading: true
@@ -75,13 +93,37 @@ export function todosReducer(
         return {
             ...state,
             loading: true
+        };ct the total user todos
+    selectTotal: selectTotalTodos
+  } = TodoListAdapter.getSelectors();
+
+
+export function todosReducer(
+	// state: TodoListState = initialState,
+    state: TodoListStateEntity  = initialState,
+    action: TodoListModule.Actions
+): TodoListStateEntity {
+
+  switch (action.type) {
+
+    // ... other
+
+    case TodoListModule.ActionTypes.SUCCESS_INIT_TODOS:
+        return {
+            ...TodoListAdapter.addMany(action.payload, state),
+            loading: false,
+            loaded: true
         };
+
+    // ... other
 
     case TodoListModule.ActionTypes.SUCCESS_CREATE_TODO:
         return {
             ...TodoListAdapter.addOne(action.payload, state),
             loading: false,
-            logs: { type: 'SUCCESS', message: 'La todo à été crée avec succès' }
+            logs: {
+	            type: 'SUCCESS',
+	            message: 'La todo à été crée avec succès' }
         };
 
     // SELECT TODO
@@ -97,28 +139,38 @@ export function todosReducer(
         return {
             ...state,
             loading: true
+        };    }
         };
+
+    // ... other
 
     case TodoListModule.ActionTypes.SUCCESS_UPDATE_TODO:
         const { id, ...changes } = action.payload;
         return {
             ...TodoListAdapter.updateOne({id: id, changes: changes}, state),
             loading: false,
-            logs: { type: 'SUCCESS', message: 'La todo à été mise à jour avec succès' }
+            logs: {
+	            type: 'SUCCESS',
+	             message: 'La todo à été mise à jour avec succès' }
         };
 
     // DELETE TODO
 
     case TodoListModule.ActionTypes.LOAD_DELETE_TODO:
         return {
-            ...state,
-            loading: true
+          }
         };
+
+     // ...state,
+            loading: true
+        }; other
 
     case TodoListModule.ActionTypes.SUCCESS_DELETE_TODO:
         return {
             ...TodoListAdapter.removeOne(action.payload, state),
-            logs: { type: 'SUCCESS', message: 'La todo à été suprimmé avec succès' }
+            logs: {
+	            type: 'SUCCESS',
+	            message: 'La todo à été suprimmé avec succès' }
         };
 
     case TodoListModule.ActionTypes.ERROR_LOAD_ACTION:
@@ -149,14 +201,41 @@ export interface AppState {
 import { createSelector } from '@ngrx/store';
 import { AppState } from '..';
 
-/export const selectTodoListState$ = (state: AppState) => state.todos;
+/export const selectT    }
+        };
 
-/*
+// ... other
+```
+*store/index.ts*
+```javascript
+import { TodoListStateEntity } from './reducers/todo-list.reducer';
+
+// ... other
+
+// Changement de l'interface
+export interface AppState {
+    todos: TodoListStateEntity;
+}
+
+// ... other
+
+```
+*todo-list.selector.ts*
+```javascript
+// ... other
+import * as fromTodos from '@Reducers/todoL-listState$ = (state: AppState) => state.todos;
+
+/*.reducer';
+
+// ... other
+
+/* Ancien getter
 export const selectTodos$ =
     createSelector(selectTodoListState$, (todos) => todos.data);
 */
 
-export const selectTodoListEntities$ = createSelector(
+export const selectTodoListEntities$ = Converted$ 
+	createSelector(
     selectTodoListState$,
     (state) => state.entities
 );
@@ -164,22 +243,27 @@ export const selectTodoListEntities$ = createSelector(
 export const selectTodoListEntitiesConverted$ = createSelector(
     selectTodoListEntities$,
     (entities) => Object.keys(entities).map(id => entities[parseInt(id, 10)])
-);
+ fromTodos.selectTodos);
 
 export const selectTodoSelected$ =
-    createSelector(selectTodoListEntities$, (todos) => todos.selectedTodo);
+    createSelector(selectTodoListEntitiesState$, (todos) => todos.selectedTodo);
 
 export const selectTodosLoaded$ =
-    createSelector(selectTodoListEntities$, (todos) => todos.loaded);
+    createSelector(selectTodoListEntitiesState$, (todos) => todos.loaded);
 
 export const selectTodosErrors$ =
-    createSelector(selectTodoListEntities$, (todos) => todos.logs);
+    createSelector(selectTodoListEntitiesState$, (todos) => todos.logs);
 
 ```
+Switch du selector dans le component: 
+
+*all-todos.component.ts*
 ```javascript
 // ... other
 
-import { selectTodoListEntitiesConverted$ } from '@Selectors/todo-list.selector';
+import { 
+	selectTodoListEntitiesConverted$ 
+} from '@Selectors/todo-list.selector';
 
 // ... other
 
@@ -198,7 +282,9 @@ import { selectTodoListEntitiesConverted$ } from '@Selectors/todo-list.selector'
 // ... other
 
 ```
+Voilà nos todos sont stockées en tant que entité dans notre state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTg3MDk3NDRdfQ==
+eyJoaXN0b3J5IjpbLTExMzQ1NDU4MDEsLTIwMTg3MDk3NDRdfQ
+==
 -->
