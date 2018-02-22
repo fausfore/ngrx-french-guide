@@ -2391,7 +2391,7 @@ export class TodoListEffects {
 }
 
 ```
-Voilà on a purger un peu de code inutile mais 
+Voilà on a purger un peu de code inutile mais on peu créer un sytème de logs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjE4Mzk4NjBdfQ==
+eyJoaXN0b3J5IjpbLTIwMjY3NjYxNzddfQ==
 -->
