@@ -2534,7 +2534,7 @@ export class TodoListComponent {
 
 ### Début de la branche step-12
 
-
+Cette partie est consacré 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyNTE2NTMzMV19
+eyJoaXN0b3J5IjpbNzY5OTUxMjY5XX0=
 -->
