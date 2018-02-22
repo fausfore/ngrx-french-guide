@@ -1,5 +1,8 @@
 import { createSelector } from '@ngrx/store';
 import { AppState } from '..';
+export { selectTodosIds, selectTodosEntities, selectTodos, selectTotalTodos } from '@Reducers/todo-list.reducer';
+import * as fromTodos from '@Reducers/todo-list.reducer';
+
 
 export const selectTodoListState$ = (state: AppState) => state.todos;
 
@@ -13,10 +16,7 @@ export const selectTodoListEntities$ = createSelector(
     (state) => state.entities
 );
 
-export const selectTodoListEntitiesConverted$ = createSelector(
-    selectTodoListEntities$,
-    (entities) => Object.keys(entities).map(id => entities[parseInt(id, 10)])
-);
+export const selectTodoListEntitiesConverted$ = createSelector(selectTodoListState$, fromTodos.selectTodos);
 
 export const selectTodoSelected$ =
     createSelector(selectTodoListState$, (todos) => todos.selectedTodo);

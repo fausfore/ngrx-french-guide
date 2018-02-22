@@ -31,6 +31,17 @@ const initialState: TodoListState = {
     logs: undefined
 };
 */
+export const {
+    // select the array of user ids
+    selectIds: selectTodosIds,
+    // select the dictionary of user entities
+    selectEntities: selectTodosEntities,
+    // select the array of users
+    selectAll: selectTodos,
+    // select the total user count
+    selectTotal: selectTotalTodos
+  } = TodoListAdapter.getSelectors();
+
 
 export function todosReducer(
     state = initialState,
