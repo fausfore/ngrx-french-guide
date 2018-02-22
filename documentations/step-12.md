@@ -10,7 +10,10 @@ Cette partie est consacré a de l'optimisation de performance, dans le cas ou no
 npm install @ngrx/entity --save OR yarn add @ngrx/entity --dev
 ```
 
+```javascript
+
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjEyNTAzNzZdfQ==
+eyJoaXN0b3J5IjpbLTE4MDAxMzcxNjFdfQ==
 -->
