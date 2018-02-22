@@ -2420,7 +2420,10 @@ On ajoute une autre propriété qui permettra de garder les erreurs:
 ```javascript
 export interface TodoListState {
     // ... other
-    errorLog: any;
+    logs: {
+        type: string;
+        message: string;
+    };
 }
 ```
 Ajoutez cette propriété dans le reducer: 
@@ -2466,5 +2469,5 @@ import { Component } from '@angular/core';
 export class TodoListComponent { }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTU4ODc1NzZdfQ==
+eyJoaXN0b3J5IjpbLTIwNDA2NDA3OTJdfQ==
 -->
