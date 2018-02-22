@@ -11,11 +11,6 @@ export const selectTodos$ =
     createSelector(selectTodoListState$, (todos) => todos.data);
 */
 
-export const selectTodoListEntities$ = createSelector(
-    selectTodoListState$,
-    (state) => state.entities
-);
-
 export const selectTodoListEntitiesConverted$ = createSelector(selectTodoListState$, fromTodos.selectTodos);
 
 export const selectTodoSelected$ =
