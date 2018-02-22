@@ -2206,10 +2206,10 @@ Le service de patch:
 
 ```javascript
 // ... other
-	patchTodo(changes: Partial<Todo>, id: number): Observable<Todo> {
-	    return this.http.patch<Todo>(`${environment.apiUrl}/todos/${id}`, changes);
-    }
+patchTodo(changes: Partial<Todo>, id: number): Observable<Todo> {
+    return this.http.patch<Todo>(`${environment.apiUrl}/todos/${id}`, changes);
+  }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NzIzNDA3N119
+eyJoaXN0b3J5IjpbMjU1MTYzMjI5XX0=
 -->
