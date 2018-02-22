@@ -2107,11 +2107,7 @@ import { Todo } from '../../models/todo';
 export namespace TodoListModule {
 
     export enum ActionTypes {
-        // Create Todo
-        LOAD_CREATE_TODO = '[todoList] Load Create Todo',
-        SUCCESS_CREATE_TODO = '[todoList] Success Create Todo',
-        ERROR_CREATE_TODO = '[todoList] Error Create Todo',
-        // Patch Todo
+        // ... other
         // UPDATE_TODO = '[todoList] Update Todo',
         LOAD_UPDATE_TODO = '[todoList] Load Update Todo',
         SUCCESS_UPDATE_TODO = '[todoList] Success Update Todo',
@@ -2199,17 +2195,22 @@ export namespace TodoListModule {
     }
 
     export type Actions = LoadInitTodos
-       // ... Other
+        | SuccessInitTodos
+        | ErrorInitTodos
+        | LoadCreateTodo
+        | SuccessCreateTodo
+        | ErrorCreateTodo
+        | SelectTodo
         // | UpdateTodo
+        | LoadUpdateTodo
         | ErrorUpdateTodo
         | SuccessUpdateTodo
         | LoadDeleteTodo
-        | SuccessUpdateTodo
         | SuccessDeleteTodo;
 
 }
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTAyODcwMzY0XX0=
+eyJoaXN0b3J5IjpbMTYwODc3NDA4MF19
 -->
