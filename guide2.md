@@ -2446,12 +2446,18 @@ On aura besoin d'un selector pour le logs:
 *todo-list.selector.ts*
 ```javascript
 export const selectTodosErrors$ =
-    createSelector(selectTodoListState$, (todos) => todos.errorLog);
+    createSelector(selectTodoListState$, (todos) => todos.logs);
 ```
 Maintenant on installe le module [ngx-toastr](https://github.com/scttcper/ngx-toastr) et une fois que vous aurez tout bien installer allez dans le **TodoListComponent**
 
 ```javascript
 import { Component } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
+import { AppState } from '@StoreConfig';
+import { Store, select } from '@ngrx/store';
+import { Observable } from 'rxjs/Observable';
+import { selectTodosErrors$ } from '@Selectors/todo-list.selector';
+import { tap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-todo-list',
@@ -2466,8 +2472,34 @@ import { Component } from '@angular/core';
   `,
   styleUrls: ['./todo-list.component.scss']
 })
-export class TodoListComponent { }
+export class TodoListComponent {
+
+  public todoListErrors$: Observable<any>;
+
+  constructor(
+    private toastr: ToastrService,
+    private store: Store<AppState>
+  ) {
+    this.todoListErrors$ = store.pipe(
+      select(selectTodosErrors$),
+      tap((dialog) => {
+        if (!dialog) {
+          return;
+        }
+        if (dialog.type === 'ERROR') {
+          this.toastr.error(dialog.message);
+        } else {
+          this.toastr.success(dialog.message);
+        }
+        console.log(dialog);
+      })
+    );
+    this.todoListErrors$.subscribe();
+  }
+
+}
+
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYzMjkxNjM2XX0=
+eyJoaXN0b3J5IjpbLTIyMTUyMTMzM119
 -->
