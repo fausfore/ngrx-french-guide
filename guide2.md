@@ -2112,15 +2112,7 @@ export namespace TodoListModule {
         LOAD_UPDATE_TODO = '[todoList] Load Update Todo',
         SUCCESS_UPDATE_TODO = '[todoList] Success Update Todo',
         ERROR_UPDATE_TODO = '[todoList] Error Update Todo',
-        // Select Todo
-        SELECT_TODO = '[todoList] Select Todo',
-        // Delete Todo
-        LOAD_DELETE_TODO = '[todoList] Load Delete Todo',
-        SUCCESS_DELETE_TODO = '[todoList] Success Delete Todo',
-        // Get Todos
-        LOAD_INIT_TODOS = '[todoList] Load Init Todos',
-        SUCCESS_INIT_TODOS = '[todoList] Success Init Todos',
-        ERROR_INIT_TODOS = '[todoList] Error Init Todos'
+        // ... other
     }
 
     // GET TODOS
@@ -2212,5 +2204,5 @@ export namespace TodoListModule {
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwODc3NDA4MF19
+eyJoaXN0b3J5IjpbLTEzOTg5NTE0NjddfQ==
 -->
