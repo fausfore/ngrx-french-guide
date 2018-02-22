@@ -2405,7 +2405,7 @@ export class ErrorLoadAction {
     constructor(public payload: any) {}
 }
 ```
-et pa
+et passer l'erreur sur chaque 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MjYyOTg1OV19
+eyJoaXN0b3J5IjpbLTE5OTI5MzE3MTFdfQ==
 -->
