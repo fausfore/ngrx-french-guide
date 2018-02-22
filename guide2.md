@@ -2189,6 +2189,8 @@ export namespace TodoListModule {
 // ... other
 ```
 Le nouveau effect: 
+
+*todo-list.effect.ts*
 ```javascript
 // ... other
  @Effect() LoadUpdateTodo$: Observable<TodoListModule.Actions> = this.actions$
@@ -2202,8 +2204,9 @@ Le nouveau effect:
           catchError(() => of(new TodoListModule.ErrorCreateTodo()))
       );
 ```
-Le service de patch: 
+On créer le service de path : 
 
+*todo-list.service.ts*
 ```javascript
 // ... other
 patchTodo(changes: Partial<Todo>, id: number): Observable<Todo> {
@@ -2211,5 +2214,5 @@ patchTodo(changes: Partial<Todo>, id: number): Observable<Todo> {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4MjM0MDQ0NV19
+eyJoaXN0b3J5IjpbMzk1MDg4Mzk0XX0=
 -->
