@@ -1999,7 +1999,7 @@ export namespace TodoListModule {
         // DELETE_TODO = '[todoList] Delete Todo',
         LOAD_DELETE_TODO = '[todoList] Load Delete Todo',
         SUCCESS_DELETE_TODO = '[todoList] Success Delete Todo',
-        ERROR_DELETE_TODO = '[todoList] Success Delete Todo',
+        ERROR_DELETE_TODO = '[todoList] Error Delete Todo'
         // ...Other
     }
 
@@ -2190,5 +2190,5 @@ export namespace TodoListModule {
 // ... other
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMzY0OTE5XX0=
+eyJoaXN0b3J5IjpbMTM0ODg2OTY1Ml19
 -->
