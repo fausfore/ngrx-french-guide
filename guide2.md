@@ -2035,7 +2035,33 @@ export namespace TodoListModule {
 }
 
 ``` 
+Créer les reducers correspondante
+```javascript
+// ... Other
+    // DELETE TODO
+
+    case TodoListModule.ActionTypes.LOAD_DELETE_TODO:
+        return {
+            ...state,
+            loading: true
+        };
+
+    case TodoListModule.ActionTypes.SUCCESS_DELETE_TODO:
+        return {
+            ...state,
+            data : state.data.filter(todo => todo.id !== action.payload)
+        };
+    /*
+    case TodoListModule.ActionTypes.DELETE_TODO:
+        return {
+            ...state,
+            data : state.data.filter(todo => todo.id !== action.payload)
+        };
+
+    */
+// ... Other
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzEyNTEzODY4XX0=
+eyJoaXN0b3J5IjpbNTU4ODUyNDg1XX0=
 -->
