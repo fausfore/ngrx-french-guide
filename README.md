@@ -7,9 +7,9 @@
 
 ## [Refacto Time !](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-4.md)
 
-## [Refacto Time !](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-5.md)
+## [Update Todo](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-5.md)
 
-## [Refacto Time !](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-6.md)
+## [GET TODOS](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-6.md)
 
 ## [Refacto Time !](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-7.md)
 
@@ -21,5 +21,5 @@
 
 ## [Refacto Time !](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-11.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk5MTQ1Mjc3XX0=
+eyJoaXN0b3J5IjpbMTM3MDM5MDkyM119
 -->
