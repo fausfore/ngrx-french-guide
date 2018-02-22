@@ -2072,6 +2072,7 @@ deleteTodo(id: number) {
 // ... other
 
 ```
+Et créer le service delete Todo, pour renvoyer l'id lors de la requête, on lui ajoute un pipe qui re
 
 *todo-list.service.ts*
 ```javascript
@@ -2089,5 +2090,5 @@ deleteTodo(id): Observable<number> {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4Njc2Mjk0Nl19
+eyJoaXN0b3J5IjpbLTE2ODExNzk3NjVdfQ==
 -->
