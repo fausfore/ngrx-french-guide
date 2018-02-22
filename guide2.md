@@ -2406,10 +2406,18 @@ export class ErrorLoadAction {
 }
 ```
 et passer l'erreur sur chaque actions dans les effects :
+
+*todo-list.effect.ts*
+```javascript
+// ... other
+catchError((err) => of(new TodoListModule.ErrorLoadAction(err)))
+```
+
+*models/todo.ts*
 ```javascript
 // ... other
 catchError((err) => of(new TodoListModule.ErrorLoadAction(err)))
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM2OTg1MjQyXX0=
+eyJoaXN0b3J5IjpbLTQxODg1MTU2MV19
 -->
