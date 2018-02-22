@@ -2354,9 +2354,6 @@ export namespace TodoListModule {
         | LoadCreateTodo
         | SuccessCreateTodo
         // | ErrorCreateTodo
-        | SelectTodo
-        // | UpdateTodo
-        | LoadUpdateTodo
         // | ErrorUpdateTodo
         // | ErrorDeleteTodo
 
@@ -2364,5 +2361,5 @@ export namespace TodoListModule {
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDA4MTIwNzNdfQ==
+eyJoaXN0b3J5IjpbNDQwMDA2ODI3XX0=
 -->
