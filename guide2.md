@@ -2400,9 +2400,11 @@ Donc on peut récupérer cette erreur pour afficher le message dans un la view a
 
 *todo-list.action.ts*
 ```javascript
+import { HttpErrorResponse } from '@angular/common/http';
+// ... other
 export class ErrorLoadAction {
     readonly type = ActionTypes.ERROR_LOAD_ACTION;
-    constructor(public payload: any) {}
+    constructor(public payload: HttpErrorResponse) {}
 }
 ```
 et passer l'erreur sur chaque actions dans les effects :
@@ -2464,5 +2466,5 @@ import { Component } from '@angular/core';
 export class TodoListComponent { }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMTAxOTU3N119
+eyJoaXN0b3J5IjpbLTEzMTU4ODc1NzZdfQ==
 -->
