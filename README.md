@@ -17,9 +17,11 @@
 
 ## [DELETE TODO](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-9.md)
 
-## [Refacto Time !](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-10.md)
+## [PATCH TODO](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-10.md)
 
-## [Refacto Time !](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-11.md)
+## [ERROR LOG](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-11.md)
+
+## [NGRX - ENTITY](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-11.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI5MDg0NDg4XX0=
+eyJoaXN0b3J5IjpbLTE5NjE2NTUyNjZdfQ==
 -->
