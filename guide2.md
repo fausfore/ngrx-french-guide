@@ -2188,6 +2188,19 @@ export namespace TodoListModule {
         }
 // ... other
 ```
+Le nouveau effect: 
+```javascript
+ @Effect() LoadUpdateTodo$: Observable<TodoListModule.Actions> = this.actions$
+      .pipe(
+          ofType<TodoListModule.LoadUpdateTodo>(TodoListModule.ActionTypes.LOAD_UPDATE_TODO),
+          switchMap(action => {
+            const { id, ...changes } = action.payload;
+            return this.todoListService.patchTodo(changes, id);
+          }),
+          map(todo => new TodoListModule.SuccessUpdateTodo(todo)),
+          catchError(() => of(new TodoListModule.ErrorCreateTodo()))
+      );
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MDIxNzUzMF19
+eyJoaXN0b3J5IjpbLTc4MjIwMDA3Ml19
 -->
