@@ -2534,7 +2534,7 @@ export class TodoListComponent {
 
 ### Début de la branche step-12
 
-Cette partie est consacré a de l'optimisation 
+Cette partie est consacré a de l'optimisation dans une todo-list
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDYzNzk2MjhdfQ==
+eyJoaXN0b3J5IjpbNjM2NTk0OTQ1XX0=
 -->
