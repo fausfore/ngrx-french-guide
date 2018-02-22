@@ -2232,7 +2232,137 @@ updateTodo(formValue) {
 
 ### Début de la branche step-11
 
-Voilà le **mvp** de la todoList est terminé, sur la suite du tutoriel on va voir comment optimiser notre code et le 1er point c'est concernant les actions d'erreurs qui dans le reducer sont répété in fine par action, on pourrait les fusionné pour n'avoir que un state d'erreur todo-list
+Voilà le **mvp** de la todoList est terminé, sur la suite du tutoriel on va voir comment optimiser notre code et le 1er point c'est concernant les actions d'erreurs qui dans le reducer sont répété in fine par action, on pourrait les fusionné pour n'avoir que un state d'erreur todo-list :
+
+```javascript
+import { Todo } from '../../models/todo';
+
+export namespace TodoListModule {
+
+    export enum ActionTypes {
+        // Create Todo
+        LOAD_CREATE_TODO = '[todoList] Load Create Todo',
+        SUCCESS_CREATE_TODO = '[todoList] Success Create Todo',
+        // ERROR_CREATE_TODO = '[todoList] Error Create Todo',
+        // Patch Todo
+        // UPDATE_TODO = '[todoList] Update Todo',
+        LOAD_UPDATE_TODO = '[todoList] Load Update Todo',
+        SUCCESS_UPDATE_TODO = '[todoList] Success Update Todo',
+        // ERROR_UPDATE_TODO = '[todoList] Error Update Todo',
+        // Select Todo
+        SELECT_TODO = '[todoList] Select Todo',
+        // Delete Todo
+        LOAD_DELETE_TODO = '[todoList] Load Delete Todo',
+        SUCCESS_DELETE_TODO = '[todoList] Success Delete Todo',
+        // ERROR_DELETE_TODO = '[todoList] Error Delete Todo',
+        // Get Todos
+        LOAD_INIT_TODOS = '[todoList] Load Init Todos',
+        SUCCESS_INIT_TODOS = '[todoList] Success Init Todos',
+        // ERROR_INIT_TODOS = '[todoList] Error Init Todos',
+        // Error request Todos
+        ERROR_LOAD_ACTION = '[todoList] Error Load Action'
+    }
+
+    // GET TODOS
+
+    export class LoadInitTodos {
+        readonly type = ActionTypes.LOAD_INIT_TODOS;
+    }
+
+    export class SuccessInitTodos {
+        readonly type = ActionTypes.SUCCESS_INIT_TODOS;
+        constructor(public payload: Todo[]) {}
+    }
+    /*
+    export class ErrorInitTodos {
+        readonly type = ActionTypes.ERROR_INIT_TODOS;
+    }
+    */
+
+    // POST TODO
+    export class LoadCreateTodo {
+        readonly type = ActionTypes.LOAD_CREATE_TODO;
+        constructor(public payload: Todo) {}
+    }
+
+    export class SuccessCreateTodo {
+        readonly type = ActionTypes.SUCCESS_CREATE_TODO;
+        constructor(public payload: Todo) {}
+    }
+    /*
+    export class ErrorCreateTodo {
+        readonly type = ActionTypes.ERROR_CREATE_TODO;
+    }
+    */
+
+    // SELECT TODO
+    export class SelectTodo {
+        readonly type = ActionTypes.SELECT_TODO;
+        constructor(public payload: Todo) {}
+    }
+
+    // PATCH TODO
+    /*
+    export class UpdateTodo {
+        readonly type = ActionTypes.UPDATE_TODO;
+        constructor(public payload: Todo) {}
+    }
+    */
+
+    export class LoadUpdateTodo {
+        readonly type = ActionTypes.LOAD_UPDATE_TODO;
+        constructor(public payload: Todo) {}
+    }
+
+    export class SuccessUpdateTodo {
+        readonly type = ActionTypes.SUCCESS_UPDATE_TODO;
+        constructor(public payload: Todo) {}
+    }
+
+    /*
+    export class ErrorUpdateTodo {
+        readonly type = ActionTypes.ERROR_UPDATE_TODO;
+    }
+    */
+
+    // DELETE TODO
+
+    export class LoadDeleteTodo {
+        readonly type = ActionTypes.LOAD_DELETE_TODO;
+        constructor(public payload: number) {}
+    }
+
+    export class SuccessDeleteTodo {
+        readonly type = ActionTypes.SUCCESS_DELETE_TODO;
+        constructor(public payload: number) {}
+    }
+    /*
+    export class ErrorDeleteTodo {
+        readonly type = ActionTypes.ERROR_DELETE_TODO;
+    }
+    */
+
+    // ERROR ACTIONS
+
+    export class ErrorLoadAction {
+        readonly type = ActionTypes.ERROR_LOAD_ACTION;
+    }
+
+    export type Actions = LoadInitTodos
+        | SuccessInitTodos
+        // | ErrorInitTodos
+        | LoadCreateTodo
+        | SuccessCreateTodo
+        // | ErrorCreateTodo
+        | SelectTodo
+        // | UpdateTodo
+        | LoadUpdateTodo
+        // | ErrorUpdateTodo
+        // | ErrorDeleteTodo
+
+}
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDk3NDk0NDZdfQ==
+eyJoaXN0b3J5IjpbLTEwNDA4MTIwNzNdfQ==
 -->
