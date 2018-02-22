@@ -2102,8 +2102,7 @@ Vous commencez à être habitué, on modifie l'action:
 
 *todo-list.action.ts*
 ```javascript
-import { Todo } from '../../models/todo';
-
+// ... other
 export namespace TodoListModule {
 
     export enum ActionTypes {
@@ -2114,43 +2113,7 @@ export namespace TodoListModule {
         ERROR_UPDATE_TODO = '[todoList] Error Update Todo',
         // ... other
     }
-
-    // GET TODOS
-
-    export class LoadInitTodos {
-        readonly type = ActionTypes.LOAD_INIT_TODOS;
-    }
-
-    export class SuccessInitTodos {
-        readonly type = ActionTypes.SUCCESS_INIT_TODOS;
-        constructor(public payload: Todo[]) {}
-    }
-
-    export class ErrorInitTodos {
-        readonly type = ActionTypes.ERROR_INIT_TODOS;
-    }
-
-    // POST TODO
-    export class LoadCreateTodo {
-        readonly type = ActionTypes.LOAD_CREATE_TODO;
-        constructor(public payload: Todo) {}
-    }
-
-    export class SuccessCreateTodo {
-        readonly type = ActionTypes.SUCCESS_CREATE_TODO;
-        constructor(public payload: Todo) {}
-    }
-
-    export class ErrorCreateTodo {
-        readonly type = ActionTypes.ERROR_CREATE_TODO;
-    }
-
-    // SELECT TODO
-    export class SelectTodo {
-        readonly type = ActionTypes.SELECT_TODO;
-        constructor(public payload: Todo) {}
-    }
-
+    // ... other
     // PATCH TODO
     /*
     export class UpdateTodo {
@@ -2158,7 +2121,6 @@ export namespace TodoListModule {
         constructor(public payload: Todo) {}
     }
     */
-
     export class LoadUpdateTodo {
         readonly type = ActionTypes.LOAD_UPDATE_TODO;
         constructor(public payload: Todo) {}
@@ -2174,35 +2136,18 @@ export namespace TodoListModule {
         constructor(public payload: Todo) {}
     }
 
-    // DELETE TODO
-
-    export class LoadDeleteTodo {
-        readonly type = ActionTypes.LOAD_DELETE_TODO;
-        constructor(public payload: number) {}
-    }
-
-    export class SuccessDeleteTodo {
-        readonly type = ActionTypes.SUCCESS_DELETE_TODO;
-        constructor(public payload: number) {}
-    }
+    // ... other
 
     export type Actions = LoadInitTodos
-        | SuccessInitTodos
-        | ErrorInitTodos
-        | LoadCreateTodo
-        | SuccessCreateTodo
-        | ErrorCreateTodo
-        | SelectTodo
+        // ... other
         // | UpdateTodo
         | LoadUpdateTodo
         | ErrorUpdateTodo
-        | SuccessUpdateTodo
-        | LoadDeleteTodo
-        | SuccessDeleteTodo;
+        | SuccessUpdateTodo;
 
 }
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTg5NTE0NjddfQ==
+eyJoaXN0b3J5IjpbLTE5MzcwNDYyOTVdfQ==
 -->
