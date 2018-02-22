@@ -2396,7 +2396,8 @@ Voilà on a purger un peu de code inutile mais on peu créer un système de logs
 ```javascript
 catchError((err) => of(new TodoListModule.ErrorLoadAction()))
 ```
-Donc on peut récupérer cette erreur pour afficher le message dans un 
+Donc on peut récupérer cette erreur pour afficher le message dans un la view avec avec un **toastr**
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NzM1MDgzM119
+eyJoaXN0b3J5IjpbMTc3MTgyMDg4MV19
 -->
