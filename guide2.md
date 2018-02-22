@@ -2297,7 +2297,7 @@ export namespace TodoListModule {
 }
 
 ```
-
+*todo-list.reducer.ts*
 ```javascript
 // ... other
   switch (action.type) {
@@ -2358,5 +2358,5 @@ export namespace TodoListModule {
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDA1NDU0MDFdfQ==
+eyJoaXN0b3J5IjpbMTU2MzI5NjYwNV19
 -->
