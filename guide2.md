@@ -2446,9 +2446,23 @@ export const selectTodosErrors$ =
 Maintenant on installe le module [ngx-toastr](https://github.com/scttcper/ngx-toastr) et une fois que vous aurez tout bien installer allez dans le **TodoListComponent**
 
 ```javascript
-export const selectTodosErrors$ =
-    createSelector(selectTodoListState$, (todos) => todos.errorLog);
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-todo-list',
+  template: `
+	  <header>
+		  <nav>
+			  <a routerLink="all-todos" routerLinkActive="active">all todos</a>
+			  <a routerLink="select-todo" routerLinkActive="active">select todo</a>
+		  </nav>
+	  </header>
+	  <router-outlet></router-outlet>
+  `,
+  styleUrls: ['./todo-list.component.scss']
+})
+export class TodoListComponent { }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjA5ODM4MjJdfQ==
+eyJoaXN0b3J5IjpbMTUwMTAxOTU3N119
 -->
