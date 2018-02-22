@@ -2235,29 +2235,14 @@ updateTodo(formValue) {
 Voilà le **mvp** de la todoList est terminé, sur la suite du tutoriel on va voir comment optimiser notre code et le 1er point c'est concernant les actions d'erreurs qui dans le reducer sont répété in fine par action, on pourrait les fusionné pour n'avoir que un state d'erreur todo-list :
 
 ```javascript
-import { Todo } from '../../models/todo';
-
+// ... Other
 export namespace TodoListModule {
 
     export enum ActionTypes {
-        // Create Todo
-        LOAD_CREATE_TODO = '[todoList] Load Create Todo',
-        SUCCESS_CREATE_TODO = '[todoList] Success Create Todo',
+	    // ... Other
         // ERROR_CREATE_TODO = '[todoList] Error Create Todo',
-        // Patch Todo
-        // UPDATE_TODO = '[todoList] Update Todo',
-        LOAD_UPDATE_TODO = '[todoList] Load Update Todo',
-        SUCCESS_UPDATE_TODO = '[todoList] Success Update Todo',
         // ERROR_UPDATE_TODO = '[todoList] Error Update Todo',
-        // Select Todo
-        SELECT_TODO = '[todoList] Select Todo',
-        // Delete Todo
-        LOAD_DELETE_TODO = '[todoList] Load Delete Todo',
-        SUCCESS_DELETE_TODO = '[todoList] Success Delete Todo',
         // ERROR_DELETE_TODO = '[todoList] Error Delete Todo',
-        // Get Todos
-        LOAD_INIT_TODOS = '[todoList] Load Init Todos',
-        SUCCESS_INIT_TODOS = '[todoList] Success Init Todos',
         // ERROR_INIT_TODOS = '[todoList] Error Init Todos',
         // Error request Todos
         ERROR_LOAD_ACTION = '[todoList] Error Load Action'
@@ -2313,5 +2298,5 @@ export namespace TodoListModule {
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NTE0MTI0M119
+eyJoaXN0b3J5IjpbLTE5MDY1NDM2OThdfQ==
 -->
