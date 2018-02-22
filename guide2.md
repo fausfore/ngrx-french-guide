@@ -1982,6 +1982,8 @@ createTodo(todo: Todo) {
 
 ## DELETE TODO
 
+### Début de la branche step-9
+
 Maintenant voyons la suppression avec un vrai delete serveur comme pour le post il nous faudra un effect, ajouter un action de type **Load**
 
 Les actions :
@@ -2072,7 +2074,7 @@ deleteTodo(id: number) {
 // ... other
 
 ```
-Et créer le service delete Todo, pour renvoyer l'id lors de la requête, on lui ajoute un pipe qui renvoie l'id du paramètre
+Et créer le service delete Todo, pour renvoyer l'id lors de la requête, on lui ajoute un pipe qui renvoie l'id du paramètre si 200
 
 *todo-list.service.ts*
 ```javascript
@@ -2088,7 +2090,9 @@ deleteTodo(id): Observable<number> {
 // ... other
 
 ```
+Voilà pour la suppression.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTMyNzQzODVdfQ==
+eyJoaXN0b3J5IjpbNTUyMzk3MjAxXX0=
 -->
