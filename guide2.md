@@ -2065,9 +2065,14 @@ Modifier l'action passé dans le template :
 
 *all-todos.component.ts*
 ```javascript
+// ... other
+deleteTodo(id: number) {
+	this.store.dispatch(new TodoListModule.LoadDeleteTodo(id));
+}
+// ... other
 
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxODk0ODEwXX0=
+eyJoaXN0b3J5IjpbLTE0MjQ4ODA0OTJdfQ==
 -->
