@@ -15,6 +15,7 @@ export function todosReducer(
 
   switch (action.type) {
 
+    // GET TODOS
     case TodoListModule.ActionTypes.LOAD_INIT_TODOS:
         // Passe le loading a true
         return {
@@ -39,20 +40,15 @@ export function todosReducer(
             loading: false
         };
 
-    case TodoListModule.ActionTypes.SELECT_TODO:
+    // POST TODO
+    case TodoListModule.ActionTypes.LOAD_CREATE_TODO:
+        // Passe le loading a true
         return {
             ...state,
-            selectedTodo: action.payload
+            loading: true
         };
 
-    case TodoListModule.ActionTypes.UPDATE_TODO:
-        return {
-            ...state,
-            data: state.data
-                .map(todo => action.payload.id === todo.id ? action.payload : todo)
-        };
-
-    case TodoListModule.ActionTypes.CREATE_TODO:
+    case TodoListModule.ActionTypes.SUCCESS_CREATE_TODO:
         return {
             ...state,
             data: [
@@ -61,6 +57,40 @@ export function todosReducer(
             ]
         };
 
+    case TodoListModule.ActionTypes.ERROR_CREATE_TODO:
+        // Passe le loading a true
+        return {
+            ...state,
+            loading: false
+        };
+
+    // SELECT TODO
+    case TodoListModule.ActionTypes.SELECT_TODO:
+        return {
+            ...state,
+            selectedTodo: action.payload
+        };
+
+    // PATCH TODO
+    case TodoListModule.ActionTypes.UPDATE_TODO:
+        return {
+            ...state,
+            data: state.data
+                .map(todo => action.payload.id === todo.id ? action.payload : todo)
+        };
+
+        /*
+    case TodoListModule.ActionTypes.CREATE_TODO:
+        return {
+            ...state,
+            data: [
+                ...state.data,
+                action.payload
+            ]
+        };
+        */
+
+    // DELETE TODO
     case TodoListModule.ActionTypes.DELETE_TODO:
         return {
             ...state,

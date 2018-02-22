@@ -13,4 +13,8 @@ export class TodoListService {
     return this.http.get<Todo[]>(`${environment.apiUrl}/todos`);
   }
 
+  createTodo(body): Observable<Todo> {
+    return this.http.post<Todo>(`${environment.apiUrl}/todos`, body);
+  }
+
 }

@@ -73,7 +73,7 @@ export class AllTodosComponent {
       userId: 1, // userId au pif
       id: this.todosLength + 1
     };
-    this.store.dispatch(new TodoListModule.CreateTodo(payload));
+    this.store.dispatch(new TodoListModule.LoadCreateTodo(payload));
     this.todoForm.reset();
   }
 
