@@ -2232,7 +2232,7 @@ updateTodo(formValue) {
 
 ### Début de la branche step-11
 
-Voilà le **mvp** de la todoList est terminé, sur la suite du tutoriel on va voir comment optimiser notre code et le 1er point c'est concernant les actions d'erreurs
+Voilà le **mvp** de la todoList est terminé, sur la suite du tutoriel on va voir comment optimiser notre code et le 1er point c'est concernant les actions d'erreurs qui dans le reducer sont répété
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMzg0MjI5XX0=
+eyJoaXN0b3J5IjpbLTEwNjcyMDUxOTBdfQ==
 -->
