@@ -2436,20 +2436,14 @@ case TodoListModule.ActionTypes.ERROR_LOAD_ACTION:
         errorLog: action.payload
     };
 ```
+On aura besoin d'un selector pour le logs: 
 
-*todo-list.reducer.ts*
+*todo-list.selector.ts*
 ```javascript
-const initialState: TodoListState = {
-    // ... other
-    errorLog: undefined
-};
-case TodoListModule.ActionTypes.ERROR_LOAD_ACTION:
-    return {
-        ...state,
-        loading: false,
-        errorLog: action.payload
-    };
+export const selectTodosErrors$ =
+    createSelector(selectTodoListState$, (todos) => todos.errorLog);
 ```
+Maintenant
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNjMxMDgwXX0=
+eyJoaXN0b3J5IjpbMTkwMTI2NjIyOF19
 -->
