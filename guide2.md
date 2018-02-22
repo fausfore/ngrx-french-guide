@@ -2405,7 +2405,10 @@ export class ErrorLoadAction {
     constructor(public payload: any) {}
 }
 ```
-et passer l'erreur sur chaque actions dans les effects
+et passer l'erreur sur chaque actions dans les effects :
+```javascript
+catchError((err) => of(new TodoListModule.ErrorLoadAction()))
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzcwMTU2ODBdfQ==
+eyJoaXN0b3J5IjpbMTIzMDgzNjk1NV19
 -->
