@@ -2407,8 +2407,9 @@ export class ErrorLoadAction {
 ```
 et passer l'erreur sur chaque actions dans les effects :
 ```javascript
-catchError((err) => of(new TodoListModule.ErrorLoadAction()))
+
+catchError((err) => of(new TodoListModule.ErrorLoadAction(err)))
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzMDgzNjk1NV19
+eyJoaXN0b3J5IjpbLTMzODEyMzU2XX0=
 -->
