@@ -2232,7 +2232,7 @@ updateTodo(formValue) {
 
 ### Début de la branche step-11
 
-Voilà le mvp de la todoList est terminé
+Voilà le **mvp** de la todoList est terminé, sur la suite du tutoriel on va voir comment optimiser notre code et le 1er point c'est concernant les 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMDcxMzQxOF19
+eyJoaXN0b3J5IjpbNjIyNzYwMTkxXX0=
 -->
