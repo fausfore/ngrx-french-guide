@@ -1809,7 +1809,7 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 ### Début de la branche step-7
 
-## Routes POST
+## POST TODO
 
 ### Début de la branche step-8
 
@@ -1978,7 +1978,10 @@ createTodo(todo: Todo) {
     this.todoForm.reset();
   }
 ```
+### Fin de la branche step-8
+
+## DELETE TODO
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQwNTMxNDc3XX0=
+eyJoaXN0b3J5IjpbLTI2MzY5ODIzOF19
 -->
