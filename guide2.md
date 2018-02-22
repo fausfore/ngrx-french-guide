@@ -1848,7 +1848,6 @@ export namespace TodoListModule {
     
     export class ErrorCreateTodo {
         readonly type = ActionTypes.ERROR_CREATE_TODO;
-        constructor(public payload: Todo) {}
     }
     // ... Other
     export type Actions = DeleteTodo
@@ -2155,7 +2154,7 @@ export namespace TodoListModule {
 }
 
 ```
-
+*todo-list.reducer.ts*
 ```javascript
 // ... other
    // PATCH TODO
@@ -2190,5 +2189,5 @@ export namespace TodoListModule {
 // ... other
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0ODg2OTY1Ml19
+eyJoaXN0b3J5IjpbLTY1MDIxNzUzMF19
 -->
