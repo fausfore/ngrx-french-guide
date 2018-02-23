@@ -118,7 +118,6 @@ Et on change l'action dans le component:
 ```javascript
 // ... other
 updateTodo(formValue) {
-    console.log(formValue);
     const payload = Object.assign(this.selectTodo, formValue);
     this.store.dispatch(new TodoListModule.LoadUpdateTodo(payload));
     return this.router.navigate(['/todo-list/all-todos']);
@@ -128,5 +127,5 @@ updateTodo(formValue) {
 ### Fin de la branche step-10
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNjUzMDU4NV19
+eyJoaXN0b3J5IjpbMjY5NTg2NDg3XX0=
 -->
