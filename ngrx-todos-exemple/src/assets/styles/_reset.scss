@@ -41,3 +41,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+button {
+	border-color: none;
+    border-style: none;
+    border-width: none;
+	padding: 0;
+	&:focus {
+		outline:0;
+	}
+}

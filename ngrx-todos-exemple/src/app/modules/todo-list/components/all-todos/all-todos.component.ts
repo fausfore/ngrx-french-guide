@@ -14,19 +14,28 @@ import { Router } from '@angular/router';
   styleUrls: ['./all-todos.component.scss'],
   template: `
     <h1>la todolist redux style !</h1>
-    <form [formGroup]="todoForm" (ngSubmit)="createTodo(todoForm.value)">
-      <label>Titre :</label>
-      <input type="text" formControlName="title" placeholder="Title"/>
-      <label>Est-elle terminé ? :</label>
-      <input type="checkbox" formControlName="completed"/>
-      <button>Créer</button>
+    <form [formGroup]="todoForm" (ngSubmit)="createTodo(todoForm.value)" class="form">
+      <div class="form-field">
+        <label class="title">Titre :</label>
+        <input type="text" formControlName="title" placeholder="Title"/>
+      </div>
+      <div class="form-field">
+        <label class="title inline">Est-elle terminé ? :</label>
+        <label class="checkbox-container">
+          <input type="checkbox" formControlName="completed"/>
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <button class="btn primary">Ajouter une todo</button>
     </form>
     <ul>
       <li *ngFor="let todo of todos$ | async; let i = index" >
-        <label>{{ i }} - {{ todo.title }}</label>
-        <input type="checkbox" [ngModel]="todo.completed"/>
-        <button (click)="deleteTodo(todo.id)">Supprimer</button>
-        <button (click)="selectTodo(todo)">Modifier</button>
+        <p>{{ i }} - {{ todo.title }}</p>
+        <label class="isDone" [ngClass]="{ 'clear' : todo.completed  }">{{ todo.completed ? 'terminé' : 'En cours...' }}</label>
+        <div class="button-area centerY">
+          <button class="btn alert" (click)="deleteTodo(todo.id)">Supprimer</button>
+          <button class="btn primary" (click)="selectTodo(todo)">Modifier</button>
+        </div>
       </li>
     </ul>
   `

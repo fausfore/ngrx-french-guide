@@ -1,3 +1,5 @@
+@import '../../../assets/styles/colors';
+
 header {
 	background: #777;
 	width: 100%;
@@ -10,8 +12,9 @@ header {
 			flex: 2;
 			color: #fff;
 			text-align: center;
+			font-size: 16px;
 			&.active {
-				color: red;
+				color: $secondary;
 			}
 		}
 	}

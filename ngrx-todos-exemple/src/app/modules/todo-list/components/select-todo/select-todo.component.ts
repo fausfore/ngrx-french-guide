@@ -13,15 +13,28 @@ import { tap } from 'rxjs/operators';
   selector: 'app-select-todo',
   styleUrls: ['./select-todo.component.scss'],
   template: `
-      <h1>Mettre à jour la todo</h1>
-      <form *ngIf="selectTodo$ | async; else NoElement" [formGroup]="updateTodoForm" (ngSubmit)="updateTodo(updateTodoForm.value)">
-          <label>Titre :</label>
-          <input type="text" formControlName="title" placeholder="Title"/>
-          <label>Est-elle terminé ? :</label>
+  <article class="select-todo-content">
+    <h1>Mettre à jour la todo</h1>
+    <form class="form" *ngIf="selectTodo$ | async; else NoElement"
+      [formGroup]="updateTodoForm"
+      (ngSubmit)="updateTodo(updateTodoForm.value)">
+      <div class="form-field">
+        <label class="title">Titre :</label>
+        <input type="text" formControlName="title" placeholder="Title"/>
+      </div>
+      <div class="form-field">
+        <label class="title inline">Est-elle terminé ? :</label>
+        <label class="checkbox-container">
           <input type="checkbox" formControlName="completed"/>
-          <button>Mettre à jour</button>
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <button class="btn primary">Mettre à jour</button>
     </form>
-    <ng-template #NoElement>Pas de todo séléctionner<ng-template>
+  </article>
+  <ng-template #NoElement>
+    <h2 class="centerXY">Pas de todo séléctionnée...</h2>
+  <ng-template>
   `
 })
 export class SelectTodoComponent implements OnInit {
