@@ -20,6 +20,9 @@ ng generate effect App --root --module app.module.ts --collection @ngrx/schemati
 Les fichiers specs de test sont mis à jour sur la branche step-13 (  ) ainsi que les imports au niveau des modules pour faciliter la rédaction de test
 
 ![Karma](https://github.com/fausfore/ngrx-guide/blob/master/assets/images/karma.png)
+
+## Change Detection OnPush
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyODcxMDc0OF19
+eyJoaXN0b3J5IjpbLTE3NjU4MzUxOTBdfQ==
 -->
