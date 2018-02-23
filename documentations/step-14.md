@@ -357,7 +357,7 @@ describe('Todos reducer', () => {
 ```
 ### Selectors
 
-Pour tester les selectors cela demande un peu plus de complexité comme on récupère un state depuis un store il faut déjà créer une instance de Store accessible depuis le test dans le **beforeEach** ensuite cela nous permet de récupérer le default state du selector
+Pour tester les selectors cela demande un peu plus de complexité comme on récupère un state depuis un store il faut déjà créer une instance de Store accessible depuis le test dans le **beforeEach** ensuite cela nous permet de récupérer le default state du selector mais en plus on peut **dispatch une action** dans notre test afin de tester le selector après une action x.
 
 *todo-list.selector.spec.ts*
 ```javascript
@@ -594,5 +594,5 @@ describe('Testing Effects', () => {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwOTY3OTM0Ml19
+eyJoaXN0b3J5IjpbLTExMzk3MjEzMTZdfQ==
 -->
