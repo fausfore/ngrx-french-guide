@@ -203,7 +203,7 @@ export interface AppState {
 *todo-list.selector.ts*
 ```javascript
 // ... other
-import * as fromTodos from '@Reducers/todoL-listState$ = (state: AppState) => state.todos;
+import * as fromTodos from '@Reducers/todo';
 
 /*.reducer';
 
@@ -265,5 +265,5 @@ import {
 Voilà nos todos sont stockées en tant que entité dans notre state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczODA2NTU0NywtMjAxODcwOTc0NF19
+eyJoaXN0b3J5IjpbMTAyMzc5Mzc1NiwtMjAxODcwOTc0NF19
 -->
