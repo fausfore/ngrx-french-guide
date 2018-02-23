@@ -3052,6 +3052,12 @@ jasmine-core@~2.99.0:
   version "2.99.1"
   resolved "https://registry.yarnpkg.com/jasmine-core/-/jasmine-core-2.99.1.tgz#e6400df1e6b56e130b61c4bcd093daa7f6e8ca15"
 
+jasmine-marbles@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/jasmine-marbles/-/jasmine-marbles-0.2.0.tgz#b893d8508b75790b634876d3a1bea1345d65c156"
+  dependencies:
+    lodash "^4.5.0"
+
 jasmine-spec-reporter@~4.1.0:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/jasmine-spec-reporter/-/jasmine-spec-reporter-4.1.1.tgz#5a6d58ab5d61bea7309fbc279239511756b1b588"

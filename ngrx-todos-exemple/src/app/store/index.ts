@@ -5,7 +5,7 @@ import { todosReducer, TodoListStateEntity } from './reducers/todo-list.reducer'
 import { TodoListEffects } from '@Effects/todo-list.effect';
 import { EffectsModule } from '@ngrx/effects';
 
-const reducers = {
+export const reducers = {
     todos: todosReducer
 };
 

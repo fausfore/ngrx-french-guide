@@ -6,11 +6,6 @@ import * as fromTodos from '@Reducers/todo-list.reducer';
 
 export const selectTodoListState$ = (state: AppState) => state.todos;
 
-/*
-export const selectTodos$ =
-    createSelector(selectTodoListState$, (todos) => todos.data);
-*/
-
 export const selectTodoListEntitiesConverted$ = createSelector(selectTodoListState$, fromTodos.selectTodos);
 
 export const selectTodoSelected$ =
