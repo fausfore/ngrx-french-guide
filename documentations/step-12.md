@@ -185,27 +185,7 @@ export function todosReducer(
 }
 
 ```
-*store/index.ts*
-```javascript
-// ... other
 
-export interface AppState {
-    todos: TodoListStateEntity;
-}
-
-// ... other
-
-```
-
-```javascript
-import { createSelector } from '@ngrx/store';
-import { AppState } from '..';
-
-/export const selectT    }
-        };
-
-// ... other
-```
 *store/index.ts*
 ```javascript
 import { TodoListStateEntity } from './reducers/todo-list.reducer';
@@ -285,5 +265,5 @@ import {
 Voilà nos todos sont stockées en tant que entité dans notre state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA1NzUxNTcyLC0yMDE4NzA5NzQ0XX0=
+eyJoaXN0b3J5IjpbMTczODA2NTU0NywtMjAxODcwOTc0NF19
 -->
