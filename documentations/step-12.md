@@ -123,30 +123,43 @@ export interface AppState {
 import * as fromTodos from '@Reducers/todo-list.reducer';
 // ... other
 
+
+
+
+// ...other
+import * as fromTodos from '@Reducers/todo-list.reducer';
+
 /* Ancien getter
 export const selectTodos$ =
     createSelector(selectTodoListState$, (todos) => todos.data);
 */
 
-export const selectTodoListEntities$ = Converted$ 
-	createSelector(
-    selectTodoListState$,
-    (state) => state.entities
-);
 
+/*
 export const selectTodoListEntitiesConverted$ = createSelector(
     selectTodoListEntities$,
     (entities) => Object.keys(entities).map(id => entities[parseInt(id, 10)])
- fromTodos.selectTodos);
+ fromTodos.selectTodos);*/
+
+
+export const selectTodoListState$ = (state: AppState) => state.todos;
+
+/*
+export const selectTodos$ =
+    createSelector(selectTodoListState$, (todos) => todos.data);
+*/
+
+export const selectTodoListEntitiesConverted$ = createSelector(selectTodoListState$, fromTodos.selectTodos);
 
 export const selectTodoSelected$ =
-    createSelector(selectTodoListEntitiesState$, (todos) => todos.selectedTodo);
+    createSelector(selectTodoListState$, (todos) => todos.selectedTodo);
 
 export const selectTodosLoaded$ =
-    createSelector(selectTodoListEntitiesState$, (todos) => todos.loaded);
+    createSelector(selectTodoListState$, (todos) => todos.loaded);
 
 export const selectTodosErrors$ =
-    createSelector(selectTodoListEntitiesState$, (todos) => todos.logs);
+    createSelector(selectTodoListState$, (todos) => todos.logs);
+
 
 ```
 Switch du selector dans le component: 
@@ -179,5 +192,5 @@ import {
 Voilà nos todos sont stockées en tant que entité dans notre state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NTA0NTE2NywtMjAxODcwOTc0NF19
+eyJoaXN0b3J5IjpbMTU1MDMwNDg5NywtMjAxODcwOTc0NF19
 -->
