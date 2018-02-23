@@ -40,7 +40,7 @@ Tester nos actions reste relativement simple, on créer un instance de l'action 
 const action = new TodoListModule.ErrorLoadAction(message);
 // Attention dans le expect 
 expect({...action}). // GOOD
-expect(action). // GOOD
+expect(action). // BAD
 
 ```
 *todo-list.actions.spec.ts*
@@ -593,5 +593,5 @@ describe('Testing Effects', () => {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTA3MDk0MjZdfQ==
+eyJoaXN0b3J5IjpbMTM5MjY1NjkyOF19
 -->
