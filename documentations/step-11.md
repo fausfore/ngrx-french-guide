@@ -288,7 +288,6 @@ export class TodoListComponent {
         } else {
           this.toastr.success(dialog.message);
         }
-        console.log(dialog);
       })
     );
     this.todoListErrors$.subscribe();
@@ -300,5 +299,5 @@ export class TodoListComponent {
 
 ### Fin de la branche step-11
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjE3OTU4ODFdfQ==
+eyJoaXN0b3J5IjpbLTk1Mjk1ODg4XX0=
 -->
