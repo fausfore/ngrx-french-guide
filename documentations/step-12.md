@@ -11,7 +11,7 @@ npm install @ngrx/entity --save OR yarn add @ngrx/entity --dev
 ```
 *todo-list.reducer.ts*
 ```javascript
-import { T*todolistModule } from '../actions/todo-list.action';
+import { TodoListModule } from '../actions/todo-list.action';
 import { TodoListState, Todo  } from '../../models/todo';.reducer.ts*
 ```javascript
 // ... other
@@ -285,5 +285,5 @@ import {
 Voilà nos todos sont stockées en tant que entité dans notre state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NzMyODQxNCwtMjAxODcwOTc0NF19
+eyJoaXN0b3J5IjpbLTQ2MTkyNjQ4LC0yMDE4NzA5NzQ0XX0=
 -->
