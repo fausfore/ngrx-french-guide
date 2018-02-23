@@ -26,6 +26,8 @@
 ## [12 - NGRX - ENTITY](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-12.md)
 
 ## [13 - EXTRAS](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-13.md)
+
+## [14 - TESTINGS ADVANCE](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-14.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIxODYwMjU1LDE1NjczMzE2NDJdfQ==
+eyJoaXN0b3J5IjpbLTk1Nzk3ODk3NCwxNTY3MzMxNjQyXX0=
 -->
