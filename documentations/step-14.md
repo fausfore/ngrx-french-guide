@@ -203,7 +203,7 @@ describe('Todos actions', () => {
 ```
 ### Reducers
 
-Pour les tests de reducer 
+Pour nos tests de reducer 
 
 *todo-list.reducer.spec.ts*
 ```javascript
@@ -593,5 +593,5 @@ describe('Testing Effects', () => {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MzUwMjgwMl19
+eyJoaXN0b3J5IjpbNzM2NDA3MTk0XX0=
 -->
