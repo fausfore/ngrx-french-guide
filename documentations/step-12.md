@@ -159,13 +159,7 @@ import {
     // ... other
   ) {
     this.todos$ = store
-      .pipe(
-        select(selectTodoListEntitiesConverted$),
-        tap((todos) => {
-          console.log('selectTodos', todos);
-          this.todosLength = todos.length;
-        })
-    );
+      .pipe(select(selectTodoListEntitiesConverted$));
 
 // ... other
 
@@ -173,5 +167,5 @@ import {
 Voilà nos todos sont stockées en tant que entité dans notre state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNDQyNTEwMSwtMjAxODcwOTc0NF19
+eyJoaXN0b3J5IjpbMTIwNjY4MTQ4NSwtMjAxODcwOTc0NF19
 -->
