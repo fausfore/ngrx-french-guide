@@ -1,5 +1,5 @@
 import { TodoListModule } from '@Actions/todo-list.action';
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, ChangeDetectionStrategy } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Todo } from '@Models/todo';
@@ -39,7 +39,8 @@ import { tap } from 'rxjs/operators';
       </li>
     </ul>
     <ng-template #NoElement>Pas de todo séléctionner<ng-template>
-  `
+  `,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AllTodosComponent {
 
@@ -56,7 +57,6 @@ export class AllTodosComponent {
       .pipe(
         select(selectTodoListEntitiesConverted$),
         tap((todos) => {
-          console.log('selectTodos', todos);
           this.todosLength = todos.length;
         })
     );
@@ -77,7 +77,6 @@ export class AllTodosComponent {
   }
 
   selectTodo(todo) {
-    console.log('select', todo);
     this.store.dispatch(new TodoListModule.SelectTodo(todo));
     return this.router.navigate(['/todo-list/select-todo']);
   }
