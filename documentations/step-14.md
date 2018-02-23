@@ -1,7 +1,7 @@
 ## Testings Advanced
 
 ### Mocks
-
+Pour nos tests on aura besoin de valeur 
 ### Actions
 
 
@@ -585,5 +585,5 @@ describe('Testing Effects', () => {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMzIyNTQ2NV19
+eyJoaXN0b3J5IjpbLTIwODE1MzA5NTJdfQ==
 -->
