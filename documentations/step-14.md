@@ -1,10 +1,7 @@
 ## Testings Advanced
 
 ### Mocks
-Pour nos tests on aura besoin de valeur par défault:
-
-
-
+Pour nos tests on aura besoin de valeur pour traiter les différents cas 
 *store/mock-value.ts*
 ```javascript
 import { Todo } from '@Models/todo';
@@ -585,5 +582,5 @@ describe('Testing Effects', () => {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mjc2NjY4MDZdfQ==
+eyJoaXN0b3J5IjpbMTQxNDc5MzQ2Ml19
 -->
