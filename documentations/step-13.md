@@ -33,7 +33,7 @@ Il existe cependant un moyen de contourner cela et de définir la stratégie de 
 Article : https://alligator.io/angular/change-detection-strategy/
 
 
-L'architechure Ngrx permet d'être par
+L'architechure Ngrx permet d'être perma-OnPus
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzUzNjU2NzZdfQ==
+eyJoaXN0b3J5IjpbNDYxMzYyMDUwXX0=
 -->
