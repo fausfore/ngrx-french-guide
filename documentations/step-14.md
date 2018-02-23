@@ -34,7 +34,7 @@ export const singleTodo: Todo = { id: 2, userId: 5, title: 'for testing 2', comp
 ```
 ### Actions
 
-Tester nos actions reste relativement simple
+Tester nos actions reste relativement simple, on créer un instance de l'action et on vérifie le type ainsi que le payload si besoin
 *todo-list.actions.spec.ts*
 
 ```javascript
@@ -585,5 +585,5 @@ describe('Testing Effects', () => {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTcyOTgyODddfQ==
+eyJoaXN0b3J5IjpbLTU3ODM5MTYzMF19
 -->
