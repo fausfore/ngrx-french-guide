@@ -482,7 +482,6 @@ describe('Todo selectors', () => {
 ```
 ### Effects
 Tester les effects augmente la complexité car elle utilise **[jasmine-marbles](https://github.com/synapse-wireless-labs/jasmine-marbles)** pour tester les observables, elle apporte une solution viable pour tester dans le temps et cela reste assez lisible et compréhensible.
-On surcharge la classe Actions de effects pour ajouter la fonction stream
 
 *todo-list.effect.spec.ts*
 ```javascript
@@ -596,5 +595,5 @@ describe('Testing Effects', () => {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4OTYxNTk2NV19
+eyJoaXN0b3J5IjpbLTk3ODUwODg4NV19
 -->
