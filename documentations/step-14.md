@@ -1,8 +1,8 @@
 ## Testings Advanced
 
 ### Mocks
-Pour nos tests on aura besoin de valeur 
-### Actions
+Pour nos tests on aura besoin de valeur par défault:
+
 
 
 *store/mock-value.ts*
@@ -34,7 +34,7 @@ export const stateWithData = {
 
 export const singleTodo: Todo = { id: 2, userId: 5, title: 'for testing 2', completed: false };
 ```
-
+### Actions
 *todo-list.actions.spec.ts*
 
 ```javascript
@@ -585,5 +585,5 @@ describe('Testing Effects', () => {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODE1MzA5NTJdfQ==
+eyJoaXN0b3J5IjpbLTE5Mjc2NjY4MDZdfQ==
 -->
