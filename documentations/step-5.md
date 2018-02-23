@@ -98,7 +98,6 @@ export class AllTodosComponent implements OnInit {
 
   // ... Other
   selectTodo(todo) {
-    console.log('select', todo);
     this.store.dispatch(new TodoListModule.SelectTodo(todo));
     this.router.navigate(['/todo-list/select-todo']);
   }
@@ -185,5 +184,5 @@ export class SelectTodoComponent implements OnInit {
 ```
 ### Fin de la branche step-5
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc4MTM2MjZdfQ==
+eyJoaXN0b3J5IjpbLTI1MDA5NDk3OV19
 -->
