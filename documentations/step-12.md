@@ -9,9 +9,9 @@ Cette partie est consacré a de l'optimisation de performance, dans le cas ou no
 ```bash
 npm install @ngrx/entity --save OR yarn add @ngrx/entity --dev
 ```
-
+*todo-list.reducer.ts*
 ```javascript
-import { T*todoL-listModule } from '../actions/todo-list.action';
+import { T*todolistModule } from '../actions/todo-list.action';
 import { TodoListState, Todo  } from '../../models/todo';.reducer.ts*
 ```javascript
 // ... other
@@ -285,6 +285,5 @@ import {
 Voilà nos todos sont stockées en tant que entité dans notre state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzQ1NDU4MDEsLTIwMTg3MDk3NDRdfQ
-==
+eyJoaXN0b3J5IjpbLTc5NzMyODQxNCwtMjAxODcwOTc0NF19
 -->
