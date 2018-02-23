@@ -10,6 +10,7 @@ import { APP_BASE_HREF } from '@angular/common';
 import { TodoListComponent } from '../../todo-list.component';
 import { AllTodosComponent } from '../all-todos/all-todos.component';
 import * as FromTodoListModule from '../../todo-list.module';
+import * as FromAppModule from '../../../../app.module';
 
 describe('SelectTodoComponent', () => {
   let component: SelectTodoComponent;
@@ -18,14 +19,16 @@ describe('SelectTodoComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
+        ...FromAppModule.imports,
         ...FromTodoListModule.imports,
-        ...StoreModuleApply.imports,
-        appRouting,
+        ...StoreModuleApply.imports
       ],
       declarations: [
+        ...FromAppModule.declarations,
         ...FromTodoListModule.declarations
       ],
       providers: [
+        ...FromAppModule.providers,
         ...StoreModuleApply.providers,
         { provide: APP_BASE_HREF, useValue: '/'},
       ]

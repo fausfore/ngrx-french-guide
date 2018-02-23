@@ -21,12 +21,11 @@ export const declarations = [
 
 export const imports = [
   ...StoreModuleApply.imports,
+  ToastrModule.forRoot(),
   appRouting,
   BrowserModule,
   HttpClientModule,
   BrowserAnimationsModule,
-  ToastrModule.forRoot(),
-  EffectsModule.forRoot(appEffects),
   StoreDevtoolsModule.instrument({
     name: '[TODOLIST]',
     maxAge: 25, // Retains last 25 states

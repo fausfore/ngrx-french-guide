@@ -23,7 +23,9 @@ export const declarations = [
   imports: [
     ...imports
   ],
-  declarations: [...declarations]
+  declarations: [
+    ...declarations
+  ]
 
 })
 

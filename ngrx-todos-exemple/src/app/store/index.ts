@@ -24,7 +24,7 @@ export const REDUCER_TOKEN = new InjectionToken<ActionReducerMap<AppState>>('Reg
 export const StoreModuleApply = {
     imports: [
         StoreModule.forRoot(REDUCER_TOKEN),
-        // EffectsModule.forRoot(appEffects),
+        EffectsModule.forRoot(appEffects),
     ],
     providers: [
         { provide: REDUCER_TOKEN, useFactory: getReducers }
