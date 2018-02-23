@@ -33,7 +33,7 @@ Il existe cependant un moyen de contourner cela et de définir la stratégie de 
 Article : https://alligator.io/angular/change-detection-strategy/
 
 
-L'architechure Ngrx permet d'être d'appliquer le **OnPush** sur tous vos components
+Pour faire simple l'architechure Ngrx permet d'être d'appliquer le **OnPush** sur tous vos components donc encore un gain de performance.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE4NTczNTM1XX0=
+eyJoaXN0b3J5IjpbLTEzMzQwMzA0OTddfQ==
 -->
