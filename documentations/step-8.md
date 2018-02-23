@@ -150,7 +150,6 @@ this.todos$ = store
       .pipe(
         select(selectTodos$),
         /*tap((todos) => {
-          console.log('selectTodos', todos);
           this.todosLength = todos.length;
         }) */
     );
@@ -169,5 +168,5 @@ createTodo(todo: Todo) {
 ### Fin de la branche step-8
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4MDA0OTMxXX0=
+eyJoaXN0b3J5IjpbLTE1MDk5NzQ0OTRdfQ==
 -->
