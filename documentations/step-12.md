@@ -83,15 +83,7 @@ export function todosReducer(
         };
 
     // ... other
-
-    // PATCH TODO
-
-    case TodoListModule.ActionTypes.LOAD_UPDATE_TODO:
-        return {
-            ...state,
-            loading: true
-        };
-
+    
     case TodoListModule.ActionTypes.SUCCESS_UPDATE_TODO:
         const { id, ...changes } = action.payload;
         return {
@@ -99,32 +91,16 @@ export function todosReducer(
             loading: false,
             logs: { type: 'SUCCESS', message: 'La todo à été mise à jour avec succès' }
         };
-
-    // DELETE TODO
-
-    case TodoListModule.ActionTypes.LOAD_DELETE_TODO:
-        return {
-            ...state,
-            loading: true
-        };
-
+        
+   // ... other
+   
     case TodoListModule.ActionTypes.SUCCESS_DELETE_TODO:
         return {
             ...TodoListAdapter.removeOne(action.payload, state),
             logs: { type: 'SUCCESS', message: 'La todo à été suprimmé avec succès' }
         };
 
-    case TodoListModule.ActionTypes.ERROR_LOAD_ACTION:
-        return {
-            ...state,
-            loading: false,
-            logs: { type: 'ERROR', message: action.payload.message }
-        };
-
-    default:
-        return state;
-    }
-}
+// ... other
 
 ```
 
@@ -203,6 +179,5 @@ import {
 Voilà nos todos sont stockées en tant que entité dans notre state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDkyNTk5NDAsLTIwMTg3MDk3NDRdfQ
-==
+eyJoaXN0b3J5IjpbLTc5NTA0NTE2NywtMjAxODcwOTc0NF19
 -->
