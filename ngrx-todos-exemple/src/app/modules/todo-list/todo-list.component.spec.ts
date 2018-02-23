@@ -12,6 +12,7 @@ import { REDUCER_TOKEN, getReducers } from '@StoreConfig';
 import { StoreModule } from '@ngrx/store';
 import * as FromTodoListModule from './todo-list.module';
 import { StoreModuleApply } from '@StoreConfig';
+import * as FromAppModule from '../../app.module';
 
 describe('TodoListComponent', () => {
   let component: TodoListComponent;
@@ -20,15 +21,16 @@ describe('TodoListComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        FromTodoListModule.imports,
-        appRouting,
-        ToastrModule.forRoot(),
+        ...FromTodoListModule.imports,
+        ...FromAppModule.imports,
         ...StoreModuleApply.imports
       ],
       declarations: [
+        ...FromAppModule.declarations,
         ...FromTodoListModule.declarations
        ],
       providers: [
+        ...FromAppModule.providers,
         ...StoreModuleApply.providers,
         { provide: APP_BASE_HREF, useValue: '/'}
       ]

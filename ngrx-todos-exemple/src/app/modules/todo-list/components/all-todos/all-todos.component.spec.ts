@@ -10,6 +10,7 @@ import { APP_BASE_HREF } from '@angular/common';
 import { StoreModule } from '@ngrx/store';
 import { REDUCER_TOKEN, getReducers, StoreModuleApply } from '@StoreConfig';
 import * as FromTodoListModule from '../../todo-list.module';
+import * as FromAppModule from '../../../../app.module';
 
 describe('AllTodosComponent', () => {
   let component: AllTodosComponent;
@@ -18,14 +19,17 @@ describe('AllTodosComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
+        ...FromAppModule.imports,
         ...FromTodoListModule.imports,
         appRouting,
         ...StoreModuleApply.imports
       ],
       declarations: [
+        ...FromAppModule.declarations,
         ...FromTodoListModule.declarations
       ],
       providers: [
+        ...FromAppModule.providers,
         { provide: APP_BASE_HREF, useValue: '/'},
         ...StoreModuleApply.providers
       ]

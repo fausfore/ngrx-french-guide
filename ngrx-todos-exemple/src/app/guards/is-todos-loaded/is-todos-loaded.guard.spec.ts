@@ -5,6 +5,7 @@ import { StoreModule, Store } from '@ngrx/store';
 import { REDUCER_TOKEN, getReducers, AppState, StoreModuleApply } from '@StoreConfig';
 import { appRouting } from '../../app.routing';
 import { APP_BASE_HREF } from '@angular/common';
+import * as FromAppModule from '../../app.module';
 
 
 describe('IsTodosLoadedGuard', () => {
@@ -12,11 +13,11 @@ describe('IsTodosLoadedGuard', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        appRouting,
+        ...FromAppModule.imports,
         ...StoreModuleApply.imports
       ],
       providers: [
-        IsTodosLoadedGuard,
+        ...FromAppModule.providers,
         ...StoreModuleApply.providers,
         {provide: APP_BASE_HREF, useValue: '/'}
       ]
