@@ -23,6 +23,13 @@ Les fichiers specs de test sont mis à jour sur la branche step-13 (  ) ainsi qu
 
 ## Change Detection OnPush
 
+
+Angular effectue la détection des modifications sur tous les composants (de haut en bas) chaque fois que quelque chose change dans votre application à partir d'un événement utilisateur ou de données reçues d'une requête réseau.
+
+La détection des changements est très performante, mais au fur et à mesure que l'application devient plus complexe et que la quantité de composants augmente, la détection des changements devra effectuer de plus en plus de travail. Il existe cependant un moyen de contourner cela et de définir la stratégie de détection des modifications sur OnPush sur des composants spécifiques. Cela demandera à Angular d'exécuter la détection des modifications sur ces composants et leur sous-arborescence uniquement lorsque de nouvelles références leur sont transmises et lorsque les données sont simplement mutées.
+
+Article : https://alligator.io/angular/change-detection-strategy/
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjU4MzUxOTBdfQ==
+eyJoaXN0b3J5IjpbLTE5NTE3MzQ3MTldfQ==
 -->
