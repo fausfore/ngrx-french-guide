@@ -200,10 +200,10 @@ describe('Todos actions', () => {
 
     });
 });
-
 ```
-
 ### Reducers
+
+Le 
 
 *todo-list.reducer.spec.ts*
 ```javascript
@@ -593,5 +593,5 @@ describe('Testing Effects', () => {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MjY1NjkyOF19
+eyJoaXN0b3J5IjpbNDA2ODAzMTc5XX0=
 -->
