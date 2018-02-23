@@ -33,6 +33,8 @@ export const stateWithData = {
 export const singleTodo: Todo = { id: 2, userId: 5, title: 'for testing 2', completed: false };
 ```
 ### Actions
+
+Tester nos actions reste relativement simple
 *todo-list.actions.spec.ts*
 
 ```javascript
@@ -583,5 +585,5 @@ describe('Testing Effects', () => {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI4NjAyOTgwXX0=
+eyJoaXN0b3J5IjpbOTcyOTgyODddfQ==
 -->
