@@ -482,7 +482,7 @@ describe('Todo selectors', () => {
 ```
 ### Effects
 Tester les effects augmente la complexité car elle utilise **[jasmine-marbles](https://github.com/synapse-wireless-labs/jasmine-marbles)** pour tester les observables, elle apporte une solution viable pour tester dans le temps et cela reste assez lisible et compréhensible.
-On surC
+On surcharge la class
 
 *todo-list.effect.spec.ts*
 ```javascript
@@ -596,5 +596,5 @@ describe('Testing Effects', () => {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyOTk2NzQ0N119
+eyJoaXN0b3J5IjpbLTEyMTg0NDM3NjNdfQ==
 -->
