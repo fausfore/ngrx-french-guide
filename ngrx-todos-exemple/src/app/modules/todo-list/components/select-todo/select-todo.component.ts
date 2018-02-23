@@ -1,7 +1,7 @@
 import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 import { tap } from 'rxjs/operators';
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Inject, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AppState } from '@StoreConfig';
 import { selectTodoSelected$ } from '@Selectors/todo-list.selector';
@@ -35,7 +35,8 @@ import { Router } from '@angular/router';
   <ng-template #NoElement>
     <h2 class="centerXY">Pas de todo séléctionnée...</h2>
   <ng-template>
-  `
+  `,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SelectTodoComponent implements OnInit {
 
@@ -52,7 +53,6 @@ export class SelectTodoComponent implements OnInit {
   .pipe(
     select(selectTodoSelected$),
     tap(selectTodos => {
-      console.log('HERE');
       this.selectTodo = selectTodos;
     })
   );
@@ -74,7 +74,6 @@ export class SelectTodoComponent implements OnInit {
   }
 
   updateTodo(formValue) {
-    console.log(formValue);
     const payload = Object.assign(this.selectTodo, formValue);
     this.store.dispatch(new TodoListModule.LoadUpdateTodo(payload));
     return this.router.navigate(['/todo-list/all-todos']);

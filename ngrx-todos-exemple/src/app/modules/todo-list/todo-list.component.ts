@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
 import { AppState } from '@StoreConfig';
 import { Store, select } from '@ngrx/store';
@@ -17,6 +17,7 @@ import { tap } from 'rxjs/operators';
 	  </header>
 	  <router-outlet></router-outlet>
   `,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrls: ['./todo-list.component.scss']
 })
 export class TodoListComponent {
@@ -38,7 +39,6 @@ export class TodoListComponent {
         } else {
           this.toastr.success(dialog.message);
         }
-        console.log(dialog);
       })
     );
     this.todoListErrors$.subscribe();
