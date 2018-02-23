@@ -76,7 +76,7 @@ export namespace TodoListModule {
 
     export class ErrorLoadAction {
         readonly type = ActionTypes.ERROR_LOAD_ACTION;
-        constructor(public payload: HttpErrorResponse) {}
+        constructor(public payload: Partial<HttpErrorResponse>) {}
     }
 
     export type Actions = LoadInitTodos
