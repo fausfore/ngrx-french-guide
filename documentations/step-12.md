@@ -202,11 +202,7 @@ export interface AppState {
 ```
 *todo-list.selector.ts*
 ```javascript
-// ... other
 import * as fromTodos from '@Reducers/todo-list.reducer';
-
-/*.reducer';
-
 // ... other
 
 /* Ancien getter
@@ -265,5 +261,5 @@ import {
 Voilà nos todos sont stockées en tant que entité dans notre state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc4MDY4OTc3LC0yMDE4NzA5NzQ0XX0=
+eyJoaXN0b3J5IjpbODUwMjU0OTEwLC0yMDE4NzA5NzQ0XX0=
 -->
