@@ -14,3 +14,12 @@ Avec ça vous pouvez directement créer des éléments Ngrx en ligne de commande
 ng generate effect App --root --module app.module.ts --collection @ngrx/schematics
 
 ```
+
+## Testings
+
+Les fichiers specs de test sont mis à jour sur la branche step-13 (  ) ainsi que les imports au niveau des modules pour faciliter la rédaction de test
+
+![Karma](https://github.com/fausfore/ngrx-guide/blob/master/ngrx-todos-exemple/src/assets/img/karma.png)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTQ4NTczODI4N119
+-->
