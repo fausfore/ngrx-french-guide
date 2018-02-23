@@ -2,6 +2,7 @@
 
 ### Mocks
 Pour nos tests on aura besoin de valeur pour traiter les différents cas 
+
 *store/mock-value.ts*
 ```javascript
 import { Todo } from '@Models/todo';
@@ -582,5 +583,5 @@ describe('Testing Effects', () => {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNDc5MzQ2Ml19
+eyJoaXN0b3J5IjpbNTI4NjAyOTgwXX0=
 -->
