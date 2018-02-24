@@ -56,6 +56,8 @@ Ajoutons la fonction de suppression.
   }
 }
 ```
+## 
+
 Voilà c'est fait !
 Mais il y a un soucis pour le moment a chaque fois que l'on créer une nouvelle  todo on lui donne un id 8 ce qui pose un problème, il faut un id unique !
 
@@ -91,5 +93,5 @@ Pour cela on a ajouté un opérateur **tap** à l'intérieur du pipe, cela donne
 Voilà la suppression est terminée  !
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAyMTkyMTI1LDIxNzU3NzUyMl19
+eyJoaXN0b3J5IjpbLTEwMDEyNzE5MjEsMjE3NTc3NTIyXX0=
 -->
