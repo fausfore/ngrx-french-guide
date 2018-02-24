@@ -13,7 +13,7 @@ Voilà nos todos s'affiche bien dans la page mais faire se serait mieux de renvo
 
  Pour changer cela il faut comprendre quelque chose au niveau du **select('todos')**.
 
-Actuellement il renvoi le **contenu entier** du reducer todos avec le loaded et le loading , on peut modifier notre pour ne renvoyer que les todos au lieu de lui passer une string en paramètre on peut lui passer une fonction.
+Actuellement il renvoi le **contenu entier** du reducer todos avec le loaded et le loading , on peut modifier notre sélécteur pour ne renvoyer que les todos au lieu de lui passer une string en paramètre on peut lui passer une fonction.
 
 ```html
 <li *ngFor="let todo of todos$ | async">
@@ -201,5 +201,5 @@ Voilà notre action **createTodo** est terminé pour le moment il reste des chos
 ### Fin de la branche step-2
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODM5MzE2MSwyMTIyNzQ4MDg5XX0=
+eyJoaXN0b3J5IjpbLTg1NTI4MTM4NywyMTIyNzQ4MDg5XX0=
 -->
