@@ -72,7 +72,7 @@ import { selectTodos } from 'store/selectors/todo-list.selector';
 
 this.todos$ = store.pipe(select(selectTodos$));
 ```
-On remplace la fonction par le nouveau sélecteur et Voilà maintenant le sélecteur pourrait être utilisé dans plein d'autre component.
+On remplace la fonction par le nouveau sélecteur et le tour est joué Voilà maintenant le sélecteur pourrait être utilisé dans plein d'autre component.
 
 ## Ajouter une todo
 
@@ -206,5 +206,5 @@ Voilà notre action **createTodo** est terminé pour le moment il reste des chos
 ### Fin de la branche step-2
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNzAyMzcyNywyMTIyNzQ4MDg5XX0=
+eyJoaXN0b3J5IjpbLTYwNTQ0MDMwNSwyMTIyNzQ4MDg5XX0=
 -->
