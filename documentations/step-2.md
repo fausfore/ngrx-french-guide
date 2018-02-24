@@ -47,11 +47,11 @@ source$
 	 ).subscribe(console.log); // 50
 	 
 ```
-Ceci nous offrira un large choix de traitement possible sur **getteurs** qui sont des observables.
-
-Du coup l’idée est transformé la source de l'observable avant même le subscribe de manière pur c'est à dire la source initiale n'a pas été altéré par ces changements.
+Ceci nous offrira un large choix de traitement possible sur **getteurs** qui sont des observables. Maintenant revenons à notre sujet initial.
 
 ## States Selectors
+
+Vu que la fonction **select()** de NGRX  
 
 *store/selectors/todo-list.selector.ts*
 ```javascript
@@ -204,5 +204,5 @@ Voilà notre action **createTodo** est terminé pour le moment il reste des chos
 ### Fin de la branche step-2
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzY4MzU3ODEsMjEyMjc0ODA4OV19
+eyJoaXN0b3J5IjpbODc0MjkwNzc2LDIxMjI3NDgwODldfQ==
 -->
