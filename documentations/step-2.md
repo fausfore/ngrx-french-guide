@@ -51,7 +51,7 @@ Ceci nous offrira un large choix de traitement possible sur **getteurs** qui son
 
 ## States Selectors
 
-Vu que la fonction **select()** de NGRX peut prendre une fonction en paramètre, on peut déporter cette logique et la stockée dans un fichier de sélecteurs et grâce à la fonction **createSelector ()** on pourra composé 
+Vu que la fonction **select()** de NGRX peut prendre une fonction en paramètre, on peut déporter cette logique et la stockée dans un fichier de sélecteurs et grâce à la fonction **createSelector ()** on pourra composé des sélecteurs à partir d'autres sélecteurs.
 
 *store/selectors/todo-list.selector.ts*
 ```javascript
@@ -62,6 +62,7 @@ export const selectTodoListState$ = (state: AppState) => state.todos;
 export const selectTodos$ =
 	createSelector(selectTodoListState$,(todos) => todos.data);
 ```
+Ici notre première fonction 
 */app.component.ts*
 ```javascript
 import { selectTodos } from 'store/selectors/todo-list.selector';
@@ -204,5 +205,5 @@ Voilà notre action **createTodo** est terminé pour le moment il reste des chos
 ### Fin de la branche step-2
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMTgwMTE4OCwyMTIyNzQ4MDg5XX0=
+eyJoaXN0b3J5IjpbNzcwMjI0NjcyLDIxMjI3NDgwODldfQ==
 -->
