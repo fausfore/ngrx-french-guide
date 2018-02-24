@@ -1,9 +1,9 @@
 
-## Supprimer une todo
+## Delete todo
 
-### Début de la branche step-3
+### *[Début de la branche step-3]*
 
-Même procédé que pour la création, cette fois on va passer l'id de la todo a supprimer dans le reducer avec un **filter()** le tour est jouer.
+Même procédé que pour la création, cette fois on va passer l'id de la todo a supprimée dans le reducer et avec un **filter()** le tour est jouer.
 
 *store/actions/todo-list.action.ts*
 ```javascript
@@ -89,5 +89,5 @@ Voilà la suppression completed !
 ### Fin de la branche step-3
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE3NTc3NTIyXX0=
+eyJoaXN0b3J5IjpbLTE0MjA3OTEwMiwyMTc1Nzc1MjJdfQ==
 -->
