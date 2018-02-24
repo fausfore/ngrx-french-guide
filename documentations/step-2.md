@@ -160,7 +160,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 // ... reste
 ```
 
-Maintenant créons l'action côté Store et reducer :
+Maintenant créons l'action pour le reducer :
 
 *store/actions/todo-list.action.ts*
 ```javascript
@@ -169,13 +169,11 @@ import { Todo } from '../../models/todo';
 export namespace TodoListModule {
 
     export enum ActionTypes {
-        INIT_TODOS = '[todoList] Init Todos',
+        // ... autres
         CREATE_TODO = '[todoList] Create Todo',
     }
 
-    export class InitTodos {
-        readonly type = ActionTypes.INIT_TODOS;
-    }
+    // ... autres
 
     export class CreateTodo {
         readonly type = ActionTypes.CREATE_TODO;
@@ -186,7 +184,7 @@ export namespace TodoListModule {
 }
 ```
 
-> Cette action transmet un **payload** qui sera la nouvelle todo.
+Cette action transmet un **payload** qui sera la nouvelle todo a ajouter à notre tableau.
 
 
 */store/reducers/todo-list.reducer.ts*
@@ -207,5 +205,5 @@ Voilà notre action **createTodo** est terminé pour le moment il reste des chos
 ### Fin de la branche step-2
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTk0NTQzNjgsMjEyMjc0ODA4OV19
+eyJoaXN0b3J5IjpbOTU2NzE2MDc2LDIxMjI3NDgwODldfQ==
 -->
