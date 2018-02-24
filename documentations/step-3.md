@@ -39,7 +39,7 @@ On va se servir de **filter** pour renvoyer un nouveau tableau sans notre todo.
         };
 	// ...reste
 ```
-C
+Créer 
 */app.component.ts*
 ```javascript
 // Other things ...
@@ -90,5 +90,5 @@ Voilà la suppression completed !
 ### Fin de la branche step-3
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1NzQ0ODY2NCwyMTc1Nzc1MjJdfQ==
+eyJoaXN0b3J5IjpbNzU4OTE3MDI4LDIxNzU3NzUyMl19
 -->
