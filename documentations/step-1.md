@@ -43,8 +43,8 @@ app
 
 ## Commençons ! [ début du tutoriel ]
 
-Pour changer de l'exemple du counter, on va partir sur une **todolist**, eh oui encore ...
-Avec l’implémentation de Redux on va penser en actions utilisateur et serveur et faire une synthèse de celle-ci :
+Pour changer de l'exemple du counter, on va partir sur une **todolist** pour changer,
+quand on utilise Redux, on va pensé en actions utilisateur et serveur et faire une synthèse de celle-ci :
 Pour faire une todolist on a :
 
 Une initalisation des todos -> **GET**
@@ -282,5 +282,5 @@ export class AppComponent implements OnInit {
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNjQ0NzM0XX0=
+eyJoaXN0b3J5IjpbMTY2MTQxNTIyMF19
 -->
