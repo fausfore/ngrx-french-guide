@@ -272,9 +272,9 @@ export class AppComponent implements OnInit {
 	});
 
     Dans ce cas de figure on ne fait pas de mutation sur la liste
-    de todos dans le component. Donc et cela évite de faire
+    de todos dans le component. Donc pas besoin de faire un subscribe afin de garder la variable localement cela évite également de faire
     un unsubscribe dans le OnDestroy
-    ainsi qu'un *ngIf dans le <ul> dans le cas ou la donnée soit vide.
+    et utilisé quun *ngIf dans le <ul> dans le cas ou la donnée soit vide.
 	*/
 
   }
@@ -290,5 +290,5 @@ export class AppComponent implements OnInit {
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MzEyNjc3OF19
+eyJoaXN0b3J5IjpbLTIxMjE0Mzg0ODZdfQ==
 -->
