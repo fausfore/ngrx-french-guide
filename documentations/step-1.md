@@ -41,7 +41,7 @@ app
 └───modules
 ```
 
-## Set up
+## Commençons ! [ début du tutoriel ]
 
 Pour changer de l'exemple du counter, on va partir sur une **todolist**, eh oui encore ...
 Avec l’implémentation de Redux on va penser en actions utilisateur et serveur et faire une synthèse de celle-ci :
@@ -282,5 +282,5 @@ export class AppComponent implements OnInit {
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTY2NjUyMDddfQ==
+eyJoaXN0b3J5IjpbLTUxNjQ0NzM0XX0=
 -->
