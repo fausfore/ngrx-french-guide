@@ -49,7 +49,7 @@ source$
 ```
 Ceci nous offrira un large choix de traitement possible sur **getteurs** qui sont des observables. Maintenant revenons à notre sujet initial.
 
-## States Selectors
+## Les States Selectors
 
 Vu que la fonction **select()** de NGRX peut prendre une fonction en paramètre, on peut déporter cette logique et la stockée dans un fichier de sélecteurs et grâce à la fonction **createSelector ()** on pourra composé des sélecteurs à partir d'autres sélecteurs.
 
@@ -204,5 +204,5 @@ Voilà notre action **createTodo** est terminée, il reste des chose a revoir co
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzU4ODg2OTAsMjEyMjc0ODA4OV19
+eyJoaXN0b3J5IjpbMTkxNzUxODEyMCwyMTIyNzQ4MDg5XX0=
 -->
