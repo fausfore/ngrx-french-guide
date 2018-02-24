@@ -1,5 +1,5 @@
 # Sommaire
-Ceci est un tutoriel pour s'éssayer a Ngrx, vous verez comment créer une todo-list
+Ceci est un tutoriel pour s'éssayer a Ngrx, vous verez les différent concept de cette librairie par le biais d'un exercise de céation d'une todo-list
 ## [0 - Introduction](https://github.com/fausfore/ngrx-guide/blob/master/documentations/introduction.md)
 ### 0-1 Redux, kesako ?!
 ### 0-2 Pourquoi Redux alors ?!
@@ -40,5 +40,5 @@ Ceci est un tutoriel pour s'éssayer a Ngrx, vous verez comment créer une todo-
 
 ## [14 - TESTINGS ADVANCE](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-14.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MjU1MTE4NCwxNTY3MzMxNjQyXX0=
+eyJoaXN0b3J5IjpbLTMwNzQzNTcsMTU2NzMzMTY0Ml19
 -->
