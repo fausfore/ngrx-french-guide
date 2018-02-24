@@ -287,9 +287,10 @@ export class AppComponent implements OnInit {
 }
 
 ```
+Après ces premières manipulations vous devez voir apparaître la liste de todo.
 
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMTA3NzkxNF19
+eyJoaXN0b3J5IjpbMTgwNTM5MzUyNF19
 -->
