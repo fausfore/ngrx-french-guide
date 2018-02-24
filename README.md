@@ -25,6 +25,7 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 ### 2-3 Créer une todo
 
 ## [3 - Delete todo](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-3.md)
+### 3-1 Gérer les ids
 
 ## [4 - Refacto Time !](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-4.md)
 
@@ -48,5 +49,5 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 
 ## [14 - TESTINGS ADVANCE](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-14.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYwNjY4MiwxNTY3MzMxNjQyXX0=
+eyJoaXN0b3J5IjpbNTk4NDk5NDAxLDE1NjczMzE2NDJdfQ==
 -->
