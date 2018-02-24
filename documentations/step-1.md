@@ -50,9 +50,9 @@ Faisons le point de ce que représente fonctionnellement une todo :
 On récupère des todos -> **GET**
 On crée des todos -> **PUT**
 On supprime des todos-> **DELETE**
-Modification de todo -> **PATCH / POST**
+On met à jour des todos -> **PATCH / POST**
 
-Un bon vieux **CRUD** quoi.
+Un besoin au niveau du web très courant.
 
 On commence a écrire notre InitializeTodos et l'interface .
 
@@ -282,5 +282,5 @@ export class AppComponent implements OnInit {
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2Nzg0NzA4NF19
+eyJoaXN0b3J5IjpbMTE1NzY2NzYyN119
 -->
