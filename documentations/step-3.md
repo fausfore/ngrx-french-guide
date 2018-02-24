@@ -39,7 +39,7 @@ On va se servir de **filter** pour renvoyer un nouveau tableau sans notre todo.
         };
 	// ...reste
 ```
-Ajoutons la fonction de suppréssion.
+Ajoutons la fonction de suppression.
 */app.component.ts*
 ```javascript
 // Other things ...
@@ -90,5 +90,5 @@ Voilà la suppression completed !
 ### Fin de la branche step-3
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNjk5NzgzNywyMTc1Nzc1MjJdfQ==
+eyJoaXN0b3J5IjpbLTU1MTc2NDEsMjE3NTc3NTIyXX0=
 -->
