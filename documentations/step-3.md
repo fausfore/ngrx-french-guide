@@ -3,7 +3,7 @@
 
 ### *[Début de la branche step-3]*
 
-## Action, reducer
+
 Même procédé que pour la création, cette fois on va passer l'id de la todo a supprimée dans le reducer.
 
 *store/actions/todo-list.action.ts*
@@ -94,5 +94,5 @@ Pour cela on a ajouté un opérateur **tap** à l'intérieur du pipe, cela donne
 Voilà la suppression est terminée  !
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNTQ1NDY5MSwyMTc1Nzc1MjJdfQ==
+eyJoaXN0b3J5IjpbMTExNDI3NDY2MSwyMTc1Nzc1MjJdfQ==
 -->
