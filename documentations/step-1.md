@@ -59,22 +59,21 @@ On commence par définir notre l'interface .
 *models/todo.ts*
 ```javascript
 // L'interface de la todo en elle même
-
 export interface Todo {
 	userId: number;
 	id: number;
 	title: string;
 	completed: boolean;
 }
-L'interface de notre futur state de todos
 
+// L'interface de notre futur state de todos
 export interface TodoListState {
 	data: Todo[];
 	loading: boolean;
 	loaded: boolean;
 }
 ```
-On se base sur le model de **[JsonPlaceholder](https://jsonplaceholder.typicode.com/)**.
+C'est le model de **[JsonPlaceholder](https://jsonplaceholder.typicode.com/)**, on va créer un fichier pour mocké nos valeurs.
 *mocks/todo-list.ts*
 ```javascript
 export const todosMock = [{
@@ -285,5 +284,5 @@ export class AppComponent implements OnInit {
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxNzIxMDcxMl19
+eyJoaXN0b3J5IjpbMTg0NjkzMTU4OV19
 -->
