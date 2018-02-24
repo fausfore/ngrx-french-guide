@@ -6,7 +6,7 @@
 ### Début de la branche step-2
 Avant de continuer voici une petite explication de l'utilisation du pipe **async** :
 
-> Le **pipe async** souscrit à un Observable ou une Promise et renvoie la dernière valeur qu'il a émise. Lorsqu'une nouvelle valeur est émise, le canal asynchrone marque un composant afin de vérifier les modifications. Lorsque le composant est détruit, **le pipe async se désinscrit automatiquement pour éviter les fuites de mémoire potentielles**.
+> Le **pipe async** souscrit à un Observable ou une Promise et renvoie la dernière valeur qu'il a émise. Lorsqu'une nouvelle valeur est détecté, le canal asynchrone marque le signale au component afin de véri. Lorsque le composant est détruit, **le pipe async se désinscrit automatiquement pour éviter les fuites de mémoire potentielles**.
 
 > Voilà nos todos s'affiche bien dans la vue mais faire ce serait mieux de renvoyer directement
 > la liste plutôt que de faire **(todos$ | async)?.data** mais de faire directement **todos$ | async**, pour cela faut comprendre quelque chose au niveau du **select('todos')**, actuellement il renvoie le contenu entier du reducer todos avec le loaded et le loading et pour ne renvoyer que les todos au lieu de lui passer une string en paramètre on peut lui passer une fonction.
@@ -197,5 +197,5 @@ Voilà notre action **createTodo** est terminé pour le moment il reste des chos
 ### Fin de la branche step-2
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNDM1OTA1NiwyMTIyNzQ4MDg5XX0=
+eyJoaXN0b3J5IjpbMTE1MTY5MDEwNCwyMTIyNzQ4MDg5XX0=
 -->
