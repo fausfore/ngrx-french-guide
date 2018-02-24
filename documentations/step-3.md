@@ -83,7 +83,8 @@ CreateTodo(todo: Todo){
 		  id: this.todoslength + 1
 	};
 ```
-Voilà l'id s’incrémentera au fur est mesure que la collection grandit pour cela on a poussé un peu plus le **pipe()**, cela donne un 1er apercu de la cascade de fonctions qui suis cette opérateur, en lui rajoutant un **tap()**.
+Voilà l'id s’incrémentera au fur est mesure que la collection grandit.
+Pour cela on a ajouté un opérateur **tap** peu plus le **pipe()**, cela donne un 1er apercu de la cascade de fonctions qui suis cette opérateur, en lui rajoutant un **tap()**.
 
 >**tap** invoque une action pour chaque élément de la séquence observable.
 
@@ -93,5 +94,5 @@ Voilà la suppression completed !
 ### Fin de la branche step-3
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMDA3MDIyNiwyMTc1Nzc1MjJdfQ==
+eyJoaXN0b3J5IjpbOTA2MjAyOTg1LDIxNzU3NzUyMl19
 -->
