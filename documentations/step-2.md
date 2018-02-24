@@ -21,7 +21,7 @@ Actuellement il renvoi le **contenu entier** du reducer todos avec le loaded et 
 ```javascript
 this.todos$ = store.pipe(select((state) => state.todos.data));
 ```
-De cette manière on ne renvoie que ce que l'on souhaite s'afficher dans le composant cela ouvre la voie au concept des **states selectors**.
+De cette manière on cible directement la propriété **data** dans le composant cela ouvre la voie au concept des **states selectors**.
 
 Comme son nom le précise on va pouvoir sélectionner une partie d'un state voir même pouvoir renvoyer une itération modifié du state grâce au traitement de RxJs sur les Observables car oui nos states sont des observables et bénéficie de l'énorme api RxJs pour faire du traitement sur nos données.
 Pour voir un peu les différentes méthodes : http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html
@@ -201,5 +201,5 @@ Voilà notre action **createTodo** est terminé pour le moment il reste des chos
 ### Fin de la branche step-2
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTYzNTc3ODgsMjEyMjc0ODA4OV19
+eyJoaXN0b3J5IjpbMTEwNjM2NTQ5MywyMTIyNzQ4MDg5XX0=
 -->
