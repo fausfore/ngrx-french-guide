@@ -84,15 +84,12 @@ CreateTodo(todo: Todo){
 	};
 ```
 Voilà l'id s’incrémentera au fur est mesure que la collection grandit.
-Pour cela on a ajouté un opérateur **tap** à l'intérieur du pipe, cela donne un 1er aperçu de ce chainage d'opérateursqui suis cette opérateur, en lui rajoutant un **tap()**.
+Pour cela on a ajouté un opérateur **tap** à l'intérieur du pipe, cela donne un premier aperçu de ce chaînage d'opérateurs.
 
 >**tap** invoque une action pour chaque élément de la séquence observable.
 
-Le truc intéressant aussi c'est que l'on a pu récupérer cette valeur **sans faire un subscribe sur l'observable selectTodos$** propre.
-Voilà la suppression completed !
-
-### Fin de la branche step-3
+Voilà la suppression est terminée  !
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5OTY2ODA3MiwyMTc1Nzc1MjJdfQ==
+eyJoaXN0b3J5IjpbNDAyMTkyMTI1LDIxNzU3NzUyMl19
 -->
