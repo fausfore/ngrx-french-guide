@@ -19,7 +19,7 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 ### 1-2 Architecture Folder
 ### 1-3 Set up
 
-## [2 - States Selectors](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-2.md)
+## [2 - Getters & create todo](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-2.md)
 
 ## [3 - Supprimer une todo](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-3.md)
 
@@ -45,5 +45,5 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 
 ## [14 - TESTINGS ADVANCE](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-14.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTQ3NDUzMjgsMTU2NzMzMTY0Ml19
+eyJoaXN0b3J5IjpbLTE4NjcxMDI2ODYsMTU2NzMzMTY0Ml19
 -->
