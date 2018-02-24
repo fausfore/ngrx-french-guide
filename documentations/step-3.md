@@ -1,8 +1,9 @@
 
-## Delete todo
+# Delete todo
 
 ### *[Début de la branche step-3]*
 
+## Action, reducer
 Même procédé que pour la création, cette fois on va passer l'id de la todo a supprimée dans le reducer.
 
 *store/actions/todo-list.action.ts*
@@ -56,7 +57,7 @@ Ajoutons la fonction de suppression.
   }
 }
 ```
-## 
+## Gérer les ids
 
 Voilà c'est fait !
 Mais il y a un soucis pour le moment a chaque fois que l'on créer une nouvelle  todo on lui donne un id 8 ce qui pose un problème, il faut un id unique !
@@ -93,5 +94,5 @@ Pour cela on a ajouté un opérateur **tap** à l'intérieur du pipe, cela donne
 Voilà la suppression est terminée  !
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDEyNzE5MjEsMjE3NTc3NTIyXX0=
+eyJoaXN0b3J5IjpbMTIzNTQ1NDY5MSwyMTc1Nzc1MjJdfQ==
 -->
