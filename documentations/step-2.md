@@ -200,10 +200,10 @@ Cette action transmet un **payload** qui sera la nouvelle todo a ajouter à notr
 		};
 	// ...reste
 ```
-Voilà notre action **createTodo** est terminée sur pour le moment il reste des chose a revoir comme la gestion des ids mais ce soucis se réglera seule quand on écrira le service Http.
+Voilà notre action **createTodo** est terminée, il reste des chose a revoir comme la gestion des ids mais ce soucis se réglera au moment ou utilisera une api qui elle se charseule quand on écrira le service Http.
 
 ### Fin de la branche step-2
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjczMzU4NjE3LDIxMjI3NDgwODldfQ==
+eyJoaXN0b3J5IjpbLTE0NjI5OTQxNTksMjEyMjc0ODA4OV19
 -->
