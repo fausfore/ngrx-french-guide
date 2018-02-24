@@ -5,7 +5,9 @@
 ### 0-2 Pourquoi Redux alors ?!
 ### 0-3 Flux vs Redux
 ### 0-4 Le Store la base de tout
-### 
+### 0-5  Le root reducer
+### 0-6 Le schéma
+### 0-7 Les actions
 ## [1 - De Redux à Ngrx](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-1.md)
 
 ## [2 - States Selectors](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-2.md)
@@ -34,5 +36,5 @@
 
 ## [14 - TESTINGS ADVANCE](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-14.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTY1MDMwOSwxNTY3MzMxNjQyXX0=
+eyJoaXN0b3J5IjpbLTM4MjI3MDgxMiwxNTY3MzMxNjQyXX0=
 -->
