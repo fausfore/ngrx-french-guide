@@ -11,6 +11,8 @@
 ### 0-8  Action creator
 ## [1 - De Redux à Ngrx](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-1.md)
 ### 1-1 Installation
+### 1-2 Architecture Folder
+### 1-3 Set up
 
 ## [2 - States Selectors](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-2.md)
 
@@ -38,5 +40,5 @@
 
 ## [14 - TESTINGS ADVANCE](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-14.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTQ5NDQzMCwxNTY3MzMxNjQyXX0=
+eyJoaXN0b3J5IjpbNzM4MTkyODk1LDE1NjczMzE2NDJdfQ==
 -->
