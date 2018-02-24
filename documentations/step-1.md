@@ -120,7 +120,8 @@ export const todosMock = [{
     "completed": false
   }]
 ```
-La classe d'action de notre state de todos, pour le moment on créer juste l'action 
+La classe d'action de notre state de todos, pour le moment on créer juste l'action pour initialisé notre liste.
+
 *store/actions/todo-list.action.ts*
 ```javascript
 export namespace TodoListModule {
@@ -136,7 +137,7 @@ export namespace TodoListModule {
     export type Actions = InitTodos;
 }
 ```
-Question pratique je préfère encapsulé le tout dans un **namespace** pour simplifié les import, libre à vous de ne pas le faire.
+Question pratique je préfère encapsulé le tout dans un **namespace** pour simplifié les imports, libre à vous de ne pas le faire.
 Le dernier export Actions servira pour le typage du reducer uniquement.
 
 
@@ -284,5 +285,5 @@ export class AppComponent implements OnInit {
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODQzMjY0ODVdfQ==
+eyJoaXN0b3J5IjpbNjE2Mzk3NjgwXX0=
 -->
