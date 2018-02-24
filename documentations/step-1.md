@@ -23,7 +23,7 @@ $ npm install @ngrx/store ou yarn add @ngrx/store
 ```
 
 ## Architecture Folder
-Une fois le projet initialisé je cous invite a 
+Une fois le projet initialisé je cous invite a consulté 
 Pour le schéma des folders partez de **app/**
 ```
 app
@@ -283,5 +283,5 @@ export class AppComponent implements OnInit {
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NzE2OTgzOF19
+eyJoaXN0b3J5IjpbLTE1MDU3NDMxOTddfQ==
 -->
