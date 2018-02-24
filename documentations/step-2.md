@@ -75,7 +75,7 @@ this.todos$ = store.pipe(select(selectTodos$));
 On remplace la fonction par le nouveau sélecteur et le tour est joué.
 Voilà maintenant ce même sélecteur peut être utilisé dans plein d'autres components.
 
-## Ajouter une todo
+## Créer une todo
 
 On va créer un formulaire pour créer une todo grâce au **FormsBuilder** d'Angular, la fonction **createTodo()** renverra la futur action de création de todo dans le reducer.
 
@@ -204,5 +204,5 @@ Voilà notre action **createTodo** est terminée, il reste des chose a revoir co
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNzUxODEyMCwyMTIyNzQ4MDg5XX0=
+eyJoaXN0b3J5IjpbMTc3ODE4Mzg1OSwyMTIyNzQ4MDg5XX0=
 -->
