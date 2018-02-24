@@ -12,8 +12,8 @@ Cette librairie est donc une implémentation "reduxienne". Mais pas que... elle 
 
 ## Installation
 
-Pour commencer on part sur un **Angular version 5** donc vous devez avoir votre Cli au dessus de la version **1.6.0**, elle doit comprendre la version **5.5.6** de RxJs pour utliser les **pipes** qui seront utilisé plus tard.
-Donc on créer un nouveau projet angular
+Pour commencer on part sur un **Angular version 5** donc vous devez avoir votre Cli au dessus de la version **1.6.0**, elle doit comprendre la version **5.5.6** de RxJs pour utliser les dernières opérateurs disponible.
+Donc commençons un nouveau projet angular
 ```shell
 $ ng new ngrx-tutoriel-app --style=scss
 ```
@@ -282,5 +282,5 @@ export class AppComponent implements OnInit {
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMTY0MDA4XX0=
+eyJoaXN0b3J5IjpbMTU1NTEyOTQ4Ml19
 -->
