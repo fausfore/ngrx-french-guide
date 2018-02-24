@@ -54,7 +54,7 @@ On met à jour des todos -> **PATCH / POST**
 
 Un besoin au niveau du web très courant.
 
-On commence a écrire notre InitializeTodos et l'interface .
+On commence a écrire par définir notre l'interface .
 
 *models/todo.ts*
 ```javascript
@@ -282,5 +282,5 @@ export class AppComponent implements OnInit {
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NzY2NzYyN119
+eyJoaXN0b3J5IjpbLTE5OTk3NTAyNDNdfQ==
 -->
