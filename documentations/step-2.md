@@ -1,4 +1,4 @@
-# States Selector
+# 
 
 ### *[Début de la branche step-2]*
 Avant de continuer voici une petite explication de l'utilisation du pipe **async** :
@@ -200,5 +200,5 @@ Voilà notre action **createTodo** est terminé pour le moment il reste des chos
 ### Fin de la branche step-2
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDQ3NzExMDQsMjEyMjc0ODA4OV19
+eyJoaXN0b3J5IjpbLTEwOTIyMDg3MDUsMjEyMjc0ODA4OV19
 -->
