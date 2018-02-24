@@ -145,7 +145,7 @@ export class AppComponent implements OnInit {
 
 }
 ```
-N'oubliez pas de chargées les modules pour utiliser les form de Angular.
+N'oubliez pas de chargées les modules pour utiliser les formulaires de Angular.
 
 */app.module.ts*
 ```javascript
@@ -207,5 +207,5 @@ Voilà notre action **createTodo** est terminé pour le moment il reste des chos
 ### Fin de la branche step-2
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMzMzMjU5LDIxMjI3NDgwODldfQ==
+eyJoaXN0b3J5IjpbLTE2MDA1ODc3NjAsMjEyMjc0ODA4OV19
 -->
