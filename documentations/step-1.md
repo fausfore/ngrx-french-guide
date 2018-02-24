@@ -58,12 +58,15 @@ On commence par définir notre l'interface .
 
 *models/todo.ts*
 ```javascript
+// L'interface de la todo en elle même
+
 export interface Todo {
 	userId: number;
 	id: number;
 	title: string;
 	completed: boolean;
 }
+L'interface de notre futur state de todos
 
 export interface TodoListState {
 	data: Todo[];
@@ -282,5 +285,5 @@ export class AppComponent implements OnInit {
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYzNzgwMzcwXX0=
+eyJoaXN0b3J5IjpbMTIxNzIxMDcxMl19
 -->
