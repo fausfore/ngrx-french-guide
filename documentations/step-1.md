@@ -8,11 +8,11 @@ Pour Vue  => **vuex**
 Pour Angular  => **Ngrx**
 
 Il est donc inutile de créer un store from scratch. Comme nous allons créer une application Angular, nous utiliserons **Ngrx**.
-Cette librairie est donc une implémentation "reduxienne". Mais pas que... elle prend une bonne couche de **RxJS** comme Angular lui-même et utilise les **Observables** pour populer les states dans les composants Angular.
+Cette librairie est donc une implémentation "reduxienne". Mais pas que... elle prend une bonne couche de **RxJS** comme Angular lui-même et utilise les **Observables** pour communiquer la mise à jour des states dans les composants Angular.
 
 ## Installation
 
-Pour commencer on part sur un angular version 5 donc vous devez avoir votre Cli au dessus de la version **1.6.0**, elle doit comprendre la version **5.5.6** de RxJs pour utliser les **pipes** qui seront utilisé plus tard.
+Pour commencer on part sur un **Angular version 5** donc vous devez avoir votre Cli au dessus de la version **1.6.0**, elle doit comprendre la version **5.5.6** de RxJs pour utliser les **pipes** qui seront utilisé plus tard.
 Donc on créer un nouveau projet angular
 ```shell
 $ ng new ngrx-tutoriel-app --style=scss
@@ -282,5 +282,5 @@ export class AppComponent implements OnInit {
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODM1MTk0MzFdfQ==
+eyJoaXN0b3J5IjpbMTQxMTY0MDA4XX0=
 -->
