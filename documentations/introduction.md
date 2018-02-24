@@ -1,5 +1,5 @@
 
-### Introduction
+# Introduction
 
 Dans cette article, nous allons voir comment utiliser le pattern redux dans une application Angular via Ngrx.
 Ce dernier proposant une conception du développement  d'application autour d'actions utilisateurs et serveurs. Le but étant de supprimer les différentes mutations de données des composants et services Angular pour les centraliser dans un objet global, qui serait mutable uniquement par des actions typées.
@@ -236,5 +236,5 @@ store.dispatch(new CounterActions.SetNewValue(6))
 // resultat => { counter : 6 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ3NzkwNzE2XX0=
+eyJoaXN0b3J5IjpbMTM5Njc3MzA4NCwzNDc3OTA3MTZdfQ==
 -->
