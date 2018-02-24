@@ -1,5 +1,5 @@
 # Sommaire
-Ceci est une introduction 
+Ceci est un
 ## [0 - Introduction](https://github.com/fausfore/ngrx-guide/blob/master/documentations/introduction.md)
 ### 0-1 Redux, kesako ?!
 ### 0-2 Pourquoi Redux alors ?!
@@ -40,5 +40,5 @@ Ceci est une introduction
 
 ## [14 - TESTINGS ADVANCE](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-14.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTU0NjA5OTMsMTU2NzMzMTY0Ml19
+eyJoaXN0b3J5IjpbLTY4NTE4NjY3NiwxNTY3MzMxNjQyXX0=
 -->
