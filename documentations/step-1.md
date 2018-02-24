@@ -173,7 +173,7 @@ export function todosReducer(
     }
 }
 ```
-Voilà notre premier switch va ajouter 
+Voilà notre premier switch va ajouter un tableau de todo dans notre array data 
 *exemple : /store/index.ts*
 ```javascript
 import { ActionReducerMap } from '@ngrx/store';
@@ -286,5 +286,5 @@ export class AppComponent implements OnInit {
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjE1OTcwODldfQ==
+eyJoaXN0b3J5IjpbLTY1ODQ2NjUzMF19
 -->
