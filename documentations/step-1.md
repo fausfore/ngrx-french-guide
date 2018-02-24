@@ -47,14 +47,14 @@ Pour changer de l'exemple du counter, on va partir sur une **todolist** pour cha
 quand on utilise Redux, on va pensé en actions utilisateur et serveur.
 Faisons le point de ce que représente fonctionnellement une todo :
 
-On récupère des todos -> **GET**
-On crée des todos -> **PUT**
-On supprime des todos-> **DELETE**
-On met à jour des todos -> **PATCH / POST**
+- On récupère des todos -> **GET**
+- On crée des todos -> **PUT**
+- On supprime des todos-> **DELETE**
+- On met à jour des todos -> **PATCH / POST**
 
 Un besoin au niveau du web très courant.
 
-On commence a écrire par définir notre l'interface .
+On commence par définir notre l'interface .
 
 *models/todo.ts*
 ```javascript
@@ -282,5 +282,5 @@ export class AppComponent implements OnInit {
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTk3NTAyNDNdfQ==
+eyJoaXN0b3J5IjpbOTYzNzgwMzcwXX0=
 -->
