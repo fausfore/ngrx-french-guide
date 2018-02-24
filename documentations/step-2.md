@@ -51,7 +51,7 @@ Ceci nous offrira un large choix de traitement possible sur **getteurs** qui son
 
 ## States Selectors
 
-Vu que la fonction **select()** de NGRX peut prendre une fuction en paramètre   
+Vu que la fonction **select()** de NGRX peut prendre une fonction en paramètre   
 
 *store/selectors/todo-list.selector.ts*
 ```javascript
@@ -204,5 +204,5 @@ Voilà notre action **createTodo** est terminé pour le moment il reste des chos
 ### Fin de la branche step-2
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTMxMDQwNjEsMjEyMjc0ODA4OV19
+eyJoaXN0b3J5IjpbMTg0NDMzNDU2OSwyMTIyNzQ4MDg5XX0=
 -->
