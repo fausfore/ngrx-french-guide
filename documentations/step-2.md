@@ -28,7 +28,7 @@ Pour voir un peu les différents opérateurs: http://reactivex.io/rxjs/class/es6
 
 > Le Pipe permet de réaliser un chaînage d'opérateurs RXJS de manière plus lisible.
 
-Ceci nous offrira un large choix de traitement possible sur nos 
+Ceci nous offrira un large choix de traitement possible sur no
 
 *exemple de pipe*
 ```javascript
@@ -204,5 +204,5 @@ Voilà notre action **createTodo** est terminé pour le moment il reste des chos
 ### Fin de la branche step-2
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczOTE2MjAzOSwyMTIyNzQ4MDg5XX0=
+eyJoaXN0b3J5IjpbMzE5MzQ5ODY2LDIxMjI3NDgwODldfQ==
 -->
