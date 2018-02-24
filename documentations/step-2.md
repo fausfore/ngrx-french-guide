@@ -28,8 +28,6 @@ Pour voir un peu les différents opérateurs: http://reactivex.io/rxjs/class/es6
 
 > Le Pipe permet de réaliser un chaînage d'opérateurs RXJS de manière plus lisible.
 
-Ceci nous offrira un large choix de traitement possible sur no
-
 *exemple de pipe*
 ```javascript
 const { Observable } = require('rxjs/Rx')
@@ -49,6 +47,8 @@ source$
 	 ).subscribe(console.log); // 50
 	 
 ```
+Ceci nous offrira un large choix de traitement possible sur **getteurs** qui sont des observables.
+
 Du coup l’idée est transformé la source de l'observable avant même le subscribe de manière pur c'est à dire la source initiale n'a pas été altéré par ces changements.
 
 ## States Selectors
@@ -204,5 +204,5 @@ Voilà notre action **createTodo** est terminé pour le moment il reste des chos
 ### Fin de la branche step-2
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE5MzQ5ODY2LDIxMjI3NDgwODldfQ==
+eyJoaXN0b3J5IjpbLTE0MzY4MzU3ODEsMjEyMjc0ODA4OV19
 -->
