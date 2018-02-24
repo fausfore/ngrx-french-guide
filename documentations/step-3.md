@@ -3,7 +3,7 @@
 
 ### *[Début de la branche step-3]*
 
-Même procédé que pour la création, cette fois on va passer l'id de la todo a supprimée dans le reducer et avec un **filter()** 
+Même procédé que pour la création, cette fois on va passer l'id de la todo a supprimée dans le reducer.
 
 *store/actions/todo-list.action.ts*
 ```javascript
@@ -27,6 +27,7 @@ export namespace TodoListModule {
         | DeleteTodo;
 }
 ```
+On va se servir de **filter** pour renvoyer un nouveau tableau sans notre todo.
 
 */store/reducers/todo-list.reducer.ts*
 ```javascript
@@ -38,7 +39,7 @@ export namespace TodoListModule {
         };
 	// ...reste
 ```
-
+C
 */app.component.ts*
 ```javascript
 // Other things ...
@@ -89,5 +90,5 @@ Voilà la suppression completed !
 ### Fin de la branche step-3
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc0Njg5Mjg2LDIxNzU3NzUyMl19
+eyJoaXN0b3J5IjpbMTI1NzQ0ODY2NCwyMTc1Nzc1MjJdfQ==
 -->
