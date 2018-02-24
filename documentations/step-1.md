@@ -73,7 +73,8 @@ export interface TodoListState {
 	loaded: boolean;
 }
 ```
-C'est le model de **[JsonPlaceholder](https://jsonplaceholder.typicode.com/)**, on va créer un fichier pour mocké nos valeurs.
+C'est le model de **[JsonPlaceholder](https://jsonplaceholder.typicode.com/)** et on créer un fichier pour mocké nos valeurs.
+
 *mocks/todo-list.ts*
 ```javascript
 export const todosMock = [{
@@ -119,8 +120,7 @@ export const todosMock = [{
     "completed": false
   }]
 ```
-Un petit mock pour tester.
-
+La classe d'action de nos todos
 *store/actions/todo-list.action.ts*
 ```javascript
 export namespace TodoListModule {
@@ -284,5 +284,5 @@ export class AppComponent implements OnInit {
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NjkzMTU4OV19
+eyJoaXN0b3J5IjpbLTg1OTQxMTA2MF19
 -->
