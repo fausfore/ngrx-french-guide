@@ -9,7 +9,10 @@ Cette partie est consacré a de l'optimisation de performance, dans le cas ou no
 ```bash
 npm install @ngrx/entity --save OR yarn add @ngrx/entity --dev
 ```
-*todo-list.reducer.ts*
+
+```javascript
+import { T*todoL-listModule } from '../actions/todo-list.action';
+import { TodoListState, Todo  } from '../../models/todo';.reducer.ts*
 ```javascript
 // ... other
 import { createEntityAdapter, EntityAdapter, EntityState } from '@ngrx/entity';
@@ -43,14 +46,45 @@ const initialState: TodoListState = {
     logs: undefined
 };
 */
-export const {
+
+export function todosReducer(
+    state = initialState,
+    action: TodoListModule.Actions
+): TodoListStateEntity {
+
+  switch (action.type) {
+
+    // GET TODOS
+    case TodoListModule.ActionTypes.LOAD_INIT_TODOS:
+    export const {
     // select the array of user ids
     selectIds: selectTodosIds,
     // select the dictionary of user entities
     selectEntities: selectTodosEntities,
     // select the array of users
     selectAll: selectTodos,
-    // select the total user count
+    // Passe lect the total user count loading a true
+        return {
+            ...state,
+            loading: true
+        };
+
+    case TodoListModule.ActionTypes.SUCCESS_INIT_TODOS:
+        // Bind state.data avec les todos du server
+        // Passe le loaded a true et le loading a false
+        return {
+            ...TodoListAdapter.addMany(action.payload, state),
+            loading: false,
+            loaded: true
+        };
+
+    // POST TODO
+    case TodoListModule.ActionTypes.LOAD_CREATE_TODO:
+        // Passe le loading a true
+        return {
+            ...state,
+            loading: true
+        };
     selectTotal: selectTotalTodos
   } = TodoListAdapter.getSelectors();
 
@@ -79,7 +113,21 @@ export function todosReducer(
         return {
             ...TodoListAdapter.addOne(action.payload, state),
             loading: false,
-            logs: { type: 'SUCCESS', message: 'La todo à été crée avec succès' }
+            logs: { type: 'SUCCESS', message: 'La todo à été crée avec succès' };
+
+    // SELECT TODO
+    case TodoListModule.ActionTypes.SELECT_TODO:
+        return {
+            ...state,
+            selectedTodo: action.payload
+        };
+
+    // PATCH TODO
+
+    case TodoListModule.ActionTypes.LOAD_UPDATE_TODO:
+        return {
+            ...state,
+            loading: true }
         };
 
     // ... other
@@ -89,10 +137,20 @@ export function todosReducer(
         return {
             ...TodoListAdapter.updateOne({id: id, changes: changes}, state),
             loading: false,
-            logs: { type: 'SUCCESS', message: 'La todo à été mise à jour avec succès' }
-        };
+            logs: { type: 'SUCCESS', message: 'La todo à été mise à jour avec succès' }};
+
         
    // ... other
+   // DELETE TODO
+
+    case TodoListModule.ActionTypes.LOAD_DELETE_TODO:
+        return {
+          };
+        };
+
+     // ...state,
+            loading: true
+        }; other
    
     case TodoListModule.ActionTypes.SUCCESS_DELETE_TODO:
         return {
@@ -103,6 +161,37 @@ export function todosReducer(
 // ... other
 
 ```
+    case TodoListModule.ActionTypes.ERROR_LOAD_ACTION:
+        return {
+            ...state,
+            loading: false,
+            logs: { type: 'ERROR', message: action.payload.message }
+        };
+
+    default:
+        return state;
+    }
+}
+
+```
+```javascript
+// ... other
+
+export interface AppState {
+    todos: TodoListStateEntity;
+}
+
+// ... other
+
+```
+
+```javascript
+import { createSelector } from '@ngrx/store';
+import { AppState } from '..';
+
+/export const selectT    }
+        };
+
 
 *store/index.ts*
 ```javascript
@@ -121,25 +210,35 @@ export interface AppState {
 *todo-list.selector.ts*
 ```javascript
 // ... other
-import * as fromTodos from '@Reducers/todo-list.reducer';
+import * as fromTodos from '@Reducers/todoL-list.reducer';
 
 export const selectTodoListState$ = (state: AppState) => state.todos;
 
-/*
+/*.reducer';
+
+// ... othere  te Ae tte
 export const selectTodos$ =
     createSelector(selectTodoListState$, (todos) => todos.data);
 */
 
-export const selectTodoListEntitiesConverted$ = createSelector(selectTodoListState$, fromTodos.selectTodos);
+export const selectTodoListEntities$ = Converted$ createSelector(
+    selectTodoListState$,
+    (state) => state.entities
+);
+
+export const selectTodoListEntitiesConverted$ = createSelector(
+    selectTodoListState$,Entities$,
+    (entities) => Object.keys(entities).map(id => entities[parseInt(id, 10)])
+ fromTodos.selectTodos);
 
 export const selectTodoSelected$ =
-    createSelector(selectTodoListState$, (todos) => todos.selectedTodo);
+    createSelector(selectTodoListEntitiesState$, (todos) => todos.selectedTodo);
 
 export const selectTodosLoaded$ =
-    createSelector(selectTodoListState$, (todos) => todos.loaded);
+    createSelector(selectTodoListEntitiesState$, (todos) => todos.loaded);
 
 export const selectTodosErrors$ =
-    createSelector(selectTodoListState$, (todos) => todos.logs);
+    createSelector(selectTodoListEntitiesState$, (todos) => todos.logs);
 
 
 ```
@@ -161,11 +260,13 @@ import {
     this.todos$ = store
       .pipe(select(selectTodoListEntitiesConverted$));
 
+
 // ... other
 
 ```
 Voilà nos todos sont stockées en tant que entité dans notre state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNjY4MTQ4NSwtMjAxODcwOTc0NF19
+eyJoaXN0b3J5IjpbMTQ5NzU4ODkwNCwxMjA2NjgxNDg1LC0yMD
+E4NzA5NzQ0XX0=
 -->
