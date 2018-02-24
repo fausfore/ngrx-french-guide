@@ -201,6 +201,8 @@ Dans notre index, on défini l'objet **reducers** qui contient notre **reducer**
 
 L'injection d'un token
 
+> Pour injecter les reduceurs dans votre application, utilisez un **InjectionToken** et un fournisseur pour enregistrer les réducteurs via l'injection de dépendance.
+
 */app.module.ts*
 ```javascript
 import { BrowserModule } from '@angular/platform-browser';
@@ -288,5 +290,5 @@ export class AppComponent implements OnInit {
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg4NzkzOTBdfQ==
+eyJoaXN0b3J5IjpbMTk2MzM2NzY5MV19
 -->
