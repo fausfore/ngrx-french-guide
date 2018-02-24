@@ -20,9 +20,9 @@ this.todos$ = store.pipe(select((state) => state.todos.data));
 ```
 De cette manière on cible directement la propriété **data**.
 
+## Les Pipes RXJS
 
-
-Comme son nom le précise on va pouvoir sélectionner une partie d'un state voir même pouvoir renvoyer une itération modifié du state grâce au traitement de RxJs sur les Observables car oui nos states sont des observables et bénéficie de l'énorme api RxJs pour faire du traitement sur nos données.
+Avant de continuer sur nosComme son nom le précise on va pouvoir sélectionner une partie d'un state voir même pouvoir renvoyer une itération modifié du state grâce au traitement de RxJs sur les Observables car oui nos states sont des observables et bénéficie de l'énorme api RxJs pour faire du traitement sur nos données.
 Pour voir un peu les différentes méthodes : http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html
 
 On en voit un premier qui est la fonction **Pipe()** que sera très très très utilisé dans nos traitement:
@@ -48,6 +48,8 @@ source$
 	 
 ```
 Du coup l’idée est transformé la source de l'observable avant même le subscribe de manière pur c'est à dire la source initiale n'a pas été altéré par ces changements.
+
+## States Selectors
 
 *store/selectors/todo-list.selector.ts*
 ```javascript
@@ -200,5 +202,5 @@ Voilà notre action **createTodo** est terminé pour le moment il reste des chos
 ### Fin de la branche step-2
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDUwNTkxMDMsMjEyMjc0ODA4OV19
+eyJoaXN0b3J5IjpbLTE2MTMyMDMwNDMsMjEyMjc0ODA4OV19
 -->
