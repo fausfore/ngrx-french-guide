@@ -196,7 +196,7 @@ export function getReducers() {
 
 export const REDUCER_TOKEN = new InjectionToken<ActionReducerMap<AppState>>('Registered Reducers');
 ```
-Dans notre index, on défini l'objet reducers qui contient notre reducer de todos, on ajoute aussi une fonction qui renvoie cette objet voici pourquoi :
+Dans notre index, on défini l'objet **reducers** qui contient notre **reducer** de todos, on ajoute aussi une fonction **getReducers()** qui renvoie cette objet voici pourquoi :
  >Le mode Ahead of Time (AoT) Compilation de Angular exige que tous les symboles référencés dans les métadonnées du décorateur soient analysables statiquement. Pour cette raison, nous ne pouvons pas injecter dynamiquement l'état à l'exécution avec AoT sauf si nous fournissons notre **reducers** en tant que fonction. 
 
 */app.module.ts*
@@ -228,7 +228,7 @@ export class AppModule { }
 ```
 
 
->Maintenant pour créer notre **Store**, il suffit de prendre le **StoreModule** et de lui injecter nos reducers.
+Maintenant pour créer notre **Store**, il suffit de prendre le **StoreModule** et de lui injecter nos reducers.
 
 *exemple : /app.component.ts*
 ```javascript
@@ -286,5 +286,5 @@ export class AppComponent implements OnInit {
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxOTQ4MTU2MV19
+eyJoaXN0b3J5IjpbLTExMjUyNjU2NV19
 -->
