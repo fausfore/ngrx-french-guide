@@ -8,7 +8,9 @@
 ### 0-5  Le root reducer
 ### 0-6 Le schéma
 ### 0-7 Les actions
+### 0-8  Action creator
 ## [1 - De Redux à Ngrx](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-1.md)
+### 1-1 Installation
 
 ## [2 - States Selectors](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-2.md)
 
@@ -36,5 +38,5 @@
 
 ## [14 - TESTINGS ADVANCE](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-14.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MjI3MDgxMiwxNTY3MzMxNjQyXX0=
+eyJoaXN0b3J5IjpbLTExNTQ5NDQzMCwxNTY3MzMxNjQyXX0=
 -->
