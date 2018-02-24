@@ -77,7 +77,7 @@ Voilà maintenant ce même sélecteur peut être utilisé dans plein d'autres co
 
 ## Ajouter une todo
 
-On va créer un formulaire pour créer une todo grâce au **FormsBuilder** d'Angular
+On va créer un formulaire pour créer une todo grâce au **FormsBuilder** d'Angular, la fonction **createTodo()** renverra la futur action de création de todo dans le reducer.
 
 */app.component.ts*
 ```javascript
@@ -207,5 +207,5 @@ Voilà notre action **createTodo** est terminé pour le moment il reste des chos
 ### Fin de la branche step-2
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDA1ODc3NjAsMjEyMjc0ODA4OV19
+eyJoaXN0b3J5IjpbLTE5MTk0NTQzNjgsMjEyMjc0ODA4OV19
 -->
