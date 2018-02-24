@@ -62,7 +62,8 @@ export const selectTodoListState$ = (state: AppState) => state.todos;
 export const selectTodos$ =
 	createSelector(selectTodoListState$,(todos) => todos.data);
 ```
-Ici notre première fonction renvoie vers le state todos puis on la combine avec une autre fonction qui 
+Ici notre première fonction renvoie vers le state todos puis on la combine avec une autre fonction qui renvoie data.
+
 */app.component.ts*
 ```javascript
 import { selectTodos } from 'store/selectors/todo-list.selector';
@@ -71,7 +72,7 @@ import { selectTodos } from 'store/selectors/todo-list.selector';
 
 this.todos$ = store.pipe(select(selectTodos$));
 ```
-Voilà maintenant le sélecteur pourrait être utilisé dans plein d'autre component.
+On remplace la fonction par le nouveau sélecteur et Voilà maintenant le sélecteur pourrait être utilisé dans plein d'autre component.
 
 ## Ajouter une todo
 
@@ -205,5 +206,5 @@ Voilà notre action **createTodo** est terminé pour le moment il reste des chos
 ### Fin de la branche step-2
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMTg4NTU4MCwyMTIyNzQ4MDg5XX0=
+eyJoaXN0b3J5IjpbLTYwNzAyMzcyNywyMTIyNzQ4MDg5XX0=
 -->
