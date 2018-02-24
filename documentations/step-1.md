@@ -173,7 +173,7 @@ export function todosReducer(
     }
 }
 ```
-Voilà notre premier switch va ajouter un tableau de todo dans notre tableau data 
+Voilà notre premier switch va ajouter le mock de todo dans notre tableau data 
 *store/index.ts*
 ```javascript
 import { ActionReducerMap } from '@ngrx/store';
@@ -272,7 +272,8 @@ export class AppComponent implements OnInit {
 	});
 
     Dans ce cas de figure on ne fait pas de mutation sur la liste
-    de todos dans le component. Donc pas besoin de faire un subscribe afin de garder la variable localement cela évite également de faire
+    de todos dans le component. Donc pas besoin de faire un subscribe
+    afin de garder la variable localement cela évite également de faire
     un unsubscribe dans le OnDestroy
     et utilisé un *ngIf dans le <ul> dans le cas ou la donnée soit vide.
 	*/
@@ -290,5 +291,5 @@ export class AppComponent implements OnInit {
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2OTY0MTYxNF19
+eyJoaXN0b3J5IjpbMTEzMTA3NzkxNF19
 -->
