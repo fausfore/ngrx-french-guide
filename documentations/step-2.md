@@ -4,6 +4,7 @@
 ## States Selectors
 
 ### Début de la branche step-2
+Avant de continuer voici une petite explication de l'utilisation du pipe **async** :
 
 > Le **pipe async** souscrit à un Observable ou une Promise et renvoie la dernière valeur qu'il a émise. Lorsqu'une nouvelle valeur est émise, le canal asynchrone marque un composant afin de vérifier les modifications. Lorsque le composant est détruit, **le pipe async se désinscrit automatiquement pour éviter les fuites de mémoire potentielles**.
 
@@ -196,5 +197,5 @@ Voilà notre action **createTodo** est terminé pour le moment il reste des chos
 ### Fin de la branche step-2
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMjc0ODA4OV19
+eyJoaXN0b3J5IjpbMTQwNDM1OTA1NiwyMTIyNzQ4MDg5XX0=
 -->
