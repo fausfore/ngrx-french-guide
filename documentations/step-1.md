@@ -138,7 +138,7 @@ export namespace TodoListModule {
 }
 ```
 Question pratique je préfère encapsulé le tout dans un **namespace** pour simplifié les imports, ce n'est pas une obligation.
-Le dernier export Actions servira pour le typage du reducer uniquement.
+Le dernier export **Actions** servira pour le typage du **reducer** uniquement.
 
 
 */store/reducers/todo-list.reducer.ts*
@@ -173,6 +173,7 @@ export function todosReducer(
     }
 }
 ```
+Voilà notre premier switch va pe
 *exemple : /store/index.ts*
 ```javascript
 import { ActionReducerMap } from '@ngrx/store';
@@ -285,5 +286,5 @@ export class AppComponent implements OnInit {
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MzQzNzkwMl19
+eyJoaXN0b3J5IjpbMTUyNDk1NDI5Nl19
 -->
