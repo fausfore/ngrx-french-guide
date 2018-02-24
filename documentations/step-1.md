@@ -120,7 +120,7 @@ export const todosMock = [{
     "completed": false
   }]
 ```
-La classe d'action de notre state de todos, pour le moment 
+La classe d'action de notre state de todos, pour le moment on créer juste l'
 *store/actions/todo-list.action.ts*
 ```javascript
 export namespace TodoListModule {
@@ -284,5 +284,5 @@ export class AppComponent implements OnInit {
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNTg4MzM5OV19
+eyJoaXN0b3J5IjpbLTM3NzQ2NDMzM119
 -->
