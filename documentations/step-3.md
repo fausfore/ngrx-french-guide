@@ -3,19 +3,19 @@
 
 ### *[Début de la branche step-3]*
 
-Même procédé que pour la création, cette fois on va passer l'id de la todo a supprimée dans le reducer et avec un **filter()** le tour est jouer.
+Même procédé que pour la création, cette fois on va passer l'id de la todo a supprimée dans le reducer et avec un **filter()** 
 
 *store/actions/todo-list.action.ts*
 ```javascript
-// ... Other
+// ... autres
 export namespace TodoListModule {
 
     export enum ActionTypes {
-        // ... Other
+        // ... autres
         DELETE_TODO = '[todoList] Delete Todo',
     }
 
-	// ... Other
+	// ... autres
 
     export class DeleteTodo {
         readonly type = ActionTypes.DELETE_TODO;
@@ -89,5 +89,5 @@ Voilà la suppression completed !
 ### Fin de la branche step-3
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjA3OTEwMiwyMTc1Nzc1MjJdfQ==
+eyJoaXN0b3J5IjpbOTc0Njg5Mjg2LDIxNzU3NzUyMl19
 -->
