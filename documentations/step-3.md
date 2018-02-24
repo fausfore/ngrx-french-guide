@@ -57,7 +57,9 @@ Ajoutons la fonction de suppression.
 }
 ```
 Voilà c'est fait !
-Mais il y a un soucis pour le moment a chaque fois que l'on créer une nouvelle  todo on lui donne un id 8 ce qui pose un problème, il faut un id unique. Pour le moment on a deux options calculer la longueur du tableau ou créer des id unique via un généreteur comme [uuid](https://www.npmjs.com/package/uuid) mais l'exemple la 1er option suffit.
+Mais il y a un soucis pour le moment a chaque fois que l'on créer une nouvelle  todo on lui donne un id 8 ce qui pose un problème, il faut un id unique !
+
+ Pour le moment on a deux options calculer la longueur du tableau de todo ou créer des id unique via un générateur comme [uuid](https://www.npmjs.com/package/uuid) mais l'exemple la 1er option suffit.
 
 */app.component.ts*
 ```javascript
@@ -91,5 +93,5 @@ Voilà la suppression completed !
 ### Fin de la branche step-3
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NjYzMTI5MSwyMTc1Nzc1MjJdfQ==
+eyJoaXN0b3J5IjpbLTk0NjMyMDc3MywyMTc1Nzc1MjJdfQ==
 -->
