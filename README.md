@@ -22,6 +22,7 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 ## [2 - Getters & create todo](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-2.md)
 ### 2-1 Le Pipe et les opérateurs RXJS
 ### 2-2 Les States Selectors
+### 2-3 Créer une todo
 
 ## [3 - Delete todo](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-3.md)
 
@@ -47,5 +48,5 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 
 ## [14 - TESTINGS ADVANCE](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-14.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcwNDA4NTYwLDE1NjczMzE2NDJdfQ==
+eyJoaXN0b3J5IjpbODYwNjY4MiwxNTY3MzMxNjQyXX0=
 -->
