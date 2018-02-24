@@ -201,7 +201,7 @@ Dans notre index, on défini l'objet **reducers** qui contient notre **reducer**
 
 L'injection d'un token est optionnelle: 
 
-> Pour injecter les reduceurs dans votre application, utilisez un **InjectionToken** et un fournisseur pour enregistrer les réducteurs via l'injection de dépendance.
+> Pour injecter les reduceurs dans votre application, utilisez un **InjectionToken** et un **providers** pour enregistrer les reduceurs via l'injection de dépendance.
 
 */app.module.ts*
 ```javascript
@@ -272,7 +272,7 @@ export class AppComponent implements OnInit {
 	});
 
     Dans ce cas de figure on ne fait pas de mutation sur la liste
-    de todos dans le composant et cela évite de faire
+    de todos dans le component. Donc et cela évite de faire
     un unsubscribe dans le OnDestroy
     ainsi qu'un *ngIf dans le <ul> dans le cas ou la donnée soit vide.
 	*/
@@ -290,5 +290,5 @@ export class AppComponent implements OnInit {
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NjQwNTc0NF19
+eyJoaXN0b3J5IjpbMTM5MzEyNjc3OF19
 -->
