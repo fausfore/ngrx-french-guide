@@ -17,7 +17,7 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 ## [1 - De Redux à Ngrx](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-1.md)
 ### 1-1 Installation
 ### 1-2 Architecture Folder
-### 1-3 Set up
+### 1-3 Commençons ! [ début du tutoriel ]
 
 ## [2 - Getters & create todo](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-2.md)
 ### 2-1 Le Pipe et les opérateurs RXJS
@@ -49,5 +49,5 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 
 ## [14 - TESTINGS ADVANCE](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-14.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk4NDk5NDAxLDE1NjczMzE2NDJdfQ==
+eyJoaXN0b3J5IjpbMjA3OTYwMjgwMCwxNTY3MzMxNjQyXX0=
 -->
