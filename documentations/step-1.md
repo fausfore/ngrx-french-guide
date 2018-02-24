@@ -49,7 +49,7 @@ Faisons le point de ce que représente fonctionnellement une todo :
 
 On récupère des todos -> **GET**
 On crée des todos -> **PUT**
-Suppression de todo-> **DELETE**
+On supprimes de todo-> **DELETE**
 Modification de todo -> **PATCH / POST**
 
 Un bon vieux **CRUD** quoi.
@@ -282,5 +282,5 @@ export class AppComponent implements OnInit {
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0ODkwNjI2N119
+eyJoaXN0b3J5IjpbLTIwMTE4NzQ0MzNdfQ==
 -->
