@@ -137,7 +137,7 @@ export namespace TodoListModule {
     export type Actions = InitTodos;
 }
 ```
-Question pratique je préfère encapsulé le tout dans un **namespace** pour simplifié les imports, libre à vous de ne pas le faire.
+Question pratique je préfère encapsulé le tout dans un **namespace** pour simplifié les imports, ce n'est pas une obligation.
 Le dernier export Actions servira pour le typage du reducer uniquement.
 
 
@@ -285,5 +285,5 @@ export class AppComponent implements OnInit {
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE2Mzk3NjgwXX0=
+eyJoaXN0b3J5IjpbLTg5MzQzNzkwMl19
 -->
