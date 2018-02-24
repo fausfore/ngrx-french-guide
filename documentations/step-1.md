@@ -1,6 +1,6 @@
 # De Redux à Ngrx
 
-### Début de la branche step-1 
+### *[ Début de la branche step-1 ]*
 
 Redux est un pattern déjà bien implémenter sur les principaux frameworks/librairies javascript du moment.
 Pour React  => **react-redux**
@@ -292,5 +292,5 @@ Après ces premières manipulations vous devez voir apparaître la liste de todo
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNTM5MzUyNF19
+eyJoaXN0b3J5IjpbLTYyMjE5NTYwXX0=
 -->
