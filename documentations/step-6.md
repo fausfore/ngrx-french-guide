@@ -394,10 +394,9 @@ public todosLoading: Observable<boolean>;
 // ...autres
 ```
 
-On a plsu besoin Voilà le côté service est déplacé dans le effect qui via le **LoadInitTodos()** va utilisé le service **todoListService.getTodos()** qui dispatchera la nouvelle valeur de todos dans le Store.
-On a rajouter en plus un template de chargement qui s'affichera entre le **LoadInitTodos()** et le **SuccessInitTodos()**
+On a plsu besoin d'avoir le service dans le component c'est l'effect qui via le **LoadInitTodos()** va utilisé le service **todoListService.getTodos()** qui dispatchera la nouvelle valeur de todos dans le Store.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjMzMjU4NDIsNTMyODk4MTUyXX0=
+eyJoaXN0b3J5IjpbMTk2NDQ5MDE1Nyw1MzI4OTgxNTJdfQ==
 -->
