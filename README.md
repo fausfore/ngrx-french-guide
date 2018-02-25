@@ -60,6 +60,10 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 ### 14-3 Reducers
 ### 14-4 Selectors
 ### 14-5 Effects
+
+## Conclusion 
+
+J’espère que ce tutoriel vous a permis de 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjA5NzY4MDEsMTU2NzMzMTY0Ml19
+eyJoaXN0b3J5IjpbLTg4OTg5NjIzNiwxNTY3MzMxNjQyXX0=
 -->
