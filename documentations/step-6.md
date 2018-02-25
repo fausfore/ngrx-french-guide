@@ -132,7 +132,7 @@ export namespace TodoListModule {
 	// ...other
 }
 ```
-Et le reducer dois retourner le payload à la place du mock qu'on peut d'ailleurs totalement supprimé mainte ~~/mocks~~
+Et le reducer dois retourner le payload à la place du mock qu'on peut d'ailleurs totalement supprimé. ~~/mocks~~
 
 */store/reducers/todo-list.reducer.ts*
 ```javascript
@@ -403,5 +403,5 @@ On a rajouter en plus un template de chargement qui s'affichera entre le **LoadI
 
 ### Fin de la branche step-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjcwNDc2NTUsNTMyODk4MTUyXX0=
+eyJoaXN0b3J5IjpbLTEzNDY0MTcwOTksNTMyODk4MTUyXX0=
 -->
