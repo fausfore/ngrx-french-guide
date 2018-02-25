@@ -364,7 +364,7 @@ import { selectTodoListState$, selectTodosLoading$, selectTodos$ } from '@Select
 @Component({
 template: `
     <!--
-	    Ajoutez votre l
+	    Ajoutez votre loader
     -->
     `
 })
@@ -398,5 +398,5 @@ On a rajouter en plus un template de chargement qui s'affichera entre le **LoadI
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY2NzMxNjI5LDUzMjg5ODE1Ml19
+eyJoaXN0b3J5IjpbMTY4MjI5ODQ5MCw1MzI4OTgxNTJdfQ==
 -->
