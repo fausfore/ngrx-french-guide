@@ -209,7 +209,7 @@ export const selectTodoListState$ = (state: AppState) => state.todos;
 
 /*.reducer';
 
-// ... othere  te Ae tte
+// ... à supprimer
 export const selectTodos$ =
     createSelector(selectTodoListState$, (todos) => todos.data);
 */
@@ -259,6 +259,6 @@ import {
 Voilà nos todos sont stockées en tant que entité dans notre state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1ODQzMjg0NCwxMjA2NjgxNDg1LC0yMD
+eyJoaXN0b3J5IjpbLTE0MTc3MDAzOCwxMjA2NjgxNDg1LC0yMD
 E4NzA5NzQ0XX0=
 -->
