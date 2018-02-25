@@ -3,7 +3,8 @@
 ### *[Début de la branche step-12]*
 
 Cette partie fait un focus sur l'optimisation de performance.
-Dans le cas ou notre todo-list contient des milliers de todos on aurez une baisse des performance car car sur chaque action on réalise une itération et si notre todo-list de sois plus un array de todo mais plutôt une **entité** de todo, lors d'un changement on aurai besoin que d'un **object[key]** pour mettre à jour la liste et c'est là que vient [Ngrx/entity](https://github.com/ngrx/platform/blob/master/docs/entity/README.md) ce module permet facilement de prendre en entré un array de créer une entité avec un **adapter** puis de rendre un array lors du **selector**, en plus il fourni des méthodes pour traiter directement avec notre entité comme **AddOne()** ou **AddMany()** .
+Dans le cas ou notre todo-list contienne des milliers de todos on aurez une baisse de performance car sur chaque action on réalise une itération sur notre tableau.
+Et si notre todo-list de soit plus un array de todo mais plutôt une **entité** de todo, lors d'un changement on aurai besoin que d'un **object[key]** pour mettre à jour la liste et c'est là que vient [Ngrx/entity](https://github.com/ngrx/platform/blob/master/docs/entity/README.md) ce module permet facilement de prendre en entré un array de créer une entité avec un **adapter** puis de rendre un array lors du **selector**, en plus il fourni des méthodes pour traiter directement avec notre entité comme **AddOne()** ou **AddMany()** .
 
 ```bash
 npm install @ngrx/entity --save OR yarn add @ngrx/entity --dev
@@ -266,6 +267,6 @@ import {
 Voilà nos todos sont stockées en tant que entité dans notre state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3ODE2MDIxOCwxMjA2NjgxNDg1LC0yMD
-E4NzA5NzQ0XX0=
+eyJoaXN0b3J5IjpbLTE2Njg1NTc4MzUsMTIwNjY4MTQ4NSwtMj
+AxODcwOTc0NF19
 -->
