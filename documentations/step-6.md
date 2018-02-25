@@ -9,7 +9,7 @@ Pour maximisé le temps on va créer un API avec le module npm **[JsonPlaceholde
 ```bash
 npm install -g json-serve
 ```
-Dans notre projet on va inclure un nouveau dossier **/server** au même niveau que **/app**  et ajouter un fichier json :
+Dans notre projet on va inclure un nouveau dossier **/server** au même niveau que **/app**  et ajouter un fichier json qui sera notre base de données :
 ```
 src
 |
@@ -18,7 +18,6 @@ src
 └───server
 	└───db.json
 ```
-ensuite on ajoute :
 
 *db.json*
 ```json
@@ -30,7 +29,7 @@ Et pour finir sur un terminal, il suffit de rentrer
 ```bash
 json-server path-of-json
 ```
-le port 3000 va s'ouvrir, allez sur **localhost:3000/todos** et hop une Api rest prête à l'emploi easy.
+le port 3000 va s'ouvrir, allez sur **localhost:3000/todos** et hop une API prête à l'emploi.
 
 ## Routes GET 
 On va générer un service depuis la console : 
@@ -403,5 +402,5 @@ On a rajouter en plus un template de chargement qui s'affichera entre le **LoadI
 
 ### Fin de la branche step-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MTg4Njc4Miw1MzI4OTgxNTJdfQ==
+eyJoaXN0b3J5IjpbMTcyMzk1NTAzMCw1MzI4OTgxNTJdfQ==
 -->
