@@ -6,7 +6,8 @@ Voilà on a maintenant toutes nos fonctionnalités : **Create, Select, Update, D
 Mais cela reste du local ou du offline, il est temps de mettre en place un serveur et inclure des requêtes **http**.
 
 Pour maximisé le temps on va créer un API avec le module npm **[JsonPlaceholder](https://jsonplaceholder.typicode.com/)** .
-``
+```bash
+
 avec **npm install -g json-server**.
 Le fichier va ajouter un nouveaux dossier **/server** au même niveau que **/app** et mettre un json :
 ```
@@ -402,5 +403,5 @@ On a rajouter en plus un template de chargement qui s'affichera entre le **LoadI
 
 ### Fin de la branche step-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MDU2ODkzOCw1MzI4OTgxNTJdfQ==
+eyJoaXN0b3J5IjpbLTIwMTQ3NzA3NDQsNTMyODk4MTUyXX0=
 -->
