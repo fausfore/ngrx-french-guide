@@ -162,14 +162,14 @@ export class TodoListEffects {
 ```
 ## Système de logs
 
-Voilà on a purger un peu de code inutile mais on peu mettre en place un système de logs avec des *toasters* afin d'informé l'utilisateur en cas de changement dans le state ou des possibles.
+Voilà on a purger un peu de code inutile mais on peu mettre en place un système de logs avec des *toasters* afin d'informé l'utilisateur en cas de changement ou d'erreurs  dans le state.
 Le **catchError** peut prendre une erreur en argument donc on peut l'a récupérer pour notre state.
 
+*todo-list.effect.ts*
 ```javascript
-catchError((err) => of(new TodoListModule.ErrorLoadAction()))
+// ... other
+catchError((err) => of(new TodoListModule.ErrorLoadAction(err)))
 ```
-Donc on peut récupérer cette erreur pour afficher le message dans un la view avec avec un **toastr**
-
 *todo-list.action.ts*
 ```javascript
 import { HttpErrorResponse } from '@angular/common/http';
@@ -179,13 +179,7 @@ export class ErrorLoadAction {
     constructor(public payload: HttpErrorResponse) {}
 }
 ```
-et passer l'erreur sur chaque actions dans les effects :
 
-*todo-list.effect.ts*
-```javascript
-// ... other
-catchError((err) => of(new TodoListModule.ErrorLoadAction(err)))
-```
 On ajoute une autre propriété qui permettra de garder les erreurs: 
 
 *models/todo.ts*
@@ -302,5 +296,5 @@ export class TodoListComponent {
 
 ### Fin de la branche step-11
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU1NDg2OTIxLC05NTI5NTg4OF19
+eyJoaXN0b3J5IjpbLTE1MjA2MTU0OTcsLTk1Mjk1ODg4XX0=
 -->
