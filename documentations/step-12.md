@@ -172,7 +172,6 @@ export function todosReducer(
 
 // ... other
 
-```
     case TodoListModule.ActionTypes.ERROR_LOAD_ACTION:
         return {
             ...state,
@@ -186,24 +185,6 @@ export function todosReducer(
 }
 
 ```
-```javascript
-// ... other
-
-export interface AppState {
-    todos: TodoListStateEntity;
-}
-
-// ... other
-
-```
-
-```javascript
-import { createSelector } from '@ngrx/store';
-import { AppState } from '..';
-
-/export const selectT    }
-        };
-
 
 *store/index.ts*
 ```javascript
@@ -252,7 +233,6 @@ export const selectTodosLoaded$ =
 export const selectTodosErrors$ =
     createSelector(selectTodoListEntitiesState$, (todos) => todos.logs);
 
-
 ```
 Switch du selector dans le component: 
 
@@ -279,6 +259,6 @@ import {
 Voilà nos todos sont stockées en tant que entité dans notre state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzE5Nzc3MTYsMTIwNjY4MTQ4NSwtMj
-AxODcwOTc0NF19
+eyJoaXN0b3J5IjpbMTk1ODQzMjg0NCwxMjA2NjgxNDg1LC0yMD
+E4NzA5NzQ0XX0=
 -->
