@@ -363,21 +363,9 @@ import { selectTodoListState$, selectTodosLoading$, selectTodos$ } from '@Select
 
 @Component({
 template: `
-    <h1>la todolist redux style !</h1>
-    <form [formGroup]="todoForm" (ngSubmit)="CreateTodo(todoForm.value)">
-	    <label>Titre :</label>
-	    <input type="text" formControlName="title" placeholder="Title"/>
-	    <label>Est-elle terminé ? :</label>
-	    <input type="checkbox" formControlName="completed"/>
-	    <button>Créer</button>
-    </form>
-    <ul>
-		<li *ngFor="let todo of todos$ | async">
-			<label>{{ todo.title }}</label>
-			<input type="checkbox" [value]="todo.completed"/>
-			<button (click)="DeleteTodo(todo.id)">Supprimer</button>
-		</li>
-	</ul>
+    <!--
+	    Ajoutez votre l
+    -->
     `
 })
 
@@ -403,12 +391,12 @@ public todosLoading: Observable<boolean>;
 		  */
 		  this.store.dispatch(new TodoListModule.LoadInitTodos())
 	  }
-// ...other
+// ...autres
 ```
 Voilà le côté service est déplacer vers le Effect qui via le **LoadInitTodos()** va utiliser le service **todoListService.getTodos()** qui dispatchera la nouvelle valeur de todos dans le Store.
 On a rajouter en plus un template de chargement qui s'affichera entre le **LoadInitTodos()** et le **SuccessInitTodos()**
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNDE3NzYzMyw1MzI4OTgxNTJdfQ==
+eyJoaXN0b3J5IjpbNzY2NzMxNjI5LDUzMjg5ODE1Ml19
 -->
