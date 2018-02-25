@@ -1,4 +1,4 @@
-# Des
+# Des tests, des tests
 
 ## Mocks
 Pour nos tests on aura besoin de valeur pour traiter les différents cas 
@@ -595,5 +595,5 @@ describe('Testing Effects', () => {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzg3NzEzODddfQ==
+eyJoaXN0b3J5IjpbLTEwMzk2OTQ5MjFdfQ==
 -->
