@@ -1,6 +1,6 @@
-## ERROR LOG
+## Les action de type ERROR
 
-### Début de la branche step-11
+### *[Début de la branche step-11]*
 
 Voilà le **mvp** de la todoList est terminé, sur la suite du tutoriel on va voir comment optimiser notre code et le 1er point c'est concernant les actions d'erreurs qui dans le reducer sont répété in fine par action, on pourrait les fusionné pour n'avoir que un state d'erreur todo-list :
 
@@ -300,5 +300,5 @@ export class TodoListComponent {
 
 ### Fin de la branche step-11
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjE3OTU4ODEsLTk1Mjk1ODg4XX0=
+eyJoaXN0b3J5IjpbLTIwNjQ0NjE4ODYsLTk1Mjk1ODg4XX0=
 -->
