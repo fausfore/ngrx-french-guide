@@ -64,7 +64,7 @@ import { appRouting } from './app.routing';
 // ... reste
 ```
 
-On va migré quasiment tout le contenu du **AppComponent**  vers **AllTodosComponent**, dans AppComonent** reste que la mise en place du **router-outlet**
+On va migré quasiment tout le contenu du **AppComponent**  vers **AllTodosComponent**, dans **AppComponent** il reste que la balise **router-outlet**
 */app.component.ts*
 ```javascript
 import { Component } from '@angular/core';
@@ -76,7 +76,7 @@ import { Component } from '@angular/core';
 
 export class AppComponent{ }
 ```
-
+Le fichier de routing pour 
  *modules/todo-list/todo-list.routing.ts*  
 ```javascript
 import { Route, RouterModule } from '@angular/router';
@@ -264,5 +264,6 @@ Plutôt cool non si votre IDE indique une erreur redémarrer-le. Voilà le point
 ### Fin de la branche step-4
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0MzYxNjQ4NCwtMTAwOTk0MDg1OF19
+eyJoaXN0b3J5IjpbLTE5MTExMDAzODAsLTEwMDk5NDA4NThdfQ
+==
 -->
