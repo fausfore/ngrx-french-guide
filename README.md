@@ -36,7 +36,7 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 ### 6-1 Service Angular Get Todos
 ### 6-2 Introduction de Effects
 
-## [7 - BONUS TIME !!](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-7.md)
+## [7 - Load Guard & DevTools](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-7.md)
 ### 7-1 Redux Devtools
 
 ## [8 - POST TODO](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-8.md)
@@ -53,5 +53,5 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 
 ## [14 - TESTINGS ADVANCE](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-14.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyMjcyMzM0MiwxNTY3MzMxNjQyXX0=
+eyJoaXN0b3J5IjpbLTIwMzk5MzEwNTUsMTU2NzMzMTY0Ml19
 -->
