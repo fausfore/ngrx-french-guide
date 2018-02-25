@@ -41,7 +41,7 @@ Redux est une version moins compliqué de Flux, il s'en distingue par le fait
 
 Grâce à la programmation fonctionnelles, le dispatcher est complètement retiré du schéma qui rend plus simple le développement.  
 <center>
-	<img width="600" src="https://wecodetheweb.com/2015/09/29/functionally-managing-state-with-redux/redux-cycle.png"/>
+	<img src="https://wecodetheweb.com/2015/09/29/functionally-managing-state-with-redux/redux-cycle.png"/>
 </center>
 
 ## Flux vs Redux
@@ -236,5 +236,5 @@ store.dispatch(new CounterActions.SetNewValue(6))
 // resultat => { counter : 6 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5Njc3MzA4NCwzNDc3OTA3MTZdfQ==
+eyJoaXN0b3J5IjpbMTAzNjE1MTA2OSwzNDc3OTA3MTZdfQ==
 -->
