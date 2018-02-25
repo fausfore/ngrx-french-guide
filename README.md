@@ -57,10 +57,10 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 
 ## [14 - Testings Advanced](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-14.md)
 ### 14-1 Mocks
-### 14-1 Actions
-### 14-1 Reducers
-### 14-1 Selectors
-### 14-1 Mocks
+### 14-2 Actions
+### 14-3 Reducers
+### 14-4 Selectors
+### 14-5 Effects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0ODMwNjgwNywxNTY3MzMxNjQyXX0=
+eyJoaXN0b3J5IjpbLTE5NzYwNzc5NzIsMTU2NzMzMTY0Ml19
 -->
