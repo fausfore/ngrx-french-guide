@@ -235,7 +235,7 @@ export class AllTodosComponent implements OnInit {
 }
 
 ```
-Petite pause avec la nouvelle architecture le dossier **store/** commence à être vraiment loin de nos composants , résultat les imports ressemble plus à rien.
+Une point s'impose, dans la nouvelle architecture, le dossier **store/** commence à être vraiment loin de nos composants , résultat les imports ressemble plus à rien.
 Pour palier ce problème on peut créer les **alias** via le **tsconfig.json** :
 
  *tsconfig.json*  
@@ -266,5 +266,5 @@ Plutôt cool non si votre IDE indique une erreur redémarrer-le. Voilà le point
 ### Fin de la branche step-4
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyNjA5MTc2OCwtMTAwOTk0MDg1OF19
+eyJoaXN0b3J5IjpbMjA5NjYxNjgyOSwtMTAwOTk0MDg1OF19
 -->
