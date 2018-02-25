@@ -52,7 +52,7 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 
 ## [13 - EXTRAS](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-13.md)
 
-## [14 - TESTINGS ADVANCE](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-14.md)
+## [14 - Testings Advanced](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-14.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4MDM1NDcsMTU2NzMzMTY0Ml19
+eyJoaXN0b3J5IjpbLTIwNTA4NjA3MTMsMTU2NzMzMTY0Ml19
 -->
