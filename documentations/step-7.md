@@ -5,7 +5,7 @@ A partir de la vous devez *checkout* la **step-6** pour avoir le design réalis�
 ![styles](https://github.com/fausfore/ngrx-guide/blob/master/assets/images/styles.png)
 
 
-### Début de la branche step-7
+### *[Début de la branche step-7
 
 Pour le moment c'est toujours **AllTodosComponent** qui a la main sur le **LoadInitTodos** mais on peut l'extraire également et l'intégrée a un **Guard Angular** qui vérifiera si la donnée est déjà chargée ( vérifiable par la propriété loaded ) dans le cas ou il n'y a pas de donnée, il enverra l'action **LoadInitTodos**.
 
@@ -132,5 +132,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 ### Fin de la branche step-7
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3ODI5MDgxMl19
+eyJoaXN0b3J5IjpbLTQ4NjIyMzQ5XX0=
 -->
