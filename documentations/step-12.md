@@ -1,4 +1,4 @@
-# NGRX - ENTITY
+# @Ngrx/Entity
 
 ### *[Début de la branche step-12]*
 
@@ -259,6 +259,6 @@ import {
 Voilà nos todos sont stockées en tant que entité dans notre state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTc3MDAzOCwxMjA2NjgxNDg1LC0yMD
-E4NzA5NzQ0XX0=
+eyJoaXN0b3J5IjpbLTExMTIwNTg3MjAsMTIwNjY4MTQ4NSwtMj
+AxODcwOTc0NF19
 -->
