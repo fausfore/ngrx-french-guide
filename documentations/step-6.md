@@ -325,7 +325,7 @@ import { TodoListEffects } from '@Effects/todo-list.effect';
 export const appEffects = [TodoListEffects];
 // ..other
 ```
-On ajoute 2 autre selectors pour le loading et le loaded state.
+Vous pouvez créer deux autres sélecteurs pour le **loading** et le **loaded** state.
 
 *store/selectors/todo-list.selector.ts*
 ```javascript
@@ -410,5 +410,5 @@ On a rajouter en plus un template de chargement qui s'affichera entre le **LoadI
 
 ### Fin de la branche step-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5OTg4OTI2MCw1MzI4OTgxNTJdfQ==
+eyJoaXN0b3J5IjpbLTkzODcwOTczNiw1MzI4OTgxNTJdfQ==
 -->
