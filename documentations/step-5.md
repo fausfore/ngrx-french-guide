@@ -182,8 +182,8 @@ export class SelectTodoComponent implements OnInit {
 }
 
 ```
-Maintenant vous allez pouvoir réali
+Maintenant vous allez pouvoir réaliser la sélection et la mise à jour d'une todo.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTI4MDg0NTIsLTI1MDA5NDk3OV19
+eyJoaXN0b3J5IjpbMTY3NjA1OTczMiwtMjUwMDk0OTc5XX0=
 -->
