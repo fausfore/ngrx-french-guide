@@ -151,7 +151,7 @@ export function todosReducer(
 ## Introduction de Effects
 La logique fonctionne bien, on charge bien les todos mais avec Ngrx il est possible d'aller plus loin en gérant également la partie **asynchrone** pour le moment impossible dans le reducer **(synchrone only)** .
 
-**Effects** est un second module créer par la team de ngrx qui a pour but de gérer ce genre de cas, en quelque mot les Effects sont des **listenners d'actions** qui peuvent effectués des fonctions et qui retourne une **nouvelle action** ( ou pas ). 
+**Effects** est un second module créer par la team de ngrx qui a pour but de gérer ce genre de cas, en quelque mot les **Effects** sont des **listenners d'actions** qui peuvent effectués des fonctions et retourne une **nouvelle action** ( ou pas ). 
 
 <p align="center">
   <img src="https://cdn-images-1.medium.com/max/1600/1*vSadxKWVoAirhVCa8fxiNw.png">
@@ -405,5 +405,5 @@ On a rajouter en plus un template de chargement qui s'affichera entre le **LoadI
 
 ### Fin de la branche step-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMzQ4NzkxMyw1MzI4OTgxNTJdfQ==
+eyJoaXN0b3J5IjpbODgwOTIwMTc4LDUzMjg5ODE1Ml19
 -->
