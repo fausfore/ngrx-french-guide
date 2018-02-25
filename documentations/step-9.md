@@ -4,7 +4,6 @@
 
 Comme pour le **CreateTodo** = Same Shit !
 
-Les actions :
 *todo-list.action.ts*
 
 ```javascript
@@ -55,7 +54,6 @@ export namespace TodoListModule {
 }
 
 ``` 
-Créer les reducers correspondante: 
 ```javascript
 // ... Other
     // DELETE TODO
@@ -88,8 +86,6 @@ Créer les reducers correspondante:
     */
 // ... Other
 ```
-Modifier l'action passé dans le template :
-
 *all-todos.component.ts*
 ```javascript
 // ... other
@@ -99,7 +95,7 @@ deleteTodo(id: number) {
 // ... other
 
 ```
-Et créer le service delete Todo, pour renvoyer l'id lors de la requête, on lui ajoute un pipe qui renvoie l'id du paramètre si 200
+Juste pour le service 
 
 *todo-list.service.ts*
 ```javascript
@@ -120,5 +116,5 @@ Voilà pour la suppression.
 ### Fin de la branche step-9
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzEyMTQzNTc0LDIyODkwODc2Nl19
+eyJoaXN0b3J5IjpbLTExMTMwMTA5MjcsMjI4OTA4NzY2XX0=
 -->
