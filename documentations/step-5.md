@@ -1,8 +1,8 @@
-## Update Todo
+# Update Todo
 
-### Début de la branche step-5
+### *[Début de la branche step-5]*
 
-On va rajouter un propriété dans le **TodoListState** de sauvegarder une todo, on va modifier l'interface, les actions et le reducer pour pouvoir ajouter cette logique.
+On va rajouter un propriété dans le **TodoListState** afin de conservé une todo de sauvegarder une todo, on va modifier l'interface, les actions et le reducer pour pouvoir ajouter cette logique.
 
 *models/todo.ts*
 ```javascript
@@ -185,5 +185,5 @@ export class SelectTodoComponent implements OnInit {
 ```
 ### Fin de la branche step-5
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc4MTM2MjYsLTI1MDA5NDk3OV19
+eyJoaXN0b3J5IjpbNjA0MDA4Mjk3LC0yNTAwOTQ5NzldfQ==
 -->
