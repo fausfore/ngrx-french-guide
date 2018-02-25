@@ -1,5 +1,6 @@
 # Sommaire
 25/02/2018
+
 Ceci est un tutoriel pour s'éssayer a **NGRX**, vous verrez les différents concepts de cette librairie par le biais d'un exercice de création d'une **todo-list**, on verra comment optimisé notre application par l'utilisation du pattern **Redux** et couvrir un maximum de sujets jusqu'au tests unitaires.
 
 A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que **Angular**.
@@ -69,5 +70,5 @@ J’espère que ce tutoriel vous a permis de comprendre NGRX et son implémentat
 Auteur : @Fausfore / Matias Ljubica
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDI0OTQ0MzYsMTU2NzMzMTY0Ml19
+eyJoaXN0b3J5IjpbLTExMTcyMjAzNzAsMTU2NzMzMTY0Ml19
 -->
