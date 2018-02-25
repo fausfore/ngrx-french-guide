@@ -119,7 +119,7 @@ export class AllTodosComponent {
 	  
 // ...other
 ```
-On change l'action de **InitTodos** en lui ajoutant un payload de type 
+On change l'action de **InitTodos** en lui ajoutant un payload.
 
 *store/actions/todo-list.action.ts*
 ```javascript
@@ -132,7 +132,7 @@ export namespace TodoListModule {
 	// ...other
 }
 ```
-Et le reducer retourne le payload à la place du mock que l'on peut supprimé maintenant ~~/mocks~~
+Et le reducer dois retourner le payload à la place du mock qu'on peut d'ailleurs totalement supprimé mainte ~~/mocks~~
 
 */store/reducers/todo-list.reducer.ts*
 ```javascript
@@ -403,5 +403,5 @@ On a rajouter en plus un template de chargement qui s'affichera entre le **LoadI
 
 ### Fin de la branche step-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMjI3MjEzOCw1MzI4OTgxNTJdfQ==
+eyJoaXN0b3J5IjpbLTEzNjcwNDc2NTUsNTMyODk4MTUyXX0=
 -->
