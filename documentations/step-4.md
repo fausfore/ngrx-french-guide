@@ -4,7 +4,7 @@
 
 ### Début de la branche step-4
 
-Avant de se lancer sur l'update de todo on va changer un peu l'architecture du projet et mettre en place un peu de routing.
+Avant de se lancer sur la mise à jour des todos, on va changer un peu l'architecture du projet et mettre en place un peu de routing.
 
 ```
 app
@@ -265,5 +265,6 @@ Plutôt cool non si votre IDE indique une erreur redémarrer-le. Voilà le point
 ### Fin de la branche step-4
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMDE0NzI3NiwtMTAwOTk0MDg1OF19
+eyJoaXN0b3J5IjpbLTEyOTQxNjA4NjcsLTEwMDk5NDA4NThdfQ
+==
 -->
