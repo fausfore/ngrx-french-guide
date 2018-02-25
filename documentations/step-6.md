@@ -31,7 +31,7 @@ json-server path-of-json
 ```
 le port 3000 va s'ouvrir, allez sur **localhost:3000/todos** et hop une API prête à l'emploi.
 
-## Routes GET 
+## Service Angular 
 On va générer un service depuis la console : 
 ```bash
 ng g service services/todo-list
@@ -402,5 +402,5 @@ On a rajouter en plus un template de chargement qui s'affichera entre le **LoadI
 
 ### Fin de la branche step-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyMzk1NTAzMCw1MzI4OTgxNTJdfQ==
+eyJoaXN0b3J5IjpbLTY5MzI2Mzg3NSw1MzI4OTgxNTJdfQ==
 -->
