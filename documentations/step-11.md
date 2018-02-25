@@ -163,7 +163,7 @@ export class TodoListEffects {
 ## Système de logs
 
 Voilà on a purger un peu de code inutile mais on peu mettre en place un système de logs, pour informé l'utilisateur en cas de changement dans le state et les erreurs possibles.
-Le **catchError** peut prendre une erreur en argumentdonc on peut l'a récupèrer po
+Le **catchError** peut prendre une erreur en argumentdonc on peut l'a récupèrer pour notre state.
 
 ```javascript
 catchError((err) => of(new TodoListModule.ErrorLoadAction()))
@@ -302,5 +302,5 @@ export class TodoListComponent {
 
 ### Fin de la branche step-11
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkxODI4Mjc2LC05NTI5NTg4OF19
+eyJoaXN0b3J5IjpbMTA1NDQxMTc3MiwtOTUyOTU4ODhdfQ==
 -->
