@@ -45,7 +45,8 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 
 ## [10 - PATCH TODO](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-10.md)
 
-## [11 - ERROR LOG](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-1.md)
+## [11 - Les action de type ERROR](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-1.md)
+### 11-1 Système de logs
 
 ## [12 - NGRX - ENTITY](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-12.md)
 
@@ -53,5 +54,5 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 
 ## [14 - TESTINGS ADVANCE](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-14.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzYwNTg0MzEsMTU2NzMzMTY0Ml19
+eyJoaXN0b3J5IjpbLTk3Njk1NTE3NCwxNTY3MzMxNjQyXX0=
 -->
