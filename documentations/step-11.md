@@ -180,7 +180,7 @@ export class ErrorLoadAction {
 }
 ```
 
-On ajoute une autre propriété logs dans notre state.
+On ajoute une autre propriété logs dans notre interface de state.
 
 *models/todo.ts*
 ```javascript
@@ -234,7 +234,7 @@ case TodoListModule.ActionTypes.ERROR_LOAD_ACTION:
         logs: { type: 'ERROR', message: action.payload.message },
     };
 ```
-On aura besoin d'un selector pour le logs: 
+On aura besoin d'un sélecteur pour le logs: 
 
 *todo-list.selector.ts*
 ```javascript
@@ -294,7 +294,8 @@ export class TodoListComponent {
 
 ```
 
-### Fin de la branche step-11
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ2MzA1NDAsLTk1Mjk1ODg4XX0=
+eyJoaXN0b3J5IjpbLTEwOTE2NTg0NDUsLTk1Mjk1ODg4XX0=
 -->
