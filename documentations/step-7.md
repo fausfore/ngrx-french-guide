@@ -100,6 +100,7 @@ Avec le guard plus besoin de charger l'action depuis le component :
 // ...other
 ```
 Voilà une manière de charger la donnée avant même de charger un composant une idée de sortir encore plus le component de la logique.
+
 ## Redux Devtools
 Il existe une super extension Chrome pour le dev avec redux: [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=fr) 
 pour l'installer sur le projet, il vous faut le package [@ngrx/store-devtools](https://github.com/ngrx/platform/blob/master/docs/store-devtools/README.md)
@@ -133,5 +134,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 ### Fin de la branche step-7
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODUzMjMzNTRdfQ==
+eyJoaXN0b3J5IjpbLTg1NTM0NDQ1Nl19
 -->
