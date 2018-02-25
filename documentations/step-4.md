@@ -47,7 +47,7 @@ const routes: Route[] = [
 
 export const appRouting: ModuleWithProviders = RouterModule.forRoot(routes);
 ```
-Dans le **AppModule** on peut retiré les dépendances pour les formulaires.
+Dans le **AppModule** on peut déplacé les dépendances des formulaires vers **TodoListModule**.
 
 *app.module.ts*
 ```javascript
@@ -64,7 +64,7 @@ import { appRouting } from './app.routing';
 // ... reste
 ```
 
-On va déplacer quasiment tout le fichier vers **all-todos.component**,
+On va migré quasiment tout le contenu du AppComonent** fichier vers **all-todos.component**,
 reste que la mise en place du **router-outlet**
 */app.component.ts*
 ```javascript
@@ -265,5 +265,5 @@ Plutôt cool non si votre IDE indique une erreur redémarrer-le. Voilà le point
 ### Fin de la branche step-4
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MTE1ODAxNywtMTAwOTk0MDg1OF19
+eyJoaXN0b3J5IjpbMjAwMjI4MjM4NywtMTAwOTk0MDg1OF19
 -->
