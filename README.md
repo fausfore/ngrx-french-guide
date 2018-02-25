@@ -63,7 +63,7 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 
 ## Conclusion 
 
-J’espère que ce tutoriel vous a permis de 
+J’espère que ce tutoriel vous a permis de comprendre 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4OTg5NjIzNiwxNTY3MzMxNjQyXX0=
+eyJoaXN0b3J5IjpbMTI4MjU2Mzg1MSwxNTY3MzMxNjQyXX0=
 -->
