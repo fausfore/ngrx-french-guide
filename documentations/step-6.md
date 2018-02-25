@@ -280,7 +280,7 @@ export function todosReducer(
 	*/
 // ... other      
 ```
-Il est temps d'écrire le premier effect.
+Il est temps d'écrire le premier **Effect**, vous pouvez le voir 
  
 *store/effects/todo-list.effect.ts*
 ```javascript
@@ -410,5 +410,5 @@ On a rajouter en plus un template de chargement qui s'affichera entre le **LoadI
 
 ### Fin de la branche step-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3OTE2Mzk1LDUzMjg5ODE1Ml19
+eyJoaXN0b3J5IjpbLTU3NDM2MTAyMCw1MzI4OTgxNTJdfQ==
 -->
