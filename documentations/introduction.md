@@ -20,7 +20,6 @@ Comme Angular peut être utilisé avec **typescript** , Ngrx profite également 
 <p align="center">
   <img src="https://cdn-images-1.medium.com/max/1600/1*xORdWwOFLR-6D4ghvUa6AA.png">
 </p>
-<center>Le Modèle MVC (ce que nous souhaitons éviter)</center>
 
 ## Redux, kesako ?!
 
@@ -28,7 +27,6 @@ C’est un pattern née de **Flux**, une architecture crée chez Facebook, il ap
 <p align="center">
   <img src="https://julienrenaux.fr/talks-src/2016/redux-angular2/img/flux-simple-f8-diagram-with-client-action-1300w_stores_views.png">
 </p>
-<center>Le Worflow de Flux</center>
 
 L'architecture de flux présente peut contenir plusieurs structures de données indépendantes appelé **Store**
 Chaque action passe par le dispatcher qui la transmet au store ciblé par l'action.   
@@ -236,5 +234,5 @@ store.dispatch(new CounterActions.SetNewValue(6))
 // resultat => { counter : 6 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNjE1MTA2OSwzNDc3OTA3MTZdfQ==
+eyJoaXN0b3J5IjpbLTIwNDc1Njg0NjEsMzQ3NzkwNzE2XX0=
 -->
