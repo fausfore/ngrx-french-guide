@@ -106,7 +106,7 @@ export class AllTodosComponent implements OnInit {
   // ... Other
 }
 ```
-Reste la fonctionnalité de **UpdateTodo** va être mis dans le **SelectTodoComponent** avec un formulaire assez semblable à celui de la création de todo.
+Reste la fonctionnalité de **UpdateTodo** qui sera dans le **SelectTodoComponent** avec un formulaire assez semblable à celui de la création de todo.
 
  *modules/todo-list/components/select-todo/select-todo.component.ts*  
 ```javascript
@@ -182,7 +182,8 @@ export class SelectTodoComponent implements OnInit {
 }
 
 ```
-### Fin de la branche step-5
+Maintenant vous allez pouvoir ré
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MjQyMDExOSwtMjUwMDk0OTc5XX0=
+eyJoaXN0b3J5IjpbLTE1NzYyNDA5MzgsLTI1MDA5NDk3OV19
 -->
