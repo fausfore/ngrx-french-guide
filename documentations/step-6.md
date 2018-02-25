@@ -36,7 +36,7 @@ On va générer un service depuis la console :
 ```bash
 ng g service services/todo-list
 ```
-Maintenant il reste à le déclarer dans le **AppModule** et aussi également vu que l'on va faire des requête Http de importé module le module http de Angular :
+Maintenant il reste à le déclarer dans le **AppModule** ainsi que le module Http de Angular.
 
 *app.module.ts*
 ```javascript
@@ -402,5 +402,5 @@ On a rajouter en plus un template de chargement qui s'affichera entre le **LoadI
 
 ### Fin de la branche step-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTY4NDA0Niw1MzI4OTgxNTJdfQ==
+eyJoaXN0b3J5IjpbNDU5NjkyNzk2LDUzMjg5ODE1Ml19
 -->
