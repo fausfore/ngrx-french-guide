@@ -2,7 +2,7 @@
 
 ### *[Début de la branche step-9]*
 
-Comme pour le **CreateTodo** = Same 
+Comme pour le **CreateTodo** = Same Shit
 
 Les actions :
 *todo-list.action.ts*
@@ -120,5 +120,5 @@ Voilà pour la suppression.
 ### Fin de la branche step-9
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjI5NTMxNjMsMjI4OTA4NzY2XX0=
+eyJoaXN0b3J5IjpbODE2ODYyMjI5LDIyODkwODc2Nl19
 -->
