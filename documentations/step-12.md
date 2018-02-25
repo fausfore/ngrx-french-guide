@@ -16,7 +16,7 @@ const ArrayTodos = [
 
 const EntityTodos = {
 	id : {
-		id
+		id: 1
 	}
 };
 
@@ -287,6 +287,6 @@ import {
 Voilà nos todos sont stockées en tant que entité dans notre state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAzNDcyNjY1LDEyMDY2ODE0ODUsLTIwMT
-g3MDk3NDRdfQ==
+eyJoaXN0b3J5IjpbLTEzMTE4MzA0ODAsMTIwNjY4MTQ4NSwtMj
+AxODcwOTc0NF19
 -->
