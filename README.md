@@ -1,5 +1,4 @@
 # Sommaire
-**TOUJOURS EN COURS DE REDACTION**
 
 Ceci est un tutoriel pour s'éssayer a **Ngrx**, vous verrez les différents concepts de cette librairie par le biais d'un exercice de création d'une **todo-list**, on verra comment optimiser notre application par l'utilisation du pattern **Redux** et de couvrir un maximum de sujets jusqu'au tests unitaires.
 
@@ -62,5 +61,5 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 ### 14-4 Selectors
 ### 14-5 Effects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNDc4MTYwMSwxNTY3MzMxNjQyXX0=
+eyJoaXN0b3J5IjpbLTEyNjA5NzY4MDEsMTU2NzMzMTY0Ml19
 -->
