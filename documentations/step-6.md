@@ -337,7 +337,7 @@ export const selectTodosLoaded$ =
 	createSelector(selectTodoListState$,(todos) => todos.loaded);
 ```
 
-Et importer le module d"effect dans le rootModule en lui passant notre array de effects :
+Et importé le module d"effect dans le module principal en lui passant notre tableau d'effects :
 ```javascript
 // ... other
 import { EffectsModule } from '@ngrx/effects';
@@ -410,5 +410,5 @@ On a rajouter en plus un template de chargement qui s'affichera entre le **LoadI
 
 ### Fin de la branche step-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzODcwOTczNiw1MzI4OTgxNTJdfQ==
+eyJoaXN0b3J5IjpbMjE1MjY0Njg5LDUzMjg5ODE1Ml19
 -->
