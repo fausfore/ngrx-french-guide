@@ -261,10 +261,8 @@ import { AppState } from '@StoreConfig';
 import { selectTodos$ } from '@Selectors/todo-list.selector';
 import { TodoListModule } from '@Actions/todo-list.action';
 ```
-Plutôt cool non si votre IDE indique une erreur redémarrer-le.  Voilà le point refacto est terminé passons à l'update de todo !
-
-### Fin de la branche step-4
+Plutôt cool non si votre IDE indique une erreur redémarrer-le.  Voilà le point refacto est terminé passons à la mise à jour des todos !
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NDE5NjA1NywtMTAwOTk0MDg1OF19
+eyJoaXN0b3J5IjpbOTc5MTk2NDIsLTEwMDk5NDA4NThdfQ==
 -->
