@@ -1,6 +1,6 @@
-## API
-### Début de la branche step-6
+# Créer un API
 
+### *[Début de la branche step-6]*
 
 Voilà on a maintenant toutes nos fonctionnalités : **Create, Update, Delete** on va pouvoir commencer a inclure les requêtes **http**, pour cela on va prendre le module npm de  **[JsonPlaceholder](https://jsonplaceholder.typicode.com/)** avec **npm install -g json-server**.
 Le fichier va ajouter un nouveaux dossier **/server** au même niveau que **/app** et mettre un json :
@@ -397,5 +397,5 @@ On a rajouter en plus un template de chargement qui s'affichera entre le **LoadI
 
 ### Fin de la branche step-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTMyODk4MTUyXX0=
+eyJoaXN0b3J5IjpbMTgwOTYyNzAwMyw1MzI4OTgxNTJdfQ==
 -->
