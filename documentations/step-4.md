@@ -76,7 +76,7 @@ import { Component } from '@angular/core';
 
 export class AppComponent{ }
 ```
-Le fichier de routing pour 
+Le fichier de routing pour le module **TodoList**
  *modules/todo-list/todo-list.routing.ts*  
 ```javascript
 import { Route, RouterModule } from '@angular/router';
@@ -264,6 +264,5 @@ Plutôt cool non si votre IDE indique une erreur redémarrer-le. Voilà le point
 ### Fin de la branche step-4
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTExMDAzODAsLTEwMDk5NDA4NThdfQ
-==
+eyJoaXN0b3J5IjpbNzgzMjU5NzMsLTEwMDk5NDA4NThdfQ==
 -->
