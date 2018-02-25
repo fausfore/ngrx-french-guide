@@ -19,15 +19,12 @@ const EntityTodos = {
 };
 
 ```
-C'est là que vient [Ngrx/entity](https://github.com/ngrx/platform/blob/master/docs/entity/README.md) ce module permet facilement de prendre en entrée un tableau, de créer une entité avec un **adapter** puis de rendre un tableau lors du **selector**, de plus il fourni des méthodes pour traiter directement avec notre entité comme **AddOne()** ou **AddMany()** .
+C'est là que vient [Ngrx/entity](https://github.com/ngrx/platform/blob/master/docs/entity/README.md) ce module permet facilement de prendre en entrée un tableau, de créer une entité avec un **adapter** puis de rendre un tableau lors du **selector**, de plus il nous fourni des méthodes pour traiter directement avec notre entité comme **AddOne()** ou **AddMany()** .
 
 ```bash
 npm install @ngrx/entity --save OR yarn add @ngrx/entity --dev
 ```
 
-```javascript
-import { T*todoL-listModule } from '../actions/todo-list.action';
-import { TodoListState, Todo  } from '../../models/todo';.reducer.ts*
 ```javascript
 // ... other
 import { createEntityAdapter, EntityAdapter, EntityState } from '@ngrx/entity';
@@ -282,6 +279,6 @@ import {
 Voilà nos todos sont stockées en tant que entité dans notre state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5NDI0NDgxNiwxMjA2NjgxNDg1LC0yMD
-E4NzA5NzQ0XX0=
+eyJoaXN0b3J5IjpbLTE4NzE5Nzc3MTYsMTIwNjY4MTQ4NSwtMj
+AxODcwOTc0NF19
 -->
