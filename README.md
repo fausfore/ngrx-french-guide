@@ -39,11 +39,11 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 ## [7 - Load Guard & DevTools](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-7.md)
 ### 7-1 Redux Devtools
 
-## [8 - Create Todo V2](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-8.md)
+## [8 - Create Todo v2](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-8.md)
 
-## [9 - Delete Todo V2](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-9.md)
+## [9 - Delete Todo v2](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-9.md)
 
-## [10 - PATCH TODO](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-10.md)
+## [10 - Update Todo v2](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-10.md)
 
 ## [11 - Les action de type ERROR](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-1.md)
 ### 11-1 Système de logs
@@ -54,5 +54,5 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 
 ## [14 - TESTINGS ADVANCE](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-14.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3Njk1NTE3NCwxNTY3MzMxNjQyXX0=
+eyJoaXN0b3J5IjpbMTc4MDM1NDcsMTU2NzMzMTY0Ml19
 -->
