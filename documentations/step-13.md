@@ -13,7 +13,7 @@ ng generate effect App --root --module app.module.ts --collection @ngrx/schemati
 
 ```
 
-## Testings
+## Testings basics
 
 Les fichiers specs de tests sont mis à jour sur la branche step-13 ainsi que les imports au niveau des modules pour facilité la rédaction de test
 
@@ -33,5 +33,5 @@ Article : https://alligator.io/angular/change-detection-strategy/
 
 Pour faire simple l'architechure Ngrx permet d'être d'appliquer le **OnPush** sur tous vos components un gain de performance gratuit.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzM5MDA4MzBdfQ==
+eyJoaXN0b3J5IjpbMTc0ODgzMTk1N119
 -->
