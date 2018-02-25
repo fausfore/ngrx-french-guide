@@ -394,9 +394,9 @@ public todosLoading: Observable<boolean>;
 // ...autres
 ```
 
-On a plus besoin d'avoir le service dans le component, c'est l'effect qui via le **LoadInitTodos** va utilisé le service **getTodos** qui dispatchera la notre liste de todos via l'action **SuccessInitTodos** dans le Store.
+On a plus besoin d'avoir le service dans le component, c'est maintenent l'effect qui via le **LoadInitTodos** va utilisé le service **getTodos** qui dispatchera la notre liste de todos via l'action **SuccessInitTodos** dans le Store.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyODg1OTU0Myw1MzI4OTgxNTJdfQ==
+eyJoaXN0b3J5IjpbNjA1NTA2ODIyLDUzMjg5ODE1Ml19
 -->
