@@ -9,12 +9,19 @@ Dans le cas ou notre todo-list contienne des milliers de todos on aurez une bais
 Et si notre todo-list de soit plus un tableau de todo mais plutôt une **entité** de todo, lors d'un changement on aurai besoin que d'un **object[key]** et donc de ne plus faire pour 
 
 ```javascript
-// ... other
 const ArrayTodos = [
-	{ id: 1, title: 'blabla' }
+	{ id: 1, title: 'blabla' },
+	// etc ...
 ];
 
-// ... other
+const EntityTodos = {
+	id : {
+		id
+	}
+};
+
+
+
 
 ```
 mettre à jour la liste et c'est là que vient [Ngrx/entity](https://github.com/ngrx/platform/blob/master/docs/entity/README.md) ce module permet facilement de prendre en entré un array de créer une entité avec un **adapter** puis de rendre un array lors du **selector**, en plus il fourni des méthodes pour traiter directement avec notre entité comme **AddOne()** ou **AddMany()** .
@@ -280,6 +287,6 @@ import {
 Voilà nos todos sont stockées en tant que entité dans notre state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIwMjk5NDEyLDEyMDY2ODE0ODUsLTIwMT
+eyJoaXN0b3J5IjpbNDAzNDcyNjY1LDEyMDY2ODE0ODUsLTIwMT
 g3MDk3NDRdfQ==
 -->
