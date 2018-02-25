@@ -316,7 +316,7 @@ export class TodoListEffects {
   ) {}
 }
 ```
-Pour finaliser l'implémentation des effects, on déclare un tab de effects dans l'index du store :
+Pour finaliser l'implémentation des effects, on déclare un tableau d'effects dans l'index du store :
 ```javascript
 // ...other
 import { TodoListEffects } from '@Effects/todo-list.effect';
@@ -410,5 +410,5 @@ On a rajouter en plus un template de chargement qui s'affichera entre le **LoadI
 
 ### Fin de la branche step-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MzEzNTkwMSw1MzI4OTgxNTJdfQ==
+eyJoaXN0b3J5IjpbMTQ5OTg4OTI2MCw1MzI4OTgxNTJdfQ==
 -->
