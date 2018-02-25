@@ -5,7 +5,7 @@
 Maintenant on va modifié notre action de **CreateTodo** pour inclure une requête serveur de la même façon comme précédemment avec **InitTodos** donc au lieu s'avoir que une action **CREATE_TODO**, on aura :
 - **LOAD_CREATE_TODO** ,
 - **SUCCESS_CREATE_TODO**,
- **ERROR_CREATE_TODO**.
+ - **ERROR_CREATE_TODO**.
 
 *todo-list.action.ts*
 ```javascript
@@ -172,6 +172,5 @@ createTodo(todo: Todo) {
 ### Fin de la branche step-8
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDgwODc0NjEsLTE1MDk5NzQ0OTRdfQ
-==
+eyJoaXN0b3J5IjpbNTExMjIzMjc4LC0xNTA5OTc0NDk0XX0=
 -->
