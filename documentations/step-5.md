@@ -11,7 +11,7 @@ export interface TodoListState {
 	selectTodo: Todo
 }
 ```
-On ajoute directement un **SELECT** & un **UPDATE**
+On ajoute directement un **SELECT** & un **UPDATE** toutes ces actions auront un paramètre de type Todo.
 
 *store/actions/todo-list.action.ts*
 ```javascript
@@ -186,5 +186,5 @@ export class SelectTodoComponent implements OnInit {
 ```
 ### Fin de la branche step-5
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNjU1Njg5MywtMjUwMDk0OTc5XX0=
+eyJoaXN0b3J5IjpbLTY3ODMxMzUwMiwtMjUwMDk0OTc5XX0=
 -->
