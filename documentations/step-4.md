@@ -235,8 +235,8 @@ export class AllTodosComponent implements OnInit {
 }
 
 ```
-Une point s'impose, dans la nouvelle architecture, le dossier **store/** commence à être vraiment loin de nos composants , résultat les imports ressemble plus à rien.
-Pour palier ce problème on peut créer les **alias** via le **tsconfig.json** :
+Une point s'impose, dans la nouvelle architecture, le dossier **store/** commence à être vraiment loin de nos composants , résultat les imports ne ressemble plus à rien.
+Pour palier ce problème on peut créer des **alias** via le **tsconfig.json** :
 
  *tsconfig.json*  
 ```json
@@ -253,7 +253,7 @@ Pour palier ce problème on peut créer les **alias** via le **tsconfig.json** :
   }
 }
 ```
-Avec ces options en plus on va pouvoir écrire :
+Avec cette configuration on va pouvoir écrire :
 
   *modules/todo-list/components/all-todos/all-todo.component.ts*  
 ```javascript
@@ -266,5 +266,5 @@ Plutôt cool non si votre IDE indique une erreur redémarrer-le. Voilà le point
 ### Fin de la branche step-4
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NjYxNjgyOSwtMTAwOTk0MDg1OF19
+eyJoaXN0b3J5IjpbLTg2MDUwMTc5LC0xMDA5OTQwODU4XX0=
 -->
