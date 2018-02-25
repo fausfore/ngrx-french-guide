@@ -95,7 +95,7 @@ deleteTodo(id: number) {
 // ... other
 
 ```
-Juste pour le service 
+Juste pour le service une petite astuce pour qu'il nous renvoie un id.
 
 *todo-list.service.ts*
 ```javascript
@@ -104,17 +104,14 @@ deleteTodo(id): Observable<number> {
     return this.http.delete<Todo>(`${environment.apiUrl}/todos/${id}`)
     // Le pipe va nous renvoyer l'id de la todo si la suppression
     // est réussi
-      .pipe(
-        map((response) => id)
-      );
+      .pipe(map(response => id));
   }
 // ... other
 
 ```
-Voilà pour la suppression.
+Delete DoNe !
 
-### Fin de la branche step-9
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTMwMTA5MjcsMjI4OTA4NzY2XX0=
+eyJoaXN0b3J5IjpbLTE3NTMxOTk4NDgsMjI4OTA4NzY2XX0=
 -->
