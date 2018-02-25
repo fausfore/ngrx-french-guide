@@ -158,7 +158,7 @@ La logique fonctionne bien, on charge bien les todos mais avec Ngrx il est possi
 </p>
 <center>Les effects</center>
 
-Avec un effect au lieu d'avoir une seule action **InitTodos**, on aura une action **LoadInitTodos** qui chargera les données de l'api et renvoie une action **SuccessInitTodos** dans le cas d'une réponse 200 du server et un **ErrorInitTodos** en cas d'erreur serveur.
+Avec un effect au lieu d'avoir une seule action **InitTodos**, on aura une action **LoadInitTodos** qui chargera les données de l'api et renverra une action **SuccessInitTodos** dans le cas d'une réponse 200 du server et un **ErrorInitTodos** en cas d'erreur serveur.
 <center>LoadInitTodos => SuccessInitTodos || ErrorInitTodos</center>
 
 Pour installez tous ça go terminal :
@@ -405,5 +405,5 @@ On a rajouter en plus un template de chargement qui s'affichera entre le **LoadI
 
 ### Fin de la branche step-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODgwOTIwMTc4LDUzMjg5ODE1Ml19
+eyJoaXN0b3J5IjpbLTE1MjA3MTU0NDksNTMyODk4MTUyXX0=
 -->
