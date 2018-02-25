@@ -1,4 +1,4 @@
-## Schematics
+# Schematics
 
 Depuis la version 5 de Ngrx et de Angular qui a introduit les schematics.
 
@@ -32,5 +32,5 @@ Article : https://alligator.io/angular/change-detection-strategy/
 
 Pour faire simple l'architechure Ngrx permet d'être d'appliquer le **OnPush** sur tous vos components donc encore un gain de performance.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNjU5MDU2OF19
+eyJoaXN0b3J5IjpbLTYxOTgzNDYzM119
 -->
