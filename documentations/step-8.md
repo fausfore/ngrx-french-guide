@@ -120,7 +120,7 @@ export class TodoListService {
 
 }
 ```
-On ajoute un effect qui listen l'action de LOAD_CREATE_TODO:
+On ajoute un effect qui écoutera les actions de type **LOAD_CREATE_TODO**.
 
 ```javascript
 // ...Other
@@ -172,5 +172,5 @@ createTodo(todo: Todo) {
 ### Fin de la branche step-8
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4MDAyMzYzMCwtMTUwOTk3NDQ5NF19
+eyJoaXN0b3J5IjpbLTQ1NTIzMjE5MywtMTUwOTk3NDQ5NF19
 -->
