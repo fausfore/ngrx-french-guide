@@ -1,5 +1,6 @@
-# Schematics
+# Petit Bonus
 
+## Schematics
 Depuis la version 5 de Ngrx et de Angular qui a introduit les schematics.
 
 **[@ngrx/schematics](https://github.com/ngrx/platform/blob/master/docs/schematics/README.md)**  fournit des templates pour générer des fichiers type reducer, effect, etc ...
@@ -32,5 +33,5 @@ Article : https://alligator.io/angular/change-detection-strategy/
 
 Pour faire simple l'architechure Ngrx permet d'être d'appliquer le **OnPush** sur tous vos components un gain de performance gratuit.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1OTYwNzEwNV19
+eyJoaXN0b3J5IjpbLTIxMzM5MDA4MzBdfQ==
 -->
