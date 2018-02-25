@@ -28,6 +28,7 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 ### 3-1 Gérer les ids
 
 ## [4 - Refacto Time !](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-4.md)
+### 4-1 @Alias
 
 ## [5 - Update Todo](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-5.md)
 
@@ -49,5 +50,5 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 
 ## [14 - TESTINGS ADVANCE](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-14.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3OTYwMjgwMCwxNTY3MzMxNjQyXX0=
+eyJoaXN0b3J5IjpbLTM1ODc0MjI2MywxNTY3MzMxNjQyXX0=
 -->
