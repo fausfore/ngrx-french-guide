@@ -3,7 +3,7 @@
 
 ### Début de la branche step-10
 
-Vous commencez à être habitué, on modifie l'action:
+Comme pour le **CreateTodo** et **DeleteTodo** = Same Shit !
 
 *todo-list.action.ts*
 ```javascript
@@ -128,5 +128,5 @@ updateTodo(formValue) {
 ### Fin de la branche step-10
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNjUzMDU4NSwyNjk1ODY0ODddfQ==
+eyJoaXN0b3J5IjpbLTIxOTk4NTcxOSwyNjk1ODY0ODddfQ==
 -->
