@@ -8,7 +8,7 @@ A partir de la vous devez *checkout* la **step-6** pour avoir le design réalis�
 ### *[Début de la branche step-7]*
 
 Pour le moment c'est toujours **AllTodosComponent** qui donne le go pour lancé le chargement des todos, on pourrai chargé avoir besoin de chargé cette liste sans attendre le **OnInit** du component.
- Si on utiliser u**Guard Angular** qui vérifiera si la donnée est déjà chargée ( vérifiable par la propriété loaded ) dans le cas ou il n'y a pas de donnée, il enverra l'action **LoadInitTodos**.
+ Si on utiliser un **Guard Angular** qui vérifiera si la donnée est déjà chargée ( vérifiable par la propriété loaded ) dans le cas ou il n'y a pas de donnée, il enverra l'action **LoadInitTodos**.
 
 *Générer un guard*
 ```bash
@@ -133,5 +133,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 ### Fin de la branche step-7
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0NTY4NzE1Nl19
+eyJoaXN0b3J5IjpbMjAyMDYyNTY2Nl19
 -->
