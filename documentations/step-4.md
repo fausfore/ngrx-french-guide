@@ -137,7 +137,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 export class TodoListModule { }
 ```
-le **TodoListComponent** va servir de parent qui va lier nos deux autres components avec un autre **router-outlet**
+le **TodoListComponent** servira juste de lien entre nos deux autres components avec un autre **router-outlet**.
  *modules/todo-list/todo-list.component.ts*  
 ```javascript
 import { Component } from '@angular/core';
@@ -155,6 +155,8 @@ import { Component } from '@angular/core';
 })
 export class TodoListComponent {}
 ```
+
+Le component qui contirndra la 
 
  *modules/todo-list/components/all-todos/all-todo.component.ts*  
 ```javascript
@@ -265,6 +267,5 @@ Plutôt cool non si votre IDE indique une erreur redémarrer-le. Voilà le point
 ### Fin de la branche step-4
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjA1Mjc5MzgsLTEwMDk5NDA4NThdfQ
-==
+eyJoaXN0b3J5IjpbLTYzNTc0MzIzLC0xMDA5OTQwODU4XX0=
 -->
