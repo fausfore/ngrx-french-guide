@@ -139,9 +139,9 @@ export class TodoListEffects {
 
 // ...Other
 }
-
 ```
-Maintenant reste plus que a changer l'action lors du click et retirer la notion de id car le serveur donnera son propre id
+Maintenant reste plus que a changer l'action lors du clique ainsi on peut retirer la notion d'id car le serveur donnera son propre id à la todo.
+
 *all-todos.ts*
 ```javascript
 // private todosLength: number;
@@ -169,5 +169,5 @@ createTodo(todo: Todo) {
 ### Fin de la branche step-8
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NDIwMTY4OCwtMTUwOTk3NDQ5NF19
+eyJoaXN0b3J5IjpbMTY0ODk5NDA2OCwtMTUwOTk3NDQ5NF19
 -->
