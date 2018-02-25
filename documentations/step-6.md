@@ -7,9 +7,9 @@ Mais cela reste du local ou du offline, il est temps de mettre en place un serve
 
 Pour maximisé le temps on va créer un API avec le module npm **[JsonPlaceholder](https://jsonplaceholder.typicode.com/)** .
 ```bash
+npm install -g json-serve
 ```
-avec **npm install -g json-server**.
-Le fichier va ajouter un nouveaux dossier **/server** au même niveau que **/app** et mettre un json :
+Dans notre projet on va inclure un nouveau dossier **/server** au même niveau que **/app**  et ajouter un fichier json :
 ```
 src
 |
@@ -403,5 +403,5 @@ On a rajouter en plus un template de chargement qui s'affichera entre le **LoadI
 
 ### Fin de la branche step-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTAzMjg0OTYsNTMyODk4MTUyXX0=
+eyJoaXN0b3J5IjpbLTc5MTg4Njc4Miw1MzI4OTgxNTJdfQ==
 -->
