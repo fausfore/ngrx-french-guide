@@ -11,7 +11,7 @@ Et si notre todo-list de soit plus un tableau de todo mais plutôt une **entité
 ```javascript
 // ... other
 const ArrayTodos = [
-	{  }
+	{ id: 1, title: '' }
 ];
 
 // ... other
@@ -280,6 +280,6 @@ import {
 Voilà nos todos sont stockées en tant que entité dans notre state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMzUzMjU0LDEyMDY2ODE0ODUsLTIwMT
-g3MDk3NDRdfQ==
+eyJoaXN0b3J5IjpbNzE5MTAyOCwxMjA2NjgxNDg1LC0yMDE4Nz
+A5NzQ0XX0=
 -->
