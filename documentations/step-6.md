@@ -53,6 +53,7 @@ import { TodoListService } from './services/todo-list.service';
 })
 export class TodoListModule { }
 ```
+Ici on utilise le dernière version du module Http : **HttpClient**.
 *services/todo-list.service*
 ```javascript
 import { HttpClient } from '@angular/common/http';
@@ -402,5 +403,5 @@ On a rajouter en plus un template de chargement qui s'affichera entre le **LoadI
 
 ### Fin de la branche step-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU5NjkyNzk2LDUzMjg5ODE1Ml19
+eyJoaXN0b3J5IjpbMTE5NzQyNjExLDUzMjg5ODE1Ml19
 -->
