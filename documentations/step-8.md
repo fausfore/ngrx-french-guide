@@ -141,7 +141,6 @@ export class TodoListEffects {
 }
 ```
 Maintenant reste plus que a changer l'action lors du clique ainsi on peut retirer la notion d'id car le serveur donnera son propre id à la todo.
-
 *all-todos.ts*
 ```javascript
 // private todosLength: number;
@@ -166,8 +165,7 @@ createTodo(todo: Todo) {
     this.todoForm.reset();
   }
 ```
-### Fin de la branche step-8
-
+Voilà notre création de todo est terminée.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0ODk5NDA2OCwtMTUwOTk3NDQ5NF19
+eyJoaXN0b3J5IjpbMTI4NzI4ODczLC0xNTA5OTc0NDk0XX0=
 -->
