@@ -280,7 +280,7 @@ export function todosReducer(
 	*/
 // ... other      
 ```
-Il est temps d'écrire le premier **Effect**, vous pouvez le voir 
+Il est temps d'écrire le premier **Effect**, vous pouvez le voir cette un observable donc on peut utiliser également tous ce que peut nous fournir RXJS pour faire du traitement 
  
 *store/effects/todo-list.effect.ts*
 ```javascript
@@ -410,5 +410,5 @@ On a rajouter en plus un template de chargement qui s'affichera entre le **LoadI
 
 ### Fin de la branche step-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NDM2MTAyMCw1MzI4OTgxNTJdfQ==
+eyJoaXN0b3J5IjpbOTYyNjc4MzA1LDUzMjg5ODE1Ml19
 -->
