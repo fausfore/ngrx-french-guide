@@ -280,7 +280,7 @@ export function todosReducer(
 	*/
 // ... other      
 ```
-Il est temps d'écrire le premier **Effect**, vous pouvez le voir cette un observable donc on peut utiliser également tous ce que peut nous fournir RXJS pour faire du traitement 
+Il est temps d'écrire le premier **Effect**, vous pouvez le voir cette un observable donc on peut utiliser également tous ce que peut nous fournir RXJS pour faire du traitement, combiner des states etc ...
  
 *store/effects/todo-list.effect.ts*
 ```javascript
@@ -316,7 +316,7 @@ export class TodoListEffects {
   ) {}
 }
 ```
-Maintenant on déclare un array de effects dans l'index du store :
+Pour finaliser l'implémentation des effects, on déclare un tab de effects dans l'index du store :
 ```javascript
 // ...other
 import { TodoListEffects } from '@Effects/todo-list.effect';
@@ -410,5 +410,5 @@ On a rajouter en plus un template de chargement qui s'affichera entre le **LoadI
 
 ### Fin de la branche step-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYyNjc4MzA1LDUzMjg5ODE1Ml19
+eyJoaXN0b3J5IjpbMTc0MzEzNTkwMSw1MzI4OTgxNTJdfQ==
 -->
