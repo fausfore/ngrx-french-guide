@@ -69,7 +69,7 @@ export function todosReducer(
 		
 // ... other      
 ```
-Il faut ajouté l'action **SelectTodo** au clique aui dispatchera une action et redirigera verssur la page de **select-todo**
+Il faut ajouté l'action **SelectTodo** au clique aui dispatchera une action et redirigera vers la page de **select-todo**
 
 *all-todos.ts*
 ```javascript
@@ -186,5 +186,5 @@ export class SelectTodoComponent implements OnInit {
 ```
 ### Fin de la branche step-5
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTIzNzMwNTIsLTI1MDA5NDk3OV19
+eyJoaXN0b3J5IjpbLTIwODQxMzEyNDQsLTI1MDA5NDk3OV19
 -->
