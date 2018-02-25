@@ -41,7 +41,7 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 
 ## [8 - Create Todo V2](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-8.md)
 
-## [9 - DELETE TODO](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-9.md)
+## [9 - Delete Todo V2](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-9.md)
 
 ## [10 - PATCH TODO](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-10.md)
 
@@ -53,5 +53,5 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 
 ## [14 - TESTINGS ADVANCE](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-14.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIyNjMxMzI1LDE1NjczMzE2NDJdfQ==
+eyJoaXN0b3J5IjpbLTIwMzYwNTg0MzEsMTU2NzMzMTY0Ml19
 -->
