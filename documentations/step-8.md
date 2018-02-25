@@ -51,7 +51,7 @@ export namespace TodoListModule {
 }
 
 ```
-On update le reducer avec les nouvelles actions:
+On inclus les nouvelles actions dans le reducer.
 ```javascript
 // ...Other
 todosReducer(
@@ -172,5 +172,5 @@ createTodo(todo: Todo) {
 ### Fin de la branche step-8
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTExMjIzMjc4LC0xNTA5OTc0NDk0XX0=
+eyJoaXN0b3J5IjpbLTc4MDAyMzYzMCwtMTUwOTk3NDQ5NF19
 -->
