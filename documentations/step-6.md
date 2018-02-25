@@ -177,7 +177,7 @@ app
 		└───todo-list.effect.ts
 
 ```
-Un petit alias :
+le petit alias :
  *tsconfig.json*  
 ```json
 {
@@ -190,7 +190,11 @@ Un petit alias :
   }
 }
 ```
-On va ajouter les 3 actions pour le effect : **LOAD_INIT_TODOS, SUCCESS_INIT_TODOS, ERROR_INIT_TODOS**.
+On va ajouter les 3 actions pour le effect : 
+**LOAD_INIT_TODOS,
+SUCCESS_INIT_TODOS,
+ERROR_INIT_TODOS**.
+
 Au passage on retire l'action **InitTodos**
 
 *store/actions/todo-list.action.ts*
@@ -405,5 +409,5 @@ On a rajouter en plus un template de chargement qui s'affichera entre le **LoadI
 
 ### Fin de la branche step-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1NDA0ODA1Myw1MzI4OTgxNTJdfQ==
+eyJoaXN0b3J5IjpbLTMxOTg2ODkxLDUzMjg5ODE1Ml19
 -->
