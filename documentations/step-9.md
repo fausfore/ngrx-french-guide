@@ -109,9 +109,9 @@ deleteTodo(id): Observable<number> {
 // ... other
 
 ```
-Delete DoNe !
+DeleteTodo Done !
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTMxOTk4NDgsMjI4OTA4NzY2XX0=
+eyJoaXN0b3J5IjpbLTcwODQ1MzA5MCwyMjg5MDg3NjZdfQ==
 -->
