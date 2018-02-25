@@ -156,18 +156,17 @@ import { Component } from '@angular/core';
 export class TodoListComponent {}
 ```
 
-Le component qui contirndra la liste de todos:
-
+Le component qui contiendra la liste de todos.
  *modules/todo-list/components/all-todos/all-todo.component.ts*  
 ```javascript
 import { Store, select } from '@ngrx/store';
 import { OnInit, Component, Inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Observable } from 'rxjs/Observable';
-import { TodoListModule } from '@Actions/todo-list.action';
+import { TodoListModule } from '../../../../todo-list.action';
 import { AppState } from '@StoreConfig';
 import { Todo } from '@Models/todo';
-import { selectTodos$ } from '@Selectors/todo-list.selector';
+import { selectTodos$ } from '../../../../selectors/todo-list.selector';
 import { tap } from 'rxjs/operators';
 
 @Component({
@@ -267,5 +266,5 @@ Plutôt cool non si votre IDE indique une erreur redémarrer-le. Voilà le point
 ### Fin de la branche step-4
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNTE3OTI1MCwtMTAwOTk0MDg1OF19
+eyJoaXN0b3J5IjpbMTc4MDQ1Mzk0NSwtMTAwOTk0MDg1OF19
 -->
