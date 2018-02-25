@@ -125,8 +125,7 @@ updateTodo(formValue) {
   }
 ```
 
-### Fin de la branche step-10
-
+Et voilà le **mvp**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxOTk4NTcxOSwyNjk1ODY0ODddfQ==
+eyJoaXN0b3J5IjpbMTc2MTY4MTA3NSwyNjk1ODY0ODddfQ==
 -->
