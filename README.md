@@ -34,7 +34,7 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 
 ## [6 - Créer une API](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-6.md)
 ### 4-1 Service Angular Get Todos
-### 4-1 Service Angular Get Todos
+### 4-1 Introduction de Effects
 
 ## [7 - BONUS TIME !!](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-7.md)
 
@@ -52,5 +52,5 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 
 ## [14 - TESTINGS ADVANCE](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-14.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3MzkwMzkyOCwxNTY3MzMxNjQyXX0=
+eyJoaXN0b3J5IjpbMTk0MTk2NjI0OSwxNTY3MzMxNjQyXX0=
 -->
