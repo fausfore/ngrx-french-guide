@@ -39,7 +39,7 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 ## [7 - Load Guard & DevTools](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-7.md)
 ### 7-1 Redux Devtools
 
-## [8 - POST TODO](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-8.md)
+## [8 - Create Todo V2](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-8.md)
 
 ## [9 - DELETE TODO](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-9.md)
 
@@ -53,5 +53,5 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 
 ## [14 - TESTINGS ADVANCE](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-14.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzk5MzEwNTUsMTU2NzMzMTY0Ml19
+eyJoaXN0b3J5IjpbNTIyNjMxMzI1LDE1NjczMzE2NDJdfQ==
 -->
