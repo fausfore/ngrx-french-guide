@@ -236,7 +236,8 @@ export namespace TodoListModule {
 	| ErrorInitTodos;
 }
 ```
-Du faite qu'on a comme deux étapes lors d'un **initTodos**, on peut 
+Du faite qu'on a comme deux étapes lors d'un **initTodos**, on peut faire un switch sur les propriétés **loading** & **loaded** .
+
 Maintenant dans le reducer, vu que cette fois on fait de l'asynchrone on va commencer a jouer avec les booleans **loaded** & **loading** cela permettra de changer l'UI si les données sont en cours de fetch.
 
 */store/reducers/todo-list.reducer.ts*
@@ -410,5 +411,5 @@ On a rajouter en plus un template de chargement qui s'affichera entre le **LoadI
 
 ### Fin de la branche step-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4Nzk5MTc0Myw1MzI4OTgxNTJdfQ==
+eyJoaXN0b3J5IjpbMTY1MDU3NTI0Myw1MzI4OTgxNTJdfQ==
 -->
