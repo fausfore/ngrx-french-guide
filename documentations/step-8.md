@@ -2,7 +2,7 @@
 
 ### *[Début de la branche step-8]*
 
-Maintenant on va modifié notre action de **CreateTodo** pour inclure un appel serveur de la même façon comme précédemment avec **InitTodos** donc au lieu s'avoir que une action CREATE_TODO, on aura un **LOAD_CREATE_TODO** et un **SUCCESS_CREATE_TODO**
+Maintenant on va modifié notre action de **CreateTodo** pour inclure une requête serveur de la même façon comme précédemment avec **InitTodos** donc au lieu s'avoir que une action **CREATE_TODO**, on aura un **LOAD_CREATE_TODO** et un **SUCCESS_CREATE_TODO**.
 
 *todo-list.action.ts*
 ```javascript
@@ -169,5 +169,5 @@ createTodo(todo: Todo) {
 ### Fin de la branche step-8
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU4MDY0ODk5LC0xNTA5OTc0NDk0XX0=
+eyJoaXN0b3J5IjpbLTc3OTYwODI3MiwtMTUwOTk3NDQ5NF19
 -->
