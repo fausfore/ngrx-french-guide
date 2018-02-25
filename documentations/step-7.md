@@ -1,4 +1,4 @@
-# Load Guard & DevTools !!
+# Load Guard & DevTools
 
 A partir de la vous devez *checkout* la **step-6** pour avoir le design réalisé à la fin de cette branche.
 
@@ -135,5 +135,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de f
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NjA2MTE2Ml19
+eyJoaXN0b3J5IjpbMTI0MzU1ODE3MF19
 -->
