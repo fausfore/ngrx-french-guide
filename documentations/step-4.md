@@ -23,7 +23,7 @@ app
 			└───select-todo
 				│   select-todo.component.ts
 ```
-Une config de router pour du lazy-loading avec le **loadChildren**.
+Une config de routing afin de chargé notre module **TodoListModule** en lazy-loading avec le **loadChildren**.
  *app.routing.ts*  
 ```javascript
 import { Route, RouterModule } from '@angular/router';
@@ -47,7 +47,7 @@ const routes: Route[] = [
 
 export const appRouting: ModuleWithProviders = RouterModule.forRoot(routes);
 ```
-Dans le **AppModule** on peut retirer les dépendances pour les formulaires.
+Dans le **AppModule** on peut retiré les dépendances pour les formulaires.
 
 *app.module.ts*
 ```javascript
@@ -265,6 +265,5 @@ Plutôt cool non si votre IDE indique une erreur redémarrer-le. Voilà le point
 ### Fin de la branche step-4
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTQxNjA4NjcsLTEwMDk5NDA4NThdfQ
-==
+eyJoaXN0b3J5IjpbLTk1MTE1ODAxNywtMTAwOTk0MDg1OF19
 -->
