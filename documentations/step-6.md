@@ -119,7 +119,7 @@ export class AllTodosComponent {
 	  
 // ...other
 ```
-On change l'action de **InitTodos** en lui ajoutant un payload de type Array<Todo>
+On change l'action de **InitTodos** en lui ajoutant un payload de type 
 
 *store/actions/todo-list.action.ts*
 ```javascript
@@ -403,5 +403,5 @@ On a rajouter en plus un template de chargement qui s'affichera entre le **LoadI
 
 ### Fin de la branche step-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwOTEzNzk3LDUzMjg5ODE1Ml19
+eyJoaXN0b3J5IjpbMTEwMjI3MjEzOCw1MzI4OTgxNTJdfQ==
 -->
