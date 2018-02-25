@@ -182,8 +182,8 @@ export class SelectTodoComponent implements OnInit {
 }
 
 ```
-Maintenant vous allez pouvoir ré
+Maintenant vous allez pouvoir réali
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzYyNDA5MzgsLTI1MDA5NDk3OV19
+eyJoaXN0b3J5IjpbLTE3MTI4MDg0NTIsLTI1MDA5NDk3OV19
 -->
