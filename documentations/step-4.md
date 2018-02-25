@@ -1,6 +1,6 @@
 
 
-## Refacto Time !
+# Un peu de refacto !
 
 ### Début de la branche step-4
 
@@ -261,10 +261,10 @@ import { AppState } from '@StoreConfig';
 import { selectTodos$ } from '@Selectors/todo-list.selector';
 import { TodoListModule } from '@Actions/todo-list.action';
 ```
-Plutôt cool non si votre IDE indique une erreur redémarrer-le. Voilà le point refacto est terminé passons à l'update de todo !
+Plutôt cool non si votre IDE indique une erreur redémarrer-le.  Voilà le point refacto est terminé passons à l'update de todo !
 
 ### Fin de la branche step-4
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MDUwMTc5LC0xMDA5OTQwODU4XX0=
+eyJoaXN0b3J5IjpbNzgyNjY2OTQ5LC0xMDA5OTQwODU4XX0=
 -->
