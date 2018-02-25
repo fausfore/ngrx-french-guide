@@ -1,6 +1,6 @@
-## BONUS TIME !!
+# BONUS TIME !!
 
-A partir de la vous devez checkout la **step-6** pour avoir le styles qui a été réaliser à la fin de cette branche.
+A partir de la vous devez *checkout* la **step-6** pour avoir le design réalisé à la fin de cette branche.
 
 ![styles](https://github.com/fausfore/ngrx-guide/blob/master/assets/images/styles.png)
 
@@ -132,5 +132,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de e
 
 ### Fin de la branche step-7
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0NjMwMzgxM119
+eyJoaXN0b3J5IjpbLTk3ODI5MDgxMl19
 -->
