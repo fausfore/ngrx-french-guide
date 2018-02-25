@@ -19,7 +19,7 @@ const EntityTodos = {
 };
 
 ```
-mettre à jour la liste et c'est là que vient [Ngrx/entity](https://github.com/ngrx/platform/blob/master/docs/entity/README.md) ce module permet facilement de prendre en entré un array de créer une entité avec un **adapter** puis de rendre un array lors du **selector**, en plus il fourni des méthodes pour traiter directement avec notre entité comme **AddOne()** ou **AddMany()** .
+C'est là que vient [Ngrx/entity](https://github.com/ngrx/platform/blob/master/docs/entity/README.md) ce module permet facilement de prendre en entré un array de créer une entité avec un **adapter** puis de rendre un array lors du **selector**, en plus il fourni des méthodes pour traiter directement avec notre entité comme **AddOne()** ou **AddMany()** .
 
 ```bash
 npm install @ngrx/entity --save OR yarn add @ngrx/entity --dev
@@ -282,6 +282,6 @@ import {
 Voilà nos todos sont stockées en tant que entité dans notre state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMTcwMDkzMywxMjA2NjgxNDg1LC0yMD
+eyJoaXN0b3J5IjpbMTAwNjU0MzQ1MSwxMjA2NjgxNDg1LC0yMD
 E4NzA5NzQ0XX0=
 -->
