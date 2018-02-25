@@ -160,6 +160,8 @@ export class TodoListEffects {
 }
 
 ```
+## Système de logs
+
 Voilà on a purger un peu de code inutile mais on peu créer un système de logs en cas d'erreur, il faut savoir que dans le catchError, il peut prendre en argument l'erreur :
 
 ```javascript
@@ -299,5 +301,5 @@ export class TodoListComponent {
 
 ### Fin de la branche step-11
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NTcyNDY3MSwtOTUyOTU4ODhdfQ==
+eyJoaXN0b3J5IjpbNjcwMjk3NTc4LC05NTI5NTg4OF19
 -->
