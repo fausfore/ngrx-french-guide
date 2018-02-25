@@ -52,10 +52,11 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 
 ## [13 - Petit Bonus](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-13.md)
 ### 13-1 Schematics
-### 13-1 Testings basics
-### 13-1 Schematics
+### 13-2 Testings basics
+### 13-3 Change Detection OnPush
 
 ## [14 - Testings Advanced](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-14.md)
+### 14-1 Mocks
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4ODU5NjY4LDE1NjczMzE2NDJdfQ==
+eyJoaXN0b3J5IjpbLTEzNDM1NjUwNTIsMTU2NzMzMTY0Ml19
 -->
