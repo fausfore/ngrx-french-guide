@@ -357,7 +357,7 @@ export class AppModule { }
 
  *modules/todo-list/components/all-todos/all-todo.component.ts*  
 ```javascript
-// ...other
+// ...autres
 import { TodoListService } from '../services/todo-list';
 import { selectTodoListState$, selectTodosLoading$, selectTodos$ } from '@Selectors/todo-list.selector'; 
 
@@ -381,15 +381,15 @@ template: `
     `
 })
 
-// ...other
+// ...autres
 export class AllTodosComponent {
 public todosLoading: Observable<boolean>;
-    // ...other
+    // ...autres
 	constructor(
-		// ...other
+		// ...autres
 		// a supprimer private todoListService: TodoListService 
 	) {
-	// ...other
+	// ...autres
 	this.todosLoading = store.pipe(select(selectTodosLoading$));
 	}
 	  
@@ -408,7 +408,7 @@ public todosLoading: Observable<boolean>;
 Voilà le côté service est déplacer vers le Effect qui via le **LoadInitTodos()** va utiliser le service **todoListService.getTodos()** qui dispatchera la nouvelle valeur de todos dans le Store.
 On a rajouter en plus un template de chargement qui s'affichera entre le **LoadInitTodos()** et le **SuccessInitTodos()**
 
-### Fin de la branche step-6
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE1MjY0Njg5LDUzMjg5ODE1Ml19
+eyJoaXN0b3J5IjpbMTAwNDE3NzYzMyw1MzI4OTgxNTJdfQ==
 -->
