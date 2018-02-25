@@ -2,7 +2,7 @@
 
 ### *[Début de la branche step-9]*
 
-Maintenant voyons la suppression avec un vrai delete serveur comme pour le post il nous faudra un effect, ajouter un action de type **Load**
+Comme pour le **CreateTodo** = Same 
 
 Les actions :
 *todo-list.action.ts*
@@ -120,5 +120,5 @@ Voilà pour la suppression.
 ### Fin de la branche step-9
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MjYyNTU5OSwyMjg5MDg3NjZdfQ==
+eyJoaXN0b3J5IjpbLTE2NjI5NTMxNjMsMjI4OTA4NzY2XX0=
 -->
