@@ -71,7 +71,7 @@ export class TodoListService {
     }
 }
 ```
-Un petit alias :
+Un petit alias pour nous simplifié la vie:
  *tsconfig.json*  
 ```json
 {
@@ -86,7 +86,7 @@ Un petit alias :
 }
 ```
 
-Dans ce fichier on place des paramètres d'api comme l'url :
+Dans ce fichier on place les paramètres d'api comme l'url :
  *environment.ts*  
 ```json
 export const environment = {
@@ -403,5 +403,5 @@ On a rajouter en plus un template de chargement qui s'affichera entre le **LoadI
 
 ### Fin de la branche step-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5NzQyNjExLDUzMjg5ODE1Ml19
+eyJoaXN0b3J5IjpbLTE1Nzk0NDc3NTMsNTMyODk4MTUyXX0=
 -->
