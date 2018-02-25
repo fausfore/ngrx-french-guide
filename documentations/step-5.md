@@ -37,7 +37,7 @@ export namespace TodoListModule {
 	| DeleteTodo;
 }
 ```
-
+SelectTodo va juste récupérer le contenu du payload et l'update 
 */store/reducers/todo-list.reducer.ts*
 ```javascript
 import { TodoListModule } from '../actions/todo-list.action';
@@ -186,5 +186,5 @@ export class SelectTodoComponent implements OnInit {
 ```
 ### Fin de la branche step-5
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3ODMxMzUwMiwtMjUwMDk0OTc5XX0=
+eyJoaXN0b3J5IjpbLTE3OTUzNjU4MjIsLTI1MDA5NDk3OV19
 -->
