@@ -180,7 +180,7 @@ export class ErrorLoadAction {
 }
 ```
 
-On ajoute une autre propriété qui permettra de garder les erreurs: 
+On ajoute une autre propriété logs dans notre state.
 
 *models/todo.ts*
 ```javascript
@@ -296,5 +296,5 @@ export class TodoListComponent {
 
 ### Fin de la branche step-11
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjA2MTU0OTcsLTk1Mjk1ODg4XX0=
+eyJoaXN0b3J5IjpbODQ2MzA1NDAsLTk1Mjk1ODg4XX0=
 -->
