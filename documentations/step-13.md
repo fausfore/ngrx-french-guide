@@ -14,7 +14,7 @@ ng generate effect App --root --module app.module.ts --collection @ngrx/schemati
 
 ## Testings
 
-Les fichiers specs de test sont mis à jour sur la branche step-13 (  ) ainsi que les imports au niveau des modules pour faciliter la rédaction de test
+Les fichiers specs de tests sont mis à jour sur la branche step-13 ainsi que les imports au niveau des modules pour facilité la rédaction de test
 
 ![Karma](https://github.com/fausfore/ngrx-guide/blob/master/assets/images/karma.png)
 
@@ -32,5 +32,5 @@ Article : https://alligator.io/angular/change-detection-strategy/
 
 Pour faire simple l'architechure Ngrx permet d'être d'appliquer le **OnPush** sur tous vos components donc encore un gain de performance.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxOTgzNDYzM119
+eyJoaXN0b3J5IjpbMTgzNzAyNjkwM119
 -->
