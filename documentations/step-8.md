@@ -137,10 +137,7 @@ export class TodoListEffects {
           catchError(() => of(new TodoListModule.ErrorInitTodos()))
       );
 
-  constructor(
-    private todoListService: TodoListService,
-    private actions$: Actions
-  ) {}
+// ...Other
 }
 
 ```
@@ -172,5 +169,5 @@ createTodo(todo: Todo) {
 ### Fin de la branche step-8
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NTIzMjE5MywtMTUwOTk3NDQ5NF19
+eyJoaXN0b3J5IjpbLTc1NDIwMTY4OCwtMTUwOTk3NDQ5NF19
 -->
