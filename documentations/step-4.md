@@ -156,7 +156,7 @@ import { Component } from '@angular/core';
 export class TodoListComponent {}
 ```
 
-Le component qui contirndra la 
+Le component qui contirndra la liste de todos:
 
  *modules/todo-list/components/all-todos/all-todo.component.ts*  
 ```javascript
@@ -267,5 +267,5 @@ Plutôt cool non si votre IDE indique une erreur redémarrer-le. Voilà le point
 ### Fin de la branche step-4
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNTc0MzIzLC0xMDA5OTQwODU4XX0=
+eyJoaXN0b3J5IjpbMTYwNTE3OTI1MCwtMTAwOTk0MDg1OF19
 -->
