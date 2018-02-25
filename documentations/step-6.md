@@ -3,7 +3,9 @@
 ### *[Début de la branche step-6]*
 
 Voilà on a maintenant toutes nos fonctionnalités : **Create, Select, Update, Delete**.
-Mais cela reste du local ou du offline, il est temps de mettre en place un serveur n va pouvoir commencer a inclure les requêtes **http**, pour cela on va prendre le module npm de  **[JsonPlaceholder](https://jsonplaceholder.typicode.com/)** avec **npm install -g json-server**.
+Mais cela reste du local ou du offline, il est temps de mettre en place un serveur et inclure des requêtes **http**.
+
+Pour maximisé le temps cela on va prendre le module npm de  **[JsonPlaceholder](https://jsonplaceholder.typicode.com/)** avec **npm install -g json-server**.
 Le fichier va ajouter un nouveaux dossier **/server** au même niveau que **/app** et mettre un json :
 ```
 src
@@ -398,5 +400,5 @@ On a rajouter en plus un template de chargement qui s'affichera entre le **LoadI
 
 ### Fin de la branche step-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkyMzM4MzUwLDUzMjg5ODE1Ml19
+eyJoaXN0b3J5IjpbMTg0Mjk4NDQyNSw1MzI4OTgxNTJdfQ==
 -->
