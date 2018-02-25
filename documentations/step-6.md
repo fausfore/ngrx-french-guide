@@ -148,6 +148,7 @@ export function todosReducer(
 		};
 // ...Other
 ```
+## Introduction de Effects
 La logique fonctionne bien mais avec Ngrx il est possible d'aller beaucoup plus loin en gérant également la partie **asynchrone** pour le moment impossible dans le reducer **(synchrone only)** .
 **Effects** est une second module créer par la team de ngrx qui a pour but de gérer ce genre de cas, en quelque mot les Effects sont des **listenners d'actions** qui peuvent effectués des fonctions et qui retourne une **nouvelle action** ( ou pas ). 
 
@@ -403,5 +404,5 @@ On a rajouter en plus un template de chargement qui s'affichera entre le **LoadI
 
 ### Fin de la branche step-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDY0MTcwOTksNTMyODk4MTUyXX0=
+eyJoaXN0b3J5IjpbNjczMjk3Nzc2LDUzMjg5ODE1Ml19
 -->
