@@ -2,7 +2,7 @@
 
 # Un peu de refacto !
 
-### Début de la branche step-4
+### *[Début de la branche step-4]*
 
 Avant de se lancer sur la mise à jour des todos, on va changer un peu l'architecture du projet et mettre en place un peu de routing.
 
@@ -233,8 +233,8 @@ export class AllTodosComponent implements OnInit {
   }
 
 }
-
 ```
+## @Alias
 Une point s'impose, dans la nouvelle architecture, le dossier **store/** commence à être vraiment loin de nos composants , résultat les imports ne ressemble plus à rien.
 Pour palier ce problème on peut créer des **alias** via le **tsconfig.json** :
 
@@ -266,5 +266,5 @@ Plutôt cool non si votre IDE indique une erreur redémarrer-le.  Voilà le poin
 ### Fin de la branche step-4
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgyNjY2OTQ5LC0xMDA5OTQwODU4XX0=
+eyJoaXN0b3J5IjpbLTQ1NDE5NjA1NywtMTAwOTk0MDg1OF19
 -->
