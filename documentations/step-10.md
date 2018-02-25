@@ -125,7 +125,7 @@ updateTodo(formValue) {
   }
 ```
 
-Et voilà le **[mvp](https://fr.wikipedia.org/wiki/MVP)** de notre todo-list est réalisé, la suite du tutoriel va se concentrer sur de l'optim
+Et voilà le **[mvp](https://fr.wikipedia.org/wiki/MVP)** de notre todo-list est réalisé, la suite du tutoriel va se concentrer sur de l'optimisation 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDkwMTA2ODMsMjY5NTg2NDg3XX0=
+eyJoaXN0b3J5IjpbLTE1MTIwNTIwNDgsMjY5NTg2NDg3XX0=
 -->
