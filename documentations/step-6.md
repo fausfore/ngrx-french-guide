@@ -158,10 +158,10 @@ La logique fonctionne bien, on charge bien les todos mais avec Ngrx il est possi
 </p>
 <center>Les effects</center>
 
-Avec un effect au lieu d'avoir une seule action **InitTodos**, on aura une action **LoadInitTodos** qui chargera les données de l'api et dans le cas d'une réponse 200 du serveur, on renverra une action **SuccessInitTodos**  et un **ErrorInitTodos** en cas d'erreur serveur.
+Avec un effect au lieu d'avoir une seule action **InitTodos**, on aura une action **LoadInitTodos** qui chargera les données de l'api et dans le cas d'une réponse 200 du serveur, on renverra une action **SuccessInitTodos** et dans le cas inverse on retourne une action **ErrorInitTodos**.
 <center>LoadInitTodos => SuccessInitTodos || ErrorInitTodos</center>
 
-Pour installez tous ça go terminal :
+Pour installer tous ça go terminal :
 ```bash
 npm i @ngrx/effects --save ou yarn add @ngrx/effects --dev 
 ```
@@ -405,5 +405,5 @@ On a rajouter en plus un template de chargement qui s'affichera entre le **LoadI
 
 ### Fin de la branche step-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNzQ4MzA0Nyw1MzI4OTgxNTJdfQ==
+eyJoaXN0b3J5IjpbMTY1NDA0ODA1Myw1MzI4OTgxNTJdfQ==
 -->
