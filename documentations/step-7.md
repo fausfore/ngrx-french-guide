@@ -131,9 +131,9 @@ export class AppModule { }
   <img src="https://d33wubrfki0l68.cloudfront.net/595e2922eee1bf85b801cdc86b8f7e135cc46ee0/0fd92/images/angular/store-devtools/store-devtools-screen.jpg">
 </p>
 
-L'outils permet de voir chaque changement de state, de garder l'historique, de faire export du state global et inversement ainsi des graphiques sur les l'états de notre App.
+L'outils permet de voir chaque changement de state, de garder l'historique, de faire export du state global et inversement ainsi des graphiques sur les states de notre application.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjMxNjYxMzVdfQ==
+eyJoaXN0b3J5IjpbMTU5NjA2MTE2Ml19
 -->
