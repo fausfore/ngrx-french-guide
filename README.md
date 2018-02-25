@@ -48,7 +48,7 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 ## [11 - Les action de type ERROR](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-11.md)
 ### 11-1 Système de logs
 
-## [12 - NGRX - ENTITY](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-12.md)
+## [12 - @Ngrx/Entity](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-12.md)
 
 ## [13 - Petit Bonus](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-13.md)
 ### 13-1 Schematics
@@ -62,5 +62,5 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 ### 14-4 Selectors
 ### 14-5 Effects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5Mzg3NTk5MSwxNTY3MzMxNjQyXX0=
+eyJoaXN0b3J5IjpbMTEyNDc4MTYwMSwxNTY3MzMxNjQyXX0=
 -->
