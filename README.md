@@ -63,7 +63,7 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 
 ## Conclusion 
 
-J’espère que ce tutoriel vous a permis de comprendre NGRX et son implémentation, il reste des points comme les **Meta-reducers** que nous n'avons pas vu mais 
+J’espère que ce tutoriel vous a permis de comprendre NGRX et son implémentation, il reste des points comme les **Meta-reducers** que nous n'avons pas vu mais je vous laisse 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTE2NDc5NTMsMTU2NzMzMTY0Ml19
+eyJoaXN0b3J5IjpbMTM1OTc2NDg5MCwxNTY3MzMxNjQyXX0=
 -->
