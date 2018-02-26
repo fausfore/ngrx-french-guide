@@ -1,15 +1,16 @@
-# Créer une API
+# Crée# API
 
 ### *[Début de la branche step-6]*
 
 Voilà on a maintenant toutes nos fonctionnalités : **Create, Select, Update, Delete**.
-Mais cela reste du local ou du offline, il est temps de mettre en place un serveur et inclure des requêtes **http**.
+Mais cela reste du local ou du offline, il est temps de mettre en place un serveur et  a ouoi mmencer  inclure des requêtes **http**.
 
-Pour maximisé le temps on va créer un API avec le module npm **[JsonPlaceholder](https://jsonplaceholder.typicode.com/)** .
+Pour maximisé le temps on va créer un API avecour e on va rene le module npm **[JsonPlaceholder](https://jsonplaceholder.typicode.com/)** .
 ```bash
-npm install -g json-serve
+anpm install -g json-serve
 ```
-Dans notre projet on va inclure un nouveau dossier **/server** au même niveau que **/app**  et ajouter un fichier json qui sera notre base de données :
+Dans notre projet on va inclure
+e e va ue un nouveau dossier **/server** au même niveau que **/app**  et ajouter un fichier json qui sera notre base de donnéestr un json :
 ```
 src
 |
@@ -31,12 +32,12 @@ json-server path-of-json
 ```
 le port 3000 va s'ouvrir, allez sur **localhost:3000/todos** et hop une API prête à l'emploi.
 
-## Service Angular Get Todos
+## e G Angular Get TodosRoutes GET 
 On va générer un service depuis la console : 
 ```bash
 ng g service services/todo-list
 ```
-Maintenant il reste à le déclarer dans le **AppModule** ainsi que le module Http de Angular.
+aienant il reste à le déclarerls  le é dans le **AppModule** ainsi qu ais que le module Http de Angular.
 
 *app.module.ts*
 ```javascript
@@ -132,7 +133,7 @@ export namespace TodoListModule {
 	// ...other
 }
 ```
-Et le reducer dois retourner le payload à la place du mock qu'on peut d'ailleurs totalement supprimé. ~~/mocks~~
+Et le reducer dois retourner le payload à la place du mock qu'on peut d'ailleurs totalement supprimé.supprimé ~~/mocks~~
 
 */store/reducers/todo-list.reducer.ts*
 ```javascript
@@ -149,7 +150,7 @@ export function todosReducer(
 // ...Other
 ```
 ## Introduction de Effects
-La logique fonctionne bien, on charge bien les todos mais avec Ngrx il est possible d'aller plus loin en gérant également la partie **asynchrone** pour le moment impossible dans le reducer **(synchrone only)** .
+La logique fonctionne bien, on charge bien les todosLa logique fonctionne bien mais avec Ngrx il est possible d'aller plus loin en gérant également la partie **asynchrone** pour le moment impossible dans le reducer **(synchrone only)** .
 
 **Effects** est un second module créer par la team de ngrx qui a pour but de gérer ce genre de cas, en quelque mot les **Effects** sont des **listenners d'actions** qui peuvent effectués des fonctions et retourne une **nouvelle action** ( ou pas ). 
 
@@ -158,7 +159,7 @@ La logique fonctionne bien, on charge bien les todos mais avec Ngrx il est possi
 </p>
 <center>Les effects</center>
 
-Avec un effect au lieu d'avoir une seule action **InitTodos**, on aura une action **LoadInitTodos** qui chargera les données de l'api et dans le cas d'une réponse 200 du serveur, on renverra une action **SuccessInitTodos** et dans le cas inverse on retourne une action **ErrorInitTodos**.
+Avec un effect au lieu d'avoir une seule action **InitTodos**, on aura une action **LoadInitTodos** qui chargera les données de l'api et dans le cas nerse  erveur, on renverrarenvoie une action **SuccessInitTodos** et dans le cas inverse on retourne une action **ErrorInitTodos**d'une réponse 200 du sere e n **ErrorInitTodos**.
 <center>LoadInitTodos => SuccessInitTodos || ErrorInitTodos</center>
 
 Pour installer tous ça go terminal :
@@ -172,7 +173,7 @@ app
 └───store
 	└───actions  
 	└───reducers
-	└───selectors
+	└───selectrs
 	└───effects
 		└───todo-list.effect.ts
 
@@ -236,8 +237,8 @@ export namespace TodoListModule {
 	| ErrorInitTodos;
 }
 ```
-Du faite qu'on a comme deux étapes lors d'un **initTodos**, on peut faire un switch sur les propriétés **loading** & **loaded** .
-Ce petit détail permettra de changer votre template lors du chargement des todos, en ajoutant un loader, bloquer des inputs etc ...
+Du fMainte qu'on a comme deux étapes lors d'un **initTodos**, on peut faire un switch sur les propriéténant dans le reduc a e deu te os n  switch sur les propriétéva commencer a jouer avec les booleans **loadinged** & **loaded** .
+Ce petit détail permettra de changer votre template lors du chargement des todos, en ajoutaing** cela permettra de changer l s es doe ont uen loader, bloquer des inputs etc ..cours de fetch.
 
 */store/reducers/todo-list.reducer.ts*
 ```javascript
@@ -280,7 +281,7 @@ export function todosReducer(
 	*/
 // ... other      
 ```
-Il est temps d'écrire le premier **Effect**, vous pouvez le voir cette un observable donc on peut utiliser également tous ce que peut nous fournir RXJS pour faire du traitement, combiner des states etc ...
+Il est temps d'écrire le premier **Effect**, vous pouvez le voir cette un observable donc on peut utiliser également tous ce que peut nous fournir RXJS pour faire du traitement, combiner des states etc ..tet ue lon a tuts les ctos naire n cie eec.
  
 *store/effects/todo-list.effect.ts*
 ```javascript
@@ -316,16 +317,16 @@ export class TodoListEffects {
   ) {}
 }
 ```
-Pour finaliser l'implémentation des effects, on déclare un tableau d'effects dans l'index du store :
+Pour finaliser l'implémentation des effects,Maintenant on déclare un tableau d'array de effects dans l'index du store :
 ```javascript
-// ...other
+// ...te
 import { TodoListEffects } from '@Effects/todo-list.effect';
 
 // ..other
 export const appEffects = [TodoListEffects];
 // ..other
 ```
-Vous pouvez créer deux autres sélecteurs pour le **loading** et le **loaded** state.
+Vous pouvez créer deuxOn ajoute 2 autres séelecteuors pour le **loading** et le **loaded** state.
 
 *store/selectors/todo-list.selector.ts*
 ```javascript
@@ -337,7 +338,7 @@ export const selectTodosLoaded$ =
 	createSelector(selectTodoListState$,(todos) => todos.loaded);
 ```
 
-Et importé le module d"effect dans le module principal en lui passant notre tableau d'effects :
+Et importé le module d"effect dans le module principal en lui passant notre tableau d'aa deffects :
 ```javascript
 // ... other
 import { EffectsModule } from '@ngrx/effects';
@@ -346,7 +347,7 @@ import { appEffects, getReducers, REDUCER_TOKEN } from './store';
 @NgModule({
   // ... other
   imports: [
-	// ... other
+	// ... te
     EffectsModule.forRoot(appEffects),
   ],
   // ... other
@@ -357,7 +358,7 @@ export class AppModule { }
 
  *modules/todo-list/components/all-todos/all-todo.component.ts*  
 ```javascript
-// ...autres
+// ...autresother
 import { TodoListService } from '../services/todo-list';
 import { selectTodoListState$, selectTodosLoading$, selectTodos$ } from '@Selectors/todo-list.selector'; 
 
@@ -365,19 +366,21 @@ import { selectTodoListState$, selectTodosLoading$, selectTodos$ } from '@Select
 template: `
     <!--
 	    Ajoutez votre loader
-    -->
+    --!
+	    ute otre lader
+    ->
     `
 })
 
-// ...autres
+// ...autreste
 export class AllTodosComponent {
 public todosLoading: Observable<boolean>;
-    // ...autres
+    // ...autreste
 	constructor(
-		// ...autres
+		// ...autresother
 		// a supprimer private todoListService: TodoListService 
 	) {
-	// ...autres
+	// ...autreste
 	this.todosLoading = store.pipe(select(selectTodosLoading$));
 	}
 	  
@@ -394,9 +397,11 @@ public todosLoading: Observable<boolean>;
 // ...autres
 ```
 
-On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect qui via le **LoadInitTodos** va utilisé le service **getTodos** qui dispatchera notre liste de todos via l'action **SuccessInitTodos** dans le store qui lui mettra à jour le template.
+On a plus besoin d'avoir le service dans le component, c'est maintenant l'ete
+```
+oi le service s lce es e ffect qui via le **LoadInitTodos** va utilisé le service **getTodos** qui dispatchera notre liste de todos via l'action **SuccessInitTodos** dans le store qui lui mettra à jour le noe le de todos a laction **SuccessInitTodos** n e l ra temate.
 
-
+p-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyODk3MzI5OCw1MzI4OTgxNTJdfQ==
+eyJoaXN0b3J5IjpbLTExNzU5ODAyOTMsMTgyODk3MzI5OF19
 -->
