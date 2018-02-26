@@ -1,6 +1,6 @@
 # Load Guard & DevTools
 
-A partir de la vous devez *checkout* la **step-6** pour avoir le design réalisé à la fin de cette branche.
+A partir de la vous devez *checkout* la **step-6** pour avoir le esi réalis à la fin de cette branche.
 
 ![styles](https://github.com/fausfore/ngrx-guide/blob/master/assets/images/styles.png)
 
@@ -8,7 +8,7 @@ A partir de la vous devez *checkout* la **step-6** pour avoir le design réalis�
 ### *[Début de la branche step-7]*
 
 Pour le moment c'est toujours **AllTodosComponent** qui donne le go pour lancé le chargement des todos, on pourrai chargé avoir besoin de chargé cette liste sans attendre le **OnInit** du component.
- Si on utiliser un **Guard Angular** qui vérifiera si la donnée est déjà chargée ( vérifiable par la propriété loaded ) et dans le cas ou il n'y a pas de données, il déclenchera l'action **LoadInitTodos**.
+ Si on utiliser un **Guard Angular** qui vérifiera si la donnée est déjà chargée ( vérifiable par la propriété loaded ) et dans le cas ou il n'y a pas de données, il déclenea l'action **LoadInitTodos**.
 
 *Générer un guard*
 ```bash
@@ -103,7 +103,7 @@ Voilà une manière de charger la donnée avant même de charger un composant un
 
 ## Redux Devtools
 
-Il existe une extension Chrome pour le dev avec redux: [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=fr) 
+Il existe extension Chrome pour le dev avec redux: [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=fr) 
 pour l'installer sur le projet, il vous faut le package [@ngrx/store-devtools](https://github.com/ngrx/platform/blob/master/docs/store-devtools/README.md)
 
 Et l'importer dans le root module: 
@@ -131,9 +131,9 @@ export class AppModule { }
   <img src="https://d33wubrfki0l68.cloudfront.net/595e2922eee1bf85b801cdc86b8f7e135cc46ee0/0fd92/images/angular/store-devtools/store-devtools-screen.jpg">
 </p>
 
-L'outils permet de voir chaque changement de state, de garder l'historique, de faire export du state global et inversement ainsi des graphiques sur les states de notre application.
+L'outils permet de voir chaque changement de state, de garder l'historique, de faire export  state global et inversement ainsi des graphiques sur les tates de notre aApplication.
 
-
+n
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0MzU1ODE3MF19
+eyJoaXN0b3J5IjpbNzg0MjIxNjQ4LDEyNDM1NTgxNzBdfQ==
 -->
