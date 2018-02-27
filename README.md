@@ -70,5 +70,6 @@ J’espère que ce tutoriel vous a permis de comprendre NGRX et son implémentat
 Auteur : @Fausfore / Matias Ljubica
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQxMzQ3NDkwLDE1NjczMzE2NDJdfQ==
+eyJoaXN0b3J5IjpbMTgyMDczMTExMCw5NDEzNDc0OTAsMTU2Nz
+MzMTY0Ml19
 -->
