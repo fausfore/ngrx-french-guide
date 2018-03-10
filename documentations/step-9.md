@@ -95,7 +95,7 @@ deleteTodo(id: number) {
 // [...]
 
 ```
-Le serveur 
+Le serveur lors d'une 
 Juste pour le service une petite astuce pour qu'il nous renvoie un id.
 
 *todo-list.service.ts*
@@ -114,5 +114,5 @@ DeleteTodo Done !
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MDE1MjU5NCwyMjg5MDg3NjZdfQ==
+eyJoaXN0b3J5IjpbLTE5ODYwNjI5MTcsMjI4OTA4NzY2XX0=
 -->
