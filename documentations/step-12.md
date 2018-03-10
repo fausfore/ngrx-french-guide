@@ -148,13 +148,13 @@ export const selectTodoListEntitiesConverted$ = createSelector(
     fromTodos.selectTodos);
 
 export const selectTodoSelected$ =
-    createSelector(selectTodoListEntitiesState$, (todos) => todos.selectedTodo);
+    createSelector(selectTodoListState$, (todos) => todos.selectedTodo);
 
 export const selectTodosLoaded$ =
-    createSelector(selectTodoListEntitiesState$, (todos) => todos.loaded);
+    createSelector(selectTodoListState$, (todos) => todos.loaded);
 
 export const selectTodosErrors$ =
-    createSelector(selectTodoListEntitiesState$, (todos) => todos.logs);
+    createSelector(selectTodoListState$, (todos) => todos.logs);
 
 ```
 Switch du selector dans le component: 
@@ -179,9 +179,9 @@ import {
 //  [...]
 
 ```
-Voilà nos todos sont stockées en tant que entité dans notre state.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDQyNzA0MjYsMTIwNjY4MTQ4NSwtMj
-AxODcwOTc0NF19
+eyJoaXN0b3J5IjpbLTMzMjk5NjYwNiwxMjA2NjgxNDg1LC0yMD
+E4NzA5NzQ0XX0=
 -->
