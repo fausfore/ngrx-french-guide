@@ -2,18 +2,19 @@
 
 ### *[ Début de la branche step-1 ]*
 
-Redux est un pattern déjà bien implémenter sur les principaux frameworks/librairies javascript du moment.
+Redux est un pattern déjà implémenté sur les principaux frameworks/librairies javascript du moment.
 Pour React  => **react-redux**
 Pour Vue  => **vuex**
 Pour Angular  => **Ngrx**
 
-Il est donc inutile de créer un store from scratch. Comme nous allons créer une application Angular, nous utiliserons **Ngrx**.
-Cette librairie est donc une implémentation "reduxienne". Mais pas que... elle prend une bonne couche de **RxJS** comme Angular lui-même et utilise les **Observables** pour communiquer la mise à jour des states dans les composants Angular.
+Il est donc inutile de créer un store *from scratch*. Comme nous allons créer une application Angular, nous utiliserons **Ngrx**.
+Cette librairie est une implémentation "reduxienne". Elle englobe une couche de **RxJS** tout comme Angular et utilise les **Observables** pour communiquer la mise à jour des states dans les composants Angular.
 
 ## Installation
 
-Pour commencer on part sur un **Angular version 5** donc vous devez avoir votre Cli au dessus de la version **1.6.0**, elle doit comprendre la version **5.5.6** de RxJs pour utliser les dernières opérateurs disponible.
-Donc commençons par créer un nouveau projet Angular
+Pour démarrer il faut utiliser la **version 5** d'Angular. Le CLI doit être  au dessus de la version **1.6.0** et doit inclure la version **5.5.6** de RxJs pour utliser les derniers opérateurs disponibles.
+
+Commençons par créer un nouveau projet Angular
 ```shell
 $ ng new ngrx-tutoriel-app --style=scss
 ```
@@ -23,7 +24,7 @@ $ npm install @ngrx/store ou yarn add @ngrx/store
 ```
 
 ## Architecture Folder
-Une fois le projet initialisé je cous invite a consulté notre futur schéma pour structurer nos dossiers.
+Voici un exemple de schéma d'arborescence pour structurer nos dossiers.
 ```
 app
 │   app.component.ts
@@ -43,18 +44,17 @@ app
 
 ## Commençons ! [ début du tutoriel ]
 
-Pour changer de l'exemple du counter, on va partir sur une **todolist** pour changer,
-quand on utilise Redux, on va pensé en actions utilisateur et serveur.
+Pour changer de l'exemple du counter précédent, on va partir cette fois sur une **todolist**.
+
+Avec Redux, il faut penser en actions **utilisateur et serveur**.
 Faisons le point de ce que représente fonctionnellement une todo :
+1. Récupération des todos -> **GET**
+2. Création des todos -> **PUT**
+3. Suppression des todos-> **DELETE**
+4. Mise à jour des todos -> **PATCH / POST**
 
-- On récupère des todos -> **GET**
-- On crée des todos -> **PUT**
-- On supprime des todos-> **DELETE**
-- On met à jour des todos -> **PATCH / POST**
 
-Un besoin au niveau du web très courant.
-
-On commence par définir notre l'interface .
+Tout d'abord on commence par définir l'interface :
 
 *models/todo.ts*
 ```javascript
@@ -73,7 +73,7 @@ export interface TodoListState {
 	loaded: boolean;
 }
 ```
-C'est le model de **[JsonPlaceholder](https://jsonplaceholder.typicode.com/)** et on créer un fichier pour mocké nos valeurs.
+> C'est le model utilisé par **[JsonPlaceholder](https://jsonplaceholder.typicode.com/)**. Ici on crée un fichier pour mocker nos valeurs.
 
 *mocks/todo-list.ts*
 ```javascript
@@ -120,7 +120,8 @@ export const todosMock = [{
     "completed": false
   }]
 ```
-La classe d'action de notre state de todos, pour le moment on créer juste l'action pour initialisé notre liste.
+
+> Pour le moment on crée l'action pour initialiser notre liste.
 
 *store/actions/todo-list.action.ts*
 ```javascript
@@ -137,7 +138,7 @@ export namespace TodoListModule {
     export type Actions = InitTodos;
 }
 ```
-Question pratique je préfère encapsulé le tout dans un **namespace** pour simplifié les imports, ce n'est pas une obligation.
+Question pratique je préfère encapsuler le tout dans un **namespace** pour simplifier les imports, ce n'est pas une obligation.
 Le dernier export **Actions** servira pour le typage du **reducer** uniquement.
 
 
@@ -147,24 +148,26 @@ import { TodoListModule } from '../actions/todo-list.action';
 import { TodoListState  } from '../../models/todo';
 import { todosMock } from '../../mocks/todo-list-data';
 
+// les valeurs par défaut de la todo
 const initialState: TodoListState = {
     data: [],
     loading: false,
     loaded: false
 };
 
+// la fonction reducer de la todo
 export function todosReducer(
     state: TodoListState = initialState,
     action: TodoListModule.Actions
 ): TodoListState {
 
   switch (action.type) {
-
+    // L'action de InitTodos
     case TodoListModule.ActionTypes.INIT_TODOS :
     return {
         ...state,
         data: [
-            ...todosMock
+            ...todosMock // injecte le mock
         ]
     };
 
@@ -173,7 +176,6 @@ export function todosReducer(
     }
 }
 ```
-Voilà notre premier switch va ajouter le mock de todo dans notre tableau data 
 *store/index.ts*
 ```javascript
 import { ActionReducerMap } from '@ngrx/store';
@@ -182,6 +184,7 @@ import { InjectionToken } from '@angular/core';
 import { todosReducer } from './reducers/todo-list.reducer';
 import { TodoListState } from '../models/todo';
 
+// Le root reducer
 const reducers = {
     todos: todosReducer
 };
@@ -189,19 +192,19 @@ const reducers = {
 export interface AppState {
     todos: TodoListState;
 }
-
+// Nécéssaire pour l'AoT
 export function getReducers() {
     return reducers;
 }
-
+// Nécéssaire pour l'AoT
 export const REDUCER_TOKEN = new InjectionToken<ActionReducerMap<AppState>>('Registered Reducers');
 ```
-Dans notre index, on défini l'objet **reducers** qui contient notre **reducer** de todos, on ajoute aussi une fonction **getReducers()** qui renvoie cette objet voici pourquoi :
- >Le mode Ahead of Time (AoT) Compilation de Angular exige que tous les symboles référencés dans les métadonnées du décorateur soient analysables statiquement. Pour cette raison, nous ne pouvons pas injecter dynamiquement l'état à l'exécution avec AoT sauf si nous fournissons notre **reducers** en tant que fonction. 
+Dans le fichier index.ts, on défini l'objet **reducers** qui contient notre **reducer** de todos, on ajoute aussi une fonction **getReducers()** qui renvoie cet objet :
+ >Le mode Ahead of Time (AoT) compilation de Angular exige que tous les symboles référencés dans les métadonnées du décorateur soient analysables statiquement. Pour cette raison, nous ne pouvons pas injecter dynamiquement l'état à l'exécution avec AoT sauf si nous utilisons notre **reducers** en tant que fonction. 
 
 L'injection d'un token est optionnelle: 
 
-> Pour injecter les reduceurs dans votre application, utilisez un **InjectionToken** et un **providers** pour enregistrer les reduceurs via l'injection de dépendance.
+> Pour injecter les reduceurs dans votre application, utilisez un **InjectionToken** et un **providers** pour enregistrer celles-ci via l'injection de dépendance.
 
 */app.module.ts*
 ```javascript
@@ -232,9 +235,11 @@ export class AppModule { }
 ```
 
 
-Maintenant pour créer notre **Store**, il suffit de prendre le **StoreModule** et de lui injecter nos reducers.
+>Pour finaliser la création du **Store**, on doit utliser le **StoreModule** et lui injecter nos reducers.
 
-*exemple : /app.component.ts*
+On va ajouter notre state de todo dans le app.component.ts via la fonction **select()**.
+
+*/app.component.ts*
 ```javascript
 import { Store, select } from '@ngrx/store';
 import { OnInit, Component } from '@angular/core';
@@ -242,6 +247,7 @@ import { Observable } from 'rxjs/Observable';
 import { TodoListModule } from './store/actions/todo-list.action';
 import { AppState } from './store';
 import { Todo } from './models/todo';
+
 
 @Component({
   selector: 'app-root',
@@ -272,10 +278,9 @@ export class AppComponent implements OnInit {
 	});
 
     Dans ce cas de figure on ne fait pas de mutation sur la liste
-    de todos dans le component. Donc pas besoin de faire un subscribe
-    afin de garder la variable localement cela évite également de faire
-    un unsubscribe dans le OnDestroy
-    et utilisé un *ngIf dans le <ul> dans le cas ou la donnée soit vide.
+    de todos dans le component, inutile de faire un subscribe.
+    Cela évite également de faire un unsubscribe dans le OnDestroy
+    et utiliser un *ngIf dans le <ul> dans le cas ou la donnée soit vide.
 	*/
 
   }
@@ -287,7 +292,7 @@ export class AppComponent implements OnInit {
 }
 
 ```
-Après ces premières manipulations vous devez voir apparaître la liste de todo.
+Après ces premières manipulations vous devriez voir apparaître la liste de todo.
 
 ### Fin de la branche step-1 
 

@@ -4,7 +4,7 @@
 
 ### *[Début de la branche step-4]*
 
-Avant de se lancer sur la mise à jour des todos, on va changer un peu l'architecture du projet et mettre en place un peu de routing.
+Avant de se lancer sur la mise à jour des todos, on va changer un peu l'architecture du projet et mettre en place du routing.
 
 ```
 app
@@ -23,7 +23,10 @@ app
 			└───select-todo
 				│   select-todo.component.ts
 ```
-Une config de routing afin de chargé notre module **TodoListModule** en lazy-loading avec le **loadChildren**.
+
+
+Ci-dessous une config de routing afin de charger notre module **TodoListModule** en lazy-loading avec le **loadChildren**.
+
  *app.routing.ts*  
 ```javascript
 import { Route, RouterModule } from '@angular/router';
@@ -47,24 +50,24 @@ const routes: Route[] = [
 
 export const appRouting: ModuleWithProviders = RouterModule.forRoot(routes);
 ```
-Dans le **AppModule** on peut déplacé les dépendances des formulaires vers **TodoListModule**.
+Dans le **AppModule** on peut déplacer les dépendances des formulaires vers **TodoListModule**.
 
 *app.module.ts*
 ```javascript
-// ... reste
+// [...]
 // import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { appRouting } from './app.routing';
-// ... reste
+// [...]
   imports: [
 	  // ReactiveFormsModule,
 	  // FormsModule,
 	  appRouting 
 	  // ...
   ],
-// ... reste
+// [...]
 ```
 
-On va migré quasiment tout le contenu du **AppComponent**  vers **AllTodosComponent**, dans **AppComponent** il reste que la balise **router-outlet**
+On va migrer tout le contenu du **AppComponent** vers **AllTodosComponent**, il ne reste que la balise **router-outlet**
 */app.component.ts*
 ```javascript
 import { Component } from '@angular/core';
@@ -235,8 +238,8 @@ export class AllTodosComponent implements OnInit {
 }
 ```
 ## @Alias
-Une point s'impose, dans la nouvelle architecture, le dossier **store/** commence à être vraiment loin de nos composants , résultat les imports ne ressemble plus à rien.
-Pour palier ce problème on peut créer des **alias** via le **tsconfig.json** :
+On remarque que dans la nouvelle architecture, le dossier **store/** commence à être vraiment loin de nos composants ce qui créé de long chemins avec tous plein de  "../" 
+Pour remédier à cela on utilise des **alias** via le **tsconfig.json** :
 
  *tsconfig.json*  
 ```json
@@ -261,7 +264,9 @@ import { AppState } from '@StoreConfig';
 import { selectTodos$ } from '@Selectors/todo-list.selector';
 import { TodoListModule } from '@Actions/todo-list.action';
 ```
-Plutôt cool non si votre IDE indique une erreur redémarrer-le.  Voilà le point refacto est terminé passons à la mise à jour des todos !
+Plutôt cool non ! ;-)
+Si votre IDE indique une erreur redémarrer-le. 
+Voilà le point refacto est terminé passons à la mise à jour des todos !
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbOTc5MTk2NDIsLTEwMDk5NDA4NThdfQ==

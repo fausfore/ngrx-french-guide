@@ -1,38 +1,39 @@
 # Getters & create todo
 
 ### *[Début de la branche step-2]*
-Avant de continuer voici une petite explication de l'utilisation du pipe **async** :
+Avant de continuer voici une petite explication de l'utilisation du Pipe **async** :
 
-> Le **pipe async** souscrit à un Observable ou une Promise et renvoie la dernière valeur qu'il a émise. Lorsqu'une nouvelle valeur est détecté, le canal asynchrone envoie un signale au component afin qu'il met à jour la donnée. 
-> Lorsque le composant est détruit, **le pipe async se désinscrit automatiquement pour éviter les fuites de mémoire potentielles**.
+> Le **Pipe async** souscrit à un Observable ou une Promise et renvoie la dernière valeur qu'il a émise. Lorsqu'une nouvelle valeur est détectée, le canal asynchrone envoie un signale au component afin qu'il met à jour la donnée. 
+> Lorsque le component est détruit, **le Pipe async se désinscrit automatiquement afin d'éviter les fuites de mémoire potentielles**.
 
-Voilà nos todos s'affiche bien dans la page mais faire se serait mieux de renvoyer on pourrai faire mieux avec ce **(todos$ | async)?.data** pourquoi ne pas faire **todos$ | async**.
+Actuellement, la syntaxe de la liste de todos est :
+```html
+<li *ngFor="let todo of (todos$ | async)?.data">
+```
 
- Pour changer cela il faut comprendre quelque chose au niveau du **select('todos')**.
-
-Actuellement il renvoi le **contenu entier** du reducer todos avec le loaded et le loading , on peut modifier notre sélecteur pour que l'on reçoive uniquement les todos et pour cela au lieu de lui passer une string en paramètre on peut lui passer une fonction.
+Cependant, en changeant l'argument du **select('todos')** par une fonction, on peut obtenir une syntaxe plus simplifiée : 
 
 ```html
 <li *ngFor="let todo of todos$ | async">
 ```
+
 ```javascript
-this.todos$ = store.pipe(select((state) => state.todos.data));
+this.todos$ = store.pipe(select((state) => state.todos.data)); // On cible directement la propriété data
 ```
-De cette manière on cible directement la propriété **data**.
+
 
 ## Le Pipe et les opérateurs RXJS
 
-Avant de continuer sur nos fonction getters (**select**), un point sur les pipes RXJS s'impose.
+Avant de continuer sur nos fonctions getters (**select**), un point sur le Pipe RXJS s'impose.
 
-Pour voir un peu les différents opérateurs: http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html
 
 > Le Pipe permet de réaliser un chaînage d'opérateurs RXJS de manière plus lisible.
 
-*exemple de pipe*
+*exemple de Pipe*
 ```javascript
 const { Observable } = require('rxjs/Rx')
 const { filter, map, reduce } = require('rxjs/operators')
-const { pipe } = require('rxjs/Rx')
+const { Pipe } = require('rxjs/Rx')
 
 const filterOutEvens = filter(x => x % 2)
 const doubleBy = x => map(value => value * x);
@@ -40,44 +41,47 @@ const sum = reduce((acc, next) => acc + next, 0);
 const source$ = Observable.range(0, 10)
 
 source$
-	.pipe(
+	.Pipe(
 	  filterOutEvens, 
 	  doubleBy(2), 
 	  sum
 	 ).subscribe(console.log); // 50
 	 
 ```
-Ceci nous offrira un large choix de traitement possible sur **getteurs** qui sont des observables. Maintenant revenons à notre sujet initial.
+
+Pour voir un aperçu des différents opérateurs: http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html
+
 
 ## Les States Selectors
 
-Vu que la fonction **select()** de NGRX peut prendre une fonction en paramètre, on peut déporter cette logique et la stockée dans un fichier de sélecteurs et grâce à la fonction **createSelector ()** on pourra composé des sélecteurs à partir d'autres sélecteurs.
+La fonction **select()** de NGRX peut prendre une fonction en paramètre, on peut déporter cette logique et la stocker dans un fichier dédié et grâce à la fonction **createSelector()** on pourra composer des sélecteurs à partir d'autres sélecteurs.
 
 *store/selectors/todo-list.selector.ts*
 ```javascript
 import { createSelector } from '@ngrx/store';
 
+// La première fonction amène vers le state todos
 export const selectTodoListState$ = (state: AppState) => state.todos;
 
+// Et a partir celle-ci, on créer une autre fonction qui reverra data 
 export const selectTodos$ =
 	createSelector(selectTodoListState$,(todos) => todos.data);
 ```
-Ici notre première fonction renvoie vers le state todos puis on la combine avec une autre fonction qui renvoie data.
 
 */app.component.ts*
 ```javascript
 import { selectTodos } from 'store/selectors/todo-list.selector';
 
-// Other things ...
+// [...]
 
 this.todos$ = store.pipe(select(selectTodos$));
+// On remplace la fonction par le sélecteur
 ```
-On remplace la fonction par le nouveau sélecteur et le tour est joué.
-Voilà maintenant ce même sélecteur peut être utilisé dans plein d'autres components.
+
 
 ## Créer une todo
 
-On va créer un formulaire pour créer une todo grâce au **FormsBuilder** d'Angular, la fonction **createTodo()** renverra la futur action de création de todo dans le reducer.
+On va utiliser un formulaire pour créer une todo grâce au **FormsBuilder** d'Angular, la fonction **createTodo()** renverra la future action de création dans le reducer.
 
 */app.component.ts*
 ```javascript
@@ -120,7 +124,7 @@ export class AppComponent implements OnInit {
     private store: Store<AppState>,
     @Inject(FormBuilder) fb: FormBuilder
   ) {
-    this.todos$ = store.pipe(select(selectTodos$));
+    this.todos$ = store.Pipe(select(selectTodos$));
 
     this.todoForm = fb.group({
       title: ['', Validators.required],
@@ -145,19 +149,19 @@ export class AppComponent implements OnInit {
 
 }
 ```
-N'oubliez pas de chargées les modules pour utiliser les formulaires de Angular.
+N'oubliez pas de charger les modules pour utiliser les formulaires d'Angular.
 
 */app.module.ts*
 ```javascript
-// ... reste
+// [...]
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-// ... reste
+// [...]
   imports: [
 	  ReactiveFormsModule,
 	  FormsModule,
-	  // ...
+	  // [...]
   ],
-// ... reste
+// [...]
 ```
 
 Maintenant créons l'action pour le reducer :
@@ -169,11 +173,11 @@ import { Todo } from '../../models/todo';
 export namespace TodoListModule {
 
     export enum ActionTypes {
-        // ... autres
+        // [...]
         CREATE_TODO = '[todoList] Create Todo',
     }
 
-    // ... autres
+    // [...]
 
     export class CreateTodo {
         readonly type = ActionTypes.CREATE_TODO;
@@ -184,12 +188,12 @@ export namespace TodoListModule {
 }
 ```
 
-Cette action transmet un **payload** qui sera la nouvelle todo a ajouter à notre tableau.
+Cette action transmet un **payload** qui sera la nouvelle todo à ajouté à notre tableau.
 
 
 */store/reducers/todo-list.reducer.ts*
 ```javascript
-	// ... reste
+	// [...]
     case TodoListModule.ActionTypes.CREATE_TODO:
 	    return {
 			...state,
@@ -198,9 +202,9 @@ Cette action transmet un **payload** qui sera la nouvelle todo a ajouter à notr
 				action.payload
 			]
 		};
-	// ...reste
+	// [...]
 ```
-Voilà notre action **createTodo** est terminée, il reste des chose a revoir comme la gestion des ids mais ce soucis se réglera au moment ou l'on utilisera une api qui elle se chargera de gérer ce point.
+Voilà notre action **createTodo** est terminée, il reste des choses à revoir comme la gestion des ids.
 
 
 <!--stackedit_data:

@@ -2,15 +2,15 @@
 # Introduction
 
 Dans cette article, nous allons voir comment utiliser le pattern redux dans une application Angular via Ngrx.
-Ce dernier proposant une conception du développement  d'application autour d'actions utilisateurs et serveurs. Le but étant de supprimer les différentes mutations de données des composants et services Angular pour les centraliser dans un objet global, qui serait mutable uniquement par des actions typées.
+Ce dernier proposant une conception du développement d'application autour d'actions utilisateur et serveur. Le but étant de supprimer les différentes mutations de données des composants et services Angular pour les centraliser dans un objet global, qui serait mutable uniquement par des actions typées.
 
-> Pour le développement sur Angular **Visual studio code** est fortement recommandé. 
-> Vous devrez aussi installer Angular sur votre machine avec un **npm i -g @angular/cli**.
+> Pour le développement sur Angular, **Visual studio code** est fortement recommandé. 
+> Vous devrez aussi installer Angular sur votre machine avec la commande **npm i -g @angular/cli**.
 
-**Intéret de NGRX**
+**Intérêt de NGRX**
 
-- Le 1er avantage est le modèle **unidirectionnelle** avec lequel nous travaillerons, ce qui n'est pas le cas du standard MVC qui de son coté est **bidirectionnelle**.
-- Le 2eme avantage est **"l'historisation"** :  comme tout les changement transitent par le store, chaque update/modification est loggé. De ce fait nous pouvons revenir dans l'historique, trouvé quelle mutation a créé un bug:  c'est en quelque sorte une **state machine**.
+- Le 1er avantage est le modèle **unidirectionnelle** avec lequel nous travaillerons, ce qui n'est pas le cas du standard MVC qui est **bidirectionnelle**.
+- Le 2ème avantage est **"l'historisation"**. Comme tous les changements transitent par le store, chaque update/modification est loggé. Grâce à cela, nous pouvons remonter dans l'historique et trouver quelle mutation a créé un bug : c'est une sorte de **state machine**.
 
 Comme Angular peut être utilisé avec **typescript** , Ngrx profite également du typage qui va verrouiller nos actions et ainsi lever plus tôt les erreurs en cours de développement.
 
@@ -23,21 +23,22 @@ Comme Angular peut être utilisé avec **typescript** , Ngrx profite également 
 
 ## Redux, kesako ?!
 
-C’est un pattern née de **Flux**, une architecture crée chez Facebook, il apporte un worflow de données unidirectionnelle distribué par un dispatcher qui recueille des actions données par le serveur ou par l’utilisateur et conserve la nouvelle instance d’une donnée dans un store ou des stores qui mettent à jour la vue.
+C’est un pattern né de **Flux**, une architecture créé chez Facebook. Il apporte un workflow de données unidirectionnelles par un dispatcher qui recueille des actions distribuées par le serveur ou par l’utilisateur et conserve la nouvelle instance d’une donnée dans un ou plusieurs stores qui mettent à jour la vue.
 <p align="center">
   <img src="https://julienrenaux.fr/talks-src/2016/redux-angular2/img/flux-simple-f8-diagram-with-client-action-1300w_stores_views.png">
 </p>
 
-L'architecture de flux présente peut contenir plusieurs structures de données indépendantes appelé **Store**
+L'architecture de flux ci-dessus peut contenir plusieurs structures de données indépendantes appelées **Store**
 Chaque action passe par le dispatcher qui la transmet au store ciblé par l'action.   
 
 ## Pourquoi Redux alors ?!
-Redux est une version moins compliqué de Flux, il s'en distingue par le fait
-- qu’il y ait qu’un store donc une seule source de donnée, 
-- des états immuables / immutables
-- et pas de dispatcher. 
+Redux est une version moins compliqué de Flux, il s'en distingue par plusieurs raisons:
 
-Grâce à la programmation fonctionnelles, le dispatcher est complètement retiré du schéma qui rend plus simple le développement.  
+- il y a qu’un store donc une seule source de donnée, 
+- des états immuables / immutables
+- il n'y a pas de dispatcher. 
+
+Grâce à la programmation fonctionnelle, le dispatcher est complètement retiré du schéma qui rend le développement plus simple.  
 <center>
 	<img src="https://wecodetheweb.com/2015/09/29/functionally-managing-state-with-redux/redux-cycle.png"/>
 </center>
@@ -45,18 +46,19 @@ Grâce à la programmation fonctionnelles, le dispatcher est complètement retir
 ## Flux vs Redux
 | Flux| Redux|
 |--|--|
-| les Stores contiennent les états et leurs logiques de mutations|  le store et leurs logiques de mutation sont séparer|
+| les Stores contiennent les états et leurs logiques de mutations|  le store et leurs logiques de mutation sont séparés|
 |Plusieurs Stores|Un seule Store|
 |Stores indépendants|Store unique avec reducers|
 |Dispatcher|Pas de dispatcher|
 |Etats mutables|Etats immuables|
 
-## Le Store la base de tout
-C'est quoi un store en au final, le store est juste une fonction qui contient l'état des reducers, un getter, un dispatcher et des subscribers.
+## Le Store, la base de tout
+Qu'est-ce qu'est le store au final ?
+Le store est une fonction qui contient l'état des reducers, un getter, une fonction de dispatch et des subscribers.
 
-Voilà un exemple de store *from scratch simplifié* :
+Voici un exemple de store *from scratch simplifié* :
 
-***Ne pas reproduire***
+***Exemple***
 
 ```javascript
 class Store {
@@ -125,15 +127,15 @@ import * as Store from './store';
 import * as RootReducer from './reducers';
 
 new Store(RootReducer/*,{}*/);
-// Le store prend en 1er param, un objet qui contiendra l'ensemble des reducers
+// Le store prend en 1er param un objet qui contiendra l'ensemble des reducers
 // 2ème param, un objet qui est l'état du store,
 // en général les reducers ont leurs propre valeur par default donc il est inutile de le rajouter.
 ```
 
 ## Le root reducer
-Le root reducer est un simple objet qui a pour propriété des fonctions. Elle représente l'ensemble des mutations de l'application.
+Le root reducer est un simple objet qui a pour propriété des fonctions. Celles-ci représentent l'ensemble des mutations de l'application.
 
-***Ne pas reproduire***
+***Exemple***
 ```javascript
 import counterReducer from './counter-reducer';
 
@@ -142,8 +144,10 @@ const rootReducer = {
 	...etc  	
 }
 ```
-Chaque function reducer a pour argument son état et une action,
-***Ne pas reproduire***
+
+Chaque fonctions reducer a pour argument son état et une action.
+
+***Exemple***
 ```javascript
 // on part de 0
 const initialState = { counter: 0 };
@@ -169,9 +173,9 @@ const counterReducer = (state = initialState, action) => {
   }
 };
 ```
-Les reducers ne fonctionnent que avec des fonctions pures, elle ne doit ** jamais** modifié directement l'état mais renvoyé un nouvelle état a partir de celui-ci.
+Les reducers ne fonctionnent qu'avec des fonctions pures, ils ne doivent **jamais** modifier directement l'état mais en renvoyer un nouveau à partir de celui-ci.
 ## Le schéma
-Voilà, on voit bien que les reducers encapsules les différentes logiques de mutation et le store contient le résultat de chaque reducer comme deux objets miroir synchronisés à chaque action.
+Les reducers encapsulent les différentes logiques de mutation et le store contient le résultat de chaque reducer comme deux objets miroir synchronisés à chaque action.
 ```javascript
 const store = {
 	counter: 0
@@ -183,19 +187,21 @@ const rootReducer = {
 ```
 
 ## Les actions
-Les actions sont des objets javascript, elle contienne au minimum une propriété **type** qui contient une string.
+Les actions sont des objets, elles contiennent au minimum une propriété **type**.
 
 ```javascript
 const action = {
 	type:'INCREMENT'
 };
 ```
-Cette propriété va permettre au reducer de savoir quelle mutation appliqué sur l'état actuel. Le nommage du type doit être explicite pour garder une bonne traçabilité lors d'un changement. Une meilleur pratique consiste à utilisé des constants pour les type d'action, par ailleurs avec les constants ont peu écrire des types plus lisible.
+Cette propriété donne la possibilité au reducer de savoir quelle mutation appliquer sur l'état actuel.
+Le nommage du type doit être explicite afin de garder une bonne traçabilité lors d'un changement.
+Une meilleure pratique consiste à utiliser des constantes qui permettent d'écrire des types d'action plus lisibles.
 
 ```javascript
 const SET_NEW_VALUE = '[counter] Set new value';
 ```
-Vu que c'est un objet on peut lui rajouter autant de propriété que l'on veut :
+Comme il s'agit d'un objet on peut lui rajouter autant de propriétés que l'on souhaite :
 
 ```javascript
 import { SET_NEW_VALUE } from './constants';
@@ -207,7 +213,7 @@ const action = {
 };
 ```
 ## Action creator
-Il existe une manière différente et préférable de réaliser une action, c'est d'utiliser une Class d'action, **Action creator**
+Il existe une manière différente et préférable de réaliser une action, c'est d'utiliser une classe qui permettra de générer notre objet d'action.
 
 ```javascript
 import { SET_NEW_VALUE } from './constants';
@@ -217,15 +223,15 @@ class SetNewValue {
 	constructor(public payload: number) {}
 }
 ```
-Et comment l'utilisé à la place de l'objet
+Elle s'utilise à la place de l'objet.
 ```javascript
 import * as CounterActions from './actions';
 
 new CounterActions.SetNewValue(6)
 // resultat => { type: '[counter] Set new value', payload: 6 }
 ```
-L'action creator permet également de mieux utilisé le typage pour les valeurs optionnelles.
-Maintenant on la structure de l'action, il faut voir comment injecter l'action dans le store, plus haut on a vu que le store dispose d'une méthode **dispatch()**, c'est elle qui va mettre à jour le store avec l'action passé en paramètre
+L'action creator permet également de mieux utiliser le typage pour les valeurs optionnelles.
+Maintenant que nous avons la structure de l'action, nous allons voir comment l'injecter dans le store. Grâce à la méthode **dispatch()** du Store, on va pouvoir mettre à jour l'état du *Counter* avec l'action passée en paramètre.
 ```javascript
 import * as CounterActions from './actions';
 import { store } from './store'

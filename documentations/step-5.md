@@ -2,26 +2,26 @@
 
 ### *[Début de la branche step-5]*
 
-On va rajouter un propriété dans le **TodoListState** afin de conservé une todo, on va modifier l'interface, les actions et le reducer pour pouvoir ajouter cette logique.
+On va rajouter une propriété dans notre **TodoListState** afin de conserver une todo ce qui permettra la mise à jour de celle-ci. Cela implique de modifier l'interface et les actions et le reducer pour pouvoir ajouter cette logique.
 
 *models/todo.ts*
 ```javascript
 export interface TodoListState {
-	// ... other
+	// [...]
 	selectTodo: Todo
 }
 ```
-On ajoute directement un **SELECT** & un **UPDATE** toutes ces actions auront un paramètre de type Todo.
+On ajoute les actions **SELECT** & **UPDATE** qui ont un paramètre de type Todo.
 
 *store/actions/todo-list.action.ts*
 ```javascript
 export namespace TodoListModule {
 	export enum ActionTypes {
-		// ... other
+		// [...]
 		SELECT_TODO = '[todoList] Select Todo',
 		UPDATE_TODO = '[todoList] Update Todo'
 	}
-	// ... other
+	// [...]
 	export class SelectTodo {
 		readonly type = ActionTypes.SELECT_TODO;
 		constructor(payload: Todo){}
@@ -31,13 +31,14 @@ export namespace TodoListModule {
 		readonly type = ActionTypes.UPDATE_TODO;
 		constructor(payload: Todo){}
 	}
-	// ... other
+	// [...]
 	export type Actions = InitTodos
 	| SelectTodo
 	| DeleteTodo;
 }
 ```
-**SelectTodo** va juste récupérer le contenu du payload et l'**UpdateTodo** va changer la todo qui match avec l'id de la todo du paylaod.
+**SelectTodo** va récupérer le contenu du payload et **UpdateTodo** va changer la todo qui match avec l'id de la todo du paylaod.
+
 */store/reducers/todo-list.reducer.ts*
 ```javascript
 import { TodoListModule } from '../actions/todo-list.action';
@@ -45,12 +46,12 @@ import { TodoListState  } from '../../models/todo';
 import { todosMock } from '../../mocks/todo-list';
 
 const initialState: TodoListState = {
-	// ... other
+	// [...]
 	selectTodo: undefined
 };
 
 export function todosReducer(
-// ... other
+// [...]
 
     case TodoListModule.ActionTypes.SELECT_TODO:
 	    return {
@@ -67,13 +68,13 @@ export function todosReducer(
 		};
 	
 		
-// ... other      
+// [...]      
 ```
-Il faut ajouté l'action **SelectTodo** au clique aui dispatchera une action et redirigera vers la page de **select-todo**
+Une fonction sera rattachée à l'événement au clique d'une todo, celle-ci redirigera vers la page **select-todo** tout en modifiant le state **selectTodo**.
 
 *all-todos.ts*
 ```javascript
-// ... Other
+// [...]
 import { Router } from '@angular/router';
 
 @Component({
@@ -90,23 +91,22 @@ import { Router } from '@angular/router';
   `
 })
 export class AllTodosComponent implements OnInit {
-  // ... Other
+  // [...]
   constructor(
-	// ... Other
+	// [...]
     private router: Router) {
-    // ... Other
+    // [...]
   }
 
-  // ... Other
+  // [...]
   selectTodo(todo) {
-    console.log('select', todo);
     this.store.dispatch(new TodoListModule.SelectTodo(todo));
     this.router.navigate(['/todo-list/select-todo']);
   }
-  // ... Other
+  // [...]
 }
 ```
-Reste la fonctionnalité de **UpdateTodo** qui sera dans le **SelectTodoComponent** avec un formulaire assez semblable à celui de la création de todo.
+Reste la fonctionnalité de **UpdateTodo** qui sera dans le **SelectTodoComponent**.
 
  *modules/todo-list/components/select-todo/select-todo.component.ts*  
 ```javascript
@@ -182,7 +182,7 @@ export class SelectTodoComponent implements OnInit {
 }
 
 ```
-Maintenant vous allez pouvoir réaliser la sélection et la mise à jour d'une todo.
+Maintenant vous pouvez sélectionner et mettre à jour une todo.
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTY3NjA1OTczMiwtMjUwMDk0OTc5XX0=
