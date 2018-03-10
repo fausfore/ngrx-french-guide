@@ -52,7 +52,7 @@ export namespace TodoListModule {
 }
 
 ```
-On ajoute les nouvelles actions dans le reducer.
+On ajoute les nouvelles actions dans le reducer :
 ```javascript
 // ...Other
 todosReducer(
@@ -107,7 +107,7 @@ todosReducer(
 }
 
 ```
-On créer un service de post: 
+On créer un service de post : 
 ```javascript
 // [...]
 @Injectable()
@@ -121,14 +121,14 @@ export class TodoListService {
 
 }
 ```
-On ajoute un effect qui écoutera les actions de type **LOAD_CREATE_TODO**.
+On ajoute l'effect qui écoutera les actions de type **LOAD_CREATE_TODO** :
 
 ```javascript
-// ...Other
+// [...]
 
 @Injectable()
 export class TodoListEffects {
-  // ...Other
+  // [...]
 
     @Effect() LoadCreateTodo$: Observable<TodoListModule.Actions> = this.actions$
       .pipe(
@@ -138,7 +138,7 @@ export class TodoListEffects {
           catchError(() => of(new TodoListModule.ErrorInitTodos()))
       );
 
-// ...Other
+// [...]
 }
 ```
 Maintenant reste plus que a changer l'action lors du clique ainsi on peut retirer la notion d'id car le serveur donnera son propre id à la todo.
@@ -168,6 +168,6 @@ createTodo(todo: Todo) {
 ```
 Voilà notre création de todo est terminée.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjczNTEzMTQsLTE1MDk5NzQ0OTRdfQ
+eyJoaXN0b3J5IjpbLTE4MTA3MjMxNTIsLTE1MDk5NzQ0OTRdfQ
 ==
 -->
