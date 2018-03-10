@@ -14,13 +14,11 @@ Actuellement c'est **AllTodosComponent** qui déclenche le chargement des todos,
 ```bash
 ng g guard guards/is-todos-loaded/is-todos-loaded
 ```
-Et le déclarer dans le **AppModule** :
+Le déclarer dans le **AppModule** :
 
 ```javascript
 // [...]
 import { IsTodosLoadedGuard } from './guards/is-todos-loaded/is-todos-loaded.guard';
-// [...]
-
 
 @NgModule({
   declarations: [
@@ -60,6 +58,7 @@ export class IsTodosLoadedGuard implements CanActivate {
 
     return this.store
       .pipe(
+      // on récupère 
         select(selectTodosLoaded$),
         map(isLoaded => {
           if (!isLoaded) {
@@ -135,5 +134,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de f
 
 n
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM4OTI1NTA1LDc4NDIyMTY0OF19
+eyJoaXN0b3J5IjpbNjU0MTgwMzMxLDc4NDIyMTY0OF19
 -->
