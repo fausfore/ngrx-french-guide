@@ -105,6 +105,7 @@ export namespace TodoListModule {
 *todo-list.service.ts*
 ```javascript
 // [...]
+// Partial vous permet de définir une interface
 patchTodo(changes: Partial<Todo>, id: number): Observable<Todo> {
     return this.http.patch<Todo>(`${environment.apiUrl}/todos/${id}`, changes);
 }
@@ -124,5 +125,5 @@ updateTodo(formValue) {
 
 Et voilà le **[mvp](https://fr.wikipedia.org/wiki/MVP)** de notre todo-list est réalisé, la suite du tutoriel va se concentrer sur de l'optimisation et des tests.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjUyMDQzNzY5LDI2OTU4NjQ4N119
+eyJoaXN0b3J5IjpbLTEyMzMwMTczNjEsMjY5NTg2NDg3XX0=
 -->
