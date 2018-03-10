@@ -132,7 +132,7 @@ export namespace TodoListModule {
 	// [...]
 }
 ```
-Et le reducer doit retourner le payload à la place du mock qu'on peut d'ailleurs totalement supprimeré.supprim ~~/mocks~~
+Et le reducer doit retourner le payload à la place du mock qu'on peut d'ailleurs totalement supprimé.~~/mocks~~
 
 */store/reducers/todo-list.reducer.ts*
 ```javascript
@@ -149,7 +149,7 @@ export function todosReducer(
 // [...]
 ```
 ## Introduction des Effects
-On charge bien les todosodosLa logique fonctionne bien mais avec NGRX il est possible d'aller plus loin en gérant également la partie **asynchrone** pour le moment impossible dans le reducer **(synchrone only)** .
+On charge bien les todos mais avec NGRX il est possible d'aller plus loin en gérant également la partie **asynchrone** pour le moment impossible dans le reducer **(synchrone only)** .
 
 **Effects** est un second module créé par la team de NGRX qui a pour but de gérer ce genre de cas. En quelques mots, les **Effects** sont des **listenners d'actions** qui peuvent effectuer des fonctions et retourner une **nouvelle action** (ou pas). 
 
@@ -404,5 +404,5 @@ oi le service s lce es e ffect qui, via le **LoadInitTodos**, va utiliser le ser
 
 p-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0MDUxMjU1MF19
+eyJoaXN0b3J5IjpbMTAyMDYxMDI3Nl19
 -->
