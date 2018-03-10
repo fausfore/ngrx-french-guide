@@ -101,11 +101,10 @@ export namespace TodoListModule {
           catchError(() => of(new TodoListModule.ErrorCreateTodo()))
       );
 ```
-On créer le service de path : 
 
 *todo-list.service.ts*
 ```javascript
-// ... other
+// [...]
 patchTodo(changes: Partial<Todo>, id: number): Observable<Todo> {
     return this.http.patch<Todo>(`${environment.apiUrl}/todos/${id}`, changes);
 }
@@ -125,5 +124,5 @@ updateTodo(formValue) {
 
 Et voilà le **[mvp](https://fr.wikipedia.org/wiki/MVP)** de notre todo-list est réalisé, la suite du tutoriel va se concentrer sur de l'optimisation et des tests.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NTc2ODQzMywyNjk1ODY0ODddfQ==
+eyJoaXN0b3J5IjpbNjUyMDQzNzY5LDI2OTU4NjQ4N119
 -->
