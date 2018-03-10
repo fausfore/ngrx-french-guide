@@ -52,7 +52,7 @@ export namespace TodoListModule {
 }
 
 ```
-On inclus les nouvelles actions dans le reducer.
+On ajoute les nouvelles actions dans le reducer.
 ```javascript
 // ...Other
 todosReducer(
@@ -71,7 +71,7 @@ todosReducer(
         };
 
     case TodoListModule.ActionTypes.SUCCESS_CREATE_TODO:
-        // Passe le loading a true
+        // Passe le loading a false et ajoute une todo
         return {
             ...state,
             loading: false,
@@ -82,7 +82,7 @@ todosReducer(
         };
 
     case TodoListModule.ActionTypes.ERROR_CREATE_TODO:
-        // Passe le loading a true
+        // Passe le loading a false
         return {
             ...state,
             loading: false
@@ -99,7 +99,7 @@ todosReducer(
         };
      */
 
-    // ...Other
+    // [...]
 
     default:
         return state;
@@ -109,11 +109,11 @@ todosReducer(
 ```
 On créer un service de post: 
 ```javascript
-// ... Other
+// [...]
 @Injectable()
 export class TodoListService {
 
- // ... Other
+ // [...]
 
   createTodo(body): Observable<Todo> {
     return this.http.post<Todo>(`${environment.apiUrl}/todos`, body);
@@ -168,6 +168,6 @@ createTodo(todo: Todo) {
 ```
 Voilà notre création de todo est terminée.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjE0NzgzMDMsLTE1MDk5NzQ0OTRdfQ
+eyJoaXN0b3J5IjpbLTExNjczNTEzMTQsLTE1MDk5NzQ0OTRdfQ
 ==
 -->
