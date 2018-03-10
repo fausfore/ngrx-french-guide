@@ -2,7 +2,8 @@
 
 ### *[Début de la branche step-8]*
 
-On va mettre à jour notre action de **CreateTodo** pour inclure une requête serveur de la même façon que **InitTodos** donc au lieu s'avoir que une action **CREATE_TODO**, on aura :
+On va mettre à jour notre action de **CreateTodo** pour inclure une requête serveur de la même façon que **InitTodos**.
+ Au lieu s'avoir que une action **CREATE_TODO**, on aura :
 - **LOAD_CREATE_TODO** ,
 - **SUCCESS_CREATE_TODO**,
  - **ERROR_CREATE_TODO**.
@@ -14,13 +15,13 @@ import { Todo } from '../../models/todo';
 export namespace TodoListModule {
 
     export enum ActionTypes {
-	    // ... Other
+	    // [...]
         LOAD_CREATE_TODO = '[todoList] Load Create Todo',
         SUCCESS_CREATE_TODO = '[todoList] Success Create Todo',
         ERROR_CREATE_TODO = '[todoList] Error Create Todo',
         // CREATE_TODO = '[todoList] Create Todo',
     }
-	// ... Other
+	// [...]
 	/*
     export class CreateTodo {
         readonly type = ActionTypes.CREATE_TODO;
@@ -41,12 +42,12 @@ export namespace TodoListModule {
     export class ErrorCreateTodo {
         readonly type = ActionTypes.ERROR_CREATE_TODO;
     }
-    // ... Other
+    // [...]
     export type Actions = DeleteTodo
         | LoadCreateTodo
         | SuccessCreateTodo
         | ErrorCreateTodo
-        // ... Other
+        // [...]
         //| CreateTodo;
 }
 
@@ -167,6 +168,6 @@ createTodo(todo: Todo) {
 ```
 Voilà notre création de todo est terminée.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzYyODE3NTksLTE1MDk5NzQ0OTRdfQ
+eyJoaXN0b3J5IjpbLTE1MjE0NzgzMDMsLTE1MDk5NzQ0OTRdfQ
 ==
 -->
