@@ -114,19 +114,19 @@ export function todosReducer(
 ```javascript
 import { TodoListStateEntity } from './reducers/todo-list.reducer';
 
-// ... other
+// [...]
 
 // Changement de l'interface
 export interface AppState {
     todos: TodoListStateEntity;
 }
 
-// ... other
+//  [...]
 
 ```
 *todo-list.selector.ts*
 ```javascript
-// ... other
+// [...]
 import * as fromTodos from '@Reducers/todoL-list.reducer';
 
 export const selectTodoListState$ = (state: AppState) => state.todos;
@@ -162,27 +162,27 @@ Switch du selector dans le component:
 
 *all-todos.component.ts*
 ```javascript
-// ... other
+// [...]
 
 import { 
 	selectTodoListEntitiesConverted$ 
 } from '@Selectors/todo-list.selector';
 
-// ... other
+// [...]
 
   constructor(
-    // ... other
+    // [...]
   ) {
     this.todos$ = store
       .pipe(select(selectTodoListEntitiesConverted$));
 
 
-// ... other
+//  [...]
 
 ```
 Voilà nos todos sont stockées en tant que entité dans notre state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzUzODE2LDEyMDY2ODE0ODUsLTIwMT
-g3MDk3NDRdfQ==
+eyJoaXN0b3J5IjpbLTE1OTk4MzkyNzYsMTIwNjY4MTQ4NSwtMj
+AxODcwOTc0NF19
 -->
