@@ -1,7 +1,7 @@
 # Les action de type ERROR
 
 ### *[Début de la branche step-11]*
-Dans notre code, on remarque que les actions d'erreur réalisent la même tâche, on pourrait en faite n'avoir qu'une action et faire du ménage dans le code.
+Dans notre code, on remarque que les actions d'erreur réalisent la même tâche,dans ce cas on pourrai n'avoir qu'une action et faire du ménage dans le code.
 
 *todo-list.action.ts*
 ```javascript
@@ -297,5 +297,5 @@ export class TodoListComponent {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzczNzk3NCwtOTUyOTU4ODhdfQ==
+eyJoaXN0b3J5IjpbLTM0MDU3NjY1NSwtOTUyOTU4ODhdfQ==
 -->
