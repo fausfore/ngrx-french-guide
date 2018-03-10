@@ -66,12 +66,12 @@ A l'heure ou j'écris ces lignes **Ngrx** viens de passer en version 5 ainsi que
 
 J’espère que ce tutoriel vous a permis de comprendre NGRX et son implémentation, il reste des points comme les **Meta-reducers** que nous n'avons pas vu lors de ce tutoriel vous pouvez trouvé les points manquant sur le [gitHub officelle de NGRX](https://github.com/ngrx/platform).
 
-Une autre utilitaire intéressant [ngrx-actions](https://github.com/amcdnl/ngrx-actions), vous permettra de reduire votre code 
+Une autre utilitaire intéressant [ngrx-actions](https://github.com/amcdnl/ngrx-actions), vous permettra de réduire votre code reduxien avec des décorateurs,
 
 
 Auteur : @Fausfore / Matias Ljubica
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzOTMwNzc1LDE4MjA3MzExMTAsMTU2Nz
-MzMTY0Ml19
+eyJoaXN0b3J5IjpbLTQ0OTM1NjY5OSwxODIwNzMxMTEwLDE1Nj
+czMzE2NDJdfQ==
 -->
