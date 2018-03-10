@@ -140,13 +140,12 @@ export const selectTodos$ =
 
 export const selectTodoListEntities$ = Converted$ createSelector(
     selectTodoListState$,
-    (state) => state.entities
+    fromTodos.selectTodosEntities
 );
 
 export const selectTodoListEntitiesConverted$ = createSelector(
-    selectTodoListState$,Entities$,
-    (entities) => Object.keys(entities).map(id => entities[parseInt(id, 10)])
- fromTodos.selectTodos);
+    selectTodoListState$,
+    fromTodos.selectTodos);
 
 export const selectTodoSelected$ =
     createSelector(selectTodoListEntitiesState$, (todos) => todos.selectedTodo);
@@ -183,6 +182,6 @@ import {
 Voilà nos todos sont stockées en tant que entité dans notre state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjM5NDY2OTAsMTIwNjY4MTQ4NSwtMj
+eyJoaXN0b3J5IjpbLTIxMDQyNzA0MjYsMTIwNjY4MTQ4NSwtMj
 AxODcwOTc0NF19
 -->
