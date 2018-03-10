@@ -95,7 +95,7 @@ Et pour finir supprimer le **LoadInitTodos** dans le component :
 	  */
 // [...]
 ```
-De cette manière de charger la donnée avant même de charger un composant une idée de sortir encore plus le component de la logique.
+De cette manière la donnée sera chargée sans être dépendant du component une idée de sortir encore plus le component de la logique.
 
 ## Redux Devtools
 
@@ -131,5 +131,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de f
 
 n
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5MjM4MDc1LDc4NDIyMTY0OF19
+eyJoaXN0b3J5IjpbLTgzMDQ2OTg0Niw3ODQyMjE2NDhdfQ==
 -->
