@@ -2,7 +2,7 @@
 
 ### *[Début de la branche step-8]*
 
-Maintenant on va modifié notre action de **CreateTodo** pour inclure une requête serveur de la même façon comme précédemment avec **InitTodos** donc au lieu s'avoir que une action **CREATE_TODO**, on aura :
+On va mettre à jour notre action de **CreateTodo** pour inclure une requête serveur de la même façon que **InitTodos** donc au lieu s'avoir que une action **CREATE_TODO**, on aura :
 - **LOAD_CREATE_TODO** ,
 - **SUCCESS_CREATE_TODO**,
  - **ERROR_CREATE_TODO**.
@@ -167,6 +167,6 @@ createTodo(todo: Todo) {
 ```
 Voilà notre création de todo est terminée.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODQyODcwOTAsLTE1MDk5NzQ0OTRdfQ
+eyJoaXN0b3J5IjpbLTE4MzYyODE3NTksLTE1MDk5NzQ0OTRdfQ
 ==
 -->
