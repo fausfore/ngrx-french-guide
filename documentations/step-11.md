@@ -180,7 +180,7 @@ export class ErrorLoadAction {
 }
 ```
 
-On ajoute une autre propriété logs dans notre interface de state.
+On ajoute une autre propriété logs dans l'interface du state :
 
 *models/todo.ts*
 ```javascript
@@ -192,12 +192,12 @@ export interface TodoListState {
     };
 }
 ```
-Ajoutez cette propriété dans le reducer: 
+Ajoutez cette propriété dans le reducer : 
 
 *todo-list.reducer.ts*
 ```javascript
 const initialState: TodoListState = {
-    // ... other
+    // [...]
     logs: undefined
 };
 
@@ -297,5 +297,5 @@ export class TodoListComponent {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NjQwODY2MiwtOTUyOTU4ODhdfQ==
+eyJoaXN0b3J5IjpbLTU2OTIwMjkyOSwtOTUyOTU4ODhdfQ==
 -->
