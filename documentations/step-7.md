@@ -73,31 +73,29 @@ Egalement dans le fichier de routing :
 
  *app.routing.ts*  
 ```javascript
-// ...Other
+// [...]
 import { IsTodosLoadedGuard } from './guards/is-todos-loaded/is-todos-loaded.guard';
-// ...Other
+// [...]
 			{
 		        path: 'todo-list',
 		        loadChildren: './modules/todo-list/todo-list.module#TodoListModule',
 		        canActivate: [IsTodosLoadedGuard]
 		    },
-// ...Other
+// [...]
 ```
 Et pour finir supprimer le **LoadInitTodos** dans le component :
 
 ```javascript
-// ...other
-
-	// ...other
+[...]
 	  /*
 	  A supprimer
 	  ngOnInit(){
 		  this.store.dispatch(new TodoListModule.LoadInitTodos());
 	  }
 	  */
-// ...other
+// [...]
 ```
-Voilà une manière de charger la donnée avant même de charger un composant une idée de sortir encore plus le component de la logique.
+De cette manière de charger la donnée avant même de charger un composant une idée de sortir encore plus le component de la logique.
 
 ## Redux Devtools
 
@@ -133,5 +131,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de f
 
 n
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTA5MTM1MzksNzg0MjIxNjQ4XX0=
+eyJoaXN0b3J5IjpbMTA5MjM4MDc1LDc4NDIyMTY0OF19
 -->
