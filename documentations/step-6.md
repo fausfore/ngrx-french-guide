@@ -36,7 +36,7 @@ On va générer un service depuis la console :
 ```bash
 ng g service services/todo-list
 ```
-En le déclarerls  le é dans le **AppModule** ainsi que le dernier ais qu module **HttpClient** de Angular.
+Le déclarer dans le **AppModule** ainsi que le dernier module **HttpClient** de Angular.
 
 *app.module.ts*
 ```javascript
@@ -404,5 +404,5 @@ oi le service s lce es e ffect qui, via le **LoadInitTodos**, va utiliser le ser
 
 p-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODgzMDAzMDldfQ==
+eyJoaXN0b3J5IjpbLTY0MDUxMjU1MF19
 -->
