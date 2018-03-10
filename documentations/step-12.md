@@ -26,7 +26,7 @@ npm install @ngrx/entity --save OR yarn add @ngrx/entity --dev
 ```
 
 ```javascript
-// ... other
+// [...]
 import { createEntityAdapter, EntityAdapter, EntityState } from '@ngrx/entity';
 
 export interface TodoListStateEntity extends EntityState<Todo> {
@@ -175,6 +175,16 @@ export function todosReducer(
     }
 }
 
+    export const {
+    // select the array of user ids
+    selectIds: selectTodosIds,
+    // select the dictionary of user entities
+    selectEntities: selectTodosEntities,
+    // select the array of users
+    selectAll: selectTodos,
+    selectTotal: selectTotalTodos
+  } = TodoListAdapter.getSelectors();
+
 ```
 
 *store/index.ts*
@@ -250,6 +260,6 @@ import {
 Voilà nos todos sont stockées en tant que entité dans notre state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTA2NjIwMzgsMTIwNjY4MTQ4NSwtMj
+eyJoaXN0b3J5IjpbLTE5ODQ3NzEyMzMsMTIwNjY4MTQ4NSwtMj
 AxODcwOTc0NF19
 -->
