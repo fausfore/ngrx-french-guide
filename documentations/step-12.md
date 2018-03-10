@@ -99,11 +99,11 @@ export function todosReducer(
 }
 
     export const {
-    // select the array of user ids
+    // select the array of todo ids
     selectIds: selectTodosIds,
-    // select the dictionary of user entities
+    // select the dictionary of todo entities
     selectEntities: selectTodosEntities,
-    // select the array of users
+    // select the array of todo
     selectAll: selectTodos,
     selectTotal: selectTotalTodos
   } = TodoListAdapter.getSelectors();
@@ -183,6 +183,6 @@ import {
 Voilà nos todos sont stockées en tant que entité dans notre state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTk4MzkyNzYsMTIwNjY4MTQ4NSwtMj
+eyJoaXN0b3J5IjpbLTE5MjM5NDY2OTAsMTIwNjY4MTQ4NSwtMj
 AxODcwOTc0NF19
 -->
