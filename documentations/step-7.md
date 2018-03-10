@@ -69,7 +69,7 @@ export class IsTodosLoadedGuard implements CanActivate {
   }
 }
 ```
-Egalement dans le fichier de route :
+Egalement dans le fichier de routing :
 
  *app.routing.ts*  
 ```javascript
@@ -133,5 +133,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de f
 
 n
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDIwNzg3NTEsNzg0MjIxNjQ4XX0=
+eyJoaXN0b3J5IjpbODE3MDEwMzA4LDc4NDIyMTY0OF19
 -->
