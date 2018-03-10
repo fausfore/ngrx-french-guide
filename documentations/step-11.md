@@ -162,18 +162,18 @@ export class TodoListEffects {
 ```
 ## Système de logs
 
-Voilà on a supprimé un peu de code inutile, avec ces actions d'erreur on peu mettre en place un système de logs avec des *toasters* afin d'informé l'utilisateur en cas de changement ou d'erreurs  dans le state.
+Voilà on a supprimé un peu de code inutile, avec ces actions d'erreur on mettra en place un système de logs avec des *toasters* afin d'informer l'utilisateur en cas de changement ou d'erreurs  dans le state.
 Le **catchError** peut prendre une erreur en argument donc on peut l'a récupérer pour notre state.
 
 *todo-list.effect.ts*
 ```javascript
-// ... other
+// [...]
 catchError((err) => of(new TodoListModule.ErrorLoadAction(err)))
 ```
 *todo-list.action.ts*
 ```javascript
 import { HttpErrorResponse } from '@angular/common/http';
-// ... other
+// [...]
 export class ErrorLoadAction {
     readonly type = ActionTypes.ERROR_LOAD_ACTION;
     constructor(public payload: HttpErrorResponse) {}
@@ -297,5 +297,5 @@ export class TodoListComponent {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNTM2OTIyOCwtOTUyOTU4ODhdfQ==
+eyJoaXN0b3J5IjpbLTU5NjQwODY2MiwtOTUyOTU4ODhdfQ==
 -->
