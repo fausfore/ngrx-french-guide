@@ -162,7 +162,7 @@ export class TodoListEffects {
 ```
 ## Système de logs
 
-Voilà on a purger un peu de code inutile mais on peu mettre en place un système de logs avec des *toasters* afin d'informé l'utilisateur en cas de changement ou d'erreurs  dans le state.
+Voilà on a supprimé un peu de code inutile, avec ces actions d'erreur on peu mettre en place un système de logs avec des *toasters* afin d'informé l'utilisateur en cas de changement ou d'erreurs  dans le state.
 Le **catchError** peut prendre une erreur en argument donc on peut l'a récupérer pour notre state.
 
 *todo-list.effect.ts*
@@ -297,5 +297,5 @@ export class TodoListComponent {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0MDU3NjY1NSwtOTUyOTU4ODhdfQ==
+eyJoaXN0b3J5IjpbMTgwNTM2OTIyOCwtOTUyOTU4ODhdfQ==
 -->
