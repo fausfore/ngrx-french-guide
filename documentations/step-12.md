@@ -69,8 +69,6 @@ export function todosReducer(
 	// [...]
 	
     case TodoListModule.ActionTypes.SUCCESS_INIT_TODOS:
-        // Bind state.data avec les todos du server
-        // Passe le loaded a true et le loading a false
         return {
             ...TodoListAdapter.addMany(action.payload, state),
             loading: false,
@@ -85,38 +83,14 @@ export function todosReducer(
             ...TodoListAdapter.updateOne({id: id, changes: changes}, state),
             loading: false,
             logs: { type: 'SUCCESS', message: 'La todo à été mise à jour avec succès' }};
-
-        
-   // ... other
-   // DELETE TODO
-
-    case TodoListModule.ActionTypes.LOAD_DELETE_TODO:
-        return {
-          };
-        };
-
-     // ...state,
-            loading: true
-        }; other
-   
+            
     case TodoListModule.ActionTypes.SUCCESS_DELETE_TODO:
         return {
             ...TodoListAdapter.removeOne(action.payload, state),
             logs: { type: 'SUCCESS', message: 'La todo à été suprimmé avec succès' }
         };
+        // [...]
 
-// ... other
-
-    case TodoListModule.ActionTypes.ERROR_LOAD_ACTION:
-        return {
-            ...state,
-            loading: false,
-            logs: { type: 'ERROR', message: action.payload.message }
-        };
-
-    default:
-        return state;
-    }
 }
 
     export const {
@@ -204,6 +178,6 @@ import {
 Voilà nos todos sont stockées en tant que entité dans notre state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1ODA3OTc0NCwxMjA2NjgxNDg1LC0yMD
-E4NzA5NzQ0XX0=
+eyJoaXN0b3J5IjpbMjIyMTEzMTA3LDEyMDY2ODE0ODUsLTIwMT
+g3MDk3NDRdfQ==
 -->
