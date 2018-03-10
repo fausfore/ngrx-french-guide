@@ -58,7 +58,6 @@ export class IsTodosLoadedGuard implements CanActivate {
 
     return this.store
       .pipe(
-      // on récupère 
         select(selectTodosLoaded$),
         map(isLoaded => {
           if (!isLoaded) {
@@ -70,7 +69,7 @@ export class IsTodosLoadedGuard implements CanActivate {
   }
 }
 ```
-Ajouter le guard au niveau des routes :
+Egalement dans le fichier des routes :
 
  *app.routing.ts*  
 ```javascript
@@ -134,5 +133,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de f
 
 n
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU0MTgwMzMxLDc4NDIyMTY0OF19
+eyJoaXN0b3J5IjpbNDAwMzQzNDc1LDc4NDIyMTY0OF19
 -->
