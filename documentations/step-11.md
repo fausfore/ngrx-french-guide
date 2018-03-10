@@ -1,6 +1,7 @@
 # Les action de type ERROR
 
 ### *[Début de la branche step-11]*
+Dans
 On remarque dans notre code que nos actions d'erreur font exactement la même chose, on pourrait en faite n'avoir qu'une action et faire du ménage dans le code.
 
 *todo-list.action.ts*
@@ -72,7 +73,7 @@ export namespace TodoListModule {
 // ... other
   switch (action.type) {
 
-    // ... other
+    // [...]
     /*
     case TodoListModule.ActionTypes.ERROR_INIT_TODOS:
         // Error rend le loading a false
@@ -100,7 +101,7 @@ export namespace TodoListModule {
         };
         */
 
-    // ... other
+    // [...]
     /*
     case TodoListModule.ActionTypes.ERROR_UPDATE_TODO:
         return {
@@ -109,7 +110,7 @@ export namespace TodoListModule {
         };*/
 
 
-    // ... other
+    // [...]
     /*
     case TodoListModule.ActionTypes.ERROR_DELETE_TODO:
         return {
@@ -123,7 +124,7 @@ export namespace TodoListModule {
             loading: false
         };
 
-    // ... other
+    // [...]
 }
 
 ```
@@ -135,28 +136,28 @@ export class TodoListEffects {
   // Listen les actions passées dans le Store
     @Effect() LoadTodos$: Observable<TodoListModule.Actions> = this.actions$
       .pipe(
-          // ... other
+          // [...]
           catchError(() => of(new TodoListModule.ErrorLoadAction()))
       );
 
     @Effect() LoadCreateTodo$: Observable<TodoListModule.Actions> = this.actions$
       .pipe(
-          // ... other
+          // [...]
           catchError(() => of(new TodoListModule.ErrorLoadAction()))
       );
 
     @Effect() LoadDeleteTodo$: Observable<TodoListModule.Actions> = this.actions$
       .pipe(
-          // ... other
+          // [...]
           catchError(() => of(new TodoListModule.ErrorLoadAction()))
       );
 
     @Effect() LoadUpdateTodo$: Observable<TodoListModule.Actions> = this.actions$
       .pipe(
-      // ... other
+      // [...]
           catchError(() => of(new TodoListModule.ErrorLoadAction()))
       );
-  // ... other
+  // [...]
 }
 
 ```
@@ -297,5 +298,5 @@ export class TodoListComponent {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NTE2NDYzMCwtOTUyOTU4ODhdfQ==
+eyJoaXN0b3J5IjpbMjQ0NDA4MTgyLC05NTI5NTg4OF19
 -->
