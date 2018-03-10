@@ -293,10 +293,10 @@ export class TodoListComponent {
 }
 
 ```
-
+Voilà le système de log est fonctionnel.
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NzE0Njg0MSwtOTUyOTU4ODhdfQ==
+eyJoaXN0b3J5IjpbLTUxNzMyODQyMywtOTUyOTU4ODhdfQ==
 -->
