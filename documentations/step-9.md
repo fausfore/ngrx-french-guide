@@ -95,23 +95,23 @@ deleteTodo(id: number) {
 // [...]
 
 ```
-Le serveur lors d'un **DELETE** nous renvoi aucune information pour palier à cela vous pouvez faire comme si dessous :
+Le serveur lors d'un **DELETE** nous renvoi aucune information pour palier à cela vous pouvez faire comme ci dessous :
 
 *todo-list.service.ts*
 ```javascript
-// ... other
+// [...]
 deleteTodo(id): Observable<number> {
     return this.http.delete<Todo>(`${environment.apiUrl}/todos/${id}`)
     // Le pipe va nous renvoyer l'id de la todo si la suppression
     // est réussi
       .pipe(map(response => id));
   }
-// ... other
+// [...]
 
 ```
-DeleteTodo Done !
+C'est bon pour la suppression.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwODQ1NTUwMCwyMjg5MDg3NjZdfQ==
+eyJoaXN0b3J5IjpbLTQ2OTYzMDMyMSwyMjg5MDg3NjZdfQ==
 -->
