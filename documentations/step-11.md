@@ -5,11 +5,11 @@ On remarque dans notre code que nos actions d'erreur font exactement la même ch
 
 *todo-list.action.ts*
 ```javascript
-// ... Other
+// [...]
 export namespace TodoListModule {
 
     export enum ActionTypes {
-	    // ... Other
+	    // [...]
         // ERROR_CREATE_TODO = '[todoList] Error Create Todo',
         // ERROR_UPDATE_TODO = '[todoList] Error Update Todo',
         // ERROR_DELETE_TODO = '[todoList] Error Delete Todo',
@@ -18,32 +18,32 @@ export namespace TodoListModule {
         ERROR_LOAD_ACTION = '[todoList] Error Load Action'
     }
 
-	// ... Other
+	// [...]
     /*
     export class ErrorInitTodos {
         readonly type = ActionTypes.ERROR_INIT_TODOS;
     }
-    // ... Other
+    // [...]
     /*
     export class ErrorCreateTodo {
         readonly type = ActionTypes.ERROR_CREATE_TODO;
     }
     */
-	// ... Other
+	// [...]
     /*
     export class UpdateTodo {
         readonly type = ActionTypes.UPDATE_TODO;
         constructor(public payload: Todo) {}
     }
     */
-	// ... Other
+	// [...]
     /*
     export class ErrorUpdateTodo {
         readonly type = ActionTypes.ERROR_UPDATE_TODO;
     }
     */
 
-    // ... Other
+    // [...]
     
     /*
     export class ErrorDeleteTodo {
@@ -58,7 +58,7 @@ export namespace TodoListModule {
     }
 
     export type Actions = LoadInitTodos
-        // ... other
+        // [...]
         // | ErrorInitTodos
         // | ErrorCreateTodo
         // | ErrorUpdateTodo
@@ -297,5 +297,5 @@ export class TodoListComponent {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUxMTY0NTM0LC05NTI5NTg4OF19
+eyJoaXN0b3J5IjpbMjA5NTE2NDYzMCwtOTUyOTU4ODhdfQ==
 -->
