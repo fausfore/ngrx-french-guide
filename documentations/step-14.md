@@ -1,7 +1,7 @@
 # Testings Advanced
 
 ## Mocks
-Pour nos tests on aura besoin de valeur pour traiter les différents cas 
+Pour nos tests on aura besoin de valeur pour traiter les différents cas  :
 
 *store/mock-value.ts*
 ```javascript
@@ -34,7 +34,7 @@ export const singleTodo: Todo = { id: 2, userId: 5, title: 'for testing 2', comp
 ```
 ## Actions
 
-Tester nos actions reste relativement simple, on créer un instance de l'action et on vérifie le type ainsi que le payload si besoin.
+Tester nos actions reste relativement simple, on créer une instance de l'action et on vérifie le type ainsi que le payload si besoin.
 
 ```javascript
 const action = new TodoListModule.ErrorLoadAction(message);
@@ -595,5 +595,5 @@ describe('Testing Effects', () => {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MzU5ODE5XX0=
+eyJoaXN0b3J5IjpbODQ0NDgzNTRdfQ==
 -->
