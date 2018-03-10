@@ -83,7 +83,7 @@ import { IsTodosLoadedGuard } from './guards/is-todos-loaded/is-todos-loaded.gua
 		    },
 // ...Other
 ```
-Avec le guard plus besoin de charger l'action depuis le component :
+Et pour finir supprimer le **LoadInitTodos** dans le component :
 
 ```javascript
 // ...other
@@ -133,5 +133,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de f
 
 n
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE3MDEwMzA4LDc4NDIyMTY0OF19
+eyJoaXN0b3J5IjpbLTE1OTA5MTM1MzksNzg0MjIxNjQ4XX0=
 -->
