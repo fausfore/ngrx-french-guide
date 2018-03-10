@@ -240,5 +240,5 @@ store.dispatch(new CounterActions.SetNewValue(6))
 // resultat => { counter : 6 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDc1Njg0NjEsMzQ3NzkwNzE2XX0=
+eyJoaXN0b3J5IjpbLTE2NDQxNTQ2NDgsMzQ3NzkwNzE2XX0=
 -->
