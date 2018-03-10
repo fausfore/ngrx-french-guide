@@ -158,9 +158,8 @@ On charge bien les todos mais avec NGRX il est possible d'aller plus loin en gé
 </p>
 <center>Les effects</center>
 
-Avec un **Eeffect** on n'aura plus  une seule action **InitT mais 3 actions qui sont **LoadInitTodos** qui chargera les données de l'api et renverra à son tour 2 cas différents possibles : 
-- **SuccessInitTodos** :  réponse serveur positive
--dans le cas nerse  erveur, on renverrarenvoie une action **SuccessInitTodos** et  rrorInitTodos** rone dans le cas inverse on retourne une action **ErrorInitTodos** :d'une réponse serveur négative. 
+Avec un **Eeffect** on n'aura plus  une seule action **InitTodos** mais 3 actions qui seront **LoadInitTodos** qui chargera les données de l'api et renverra à son tour 2 cas différents possibles : 
+- **SuccessInitTodos** :  réponse serveur positive et le cas inverse on retourne une action **ErrorInitTodos** :d'une réponse serveur négative. 
 
 200 du sere e n **ErrorInitTodos**.
 <center>LoadInitTodos => SuccessInitTodos || ErrorInitTodos
@@ -404,5 +403,5 @@ oi le service s lce es e ffect qui, via le **LoadInitTodos**, va utiliser le ser
 
 p-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMDYxMDI3Nl19
+eyJoaXN0b3J5IjpbLTE5NjY4NzYzNDFdfQ==
 -->
