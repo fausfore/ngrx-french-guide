@@ -7,7 +7,7 @@ A partir de la vous pouvez checkout la **step-6** pour avoir le style réalisé 
 
 ### *[Début de la branche step-7]*
 
-Actuellement c'est **AllTodosComponent** qui déclenche le chargement des todos, on pourrai avoir besoin de chargé cette liste sans attendre le **OnInit** du component.
+Actuellement c'est **AllTodosComponent** qui déclenche le chargement des todos, dans certain cas on voudrai chargé cette liste sans attendre le **OnInit** du component.
  Avec un **Guard Angular**,  qui vérifiera si la donnée est déjà chargée ( vérifiable par la propriété loaded ) et dans le cas ou il n'y a pas de données, il déclenea l'action **LoadInitTodos**.
 
 *Générer un guard*
@@ -135,5 +135,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de f
 
 n
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU0NjM3NDUxLDc4NDIyMTY0OF19
+eyJoaXN0b3J5IjpbODI1MTQ4ODIyLDc4NDIyMTY0OF19
 -->
