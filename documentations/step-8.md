@@ -141,11 +141,11 @@ export class TodoListEffects {
 // [...]
 }
 ```
-Maintenant reste plus que a changer l'action lors du clique ainsi on peut retirer la notion d'id car le serveur donnera son propre id à la todo.
+Maintenant on doit changer l'action lors du clique ainsi on peut retirer la notion d'id car le serveur définira son propre id à la todo.
 *all-todos.ts*
 ```javascript
 // private todosLength: number;
-// ... Other
+// [...]
 this.todos$ = store
       .pipe(
         select(selectTodos$),
@@ -154,7 +154,7 @@ this.todos$ = store
           this.todosLength = todos.length;
         }) */
     );
-// ... Other
+// [...]
 createTodo(todo: Todo) {
     const payload = {
       ...todo,
@@ -168,6 +168,5 @@ createTodo(todo: Todo) {
 ```
 Voilà notre création de todo est terminée.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTA3MjMxNTIsLTE1MDk5NzQ0OTRdfQ
-==
+eyJoaXN0b3J5IjpbLTc3MjMyNTA3OSwtMTUwOTk3NDQ5NF19
 -->
