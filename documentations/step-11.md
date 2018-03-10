@@ -1,7 +1,7 @@
 # Les action de type ERROR
 
 ### *[Début de la branche step-11]*
-Dans
+Dans notre code, 
 On remarque dans notre code que nos actions d'erreur font exactement la même chose, on pourrait en faite n'avoir qu'une action et faire du ménage dans le code.
 
 *todo-list.action.ts*
@@ -298,5 +298,5 @@ export class TodoListComponent {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ0NDA4MTgyLC05NTI5NTg4OF19
+eyJoaXN0b3J5IjpbOTczMDk1MDA3LC05NTI5NTg4OF19
 -->
