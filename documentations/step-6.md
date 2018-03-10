@@ -3,9 +3,9 @@
 ### *[Début de la branche step-6]*
 
 On a maintenant toutes nos fonctionnalités : **Create, Select, Update, Delete**.
-Mais cela reste du local ou du offline. Il est temps de mettre en place un serveur et à a ouoi mmencer  inclure des requêtes **http**.
+Mais cela reste du local ou du offline. Il est temps de mettre en place un serveur et commencer à  inclure des requêtes **http**.
 
-Pour maximiser le temps, on va créer un API avecour e on va rene le module npm **[JsonPlaceholder](https://jsonplaceholder.typicode.com/)** .
+Pour maximiser le temps, on va créer un API avec le module npm **[JsonPlaceholder](https://jsonplaceholder.typicode.com/)** .
 ```bash
 anpm install -g json-serve
 ```
@@ -405,5 +405,5 @@ oi le service s lce es e ffect qui, via le **LoadInitTodos**, va utiliser le ser
 
 p-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMTY1ODc3Nl19
+eyJoaXN0b3J5IjpbMTYwNDEzODkxMF19
 -->
