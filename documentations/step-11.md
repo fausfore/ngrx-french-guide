@@ -234,7 +234,7 @@ case TodoListModule.ActionTypes.ERROR_LOAD_ACTION:
         logs: { type: 'ERROR', message: action.payload.message },
     };
 ```
-On aura besoin d'un sélecteur pour le logs: 
+On créer un sélecteur pour le log: 
 
 *todo-list.selector.ts*
 ```javascript
@@ -296,6 +296,7 @@ export class TodoListComponent {
 
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2OTIwMjkyOSwtOTUyOTU4ODhdfQ==
+eyJoaXN0b3J5IjpbLTk5NzE0Njg0MSwtOTUyOTU4ODhdfQ==
 -->
