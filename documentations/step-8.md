@@ -166,7 +166,9 @@ createTodo(todo: Todo) {
     this.todoForm.reset();
   }
 ```
+Maintenant l'action de createTodo est connecté avec le serveur
 Voilà notre création de todo est terminée.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3MjMyNTA3OSwtMTUwOTk3NDQ5NF19
+eyJoaXN0b3J5IjpbLTE4Njg3NDgzODksLTE1MDk5NzQ0OTRdfQ
+==
 -->
