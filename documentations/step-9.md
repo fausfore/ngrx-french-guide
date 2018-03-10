@@ -84,17 +84,18 @@ export namespace TodoListModule {
         };
 
     */
-// ... Other
+// [...]
 ```
 *all-todos.component.ts*
 ```javascript
-// ... other
+// [...]
 deleteTodo(id: number) {
 	this.store.dispatch(new TodoListModule.LoadDeleteTodo(id));
 }
-// ... other
+// [...]
 
 ```
+Le serveur 
 Juste pour le service une petite astuce pour qu'il nous renvoie un id.
 
 *todo-list.service.ts*
@@ -113,5 +114,5 @@ DeleteTodo Done !
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAzNTY4NzU3LDIyODkwODc2Nl19
+eyJoaXN0b3J5IjpbLTU0MDE1MjU5NCwyMjg5MDg3NjZdfQ==
 -->
