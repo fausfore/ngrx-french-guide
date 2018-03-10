@@ -102,24 +102,24 @@ De cette manière la donnée sera chargée sans être dépendant du component.
 Il existe extension Chrome pour le développement avec redux: [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=fr) ,
 pour l'installer sur le projet, il vous faut le package [@ngrx/store-devtools](https://github.com/ngrx/platform/blob/master/docs/store-devtools/README.md)
 
-Et l'importer dans le root module: 
+Le définir dans le root module: 
 ```javascript
-// ... reste
+// [...]
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from 'environments/environment';
 
 
 @NgModule({
-  // ... other
+  // [...]
   imports: [
-	// ... other
+	// [...]
     StoreDevtoolsModule.instrument({
       name: '[TODOLIST]',
       maxAge: 25, // Retains last 25 states
       logOnly: environment.production // Restrict extension to log-only mode
     })
   ],
-  // ... other
+  // [...]
 })
 export class AppModule { }
 ```
@@ -127,9 +127,9 @@ export class AppModule { }
   <img src="https://d33wubrfki0l68.cloudfront.net/595e2922eee1bf85b801cdc86b8f7e135cc46ee0/0fd92/images/angular/store-devtools/store-devtools-screen.jpg">
 </p>
 
-L'outils permet de voir chaque changement de state, de garder l'historique, de faire export  state global et inversement ainsi des graphiques sur les tates de notre aApplication.
+L'outils vous permettra de voir chaque changement de state, de garder l'historique, de faire export  state global et inversement ainsi des graphiques sur les tates de notre aApplication.
 
 n
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU3NjE1Nzc4LDc4NDIyMTY0OF19
+eyJoaXN0b3J5IjpbLTUyODQ5Mzc4Myw3ODQyMjE2NDhdfQ==
 -->
