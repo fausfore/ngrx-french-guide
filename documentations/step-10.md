@@ -112,7 +112,7 @@ patchTodo(changes: Partial<Todo>, id: number): Observable<Todo> {
 ```
 *select-todo.component.ts*
 ```javascript
-// ... other
+// [...]
 updateTodo(formValue) {
     const payload = Object.assign(this.selectTodo, formValue);
     this.store.dispatch(new TodoListModule.LoadUpdateTodo(payload));
@@ -120,7 +120,7 @@ updateTodo(formValue) {
   }
 ```
 
-Et voilà le **[mvp](https://fr.wikipedia.org/wiki/MVP)** de notre todo-list est réalisé, la suite du tutoriel va se concentrer sur de l'optimisation et des tests.
+Et voilà le **[mvp](https://fr.wikipedia.org/wiki/MVP)** de notre todo-list est réalisé, la suite du tutoriel sera consacré sur de l'optimisation et les tests.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyNjAwMjU1NSwyNjk1ODY0ODddfQ==
+eyJoaXN0b3J5IjpbLTE2MDIyMzEwMzAsMjY5NTg2NDg3XX0=
 -->
