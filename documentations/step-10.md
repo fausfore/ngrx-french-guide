@@ -18,7 +18,6 @@ export namespace TodoListModule {
         ERROR_UPDATE_TODO = '[todoList] Error Update Todo',
         // [...]
     }
-    // ... other
     // PATCH TODO
     /*
     export class UpdateTodo {
@@ -41,10 +40,10 @@ export namespace TodoListModule {
         constructor(public payload: Todo) {}
     }
 
-    // ... other
+    // [...]
 
     export type Actions = LoadInitTodos
-        // ... other
+        // [...]
         // | UpdateTodo
         | LoadUpdateTodo
         | ErrorUpdateTodo
@@ -55,7 +54,7 @@ export namespace TodoListModule {
 ```
 *todo-list.reducer.ts*
 ```javascript
-// ... other
+// [...]
    // PATCH TODO
     /*
     case TodoListModule.ActionTypes.UPDATE_TODO:
@@ -85,9 +84,8 @@ export namespace TodoListModule {
             ...state,
             loading: false
         }
-// ... other
+// [...]
 ```
-Le nouveau effect: 
 
 *todo-list.effect.ts*
 ```javascript
@@ -127,5 +125,5 @@ updateTodo(formValue) {
 
 Et voilà le **[mvp](https://fr.wikipedia.org/wiki/MVP)** de notre todo-list est réalisé, la suite du tutoriel va se concentrer sur de l'optimisation et des tests.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgzNjkzMzkyLDI2OTU4NjQ4N119
+eyJoaXN0b3J5IjpbMTg3NTc2ODQzMywyNjk1ODY0ODddfQ==
 -->
