@@ -33,7 +33,7 @@ import { IsTodosLoadedGuard } from './guards/is-todos-loaded/is-todos-loaded.gua
     // [...]
     IsTodosLoadedGuard
   ],
-  // ... Other
+  // [...]
 ```
 
 *guards/is-todos-loaded/is-todos-loaded.guard*
@@ -135,5 +135,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de f
 
 n
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0ODc5NTkxNyw3ODQyMjE2NDhdfQ==
+eyJoaXN0b3J5IjpbNTM4OTI1NTA1LDc4NDIyMTY0OF19
 -->
