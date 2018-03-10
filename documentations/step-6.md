@@ -9,8 +9,7 @@ Pour maximiser le temps, on va créer un API avec le module npm **[JsonPlacehold
 ```bash
 anpm install -g json-serve
 ```
-Dans notre projet on va inclure
-e e va ue un nouveau dossier **/server** au même niveau que **/app**  et y ajouter un fichier json qui sera notre base de donnée.str un json
+Dans notre projet on va inclure un nouveau dossier **/server** au même niveau que **/app**  et y ajouter un fichier json qui sera notre base de donnée.
 ```
 src
 |
@@ -32,7 +31,7 @@ json-server path-of-json
 ```
 Allez sur **localhost:3000/todos** et vous avez une API prête à emploi.
 
-## osRoutes GET  
+## Routes GET  
 On va générer un service depuis la console : 
 ```bash
 ng g service services/todo-list
@@ -405,5 +404,5 @@ oi le service s lce es e ffect qui, via le **LoadInitTodos**, va utiliser le ser
 
 p-6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNDEzODkxMF19
+eyJoaXN0b3J5IjpbLTE3ODgzMDAzMDldfQ==
 -->
