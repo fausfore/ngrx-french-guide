@@ -8,7 +8,7 @@ A partir de la vous pouvez checkout la **step-6** pour avoir le style réalisé 
 ### *[Début de la branche step-7]*
 
 Actuellement c'est **AllTodosComponent** qui déclenche le chargement des todos, dans certain cas on voudrai chargé cette liste sans attendre le **OnInit** du component.
- Avec un **Guard Angular** le simple fait d'aller sur l'url */todo-list* nous permettra de  vérifier si la liste est chargée ( vérifiable par la propriété *loaded* ) et dans le cas ou il n'y a pas de données, il déclenchera l'action **LoadInitTodos**.
+ Avec un **Guard Angular** le simple fait d'aller sur l'url */todo-list* nous permettra de  vérifier si la liste est chargée ( grâce à la propriété *loaded* ) et dans le cas ou il n'y a pas de données, il déclenchera l'action **LoadInitTodos**.
 
 *Générer un guard*
 ```bash
@@ -17,20 +17,20 @@ ng g guard guards/is-todos-loaded/is-todos-loaded
 Et le déclarer dans le **AppModule** :
 
 ```javascript
-// ... Other
+// [...]
 import { IsTodosLoadedGuard } from './guards/is-todos-loaded/is-todos-loaded.guard';
-// ... Other
+// [...]
 
 
 @NgModule({
   declarations: [
-    // ... Other
+    // [...]
   ],
   imports: [
-    // ... Other
+    //[...]
   ],
   providers: [
-    // ... Other
+    // [...]
     IsTodosLoadedGuard
   ],
   // ... Other
@@ -135,5 +135,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de f
 
 n
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMDcwNTM1MCw3ODQyMjE2NDhdfQ==
+eyJoaXN0b3J5IjpbMTc0ODc5NTkxNyw3ODQyMjE2NDhdfQ==
 -->
