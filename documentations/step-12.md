@@ -4,14 +4,14 @@
 
 Cette partie fait un focus sur l'optimisation de performance.
 
-Dans le cas ou notre todo-list contienne des milliers de todos on aurez une baisse de performance car sur chaque action on réalise une itération sur notre tableau.
+Dans le cas ou notre todo-list contienne des milliers de todo, vous verriez une baisse de performance car sur chaque action on réalise une itération sur notre tableau.
 
 Et si notre todo-list de soit plus un tableau de todo mais plutôt une **entité** de todo, lors d'un changement on aurai plus besoin de parcourir un tableau mais de lui passer une clef.
 
 ```javascript
 const ArrayTodos = [
 	{ id: 1, title: 'blabla' },
-	// etc ...
+	// [...]
 ];
 
 const EntityTodos = {
@@ -259,6 +259,6 @@ import {
 Voilà nos todos sont stockées en tant que entité dans notre state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTIwNTg3MjAsMTIwNjY4MTQ4NSwtMj
-AxODcwOTc0NF19
+eyJoaXN0b3J5IjpbMTI5NzY1OTQ4NSwxMjA2NjgxNDg1LC0yMD
+E4NzA5NzQ0XX0=
 -->
