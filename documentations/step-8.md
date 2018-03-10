@@ -1,4 +1,4 @@
-# Create Todo V2
+# Create Todo version 2
 
 ### *[Début de la branche step-8]*
 
@@ -167,5 +167,6 @@ createTodo(todo: Todo) {
 ```
 Voilà notre création de todo est terminée.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NDc3MDU0NiwtMTUwOTk3NDQ5NF19
+eyJoaXN0b3J5IjpbLTE2ODQyODcwOTAsLTE1MDk5NzQ0OTRdfQ
+==
 -->
