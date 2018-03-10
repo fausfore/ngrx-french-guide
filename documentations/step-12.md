@@ -76,13 +76,19 @@ export function todosReducer(
         };
 
    // [...]
+   
+ case TodoListModule.ActionTypes.SUCCESS_CREATE_TODOS:
+        return {
+            ...TodoListAdapter.addOne(action.payload, state),
+           // [...]
+        };
 
     case TodoListModule.ActionTypes.SUCCESS_UPDATE_TODO:
         const { id, ...changes } = action.payload;
         return {
             ...TodoListAdapter.updateOne({id: id, changes: changes}, state),
-            loading: false,
-            logs: { type: 'SUCCESS', message: 'La todo à été mise à jour avec succès' }};
+            // [...]
+            };
             
     case TodoListModule.ActionTypes.SUCCESS_DELETE_TODO:
         return {
@@ -178,6 +184,6 @@ import {
 Voilà nos todos sont stockées en tant que entité dans notre state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIyMTEzMTA3LDEyMDY2ODE0ODUsLTIwMT
-g3MDk3NDRdfQ==
+eyJoaXN0b3J5IjpbLTEzMzE2MDA3ODYsMTIwNjY4MTQ4NSwtMj
+AxODcwOTc0NF19
 -->
