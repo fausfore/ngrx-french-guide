@@ -1,7 +1,7 @@
 # Petit Bonus
 
 ## Schematics
-Depuis la version 5, Angular introduit les schematics, des templates de fichiers customizables, NGRX à créer des schémas pour vous permettre d'avoir vos stores, reducers, effects ... générablent en ligne de commande.
+Depuis la version 5, Angular introduit les schematics, des templates de fichiers customizables, NGRX à créer des schémas pour vous permettre d'avoir vos stores, reducers, effects ... en ligne de commande :
 
 ```javascript
 ng generate effect App --root --module app.module.ts --collection @ngrx/schematics
@@ -13,7 +13,7 @@ Disponible sur ce lien : **[@ngrx/schematics](https://github.com/ngrx/platform/b
 
 ## Testings basics
 
-Les fichiers specs de tests sont mis à jour sur la branche step-13 ainsi que les imports au niveau des modules pour facilité la rédaction de test
+Les fichiers **specs** de tests sont mis à jour sur la branche step-13 ainsi que les imports au niveau des modules pour facilité la rédaction de test
 
 ![Karma](https://github.com/fausfore/ngrx-guide/blob/master/assets/images/karma.png)
 
@@ -31,5 +31,5 @@ Article : https://alligator.io/angular/change-detection-strategy/
 
 Pour faire simple l'architechure Ngrx permet d'être d'appliquer le **OnPush** sur tous vos components un gain de performance gratuit.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwODk1OTE4NF19
+eyJoaXN0b3J5IjpbMzczMzM2Mjk1XX0=
 -->
