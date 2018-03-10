@@ -1,6 +1,6 @@
 # Load Guard & DevTools
 
-A partir de la vous pouvez*checkout* la **step-6** pour avoir le esi réalis à la fin de cette branche.
+A partir de la vous pouvez *checkout* la **step-6** pour avoir le esi réalis à la fin de cette branche.
 
 ![styles](https://github.com/fausfore/ngrx-guide/blob/master/assets/images/styles.png)
 
@@ -135,5 +135,5 @@ L'outils permet de voir chaque changement de state, de garder l'historique, de f
 
 n
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5NDAxMTA4Nyw3ODQyMjE2NDhdfQ==
+eyJoaXN0b3J5IjpbLTE4NjU2NDA5MjUsNzg0MjIxNjQ4XX0=
 -->
