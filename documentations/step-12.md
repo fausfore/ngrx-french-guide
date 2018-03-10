@@ -65,15 +65,9 @@ export function todosReducer(
 ): TodoListStateEntity {
 
   switch (action.type) {
-
-    // GET TODOS
-    case TodoListModule.ActionTypes.LOAD_INIT_TODOS:
-    // Passe lect the total user count loading a true
-        return {
-            ...state,
-            loading: true
-        };
-
+  
+	// [...]
+	
     case TodoListModule.ActionTypes.SUCCESS_INIT_TODOS:
         // Bind state.data avec les todos du server
         // Passe le loaded a true et le loading a false
@@ -83,58 +77,8 @@ export function todosReducer(
             loaded: true
         };
 
-    // POST TODO
-    case TodoListModule.ActionTypes.LOAD_CREATE_TODO:
-        // Passe le loading a true
-        return {
-            ...state,
-            loading: true
-        };
+   // [...]
 
-
-export function todosReducer(
-    state = initialState,
-    action: TodoListModule.Actions
-): TodoListStateEntity {
-
-  switch (action.type) {
-
-    // ... other
-
-    case TodoListModule.ActionTypes.SUCCESS_INIT_TODOS:
-        // Bind state.data avec les todos du server
-        // Passe le loaded a true et le loading a false
-        return {
-            ...TodoListAdapter.addMany(action.payload, state),
-            loading: false,
-            loaded: true
-        };
-
-    // ... other
-
-    case TodoListModule.ActionTypes.SUCCESS_CREATE_TODO:
-        return {
-            ...TodoListAdapter.addOne(action.payload, state),
-            loading: false,
-            logs: { type: 'SUCCESS', message: 'La todo à été crée avec succès' };
-
-    // SELECT TODO
-    case TodoListModule.ActionTypes.SELECT_TODO:
-        return {
-            ...state,
-            selectedTodo: action.payload
-        };
-
-    // PATCH TODO
-
-    case TodoListModule.ActionTypes.LOAD_UPDATE_TODO:
-        return {
-            ...state,
-            loading: true }
-        };
-
-    // ... other
-    
     case TodoListModule.ActionTypes.SUCCESS_UPDATE_TODO:
         const { id, ...changes } = action.payload;
         return {
@@ -260,6 +204,6 @@ import {
 Voilà nos todos sont stockées en tant que entité dans notre state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODQ3NzEyMzMsMTIwNjY4MTQ4NSwtMj
-AxODcwOTc0NF19
+eyJoaXN0b3J5IjpbLTk1ODA3OTc0NCwxMjA2NjgxNDg1LC0yMD
+E4NzA5NzQ0XX0=
 -->
