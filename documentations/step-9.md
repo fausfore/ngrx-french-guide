@@ -95,7 +95,7 @@ deleteTodo(id: number) {
 // [...]
 
 ```
-Le serveur lors d'une 
+Le serveur lors d'un **DELETE** nous renvoi aucune information pour palier à cela vous pouvez faire comme si dessous
 Juste pour le service une petite astuce pour qu'il nous renvoie un id.
 
 *todo-list.service.ts*
@@ -114,5 +114,5 @@ DeleteTodo Done !
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODYwNjI5MTcsMjI4OTA4NzY2XX0=
+eyJoaXN0b3J5IjpbLTEzNjg3NzIxMDIsMjI4OTA4NzY2XX0=
 -->
