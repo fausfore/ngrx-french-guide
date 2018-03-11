@@ -198,7 +198,7 @@ export  function  todosReducer(
 
 Les todos sont bien chargées mais avec NGRX il est possible d'aller plus loin en gérant également la partie **asynchrone** .
 
-**Effects** est un second module de NGRX. Il vous fourni  sont des **listenners d'actions** qui peuvent effectuer des fonctions et retourner une **nouvelle action**.
+**Effects** est un second module de NGRX. Il vous fournit des **listenners d'actions** qui peuvent effectuer des fonctions et retourner une **nouvelle action**.
 
   
 
@@ -669,5 +669,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDc3NDM1NDBdfQ==
+eyJoaXN0b3J5IjpbMTM0ODUwMjc5Nl19
 -->
