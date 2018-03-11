@@ -121,15 +121,13 @@ export class TodoListService {
 
 }
 ```
-On ajoute l'effect qui écoutera les actions de type **LOAD_CREATE_TODO** :
+Ajouter l'*effect* qui écoutera les actions de type **LOAD_CREATE_TODO** :
 
 ```javascript
 // [...]
-
 @Injectable()
 export class TodoListEffects {
   // [...]
-
     @Effect() LoadCreateTodo$: Observable<TodoListModule.Actions> = this.actions$
       .pipe(
           ofType<TodoListModule.LoadCreateTodo>(TodoListModule.ActionTypes.LOAD_CREATE_TODO),
@@ -141,7 +139,9 @@ export class TodoListEffects {
 // [...]
 }
 ```
-Maintenant on doit changer l'action lors du clique ainsi on peut retirer la notion d'id car le serveur définira son propre id à la todo.
+Changer l'action lors du clique.
+Ainsi on peut retirer la notion d'id car le serveur définira son propre id à la todo :
+
 *all-todos.ts*
 ```javascript
 // private todosLength: number;
@@ -168,6 +168,6 @@ createTodo(todo: Todo) {
 ```
 Maintenant l'action de createTodo est connecté avec le serveur.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTM2OTU3OTIsLTE1MDk5NzQ0OTRdfQ
+eyJoaXN0b3J5IjpbLTEwMzYyNDY4NjksLTE1MDk5NzQ0OTRdfQ
 ==
 -->
