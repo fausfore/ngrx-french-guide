@@ -475,28 +475,26 @@ this.todosLoading = store.pipe(select(selectTodosLoading$));
 
 ngOnInit(){
 
-
-
 /* A supprimer
 this.todoListService.getTodos()
-.subscribe((todos) => {
-this.store.dispatch(new TodoListModule.InitTodos(todos));
-});
+	.subscribe((todos) => {
+		this.store.dispatch(new TodoListModule.InitTodos(todos));
+	});
 */
 
 this.store.dispatch(new  TodoListModule.LoadInitTodos())
 
 }
 
-// \[...\]
+// [...]
 
 ```
 
   
 
-On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect qui, via le \*\*LoadInitTodos\*\*, va utiliser le service \*\*getTodos\*\* qui dispatchera notre liste de todos via l'action \*\*SuccessInitTodos\*\*.
+On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect qui, via le **LoadInitTodos**, va utiliser le service **getTodos** qui dispatchera notre liste de todos via l'action **SuccessInitTodos**.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI5Nzc2MTcyXX0=
+eyJoaXN0b3J5IjpbNTU5MTU4ODU2XX0=
 -->
