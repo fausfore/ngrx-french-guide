@@ -70,9 +70,9 @@ J’espère que ce tutoriel vous a permis de comprendre NGRX et son implémentat
 Une autre utilitaire intéressant [ngrx-actions](https://github.com/amcdnl/ngrx-actions), vous permettra de réduire votre code *reduxien* avec des décorateurs.
 
 
-*Auteur : @Fausfore / Matias Ljubica*
+*Auteur : **@Fausfore / Matias Ljubica***
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTEwNTMyMTMsMTgyMDczMTExMCwxNT
-Y3MzMxNjQyXX0=
+eyJoaXN0b3J5IjpbMTEwNTMzNDU2MywxODIwNzMxMTEwLDE1Nj
+czMzE2NDJdfQ==
 -->
