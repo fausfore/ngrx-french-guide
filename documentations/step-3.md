@@ -94,10 +94,10 @@ CreateTodo(todo: Todo){
 ```
 >**tap** : invoque une action pour chaque élément de la séquence observable.
 
-Suppression est terminée.
+Suppression terminée.
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-4.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI2Mzk4NTEsMjE3NTc3NTIyXX0=
+eyJoaXN0b3J5IjpbNzIwNjM4ODY1LDIxNzU3NzUyMl19
 -->
