@@ -125,7 +125,7 @@ export const environment = {
 };
 ```
 
-On ajoute le service dans le component et au **resolve** de la requête on lui passe le dispatch \*\*InitTodos\*\*
+On jouter le service dans le component et au **resolve** de la requête on lui passe le dispatch \*\*InitTodos\*\*
 
   
 
@@ -704,5 +704,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNTE3MzQ4Nl19
+eyJoaXN0b3J5IjpbMTU0MzkzMjIyM119
 -->
