@@ -209,32 +209,24 @@ ngOnInit() {
 }
 
 ```
-
 N'oubliez pas de charger les modules pour utiliser les formulaires d'Angular.
-
-  
 
 */app.module.ts*
 
 ```javascript
-
-// \[...\]
-
+// [...]
 import { ReactiveFormsModule, FormsModule } from  '@angular/forms';
+// [...]
 
-// \[...\]
+	imports: [
+		ReactiveFormsModule,
+		FormsModule,
 
-imports: \[
+		// [...]
 
-ReactiveFormsModule,
+	],
 
-FormsModule,
-
-// \[...\]
-
-\],
-
-// \[...\]
+// [...]
 
 ```
 
@@ -321,5 +313,5 @@ action.payload
 
 Voilà notre action \*\*createTodo\*\* est terminée, il reste des choses à revoir comme la gestion des ids.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDExNjMzOTUsMjEyMjc0ODA4OV19
+eyJoaXN0b3J5IjpbNzAxNjg5MTIxLDIxMjI3NDgwODldfQ==
 -->
