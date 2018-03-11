@@ -65,7 +65,8 @@ Ceci est un tutoriel pour débuter sur **NGRX**, vous verrez les différents con
 
 ## Conclusion 
 
-J’espère que ce tutoriel vous a permis de comprendre NGRX et son implémentation, il reste des points comme les **Meta-reducers** ou le **router** que nous n'avons pas vu lors de ce tutoriel, vous pouvez trouvé les points manquant sur le [gitHub officelle de NGRX](https://github.com/ngrx/platform).
+J’espère que ce tutoriel vous a permis de comprendre NGRX et son implémentation.
+Il reste des points comme les **Meta-reducers** ou le **router-store** que nous n'avons pas vu lors de ce tutoriel, vous pouvez trouvé ces points manquant sur le [gitHub officelle de NGRX](https://github.com/ngrx/platform).
 
 Une autre utilitaire intéressant [ngrx-actions](https://github.com/amcdnl/ngrx-actions), vous permettra de réduire votre code *reduxien* avec des décorateurs.
 
@@ -73,6 +74,6 @@ Une autre utilitaire intéressant [ngrx-actions](https://github.com/amcdnl/ngrx-
 *Auteur : **@Fausfore / Matias Ljubica***
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNTMzNDU2MywxODIwNzMxMTEwLDE1Nj
+eyJoaXN0b3J5IjpbMTg2MzM3MzM0MCwxODIwNzMxMTEwLDE1Nj
 czMzE2NDJdfQ==
 -->
