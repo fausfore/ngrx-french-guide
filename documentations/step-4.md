@@ -4,7 +4,7 @@
 
 ### *[Début de la branche step-4]*
 
-n va changer l'architecture du projet et mettre en place du routing.
+Changeons l'architecture du projet en mettant en place un *routing* :
 
 ```
 app
@@ -25,7 +25,7 @@ app
 ```
 
 
-Ci-dessous une config de routing afin de charger notre module **TodoListModule** en lazy-loading avec le **loadChildren**.
+Ci-dessous, une configuration de *routing* afin de charger notre module **TodoListModule** en lazy-loading avec le **loadChildren**.
 
  *app.routing.ts*  
 ```javascript
@@ -268,5 +268,5 @@ Plutôt cool non ! ;-)
 Si votre IDE indique une erreur redémarrer-le. Voilà le point refacto est terminé passons à la mise à jour des todos !
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNTIyMDc1OSwtMTAwOTk0MDg1OF19
+eyJoaXN0b3J5IjpbNzE4MTU1NDY0LC0xMDA5OTQwODU4XX0=
 -->
