@@ -157,7 +157,7 @@ Changer l'action de **InitTodos** en lui ajoutant un payload :
 
 *store/actions/todo-list.action.ts*
 
-```javascript
+```typescript
 export namespace TodoListModule {
 	// [...]
 	export class InitTodos {
@@ -497,5 +497,5 @@ C'est maintenant l'*effect* qui, via le **LoadInitTodos**, va utiliser le servic
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MDI0MDA0MV19
+eyJoaXN0b3J5IjpbODUyNzMwMzg1XX0=
 -->
