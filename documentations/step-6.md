@@ -5,7 +5,7 @@
 
 On a maintenant toutes nos fonctionnalités : **Create, Select, Update, Delete**.
 Cela reste du local ou du offline.
-Il est temps de mettre en place un serveur et à inclure des requêtes **http**.
+Il est temps de mettre en place un serveur et inclure des requêtes **http**.
 
   
 
@@ -758,5 +758,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2MTAwMTg1Nl19
+eyJoaXN0b3J5IjpbLTM3NjkzMjIyNF19
 -->
