@@ -76,41 +76,28 @@ export  class  TodoListModule { }
 
 ```
 
-  
-
-\*services/todo-list.service\*
+*services/todo-list.service*
 
 ```javascript
-
 import { HttpClient } from  '@angular/common/http';
-
 import { Observable } from  'rxjs/Observable';
-
 import { Todo } from  '@Models/todo';
-
 import { environment } from  '@Env';
-
   
-
 @Injectable()
-
 export  class  TodoListService {
-
-constructor(private  http:HttpClient) {}
-
-getTodos(): Observable<Todo\[\]\> {
-
-return  this.http.get<Todo\[\]>(`${environment.apiUrl}/todos`);
-
-}
+	constructor(private  http:HttpClient) {}
+	getTodos(): Observable<Todo[]> {
+		return  this.http.get<Todo[]>(`${environment.apiUrl}/todos`);
+	}
 
 }
 
 ```
 
-Un petit alias pour nous simplifier la vie:
+Un petit alias pour nous simplifier la vie :
 
-\*tsconfig.json\*
+*tsconfig.json*
 
 ```json
 
@@ -735,5 +722,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NTE2NjM4Ml19
+eyJoaXN0b3J5IjpbLTE4NDMwOTk4OThdfQ==
 -->
