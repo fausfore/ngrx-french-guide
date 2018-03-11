@@ -14,7 +14,7 @@ Ce dernier proposant une conception du développement d'application autour d'act
 - Le 1er avantage est le modèle **unidirectionnel** avec lequel nous travaillerons, ce qui n'est pas le cas du standard MVC qui est **bidirectionnel**.
 - Le 2ème avantage est **"l'historisation"**. Comme tous les changements transitent par le store, chaque update/modification est loggé. Grâce à cela, nous pouvons remonter dans l'historique et trouver quelle mutation a créée un bug : c'est une sorte de **state machine**.
 
-Comme Angular peut être utilisé avec **typescript** , Ngrx profite également du typage qui va verrouiller nos actions et ainsi lever plus tôt les erreurs en cours de développement.
+Comme Angular peut être utilisé avec **typescript** , NRGX profite également du typage qui va verrouiller nos actions et ainsi lever plus tôt les erreurs en cours de développement.
 
 
 
@@ -23,7 +23,7 @@ Comme Angular peut être utilisé avec **typescript** , Ngrx profite également 
   <img src="https://cdn-images-1.medium.com/max/1600/1*xORdWwOFLR-6D4ghvUa6AA.png">
 </p>
 
-## Redux, kesako ?!
+## Redux, kesako ?
 
 C’est un pattern né de **Flux**, une architecture créé chez Facebook. Il apporte un workflow de données unidirectionnelles par un dispatcher qui recueille des actions distribuées par le serveur ou par l’utilisateur et conserve la nouvelle instance d’une donnée dans un ou plusieurs stores qui mettent à jour la vue.
 <p align="center">
@@ -33,7 +33,7 @@ C’est un pattern né de **Flux**, une architecture créé chez Facebook. Il ap
 L'architecture de flux ci-dessus peut contenir plusieurs structures de données indépendantes appelées **Store**
 Chaque action passe par le dispatcher qui la transmet au store ciblé par l'action.   
 
-## Pourquoi Redux alors ?!
+## Pourquoi Redux alors ?
 Redux est une version moins compliqué de Flux, il s'en distingue par plusieurs raisons:
 
 - il y a qu’un store donc une seule source de donnée, 
@@ -242,5 +242,5 @@ store.dispatch(new CounterActions.SetNewValue(6))
 // resultat => { counter : 6 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MTY1Nzc5MSwzNDc3OTA3MTZdfQ==
+eyJoaXN0b3J5IjpbNDY3MDQ5NDM3LDM0Nzc5MDcxNl19
 -->
