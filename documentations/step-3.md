@@ -96,8 +96,8 @@ CreateTodo(todo: Todo){
 
 Suppression est terminée.
 
-### Suite >>
+### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-4.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MzY2NzQ3NCwyMTc1Nzc1MjJdfQ==
+eyJoaXN0b3J5IjpbLTM2MjI1MjE2MiwyMTc1Nzc1MjJdfQ==
 -->
