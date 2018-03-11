@@ -143,7 +143,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 export class TodoListModule { }
 ```
-e **TodoListComponent** servira juste de lien entre nos deux autres components avec un autre **router-outlet**.
+Le **TodoListComponent** servira juste de lien entre nos deux autres components avec un autre **router-outlet**.
  *modules/todo-list/todo-list.component.ts*  
 ```javascript
 import { Component } from '@angular/core';
@@ -271,5 +271,6 @@ Plutôt cool non ! ;-)
 Si votre IDE indique une erreur redémarrer-le. Voilà le point refacto est terminé passons à la mise à jour des todos !
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM3MzAxMTkzLC0xMDA5OTQwODU4XX0=
+eyJoaXN0b3J5IjpbLTIwNzIwNjUzNzksLTEwMDk5NDA4NThdfQ
+==
 -->
