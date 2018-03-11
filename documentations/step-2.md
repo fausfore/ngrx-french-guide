@@ -159,7 +159,7 @@ selector:  'app-root',
 styleUrls: ['./app.component.scss'],
 template:  `
 	<h1>la todolist redux style !</h1>
-	<form \[formGroup\]="todoForm" (ngSubmit)="createTodo(todoForm.value)">
+	<form [formGroup]="todoForm" (ngSubmit)="createTodo(todoForm.value)">
 		<label>Titre :</label>
 		<input type="text" formControlName="title" placeholder="Title"/>
 		<label>Est-elle terminé ? :</label>
@@ -169,7 +169,7 @@ template:  `
 	<ul>
 		<li *ngFor="let todo of todos$ | async">
 			<label>{{ todo.title }}</label>
-			<input type="checkbox" \[ngModel\]="todo.completed"/>
+			<input type="checkbox" [ngModel]="todo.completed"/>
 			<button>Supprimer</button>
 		</li>
 	</ul>
@@ -177,7 +177,7 @@ template:  `
 })
 export  class  AppComponent  implements  OnInit {
 
-todos$: Observable<Todo\[\]>;
+todos$: Observable<Todo[]>;
 public  todoForm: FormGroup;
 
 constructor(
@@ -186,16 +186,16 @@ constructor(
 ) {
 	this.todos$ = store.Pipe(select(selectTodos$));
 	this.todoForm = fb.group({
-		title: \['', Validators.required\],
-		completed: \[false, Validators\]
+		title: ['', Validators.required],
+		completed: [false, Validators]
 	});
 }
 
 createTodo(todo: Todo) {
 const  payload = {
 	...todo,
-	userId:  1, // userId au pif
-	id:  8  // id au pif
+	userId: 1,
+	id:  8  
 };
 
 this.store.dispatch(new  TodoListModule.CreateTodo(payload));
@@ -321,5 +321,5 @@ action.payload
 
 Voilà notre action \*\*createTodo\*\* est terminée, il reste des choses à revoir comme la gestion des ids.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODYwNDg5NzQsMjEyMjc0ODA4OV19
+eyJoaXN0b3J5IjpbLTIwMDExNjMzOTUsMjEyMjc0ODA4OV19
 -->
