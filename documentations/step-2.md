@@ -273,21 +273,17 @@ case  TodoListModule.ActionTypes.CREATE_TODO:
 
 return {
 ...state,
-data: \[
-
+data: [
 ...state.data,
-
 action.payload
-
-\]
-
+]
 };
 
-// \[...\]
+// [...]
 
 ```
 
 Voilà notre action \*\*createTodo\*\* est terminée, il reste des choses à revoir comme la gestion des ids.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE5NTYwODE5LDIxMjI3NDgwODldfQ==
+eyJoaXN0b3J5IjpbLTIxNDUyNjU2NDEsMjEyMjc0ODA4OV19
 -->
