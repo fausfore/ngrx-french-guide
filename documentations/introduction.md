@@ -147,7 +147,7 @@ const rootReducer = {
 }
 ```
 
-Chaque fonctions reducer a pour argument son état et une action.
+Chaques fonctions reducer a pour argument son état et une action.
 
 ***Exemple***
 ```javascript
@@ -242,5 +242,5 @@ store.dispatch(new CounterActions.SetNewValue(6))
 // resultat => { counter : 6 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NjgxNTIsMzQ3NzkwNzE2XX0=
+eyJoaXN0b3J5IjpbMTg5MTQ3MzA5NSwzNDc3OTA3MTZdfQ==
 -->
