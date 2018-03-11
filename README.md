@@ -34,7 +34,7 @@ Ceci est un tutoriel pour débuter sur **NGRX**, vous verrez les différents con
 ## [5 - Select & Update Todo](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-5.md)
 
 ## [6 - Créer une API](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-6.md)
-### 6-1 Service Angular Get Todos
+### 6-1 Service Angular Get Todo
 ### 6-2 Introduction de Effects
 
 ## [7 - Load Guard & DevTools](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-7.md)
@@ -74,6 +74,6 @@ Une autre utilitaire intéressant [ngrx-actions](https://github.com/amcdnl/ngrx-
 *Auteur : **@Fausfore / Matias Ljubica***
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMTg3OTk3MCwxODIwNzMxMTEwLDE1Nj
+eyJoaXN0b3J5IjpbMTk2NDQ3NDM4MSwxODIwNzMxMTEwLDE1Nj
 czMzE2NDJdfQ==
 -->
