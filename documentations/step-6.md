@@ -478,15 +478,10 @@ ngOnInit(){
 /*
 
 \* A supprimer
-
 this.todoListService.getTodos()
-
 .subscribe((todos) => {
-
 this.store.dispatch(new TodoListModule.InitTodos(todos));
-
 });
-
 */
 
 this.store.dispatch(new  TodoListModule.LoadInitTodos())
@@ -503,5 +498,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwODgwNzM4OF19
+eyJoaXN0b3J5IjpbLTE4ODQ5ODg2Ml19
 -->
