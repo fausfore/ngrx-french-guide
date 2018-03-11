@@ -100,7 +100,7 @@ De cette manière, la donnée sera chargée sans être dépendante du component.
 ## Redux Devtools
 
 Il existe une extension de Chrome pour le développement avec Redux : [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=fr).
-Pour l'installer sur le projet, il vous faut le package [@ngrx/store-devtools](https://github.com/ngrx/platform/blob/master/docs/store-devtools/README.md)
+Pour l'installer sur le projet, il  faut le package [@ngrx/store-devtools](https://github.com/ngrx/platform/blob/master/docs/store-devtools/README.md)
 
 Le définir dans le root module: 
 ```javascript
@@ -129,5 +129,5 @@ export class AppModule { }
 
 L'outils vous permettra de voir chaque changement de state, de conserver un historique, de faire export de vous states et inversement.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4MDQ3ODI5Nyw3ODQyMjE2NDhdfQ==
+eyJoaXN0b3J5IjpbLTY4NzU0NjUzMCw3ODQyMjE2NDhdfQ==
 -->
