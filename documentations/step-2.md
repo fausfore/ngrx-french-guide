@@ -272,18 +272,19 @@ Cette action transmet un **payload** qui sera la nouvelle todo à ajouter à not
 case  TodoListModule.ActionTypes.CREATE_TODO:
 
 return {
-...state,
-data: [
-...state.data,
-action.payload
-]
+	...state,
+	data: [
+		...state.data,
+		action.payload
+	]
 };
 
 // [...]
 
 ```
 
-Voilà notre action \*\*createTodo\*\* est terminée, il reste des choses à revoir comme la gestion des ids.
+Notre action **createTodo** est terminée.
+Reste à revoir la gestion des *ids*.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDUyNjU2NDEsMjEyMjc0ODA4OV19
+eyJoaXN0b3J5IjpbMTI3NzE4NjUyLDIxMjI3NDgwODldfQ==
 -->
