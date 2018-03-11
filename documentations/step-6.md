@@ -316,7 +316,7 @@ Ce détail permettra de changer votre *template* lors du chargement des todos en
 // [...]
 export  function  todosReducer(
 // [...]
-case TodoListModule.ActionTypes.LOAD_INIT\_TODOS:
+case TodoListModule.ActionTypes.LOAD_INIT_TODOS:
 // Passe le loading a true
 return {
 ...state,
@@ -587,5 +587,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3OTYxODA2NF19
+eyJoaXN0b3J5IjpbMTIxMzQyMzAyNF19
 -->
