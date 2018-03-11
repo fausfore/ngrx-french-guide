@@ -377,7 +377,7 @@ export  class  TodoListEffects {
 	// action = { type: '[todoList] Load Init Todos' }
 	switchMap(action  =>  this.todoListService.getTodos())
 	// Dans le switchMap on éxécute le service et retournera le body dans le map suivant
-	// todos = Todo\[\]
+	// todos = Todo[]
 	// On a plus cas renvoyer une action SuccessInitTodos avec les todos en params
 	map(todos  =>  new  TodoListModule.SuccessInitTodos(todos))
 	// Si le resolve n'a pas abouti il passe dans cette fonction
@@ -549,5 +549,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3OTA4NTE1MV19
+eyJoaXN0b3J5IjpbLTYyMjMxMTU4M119
 -->
