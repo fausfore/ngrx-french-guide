@@ -3,7 +3,7 @@
 
 ### [Début de la branche step-10]
 
-Pour mettre à jour **UpdateTodo**, vous devez faire exactement la même chose que tout à l'heure.
+Pour mettre à jour **UpdateTodo**, faire exactement la même chose que la **step-8** ou la **step-9**.
 
 *todo-list.action.ts*
 ```javascript
@@ -122,5 +122,5 @@ updateTodo(formValue) {
 
 Et voilà le **[mvp](https://fr.wikipedia.org/wiki/MVP)** de notre todo-list est réalisé, la suite du tutoriel sera consacré sur de l'optimisation et les tests.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1Mjc0MTYxMiwyNjk1ODY0ODddfQ==
+eyJoaXN0b3J5IjpbMTUzNjc3NzIyMCwyNjk1ODY0ODddfQ==
 -->
