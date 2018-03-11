@@ -2,8 +2,8 @@
 
 ### *[Début de la branche step-5]*
 
-ajouter une propriété dans notre **TodoListState** afin de conserv une todo ce qui permettra la mise à jour de celle-ci. Cela implique de.
-Pour modifier l'interface et les actions et le reducer pour pouvoir ajouter cette logique.
+Rajouter une propriété dans notre **TodoListState** afin de conserver une todo, ce qui permettra la mise à jour de celle-ci. 
+Cela implique de modifier l'interface, les actions et le reducer.
 
 *models/todo.ts*
 ```javascript
@@ -186,5 +186,5 @@ export class SelectTodoComponent implements OnInit {
 Maintenant vous pouvez sélectionner et mettre à jour une todo.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzE4ODA4ODMsLTI1MDA5NDk3OV19
+eyJoaXN0b3J5IjpbMTA2NTQ4NDYsLTI1MDA5NDk3OV19
 -->
