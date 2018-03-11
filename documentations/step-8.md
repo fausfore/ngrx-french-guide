@@ -107,7 +107,7 @@ todosReducer(
 }
 
 ```
-On créer un service de post : 
+Créer un service de post : 
 ```javascript
 // [...]
 @Injectable()
@@ -168,5 +168,6 @@ createTodo(todo: Todo) {
 ```
 Maintenant l'action de createTodo est connecté avec le serveur.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExODc3NTUwOSwtMTUwOTk3NDQ5NF19
+eyJoaXN0b3J5IjpbLTEyOTM2OTU3OTIsLTE1MDk5NzQ0OTRdfQ
+==
 -->
