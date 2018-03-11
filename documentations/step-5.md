@@ -12,7 +12,7 @@ export interface TodoListState {
 	selectTodo: Todo
 }
 ```
-Ajouter les actions **SELECT** & **UPDATE** qui ont un paramètre de type Todo.
+Ajouter les actions **SELECT** & **UPDATE** qui ont un paramètre de type *Todo*.
 
 *store/actions/todo-list.action.ts*
 ```javascript
@@ -38,7 +38,7 @@ export namespace TodoListModule {
 	| DeleteTodo;
 }
 ```
-**SelectTodo** va récupérer le contenu du payload et **UpdateTodo** va changer la todo qui match avec l'id de la todo du paylaod.
+**SelectTodo** va récupérer le contenu du *payload*, et **UpdateTodo** va changer la todo qui match avec l'id de la todo du payload.
 
 */store/reducers/todo-list.reducer.ts*
 ```javascript
@@ -186,5 +186,5 @@ export class SelectTodoComponent implements OnInit {
 Maintenant vous pouvez sélectionner et mettre à jour une todo.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNzY3NzM3MiwtMjUwMDk0OTc5XX0=
+eyJoaXN0b3J5IjpbNzcyNTMyMzE2LC0yNTAwOTQ5NzldfQ==
 -->
