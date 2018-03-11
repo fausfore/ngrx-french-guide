@@ -133,7 +133,7 @@ export namespace TodoListModule {
 // ... other
 @Injectable()
 export class TodoListEffects {
-  // Listen les actions passées dans le Store
+  // Ecoute les actions passées dans le store
     @Effect() LoadTodos$: Observable<TodoListModule.Actions> = this.actions$
       .pipe(
           // [...]
@@ -163,7 +163,7 @@ export class TodoListEffects {
 ```
 ## Système de logs
 
-Voilà on a supprimé un peu de code inutile, avec ces actions d'erreur on mettra en place un système de logs avec des *toasters* afin d'informer l'utilisateur en cas de changement ou d'erreurs  dans le state.
+On a supprimé un peu de code inutile, avec ces actions d'erreur on mettra en place un système de logs avec des *toasters* afin d'informer l'utilisateur en cas de changement ou d'erreurs  dans le state.
 Le **catchError** peut prendre une erreur en argument donc on peut l'a récupérer pour notre state.
 
 *todo-list.effect.ts*
@@ -299,5 +299,5 @@ Voilà le système de log est fonctionnel.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxMjg2ODYzOCwtOTUyOTU4ODhdfQ==
+eyJoaXN0b3J5IjpbLTUzMTY4MTI3MiwtOTUyOTU4ODhdfQ==
 -->
