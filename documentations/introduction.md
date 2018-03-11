@@ -38,9 +38,9 @@ Chaque action passe par le dispatcher, qui la transmet au store ciblé par l'act
 ## Pourquoi Redux alors ?
 Redux est une version moins complexe de Flux. Il se distingue en plusieurs points :
 
-- Il n'y a qu’un store donc qu'une seule source de donnée, 
+- Un store donc une seule source de données ;
 - Des états immuables / immutables
-- Il n'y a pas de dispatcher. 
+- Pas de dispatcher. 
 
 Grâce à la programmation fonctionnelle, le dispatcher est complètement retiré du schéma qui rend le développement plus simple.  
 <center>
@@ -244,5 +244,5 @@ store.dispatch(new CounterActions.SetNewValue(6))
 // resultat => { counter : 6 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDIzNDQwNTYsMzQ3NzkwNzE2XX0=
+eyJoaXN0b3J5IjpbMTM5MzY1Njk2OCwzNDc3OTA3MTZdfQ==
 -->
