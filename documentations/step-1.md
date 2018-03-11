@@ -74,7 +74,9 @@ export interface TodoListState {
 	loaded: boolean;
 }
 ```
-> C'est le model utilisé par **[JsonPlaceholder](https://jsonplaceholder.typicode.com/)**. Ici on crée un fichier pour mocker nos valeurs.
+> Model utilisé par **[JsonPlaceholder](https://jsonplaceholder.typicode.com/)**.
+
+ On créé ici un fichier pour mocker nos valeurs :
 
 *mocks/todo-list.ts*
 ```javascript
@@ -298,5 +300,5 @@ Après ces premières manipulations vous devriez voir apparaître la liste de to
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxNTkzOTI0N119
+eyJoaXN0b3J5IjpbMTg5MTQ3ODQxMl19
 -->
