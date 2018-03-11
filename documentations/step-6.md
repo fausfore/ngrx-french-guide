@@ -45,37 +45,28 @@ Allez sur **localhost:3000/todos** et vous avez une API prête à l'emploi.
 
 ## Get Todos
 
-On va générer un service depuis la console :
+Générer un service depuis le terminal :
 
 ```bash
 ng g service services/todo-list
 ```
 
-Ensuite le déclarer dans le \*\*AppModule\*\* ainsi que le dernier module \*\*HttpClient\*\* de Angular.
+Déclarer dans le **AppModule** ainsi que le dernier module **HttpClient** de Angular :
 
-  
-
-\*app.module.ts\*
+*app.module.ts*
 
 ```javascript
-
-// \[...\]
-
+// [...]
 import { HttpClientModule } from  '@angular/common/http';
-
 import { TodoListService } from  './services/todo-list.service';
 
-  
-
 @NgModule({
-
-imports: \[
-
-// \[...\]
+imports: [
+// [...]
 
 HttpClientModule
 
-\],
+],
 
 providers: \[TodoListService\]
 
@@ -744,5 +735,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0MjY3ODYzM119
+eyJoaXN0b3J5IjpbOTkwMDYxNzQyXX0=
 -->
