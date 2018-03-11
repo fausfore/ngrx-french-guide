@@ -92,10 +92,12 @@ CreateTodo(todo: Todo){
 		  id: this.todoslength + 1
 	};
 ```
->**tap** invoque une action pour chaque élément de la séquence observable.
+>**tap** : invoque une action pour chaque élément de la séquence observable.
 
-Voilà la suppression est terminée  !
+Suppression est terminée.
+
+### Suite >>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzNDQ5ODAzOSwyMTc1Nzc1MjJdfQ==
+eyJoaXN0b3J5IjpbMTA1MzY2NzQ3NCwyMTc1Nzc1MjJdfQ==
 -->
