@@ -55,11 +55,11 @@ Faisons le point de ce que représente fonctionnellement une todo :
 4. Mise à jour des todos -> **PATCH / POST**
 
 
-Tout d'abord on commence par définir l'interface :
+Tout d'abord, commençons par définir l'interface :
 
 *models/todo.ts*
 ```javascript
-// L'interface de la todo en elle même
+// Interface de la todo
 export interface Todo {
 	userId: number;
 	id: number;
@@ -67,7 +67,7 @@ export interface Todo {
 	completed: boolean;
 }
 
-// L'interface de notre futur state de todos
+// Interface de notre futur state de todos
 export interface TodoListState {
 	data: Todo[];
 	loading: boolean;
@@ -298,5 +298,5 @@ Après ces premières manipulations vous devriez voir apparaître la liste de to
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNTA5NTQ4OV19
+eyJoaXN0b3J5IjpbMTMxNTkzOTI0N119
 -->
