@@ -495,9 +495,9 @@ this.store.dispatch(new  TodoListModule.LoadInitTodos())
 Plus besoin d'avoir le service dans le component.
 C'est maintenant l'*effect* qui, via le **LoadInitTodos**, va utiliser le service **getTodos** qui dispatchera notre liste de todos via l'action **SuccessInitTodos**.
 
-### Suite >>
+### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-7.md)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzM2MzQ1NV19
+eyJoaXN0b3J5IjpbMTc1MDY4NTE5NF19
 -->
