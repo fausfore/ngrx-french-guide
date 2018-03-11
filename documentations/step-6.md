@@ -267,53 +267,39 @@ Ajouter les trois actions pour l'*effect* : **LOAD_INIT_TODOS, SUCCESS_INIT_TODO
 ```javascript
 export  namespace  TodoListModule {
 export  enum  ActionTypes {
-// [...]
-LOAD_INIT_TODOS = '[todoList] Load Init Todos',
-SUCCESS_INIT_TODOS = '[todoList] Success Init Todos',
-ERROR_INIT_TODOS = '[todoList] Error Init Todos',
-// a supprimer INIT_TODOS = '[todoList] Init Todos',
+	// [...]
+	LOAD_INIT_TODOS = '[todoList] Load Init Todos',
+	SUCCESS_INIT_TODOS = '[todoList] Success Init Todos',
+	ERROR_INIT_TODOS = '[todoList] Error Init Todos',
+	// a supprimer INIT_TODOS = '[todoList] Init Todos',
 }
 // [...]
-/*
-\*\* A supprimer
+/* A supprimer
 export class InitTodos {
-readonly type = ActionTypes.INIT_TODO;
-constructor(public payload: Todo[]){ }
-
+	readonly type = ActionTypes.INIT_TODO;
+	constructor(public payload: Todo[]){ }
 }
-
 */
 
 export  class  LoadInitTodos {
-
-readonly  type = ActionTypes.LOAD\_INIT\_TODOS;
-
+	readonly  type = ActionTypes.LOAD_INIT_TODOS;
 }
 
 export  class  SuccessInitTodos {
-
-readonly  type = ActionTypes.SUCCESS\_INIT\_TODOS;
-
-constructor(payload: todo\[\]){}
-
+	readonly  type = ActionTypes.SUCCESS_INIT_TODOS;
+	constructor(payload: todo[]){}
 }
 
 export  class  ErrorInitTodos {
-
-readonly  type = ActionTypes.ERROR\_INIT\_TODOS;
-
+	readonly  type = ActionTypes.ERROR_INIT_TODOS
 }
 
-// \[...\]
+// [...]
 
 export  type  Actions = DeleteTodo
-
 // | InitTodos
-
 | LoadInitTodos
-
 | SuccessInitTodos
-
 | ErrorInitTodos;
 
 }
@@ -627,5 +613,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDc0MjIzODldfQ==
+eyJoaXN0b3J5IjpbLTE3ODU5NTA1MjhdfQ==
 -->
