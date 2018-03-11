@@ -36,7 +36,7 @@ L'architecture de Flux ci-dessus peut contenir plusieurs structures de données 
 Chaque action passe par le dispatcher, qui la transmet au store ciblé par l'action.   
 
 ## Pourquoi Redux alors ?
-Redux est une version moins complexe de Flux. Il s'en distingue par plusieurs raisons:
+Redux est une version moins complexe de Flux. Il se distingue par plusieurs raisons:
 
 - il y a qu’un store donc une seule source de donnée, 
 - des états immuables / immutables
@@ -244,5 +244,5 @@ store.dispatch(new CounterActions.SetNewValue(6))
 // resultat => { counter : 6 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4OTk1MTAwMSwzNDc3OTA3MTZdfQ==
+eyJoaXN0b3J5IjpbMzgzNDA2NjI4LDM0Nzc5MDcxNl19
 -->
