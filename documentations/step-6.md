@@ -460,15 +460,12 @@ template:  `
 	`
 })
 
-  
-
-// \[...\]
-
+// [...]
 export  class  AllTodosComponent {
 
 public  todosLoading: Observable<boolean>;
 
-// \[...\]
+// [...\]
 
 constructor(
 
@@ -514,5 +511,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTUxMjAwNjJdfQ==
+eyJoaXN0b3J5IjpbLTE5MDE1MDU0MTZdfQ==
 -->
