@@ -38,7 +38,7 @@ export namespace TodoListModule {
 	| DeleteTodo;
 }
 ```
-**SelectTodo** va récupérer le contenu du *payload*, et **UpdateTodo** va changer la todo qui match avec l'id de la todo du payload.
+**SelectTodo** va récupérer le contenu du *payload*, et **UpdateTodo** va changer la todo qui match avec l'id du payload :
 
 */store/reducers/todo-list.reducer.ts*
 ```javascript
@@ -71,7 +71,8 @@ export function todosReducer(
 		
 // [...]      
 ```
-Une fonction sera rattachée à l'événement au clique d'une todo, celle-ci redirigera vers la page **select-todo** tout en modifiant le state **selectTodo**.
+Une fonction sera rattachée à l'événement au clique d'une todo.
+Celle-ci redirigera vers la page **select-todo** tout en modifiant le state **selectTodo**.
 
 *all-todos.ts*
 ```javascript
@@ -186,5 +187,5 @@ export class SelectTodoComponent implements OnInit {
 Maintenant vous pouvez sélectionner et mettre à jour une todo.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzcyNTMyMzE2LC0yNTAwOTQ5NzldfQ==
+eyJoaXN0b3J5IjpbNjk0NDE0NDQ0LC0yNTAwOTQ5NzldfQ==
 -->
