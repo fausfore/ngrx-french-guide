@@ -142,7 +142,6 @@ export namespace TodoListModule {
 }
 ```
 Il est préférable d'encapsuler le tout dans un **namespace** pour simplifier les *imports*.
-Ce n'est pas une obligation.
 Le dernier export **Actions** servira pour le typage du **reducer** uniquement.
 
 
@@ -301,5 +300,5 @@ Après ces premières manipulations vous devriez voir apparaître la liste de to
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0Mzg1NTg3OV19
+eyJoaXN0b3J5IjpbLTgxNDEzMzUxMF19
 -->
