@@ -15,7 +15,7 @@ Voici une petite explication de l'utilisation du Pipe **async** :
 
   
 
-Actuellement, la syntaxe de la liste de todos est :
+La syntaxe de la liste de todos :
 
 ```html
 
@@ -25,7 +25,7 @@ Actuellement, la syntaxe de la liste de todos est :
 
   
 
-Cependant, en changeant l'argument du \*\*select('todos')\*\* par une fonction, on peut obtenir une syntaxe plus simplifiée :
+Cependant, en changeant l'argument du **select('todos')** par une fonction, on peut obtenir une syntaxe plus simplifiée :
 
   
 
@@ -46,11 +46,11 @@ this.todos$ = store.pipe(select((state) =>  state.todos.data)); // On cible dire
   
   
 
-\## Le Pipe et les opérateurs RXJS
+## Le Pipe et les opérateurs RXJS
 
   
 
-Avant de continuer sur nos fonctions getters (\*\*select\*\*), un point sur le Pipe RXJS s'impose.
+Avant de continuer sur nos fonctions getters **select**, un point sur le Pipe RXJS s'impose.
 
   
   
@@ -406,5 +406,5 @@ action.payload
 
 Voilà notre action \*\*createTodo\*\* est terminée, il reste des choses à revoir comme la gestion des ids.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzAwNjk4OTIsMjEyMjc0ODA4OV19
+eyJoaXN0b3J5IjpbLTk1MjQwNTc1OCwyMTIyNzQ4MDg5XX0=
 -->
