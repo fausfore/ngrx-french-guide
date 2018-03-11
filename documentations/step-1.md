@@ -208,7 +208,7 @@ Dans le fichier *index.ts*, on définit l'objet **reducers** qui contient notre 
 
 L'injection d'un token est optionnelle : 
 
-> Pour injecter les reduceurs dans votre application, utilisez un **InjectionToken** et un **providers** pour enregistrer celles-ci via l'injection de dépendance.
+> Pour injecter les reduceurs dans votre application, utilisez une **InjectionToken** et un **providers** pour enregistrer ceux-ci via l'injection de dépendance.
 
 */app.module.ts*
 ```javascript
@@ -239,7 +239,7 @@ export class AppModule { }
 ```
 
 
->Pour finaliser la création du **Store**, on doit utliser le **StoreModule** et lui injecter nos reducers.
+>Pour finaliser la création du **Store**, utiliser le **StoreModule** et lui injecter nos reducers.
 
 On va ajouter notre state de todo dans le app.component.ts via la fonction **select()**.
 
@@ -301,5 +301,5 @@ Après ces premières manipulations vous devriez voir apparaître la liste de to
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMzM3Mjk4M119
+eyJoaXN0b3J5IjpbMTU5OTQ5NTgxXX0=
 -->
