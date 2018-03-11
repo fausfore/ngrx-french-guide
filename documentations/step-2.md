@@ -156,7 +156,7 @@ import { selectTodos$ } from  './store/selectors/todo-list.selector';
 
 @Component({
 selector:  'app-root',
-styleUrls: ['./app.component.scss'\],
+styleUrls: ['./app.component.scss'],
 template:  `
 	<h1>la todolist redux style !</h1>
 	<form \[formGroup\]="todoForm" (ngSubmit)="createTodo(todoForm.value)">
@@ -321,5 +321,5 @@ action.payload
 
 Voilà notre action \*\*createTodo\*\* est terminée, il reste des choses à revoir comme la gestion des ids.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjA1ODYzODIsMjEyMjc0ODA4OV19
+eyJoaXN0b3J5IjpbLTE4ODYwNDg5NzQsMjEyMjc0ODA4OV19
 -->
