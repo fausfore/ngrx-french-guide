@@ -122,6 +122,8 @@ updateTodo(formValue) {
 
 Le **[mvp](https://fr.wikipedia.org/wiki/MVP)** de notre todo-list est terminé.
 La suite du tutoriel sera consacré sur l'optimisation et les tests.
+
+### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-11.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTc0MTU4OTksMjY5NTg2NDg3XX0=
+eyJoaXN0b3J5IjpbLTE3NTA4MzA0LDI2OTU4NjQ4N119
 -->
