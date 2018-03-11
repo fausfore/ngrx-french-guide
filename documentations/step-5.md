@@ -8,11 +8,11 @@ Cela implique de modifier l'interface, les actions et le reducer.
 *models/todo.ts*
 ```javascript
 export interface TodoListState {
-	// [...
+	// [...]
 	selectTodo: Todo
 }
 ```
-On ajoute les actions **SELECT** & **UPDATE** qui ont un paramètre de type Todo.
+Ajouter les actions **SELECT** & **UPDATE** qui ont un paramètre de type Todo.
 
 *store/actions/todo-list.action.ts*
 ```javascript
@@ -186,5 +186,5 @@ export class SelectTodoComponent implements OnInit {
 Maintenant vous pouvez sélectionner et mettre à jour une todo.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2NTQ4NDYsLTI1MDA5NDk3OV19
+eyJoaXN0b3J5IjpbMTMyNzY3NzM3MiwtMjUwMDk0OTc5XX0=
 -->
