@@ -239,9 +239,9 @@ export class AppModule { }
 ```
 
 
->Pour finaliser la création du **Store**, utiliser le **StoreModule** et lui injecter nos reducers.
+>Pour finaliser la création du **Store**, utiliser le **StoreModule** et lui injecter le token.
 
-On va ajouter notre state de todo dans le app.component.ts via la fonction **select()**.
+Ajouter notre state de todo dans le *app.component.ts* via la fonction **select**.
 
 */app.component.ts*
 ```javascript
@@ -281,7 +281,7 @@ export class AppComponent implements OnInit {
 		this.todos = todos;
 	});
 
-    Dans ce cas de figure on ne fait pas de mutation sur la liste
+    Dans ce cas de figure,pas de mutation sur la liste
     de todos dans le component, inutile de faire un subscribe.
     Cela évite également de faire un unsubscribe dans le OnDestroy
     et utiliser un *ngIf dans le <ul> dans le cas ou la donnée soit vide.
@@ -301,5 +301,5 @@ Après ces premières manipulations vous devriez voir apparaître la liste de to
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5OTQ5NTgxXX0=
+eyJoaXN0b3J5IjpbLTcyMDY4MjE1N119
 -->
