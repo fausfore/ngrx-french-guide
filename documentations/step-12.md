@@ -7,7 +7,7 @@ Cette partie fait un focus sur l'optimisation de performance.
 Chaque action réalise une itération sur notre liste.
 Dans le cas où celle-ci contient des milliers de *todos*, une baisse de performance aura lieu.
 
-Si notre *todo-list* n'est plus un tableau mais plutôt une **entité** , lors d'une action on ne fera pas une itération dans un tableau, à la place on lui passera directement une clef.
+Si notre *todo-list* n'est plus un tableau mais une **entité** , lors d'une action on ne fera pas une itération dans un tableau, à la place on lui passera directement une clef.
 
 ```javascript
 const ArrayTodos = [
@@ -183,6 +183,6 @@ import {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM4MzczNzg5LDEyMDY2ODE0ODUsLTIwMT
-g3MDk3NDRdfQ==
+eyJoaXN0b3J5IjpbLTQxMTA4OTQzMCwxMjA2NjgxNDg1LC0yMD
+E4NzA5NzQ0XX0=
 -->
