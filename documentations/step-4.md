@@ -25,7 +25,7 @@ app
 ```
 
 
-Ci-dessous, une configuration de *routing* afin de charger notre module **TodoListModule** en lazy-loading avec le **loadChildren**.
+Ci-dessous, une configuration de *routing* afin de charger notre module **TodoListModule** en *lazy-loading* avec le **loadChildren**.
 
  *app.routing.ts*  
 ```javascript
@@ -50,7 +50,7 @@ const routes: Route[] = [
 
 export const appRouting: ModuleWithProviders = RouterModule.forRoot(routes);
 ```
-Dans le **AppModule** on peut déplacer les dépendances des formulaires vers **TodoListModule**.
+Dans le **AppModule**, on peut déplacer les dépendances des formulaires vers **TodoListModule** :
 
 *app.module.ts*
 ```javascript
@@ -67,7 +67,8 @@ import { appRouting } from './app.routing';
 // [...]
 ```
 
-On va migrer tout le contenu du **AppComponent** vers **AllTodosComponent**, il ne reste que la balise **router-outlet**
+On va migrer tout le contenu du **AppComponent** vers **AllTodosComponent**.
+Il ne reste que la balise **router-outlet** :
 */app.component.ts*
 ```javascript
 import { Component } from '@angular/core';
@@ -268,5 +269,5 @@ Plutôt cool non ! ;-)
 Si votre IDE indique une erreur redémarrer-le. Voilà le point refacto est terminé passons à la mise à jour des todos !
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE4MTU1NDY0LC0xMDA5OTQwODU4XX0=
+eyJoaXN0b3J5IjpbMTczNTc3NzE2NiwtMTAwOTk0MDg1OF19
 -->
