@@ -9,7 +9,7 @@ Ceci est un tutoriel pour débuter sur **NGRX**, vous verrez les différents con
 ### 0-1 Redux, kesako ?
 ### 0-2 Pourquoi Redux alors ?
 ### 0-3 Flux vs Redux
-### 0-4 Le Store la base de tout
+### 0-4 Le Store, la base de tout
 ### 0-5  Le root reducer
 ### 0-6 Le schéma
 ### 0-7 Les actions
@@ -74,6 +74,6 @@ Une autre utilitaire intéressant [ngrx-actions](https://github.com/amcdnl/ngrx-
 *Auteur : **@Fausfore / Matias Ljubica***
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjY1NDkyMTIsMTgyMDczMTExMCwxNT
-Y3MzMxNjQyXX0=
+eyJoaXN0b3J5IjpbLTQyOTY2OTQzOCwxODIwNzMxMTEwLDE1Nj
+czMzE2NDJdfQ==
 -->
