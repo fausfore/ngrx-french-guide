@@ -50,7 +50,7 @@ Grâce à la programmation fonctionnelle, le dispatcher est complètement retir�
 ## Flux vs Redux
 | Flux| Redux|
 |--|--|
-| Les stores contiennent les états et leurs logiques de mutations|  le store et leurs logiques de mutation sont séparés|
+| Les stores contiennent les états et leurs logiques de mutations|  Le store et leurs logiques de mutation sont séparés|
 |Plusieurs stores|Un seule Store|
 |Stores indépendants|Store unique avec reducers|
 |Dispatcher|Pas de dispatcher|
@@ -244,5 +244,5 @@ store.dispatch(new CounterActions.SetNewValue(6))
 // resultat => { counter : 6 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjMyOTQ0OTIsMzQ3NzkwNzE2XX0=
+eyJoaXN0b3J5IjpbMTA1ODk0MTM4MCwzNDc3OTA3MTZdfQ==
 -->
