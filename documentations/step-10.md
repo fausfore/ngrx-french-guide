@@ -1,7 +1,7 @@
 
 ## Update Todo v2
 
-### Début de la branche step-10
+### [Début de la branche step-10]
 
 Pour mettre à jour **UpdateTodo**, vous devez faire exactement la même chose que tout à l'heure.
 
@@ -122,5 +122,5 @@ updateTodo(formValue) {
 
 Et voilà le **[mvp](https://fr.wikipedia.org/wiki/MVP)** de notre todo-list est réalisé, la suite du tutoriel sera consacré sur de l'optimisation et les tests.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTY5MjYyNDIsMjY5NTg2NDg3XX0=
+eyJoaXN0b3J5IjpbMTE1Mjc0MTYxMiwyNjk1ODY0ODddfQ==
 -->
