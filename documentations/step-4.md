@@ -243,7 +243,7 @@ export class AllTodosComponent implements OnInit {
 }
 ```
 ## @Alias
-On remarque que dans la nouvelle architecture, le dossier **store/** très vraiment loin de nos composants ce qui créé de long chemins avec tous plein de  "../" 
+On remarque que dans la nouvelle architecture, le dossier **store/** est très loin de nos composants ce qui créé de long chemins avec tous plein de  "../".
 Pour remédier à cela on utilise des **alias** via le **tsconfig.json** :
 
  *tsconfig.json*  
@@ -273,5 +273,5 @@ Plutôt cool non ! ;-)
 Si votre IDE indique une erreur redémarrer-le. Voilà le point refacto est terminé passons à la mise à jour des todos !
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk0MjgzMjM3LC0xMDA5OTQwODU4XX0=
+eyJoaXN0b3J5IjpbLTgwMzY5MTkxOSwtMTAwOTk0MDg1OF19
 -->
