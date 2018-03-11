@@ -261,7 +261,7 @@ Pour y remédier, utilisez des **alias** via le **tsconfig.json** :
   }
 }
 ```
-Avec cette configuration on va pouvoir écrire :
+Avec cette configuration, écrire :
 
   *modules/todo-list/components/all-todos/all-todo.component.ts*  
 ```javascript
@@ -273,5 +273,6 @@ Plutôt cool non ! ;-)
 Si votre IDE indique une erreur redémarrer-le. Voilà le point refacto est terminé passons à la mise à jour des todos !
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1NTU0MDU0OCwtMTAwOTk0MDg1OF19
+eyJoaXN0b3J5IjpbLTE4MjU2NDg1OTAsLTEwMDk5NDA4NThdfQ
+==
 -->
