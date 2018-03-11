@@ -104,15 +104,17 @@ Pour y palier, faire comme ceci :
 deleteTodo(id): Observable<number> {
     return this.http.delete<Todo>(`${environment.apiUrl}/todos/${id}`)
     // Le pipe va nous renvoyer l'id de la todo si la suppression
-    // est réussi
+    // est réussie
       .pipe(map(response => id));
   }
 // [...]
 
 ```
-C'est bon pour la suppression.
+Suppression terminée.
+
+### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-10.md)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyODk2Njk5NiwyMjg5MDg3NjZdfQ==
+eyJoaXN0b3J5IjpbNjI2Mzc2NTgsMjI4OTA4NzY2XX0=
 -->
