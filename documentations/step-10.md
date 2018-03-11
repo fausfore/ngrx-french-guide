@@ -89,7 +89,7 @@ export namespace TodoListModule {
 
 *todo-list.effect.ts*
 ```javascript
-// ... other
+// [...]
  @Effect() LoadUpdateTodo$: Observable<TodoListModule.Actions> = this.actions$
       .pipe(
           ofType<TodoListModule.LoadUpdateTodo>(TodoListModule.ActionTypes.LOAD_UPDATE_TODO),
@@ -122,5 +122,5 @@ updateTodo(formValue) {
 
 Et voilà le **[mvp](https://fr.wikipedia.org/wiki/MVP)** de notre todo-list est réalisé, la suite du tutoriel sera consacré sur de l'optimisation et les tests.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDIyMzEwMzAsMjY5NTg2NDg3XX0=
+eyJoaXN0b3J5IjpbLTIwOTY5MjYyNDIsMjY5NTg2NDg3XX0=
 -->
