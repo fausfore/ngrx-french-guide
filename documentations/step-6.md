@@ -217,7 +217,7 @@ Avec un **Effect**, il n'y aura pas une action **InitTodos**, mais trois :
 
   
 
-Iinstallation :
+Installation :
 
 ```bash
 npm i @NGRX/effects --save ou yarn add @NGRX/effects --dev
@@ -660,5 +660,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg3NzI3Mzc2XX0=
+eyJoaXN0b3J5IjpbLTY3MzUxMzEyN119
 -->
