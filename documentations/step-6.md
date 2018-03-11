@@ -10,15 +10,11 @@ Il est temps de mettre en place un serveur et d'y inclure des requêtes **http**
 Pour maximiser le temps, on va créer une *API* avec le module npm **[JsonPlaceholder](https://jsonplaceholder.typicode.com/)** .
 
 ```bash
-
 npm install -g json-serve
+```
+Dans notre projet, inclure un nouveau dossier **/server** au même niveau que **/app** et y ajouter un fichier *json* qui sera notre base de données :
 
 ```
-
-Dans notre projet on va inclure un nouveau dossier **/server** au même niveau que **/app** et y ajouter un fichier json qui sera notre base de donnée.
-
-```
-
 src
 |
 └───app
@@ -26,23 +22,20 @@ src
 └───server
 |
 └───db.json
-
 ```
 
   
-\*db.json\*
+*db.json*
 
 ```json
 
 {
-
-"todos": \[\]
-
+"todos": []
 }
 
 ```
 
-Et pour finir, il suffit de rentrer sur le terminal :
+Entrer sur le terminal :
 
 ```bash
 
@@ -756,5 +749,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc4ODY2MDQ5XX0=
+eyJoaXN0b3J5IjpbLTE2NzY1OTY5MDhdfQ==
 -->
