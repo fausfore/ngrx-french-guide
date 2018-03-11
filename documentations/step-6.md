@@ -5,11 +5,9 @@
 
 On a maintenant toutes nos fonctionnalités : **Create, Select, Update, Delete**.
 Cela reste du local ou du offline.
-Il est temps de mettre en place un serveur et inclure des requêtes **http**.
+Il est temps de mettre en place un serveur et d'y inclure des requêtes **http**.
 
-  
-
-Pour maximiser le temps, on va créer un API avec le module npm **\[JsonPlaceholder\](https://jsonplaceholder.typicode.com/)** .
+Pour maximiser le temps, on va créer une *API* avec le module npm **[JsonPlaceholder](https://jsonplaceholder.typicode.com/)** .
 
 ```bash
 
@@ -758,5 +756,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NjkzMjIyNF19
+eyJoaXN0b3J5IjpbNDc4ODY2MDQ5XX0=
 -->
