@@ -116,16 +116,13 @@ Plus simplement pour les *imports* :
 
 Dans ce fichier, placer les paramètres d'*API* comme l'*url* :
 
-\*environment.ts\*
+*environment.ts*
 
 ```json
 
 export const environment = {
-
 production: false,
-
 apiUrl: 'http://localhost:3000'
-
 };
 
 ```
@@ -711,5 +708,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzU5NTgwNDBdfQ==
+eyJoaXN0b3J5IjpbLTQ1NzA2MjI3OF19
 -->
