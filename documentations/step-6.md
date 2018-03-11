@@ -94,13 +94,11 @@ export  class  TodoListService {
 }
 
 ```
-
-Un petit alias pour nous simplifier la vie :
+Plus simplement pour les *imports* :
 
 *tsconfig.json*
 
 ```json
-
 {
 
 "compilerOptions": {
@@ -722,5 +720,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDMwOTk4OThdfQ==
+eyJoaXN0b3J5IjpbLTU0MTkxOTQ2MV19
 -->
