@@ -166,9 +166,12 @@ createTodo(todo: Todo) {
     this.todoForm.reset();
   }
 ```
-L'action de createTodo est maintenant connectée avec le serveur.
+L'action de **createTodo** est maintenant connectée avec le serveur.
+
+### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-9.md)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwOTI2OTU2MiwtMTUwOTk3NDQ5NF19
+eyJoaXN0b3J5IjpbLTE4OTkwNTA4MjQsLTE1MDk5NzQ0OTRdfQ
+==
 -->
