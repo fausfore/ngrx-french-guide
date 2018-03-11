@@ -367,16 +367,14 @@ import { TodoListModule } from  '@Actions/todo-list.action';
 import { TodoListService } from  '../../services/todo-list';
 
 @Injectable()
-
 export  class  TodoListEffects {
-
-	// Listen les actions passées dans le Store
-	@Effect() LoadTodos$: Observable<TodoListModule.Actions\> = this.actions$
+	// Ecoute les actions passées dans le store
+	@Effect() LoadTodos$: Observable<TodoListModule.Actions> = this.actions$
 	.pipe(
-	// Si l'action est de type 'LOAD\_INIT\_TODOS' applique la suite sinon ne fait rien
+	// Si l'action est de type 'LOAD_INIT_TODOS', applique la suite sinon ne fait rien
 	ofType(TodoListModule.ActionTypes.LOAD\_INIT\_TODOS),
 	// l'action du switchMap est l'objet d'action qui est récupérer dans le ofType
-	// action = { type: '\[todoList\] Load Init Todos' }
+	// action = { type: '[todoList] Load Init Todos' }
 	switchMap(action  =>  this.todoListService.getTodos())
 	// Dans le switchMap on éxécute le service et retournera le body dans le map suivant
 	// todos = Todo\[\]
@@ -551,5 +549,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTcxMDQzODddfQ==
+eyJoaXN0b3J5IjpbLTk3OTA4NTE1MV19
 -->
