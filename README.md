@@ -6,8 +6,8 @@ Ceci est un tutoriel pour débuter sur **NGRX**, vous verrez les différents con
 >Actuellement **Ngrx** est en *version 5* ainsi que **Angular**.
 
 ## [0 - Introduction](https://github.com/fausfore/ngrx-guide/blob/master/documentations/introduction.md)
-### 0-1 Redux, kesako ?!
-### 0-2 Pourquoi Redux alors ?!
+### 0-1 Redux, kesako ?
+### 0-2 Pourquoi Redux alors ?
 ### 0-3 Flux vs Redux
 ### 0-4 Le Store la base de tout
 ### 0-5  Le root reducer
@@ -74,6 +74,6 @@ Une autre utilitaire intéressant [ngrx-actions](https://github.com/amcdnl/ngrx-
 *Auteur : **@Fausfore / Matias Ljubica***
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2MzM3MzM0MCwxODIwNzMxMTEwLDE1Nj
-czMzE2NDJdfQ==
+eyJoaXN0b3J5IjpbLTEzMjY1NDkyMTIsMTgyMDczMTExMCwxNT
+Y3MzMxNjQyXX0=
 -->
