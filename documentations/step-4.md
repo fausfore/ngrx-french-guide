@@ -4,7 +4,7 @@
 
 ### *[Début de la branche step-4]*
 
-Avant de se lancer sur la mise à jour des todos, on va changer un peu l'architecture du projet et mettre en place du routing.
+n va changer l'architecture du projet et mettre en place du routing.
 
 ```
 app
@@ -265,9 +265,8 @@ import { selectTodos$ } from '@Selectors/todo-list.selector';
 import { TodoListModule } from '@Actions/todo-list.action';
 ```
 Plutôt cool non ! ;-)
-Si votre IDE indique une erreur redémarrer-le. 
-Voilà le point refacto est terminé passons à la mise à jour des todos !
+Si votre IDE indique une erreur redémarrer-le. Voilà le point refacto est terminé passons à la mise à jour des todos !
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc5MTk2NDIsLTEwMDk5NDA4NThdfQ==
+eyJoaXN0b3J5IjpbMTkzNTIyMDc1OSwtMTAwOTk0MDg1OF19
 -->
