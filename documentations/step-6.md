@@ -49,7 +49,6 @@ On va générer un service depuis la console :
 
 ```bash
 ng g service services/todo-list
-
 ```
 
 Ensuite le déclarer dans le \*\*AppModule\*\* ainsi que le dernier module \*\*HttpClient\*\* de Angular.
@@ -745,5 +744,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk2MDgwOTE5XX0=
+eyJoaXN0b3J5IjpbMjA0MjY3ODYzM119
 -->
