@@ -4,8 +4,8 @@
 
 Mettre à jour notre action de **CreateTodo** pour inclure une requête serveur de la même façon que **InitTodos**.
  Il n'y aura pas une action **CREATE_TODO**, mais trois :
-- **LOAD_CREATE_TODO** ,
-- **SUCCESS_CREATE_TODO**,
+- **LOAD_CREATE_TODO** ;
+- **SUCCESS_CREATE_TODO** ;
  - **ERROR_CREATE_TODO**.
 
 *todo-list.action.ts*
@@ -52,7 +52,7 @@ export namespace TodoListModule {
 }
 
 ```
-On ajoute les nouvelles actions dans le reducer :
+Ajouter les nouvelles actions dans le reducer :
 ```javascript
 // ...Other
 todosReducer(
@@ -168,6 +168,5 @@ createTodo(todo: Todo) {
 ```
 Maintenant l'action de createTodo est connecté avec le serveur.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDYzMjg2NDQsLTE1MDk5NzQ0OTRdfQ
-==
+eyJoaXN0b3J5IjpbMjExODc3NTUwOSwtMTUwOTk3NDQ5NF19
 -->
