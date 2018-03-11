@@ -2,7 +2,7 @@
 
 ### *[Début de la branche step-9]*
 
-Pour mettre à jour **DeleteTodo**, vous devez faire exactement la même chose que tout à l'heure.
+Pour mettre à jour **DeleteTodo**, faire exactement la même chose que la **step-8**.
 
 *todo-list.action.ts*
 
@@ -113,5 +113,5 @@ C'est bon pour la suppression.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2OTYzMDMyMSwyMjg5MDg3NjZdfQ==
+eyJoaXN0b3J5IjpbNjYyNTkwOTgyLDIyODkwODc2Nl19
 -->
