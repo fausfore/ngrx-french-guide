@@ -1,6 +1,6 @@
 # Load Guard & DevTools
 
-A partir de la vous pouvez *checkout* la **step-6** pour avoir le style réalisé à la fin de cette branche.
+A partir de la branche **step-6**, vous pouvez obtenir le style réalisé à la fin de cette branche.
 
 ![styles](https://github.com/fausfore/ngrx-guide/blob/master/assets/images/styles.png)
 
@@ -129,5 +129,5 @@ export class AppModule { }
 
 L'outils vous permettra de voir chaque changement de state, de conserver un historique, de faire export de vous states et inversement.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjI4MTE2NTUsNzg0MjIxNjQ4XX0=
+eyJoaXN0b3J5IjpbNDM0ODA4MjI1LDc4NDIyMTY0OF19
 -->
