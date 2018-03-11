@@ -126,15 +126,15 @@ export const environment = {
 ```
 
 Ajouter le service dans le *component*.
- Et au *resolve* de la requête on lui passe le dispatch **InitTodos**
+Et au *resolve* de la requête, passer **InitTodos** :
 
   
 
-\*modules/todo-list/components/all-todos/all-todo.component.ts\*
+*modules/todo-list/components/all-todos/all-todo.component.ts*
 
 ```javascript
 
-// \[...\]
+// [...]
 
 import { TodoListService } from  '@Services/todo-list';
 
@@ -705,5 +705,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyODExOTUzM119
+eyJoaXN0b3J5IjpbMTYwMDkwMzM0M119
 -->
