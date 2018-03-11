@@ -130,12 +130,10 @@ export const selectTodos$ = createSelector(selectTodoListState$,(todos) =>  todo
 ```javascript
 import { selectTodos } from  'store/selectors/todo-list.selector';
 
-
 // [...]
 
 // On remplace la fonction par le sélecteur
 this.todos$ = store.pipe(select(selectTodos$));
-
 
 ```
 
@@ -392,5 +390,5 @@ action.payload
 
 Voilà notre action \*\*createTodo\*\* est terminée, il reste des choses à revoir comme la gestion des ids.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNTA2MjUzMywyMTIyNzQ4MDg5XX0=
+eyJoaXN0b3J5IjpbLTE1NjM0NTY4NjUsMjEyMjc0ODA4OV19
 -->
