@@ -398,22 +398,13 @@ export  class  TodoListEffects {
 Pour finaliser l'implémentation des *effects*, déclarer un tableau d'*effect* dans l'index du store :
 
 ```javascript
-
-// ...te
-
+// [...]
 import { TodoListEffects } from  '@Effects/todo-list.effect';
-
-  
-
-// \[...\]
-
-export  const  appEffects = \[TodoListEffects\];
-
-// \[...\]
-
+// [...]
+export  const  appEffects = [TodoListEffects];
+// [...]
 ```
-
-On ajoute 2 autres sélecteurs pour le \*\*loading\*\* et le \*\*loaded\*\* state.
+Ajouter deux autres sélecteurs pour le **loading** et le **loaded** state :
 
   
 
@@ -550,5 +541,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNjMzNzI2N119
+eyJoaXN0b3J5IjpbLTEzNTAxODI2MjFdfQ==
 -->
