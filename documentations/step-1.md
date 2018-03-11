@@ -151,7 +151,7 @@ import { TodoListModule } from '../actions/todo-list.action';
 import { TodoListState  } from '../../models/todo';
 import { todosMock } from '../../mocks/todo-list-data';
 
-// les valeurs par défaut de la todo
+// les valeurs par défaut du state
 const initialState: TodoListState = {
     data: [],
     loading: false,
@@ -170,7 +170,7 @@ export function todosReducer(
     return {
         ...state,
         data: [
-            ...todosMock // injecte le mock
+            ...todosMock // Injecte le mock
         ]
     };
 
@@ -179,7 +179,7 @@ export function todosReducer(
     }
 }
 ```
-*s/index.ts*
+*store/index.ts*
 ```javascript
 import { ActionReducerMap } from '@ngrx/store';
 import { InjectionToken } from '@angular/core';
@@ -195,14 +195,14 @@ const reducers = {
 export interface AppState {
     todos: TodoListState;
 }
-// Nécéssaire pour l'AoT
+// Nécéssaire pour l'AOT
 export function getReducers() {
     return reducers;
 }
-// Nécéssaire pour l'AoT
+// Nécéssaire pour l'AOT
 export const REDUCER_TOKEN = new InjectionToken<ActionReducerMap<AppState>>('Registered Reducers');
 ```
-Dans le fichiernotre index.ts, on défini l'objet **reducers** qui contient notre **reducer** de todos, on ajoute aussi une fonction **getReducers()** qui renvoie cet objet :
+Dans le fichier notre index.ts, on défini l'objet **reducers** qui contient notre **reducer** de todos, on ajoute aussi une fonction **getReducers()** qui renvoie cet objet :
  >Le mode Ahead of Time (AoT) compilation de Angular exige que tous les symboles référencés dans les métadonnées du décorateur soient analysables statiquement. Pour cette raison, nous ne pouvons pas injecter dynamiquement l'état à l'exécution avec AoT sauf si nous utilisons notre **reducers** en tant que fonction. 
 
 L'injection d'un token est optionnelle: 
@@ -300,5 +300,5 @@ Après ces premières manipulations vous devriez voir apparaître la liste de to
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NTUxNjc2Nl19
+eyJoaXN0b3J5IjpbLTExMjI0MTY1MzJdfQ==
 -->
