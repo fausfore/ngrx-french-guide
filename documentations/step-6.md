@@ -114,7 +114,7 @@ Plus simplement pour les *imports* :
 
   
 
-Dans ce fichier, placer les paramètres d'*API* comme l'url :
+Dans ce fichier, placer les paramètres d'*API* comme l'*url* :
 
 \*environment.ts\*
 
@@ -711,5 +711,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MzQ0NzQwNl19
+eyJoaXN0b3J5IjpbLTE2MzU5NTgwNDBdfQ==
 -->
