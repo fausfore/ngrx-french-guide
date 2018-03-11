@@ -164,7 +164,7 @@ export class TodoListEffects {
 ## Système de logs
 
 Une fois le code inutile supprimé, on mettra en place un système de logs avec des *toasters* afin d'informer l'utilisateur en cas de changement ou d'erreur dans le state.
-Le **catchError** peut prendre une erreur Http en argument donc on peut l'a récupérer pour notre state.
+Le **catchError** peut prendre une erreur Http** en argument donc on peut l'a récupérer pour notre state.
 
 *todo-list.effect.ts*
 ```javascript
@@ -299,5 +299,5 @@ Voilà le système de log est fonctionnel.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3ODE0NzczMCwtOTUyOTU4ODhdfQ==
+eyJoaXN0b3J5IjpbLTE0NzU4MDA3ODYsLTk1Mjk1ODg4XX0=
 -->
