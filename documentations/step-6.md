@@ -475,7 +475,7 @@ this.todosLoading = store.pipe(select(selectTodosLoading$));
 
 ngOnInit(){
 
-/*
+
 
 \* A supprimer
 this.todoListService.getTodos()
@@ -498,5 +498,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODQ5ODg2Ml19
+eyJoaXN0b3J5IjpbNzg3MTA5MDY5XX0=
 -->
