@@ -7,8 +7,10 @@ Pour React  => **react-redux**
 Pour Vue  => **vuex**
 Pour Angular  => **NGRX**
 
-Il est donc inutile de créer un store *from scratch*. Comme nous allons créer une application Angular, nous utiliserons **NGRX**.
-Cette librairie est une implémentation "reduxienne". Elle englobe une couche de **RxJS** tout comme Angular et utilise les **Observables** pour communiquer la mise à jour des states dans les composants Angular.
+Il est donc inutile de créer un store *from scratch*. 
+Comme nous allons créer une application Angular, nous utiliserons **NGRX**.
+Cette librairie est une implémentation "reduxienne", qui englobe une couche de **RxJS** .
+Tout comme Angular, elle utilise les **Observables** pour communiquer la mise à jour des states dans les composants Angular.
 
 ## Installation
 
@@ -297,5 +299,5 @@ Après ces premières manipulations vous devriez voir apparaître la liste de to
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyNDY0NTQyMV19
+eyJoaXN0b3J5IjpbLTE2ODY4MzUxMDldfQ==
 -->
