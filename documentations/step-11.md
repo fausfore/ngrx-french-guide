@@ -193,7 +193,7 @@ export interface TodoListState {
     };
 }
 ```
-Ajouter cette propriété dans le reducer : 
+Ajouter cette propriété dans le *reducer* : 
 
 *todo-list.reducer.ts*
 ```javascript
@@ -206,14 +206,14 @@ case TodoListModule.ActionTypes.SUCCESS_DELETE_TODO:
         return {
             ...state,
             data : state.data.filter(todo => todo.id !== action.payload),
-            logs: { type: 'SUCCESS', message: 'La todo à été suprimmé avec succès' }
+            logs: { type: 'SUCCESS', message: 'La todo a été supprimée avec succès' }
         };
 
 case TodoListModule.ActionTypes.SUCCESS_UPDATE_TODO:
         return {
             ...state,
             loading: false,
-            logs: { type: 'SUCCESS', message: 'La todo à été mise à jour avec succès' },
+            logs: { type: 'SUCCESS', message: 'La todo a été mise à jour avec succès' },
             data: state.data
                 .map(todo => action.payload.id === todo.id ? action.payload : todo)
         };
@@ -221,7 +221,7 @@ case TodoListModule.ActionTypes.SUCCESS_UPDATE_TODO:
 case TodoListModule.ActionTypes.SUCCESS_CREATE_TODO:
      return {
          ...state,
-         logs: { type: 'SUCCESS', message: 'La todo à été crée avec succès' },
+         logs: { type: 'SUCCESS', message: 'La todo a été créée avec succès' },
          data: [
              ...state.data,
              action.payload
@@ -235,7 +235,7 @@ case TodoListModule.ActionTypes.ERROR_LOAD_ACTION:
         logs: { type: 'ERROR', message: action.payload.message },
     };
 ```
-On créer un sélecteur pour le log: 
+Créer un sélecteur pour le *log* : 
 
 *todo-list.selector.ts*
 ```javascript
@@ -299,5 +299,5 @@ Voilà le système de log est fonctionnel.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4Nzc1MTQyMSwtOTUyOTU4ODhdfQ==
+eyJoaXN0b3J5IjpbLTUzNjk1MTUzMCwtOTUyOTU4ODhdfQ==
 -->
