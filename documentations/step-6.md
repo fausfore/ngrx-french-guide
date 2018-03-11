@@ -1,9 +1,9 @@
 
-\# API
+# API
 
   
 
-\### *\[Début de la branche step-6\]*
+### *[Début de la branche step-6\]*
 
   
 
@@ -26,13 +26,9 @@ Dans notre projet on va inclure un nouveau dossier **/server** au même niveau q
 ```
 
 src
-
 |
-
 └───app
-
 |
-
 └───server
 
 └───db.json
@@ -766,5 +762,5 @@ this.store.dispatch(new  TodoListModule.LoadInitTodos())
 
 On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect qui, via le \*\*LoadInitTodos\*\*, va utiliser le service \*\*getTodos\*\* qui dispatchera notre liste de todos via l'action \*\*SuccessInitTodos\*\*.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNjQyODE0Nl19
+eyJoaXN0b3J5IjpbLTExNjUyODcyMThdfQ==
 -->
