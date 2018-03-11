@@ -47,9 +47,7 @@ app
 
 ## Commençons ! [ début du tutoriel ]
 
-Pour changer de l'exemple du counter précédent, on va partir sur une **todolist**.
-
-Avec Redux, uton va penser en actions **utilisateur et serveur**.
+Pour changer de l'exemple du counter précédent, nous allons créer une **todolist**.
 Faisons le point de ce que représente fonctionnellement une todo :
 1. Récupération des todos -> **GET**
 2. Création des todos -> **PUT**
@@ -300,5 +298,5 @@ Après ces premières manipulations vous devriez voir apparaître la liste de to
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4OTAxMTAxM119
+eyJoaXN0b3J5IjpbLTYzNTA5NTQ4OV19
 -->
