@@ -100,30 +100,21 @@ Plus simplement pour les *imports* :
 
 ```json
 {
-
-"compilerOptions": {
-
-"baseUrl": "./src",
-
-"paths": {
-
-// \[...\]
-
-"@Services/*": \["app/services/*"\],
-
-"@Env": \["environments/environment.ts"\],
-
-}
-
-}
-
+	"compilerOptions": {
+	"baseUrl": "./src",
+	"paths": {
+		// [...]
+		"@Services/*": ["app/services/*"],
+		"@Env": ["environments/environment.ts"],
+		}
+	}
 }
 
 ```
 
   
 
-Dans ce fichier on place les paramètres d'api comme l'url :
+Dans ce fichier, placer les paramètres d'*API* comme l'url :
 
 \*environment.ts\*
 
@@ -720,5 +711,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MTkxOTQ2MV19
+eyJoaXN0b3J5IjpbLTk5MzQ0NzQwNl19
 -->
