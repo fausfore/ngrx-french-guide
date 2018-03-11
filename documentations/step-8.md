@@ -140,7 +140,7 @@ export class TodoListEffects {
 }
 ```
 Changer l'action lors du clique.
-Ainsi, on peut retirer la notion d'id car le serveur définira son propre id à la todo :
+Ainsi, on peut retirer la notion d'*id* car le serveur définira son propre *id* à la *todo* :
 
 *all-todos.ts*
 ```javascript
@@ -166,7 +166,9 @@ createTodo(todo: Todo) {
     this.todoForm.reset();
   }
 ```
-Maintenant l'action de createTodo est connecté avec le serveur.
+L'action de createTodo est maintenant connectée avec le serveur.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjUyNDQ2MjczLC0xNTA5OTc0NDk0XX0=
+eyJoaXN0b3J5IjpbMTUwOTI2OTU2MiwtMTUwOTk3NDQ5NF19
 -->
