@@ -408,25 +408,20 @@ Ajouter deux autres sélecteurs pour le **loading** et le **loaded** state :
 
   
 
-\*store/selectors/todo-list.selector.ts\*
+*store/selectors/todo-list.selector.ts*
 
 ```javascript
-
-// \[...\]
+// [...]
 
 export  const  selectTodosLoading$ =
-
-createSelector(selectTodoListState$,(todos) =>  todos.loading);
-
+	createSelector(selectTodoListState$,(todos) =>  todos.loading);
 export  const  selectTodosLoaded$ =
-
-createSelector(selectTodoListState$,(todos) =>  todos.loaded);
-
+	createSelector(selectTodoListState$,(todos) =>  todos.loaded);
 ```
 
   
 
-On importe le module effect dans le module principal en lui passant notre tableau d'effects :
+Importer le module **EffectsModule** dans le module principal en lui passant notre tableau d'effects :
 
 ```javascript
 
@@ -541,5 +536,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTAxODI2MjFdfQ==
+eyJoaXN0b3J5IjpbLTk2NDgwMjY2M119
 -->
