@@ -354,25 +354,17 @@ case TodoListModule.ActionTypes.INIT_TODOS :
 
 ```
 
-Il est temps d'écrire notre premier \*\*Effect\*\*. C'est un \*\*Observable\*\* donc on peut utiliser tous ce que peut nous fournir RXJS pour faire du traitement, combiner des states etc...
+pour écrire notre premier **Effect**.C'est un **Observable** donc on peut utiliser tous ce que peut nous fournir RXJS pour faire du traitement, combiner des states etc...
 
 \*store/effects/todo-list.effect.ts\*
 
 ```javascript
-
 import { Injectable } from  '@angular/core';
-
 import { Actions, Effect, ofType } from  '@NGRX/effects';
-
 import { Observable } from  'rxjs/Observable';
-
 import { catchError, map, switchMap } from  'rxjs/operators';
-
 import { TodoListModule } from  '@Actions/todo-list.action';
-
 import { TodoListService } from  '../../services/todo-list';
-
-  
 
 @Injectable()
 
@@ -577,5 +569,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMDYyNjE3Ml19
+eyJoaXN0b3J5IjpbLTUwODE2NDI0OV19
 -->
