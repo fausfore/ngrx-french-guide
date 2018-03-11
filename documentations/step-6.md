@@ -119,12 +119,10 @@ Dans ce fichier, placer les paramètres d'*API* comme l'*url* :
 *environment.ts*
 
 ```json
-
 export const environment = {
-production: false,
-apiUrl: 'http://localhost:3000'
+	production: false,
+	apiUrl: 'http://localhost:3000'
 };
-
 ```
 
   
@@ -708,5 +706,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NzA2MjI3OF19
+eyJoaXN0b3J5IjpbLTE2Nzc1Mzc4NDZdfQ==
 -->
