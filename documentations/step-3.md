@@ -4,7 +4,7 @@
 ### *[Début de la branche step-3]*
 
 
-Même procédé que pour la création, cette fois on va passer l'id de la todo à supprimer dans le reducer.
+Même procédé que pour la création, cette fois on va passer l'id de la todo  supprimr dans le reducer.
 
 *store/actions/todo-list.action.ts*
 ```javascript
@@ -44,7 +44,7 @@ Ajoutons la fonction de suppression.
 
 */app.component.ts*
 ```javascript
-// [...]
+// ...]
  template: `
     <!-- reste -->
 	<li *ngFor="let todo of todos$ | async">
@@ -52,7 +52,7 @@ Ajoutons la fonction de suppression.
 		<button (click)="deleteTodo(todo.id)">Supprimer</button>
 	</li>
   `
-    // [...]
+    // ...]
   deleteTodo(id: number) {
     this.store.dispatch(new TodoListModule.DeleteTodo(id));
   }
@@ -61,10 +61,9 @@ Ajoutons la fonction de suppression.
 
 ## Gérer les ids
 
-Jusqu'à présent, à chaque fois que l'on crée une nouvelle todo on lui donnait un id "8" par défaut. Nous allons maintenant dynamiser l'attribution d'id.
+Jusqu'à présent, à chaque fois que l'on crée une nouvelle todo on lui donnaite un id "8" par défaut. Nous allons maintenant dynamiser l'attribution d'id.
 
-Nous avons 2 possibilités : 
-- calculer la longueur du tableau de todo,
+Nous avons 2 possibilités :n calculer la longueur du tableau de todo,
 - utiliser des id uniques via un générateur comme [uuid](https://www.npmjs.com/package/uuid) 
 
 Nous utiliserons la première option.
@@ -96,5 +95,5 @@ CreateTodo(todo: Todo){
 Voilà la suppression est terminée  !
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExNDI3NDY2MSwyMTc1Nzc1MjJdfQ==
+eyJoaXN0b3J5IjpbMjAzOTg3Njk5NSwyMTc1Nzc1MjJdfQ==
 -->
