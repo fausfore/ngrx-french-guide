@@ -96,7 +96,7 @@ deleteTodo(id: number) {
 
 ```
 Le serveur, lors d'un **DELETE**, ne nous renvoie aucune information.
-Pour palier à cela vous pouvez faire comme ci dessous :
+Pour y palier, faire comme ceci :
 
 *todo-list.service.ts*
 ```javascript
@@ -114,5 +114,5 @@ C'est bon pour la suppression.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDcyNDU0MTQsMjI4OTA4NzY2XX0=
+eyJoaXN0b3J5IjpbMjEyODk2Njk5NiwyMjg5MDg3NjZdfQ==
 -->
