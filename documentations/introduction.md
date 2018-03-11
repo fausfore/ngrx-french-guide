@@ -59,7 +59,7 @@ Grâce à la programmation fonctionnelle, le dispatcher est complètement retir�
 ## Le Store, la base de tout
 Le store est une fonction qui contient l'état des reducers, un getter, une fonction de dispatch et des subscribers.
 
-Voici un exemple de store *from scratch simplifié* :
+Voici un exemple de store *from scratch* simplifié :
 
 ***Exemple***
 
@@ -100,7 +100,7 @@ class Store {
 	}
 	private reduce(state, action){
 		// le 1er param est le state global du store
-		// le 2eme est l'object d'action passé dans la méthode dispatch
+		// le 2eme est l'objet d'action passée dans la méthode dispatch
 
 		const newState = {}; // objet vide
 
@@ -243,5 +243,5 @@ store.dispatch(new CounterActions.SetNewValue(6))
 // resultat => { counter : 6 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE2NzYxNTQ5LDM0Nzc5MDcxNl19
+eyJoaXN0b3J5IjpbLTE4MDQ5NDAwOTEsMzQ3NzkwNzE2XX0=
 -->
