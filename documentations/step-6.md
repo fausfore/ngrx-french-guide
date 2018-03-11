@@ -59,8 +59,7 @@ json-server path-of-json
 Allez sur \*\*localhost:3000/todos\*\* et vous avez une API prête à emploi.
 
   
-
-\## Get Todos
+## Get Todos
 
 On va générer un service depuis la console :
 
@@ -761,5 +760,5 @@ this.store.dispatch(new  TodoListModule.LoadInitTodos())
 
 On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect qui, via le \*\*LoadInitTodos\*\*, va utiliser le service \*\*getTodos\*\* qui dispatchera notre liste de todos via l'action \*\*SuccessInitTodos\*\*.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYwMDY1MTI0XX0=
+eyJoaXN0b3J5IjpbNDEwNDA3OTkwXX0=
 -->
