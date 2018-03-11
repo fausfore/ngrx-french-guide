@@ -179,7 +179,7 @@ Les reducers ne fonctionnent qu'avec des fonctions pures.
 Ils ne doivent **jamais** modifier directement l'état, mais en renvoyer un nouveau à partir de celui-ci.
 
 ## Le schéma
-Les reducers encapsulent les différentes logiques de mutation, et le store contient le résultat de chaque reducer comme deux objets miroir synchronisés à chaque action.
+Les reducers encapsulent les différentes logiques de mutation, et le store contient le résultat de chaque reducer comme deux objets miroirs synchronisés à chaque action.
 ```javascript
 const store = {
 	counter: 0
@@ -191,7 +191,7 @@ const rootReducer = {
 ```
 
 ## Les actions
-Les actions sont des objets, elles contiennent au minimum une propriété **type**.
+Les actions sont des objets. Elles contiennent au minimum une propriété **type**.
 
 ```javascript
 const action = {
@@ -244,5 +244,5 @@ store.dispatch(new CounterActions.SetNewValue(6))
 // resultat => { counter : 6 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0ODE5MDIzNSwzNDc3OTA3MTZdfQ==
+eyJoaXN0b3J5IjpbMTYxOTUxOTA1NCwzNDc3OTA3MTZdfQ==
 -->
