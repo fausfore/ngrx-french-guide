@@ -124,7 +124,7 @@ export const todosMock = [{
   }]
 ```
 
-Pour le moment on crée l'action pour initialiser notre liste :
+On crée l'action pour initialiser notre liste :
 
 *store/actions/todo-list.action.ts*
 ```javascript
@@ -141,7 +141,8 @@ export namespace TodoListModule {
     export type Actions = InitTodos;
 }
 ```
-Question pratique je préfère encapsuler le tout dans un **namespace** pour simplifier les imports, ce n'est pas une obligation.
+Il est préférable d'encapsuler le tout dans un **namespace** pour simplifier les *imports*.
+Ce n'est pas une obligation.
 Le dernier export **Actions** servira pour le typage du **reducer** uniquement.
 
 
@@ -300,5 +301,5 @@ Après ces premières manipulations vous devriez voir apparaître la liste de to
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NjE1MjM5Nl19
+eyJoaXN0b3J5IjpbLTU0Mzg1NTg3OV19
 -->
