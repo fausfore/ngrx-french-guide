@@ -180,18 +180,17 @@ Le reducer doit retourner le *payload* à la place du *mock* que l'on peut total
 // [...]
 
 export  function  todosReducer(
-// [...]
+	// [...]
 
-case TodoListModule.ActionTypes.INIT_TODOS :
-return {
-...state,
-data: [
-...action.payload
-]
+	case TodoListModule.ActionTypes.INIT_TODOS :
+		return {
+			...state,
+			data: [
+			...action.payload
+			]
+		};
 
-};
-
-// [...]
+	// [...]
 
 ```
 
@@ -672,5 +671,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTA3MDgxMV19
+eyJoaXN0b3J5IjpbMzUwNDAwNzYzXX0=
 -->
