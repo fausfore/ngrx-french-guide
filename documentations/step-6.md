@@ -423,6 +423,8 @@ export  const  selectTodosLoaded$ =
 
 Importer le module **EffectsModule** dans le module principal en lui passant notre tableau d'*effect* :
 
+*app.module.ts*
+
 ```javascript
 // [...]
 
@@ -432,45 +434,30 @@ import { appEffects, getReducers, REDUCER_TOKEN } from  './store';
 @NgModule({
 
 // [...]
-
 imports: [
 	// [...]
 	EffectsModule.forRoot(appEffects),
-
 ],
 // [...]
 export class AppModule { }
 ```
 
-*app.module.ts*
 
-  
-  
-
-\*modules/todo-list/components/all-todos/all-todo.component.ts\*
+*modules/todo-list/components/all-todos/all-todo.component.ts*
 
 ```javascript
 
-// \[...\]
+// [...]
 
 import { TodoListService } from  '../services/todo-list';
-
 import { selectTodoListState$, selectTodosLoading$, selectTodos$ } from  '@Selectors/todo-list.selector';
 
-  
-
 @Component({
-
 template:  `
-
 <!--
-
 Ajoutez votre loader
-
 -->
-
 `
-
 })
 
   
@@ -527,5 +514,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0MDYzNzM1NF19
+eyJoaXN0b3J5IjpbLTk5OTg3Mjc4XX0=
 -->
