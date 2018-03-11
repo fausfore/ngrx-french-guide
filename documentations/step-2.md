@@ -108,28 +108,21 @@ Pour voir un aperçu des différents opérateurs: http://reactivex.io/rxjs/class
 
 La fonction **select** de NGRX peut prendre une fonction en paramètre.
 On peut donc déporter cette logique et la stocker dans un fichier dédié.
-Grâce à la fonction **createSelector** on pourra composer des sélecteurs à partir d'autres sélecteurs.
+Grâce à la fonction **createSelector**, on pourra composer des sélecteurs à partir d'autres sélecteurs.
 
   
 
-\*store/selectors/todo-list.selector.ts\*
+*store/selectors/todo-list.selector.ts*
 
 ```javascript
 
 import { createSelector } from  '@ngrx/store';
 
-  
-
 // La première fonction amène vers le state todos
-
 export  const  selectTodoListState$ = (state: AppState) =>  state.todos;
 
-  
-
-// Et a partir celle-ci, on créer une autre fonction qui reverra data
-
+// Et à partir de celle-ci, on créer une autre fonction qui renverra data
 export  const  selectTodos$ =
-
 createSelector(selectTodoListState$,(todos) =>  todos.data);
 
 ```
@@ -408,5 +401,5 @@ action.payload
 
 Voilà notre action \*\*createTodo\*\* est terminée, il reste des choses à revoir comme la gestion des ids.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzkzNzE2NDExLDIxMjI3NDgwODldfQ==
+eyJoaXN0b3J5IjpbLTc5NDkzMTk2OSwyMTIyNzQ4MDg5XX0=
 -->
