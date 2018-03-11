@@ -308,56 +308,33 @@ export  type  Actions = DeleteTodo
 
 Nous avons deux étapes lors d'un **LoadinitTodos**, on peut donc faire un switch sur les propriétés dans le reducer et commencer à jouer avec les booléens **loading** & **loaded** .
 
-Ce détail permettra de changer votre template lors du chargement des todos en ajoutant un loader et en desactivant les boutons durant la requête de chargement.
+Ce détail permettra de changer votre *template* lors du chargement des todos en ajoutant un *loader* et en désactivant les boutons durant la requête de chargement.
 
-  
-
-*/store/reducers/todo-list.reducer.ts*
+*store/reducers/todo-list.reducer.ts*
 
 ```javascript
-
-// \[...\]
-
+// [...]
 export  function  todosReducer(
-
-// \[...\]
-
-  
-
+// [...]
 case TodoListModule.ActionTypes.LOAD\_INIT\_TODOS:
-
 // Passe le loading a true
-
 return {
-
 ...state,
-
 loading: true
-
 };
 
 case TodoListModule.ActionTypes.SUCCESS\_INIT\_TODOS:
-
 // Bind state.data avec les todos du server
-
 // Passe le loaded a true et le loading a false
-
 return {
-
 ...state,
-
 loading: false,
-
 loaded: true,
-
 data: action.payload
-
 };
 
 case TodoListModule.ActionTypes.ERROR\_INIT\_TODOS:
-
 // Error rend le loading a false
-
 return {
 
 ...state,
@@ -613,5 +590,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3Mzg0ODUxNV19
+eyJoaXN0b3J5IjpbMTM4ODQ2MDgzMF19
 -->
