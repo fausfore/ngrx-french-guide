@@ -285,7 +285,7 @@ data: \[
 
 ```
 
-\## Introduction des Effects
+## Introduction des Effects
 
 On charge bien les todos mais avec NGRX il est possible d'aller plus loin en gérant également la partie \*\*asynchrone\*\* pour le moment impossible dans le reducer **(synchrone only)** .
 
@@ -760,5 +760,5 @@ this.store.dispatch(new  TodoListModule.LoadInitTodos())
 
 On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect qui, via le \*\*LoadInitTodos\*\*, va utiliser le service \*\*getTodos\*\* qui dispatchera notre liste de todos via l'action \*\*SuccessInitTodos\*\*.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEwNDA3OTkwXX0=
+eyJoaXN0b3J5IjpbLTEyNTQ1MjQ4NzRdfQ==
 -->
