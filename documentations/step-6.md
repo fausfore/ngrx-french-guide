@@ -276,12 +276,9 @@ ERROR_INIT_TODOS = '[todoList] Error Init Todos',
 // [...]
 /*
 \*\* A supprimer
-
 export class InitTodos {
-
 readonly type = ActionTypes.INIT_TODO;
-
-constructor(public payload: Todo\[\]){ }
+constructor(public payload: Todo[]){ }
 
 }
 
@@ -630,5 +627,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTgzOTcxNjNdfQ==
+eyJoaXN0b3J5IjpbODI1ODI5NjQzXX0=
 -->
