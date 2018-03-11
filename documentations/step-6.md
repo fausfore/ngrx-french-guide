@@ -223,52 +223,33 @@ Installation :
 npm i @NGRX/effects --save ou yarn add @NGRX/effects --dev
 ```
 
-Et créer un nouveau fichier effect :
+Créer un nouveau fichier *effect/* :
 
 ```
-
 app
-
 └───modules
-
 └───store
-
 └───actions
-
 └───reducers
-
 └───selectrs
-
 └───effects
-
 └───todo-list.effect.ts
-
-  
-
 ```
 
-un alias :
+Alias :
 
-\*tsconfig.json\*
+*tsconfig.json*
 
 ```json
 
 {
-
-"compilerOptions": {
-
-"baseUrl": "./src",
-
-"paths": {
-
-// \[...\]
-
-"@Effects/*": \["app/store/effects/*"\],
-
-}
-
-}
-
+	"compilerOptions": {
+	"baseUrl": "./src",
+	"paths": {
+		// [...]
+		"@Effects/*": ["app/store/effects/*"],
+		}
+	}
 }
 
 ```
@@ -660,5 +641,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MzUxMzEyN119
+eyJoaXN0b3J5IjpbNDEzMTA1MzU4XX0=
 -->
