@@ -254,7 +254,7 @@ Alias :
 
 ```
 
-Ajouter les 3 actions pour l'effect : \*\*LOAD\_INIT\_TODOS, SUCCESS\_INIT\_TODOS, ERROR\_INIT\_TODOS\*\*.
+Ajouter les trois actions pour l'effect : \*\*LOAD\_INIT\_TODOS, SUCCESS\_INIT\_TODOS, ERROR\_INIT\_TODOS\*\*.
 
   
 
@@ -641,5 +641,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTk2MDE1NDJdfQ==
+eyJoaXN0b3J5IjpbNDQyMzA5NTIyXX0=
 -->
