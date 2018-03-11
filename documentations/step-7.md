@@ -129,7 +129,7 @@ export class AppModule { }
 
 **Redux DevTools** vous permettra de voir chaque changements de state, de conserver un historique et de faire un export de vos states (et inversement).
 
-### Suite >>
+### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-8.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MTk5MDU0OCw3ODQyMjE2NDhdfQ==
+eyJoaXN0b3J5IjpbNTU4NTE1MzI0LDc4NDIyMTY0OF19
 -->
