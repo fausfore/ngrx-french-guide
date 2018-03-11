@@ -135,12 +135,9 @@ Et au *resolve* de la requête, passer **InitTodos** :
 ```javascript
 // [...]
 import { TodoListService } from  '@Services/todo-list';
-// [...]
 
 export  class  AllTodosComponent {
-
 	// [...]
-
 	constructor(
 	// [...]
 		private  todoListService: TodoListService
@@ -151,33 +148,29 @@ export  class  AllTodosComponent {
 		.subscribe((todos) => {
 			this.store.dispatch(new  TodoListModule.InitTodos(todos));
 		});
-}
-
+	}
+	
 // [...]
 
 ```
 
-On change l'action de \*\*InitTodos\*\* en lui ajoutant un payload.
+Changer l'action de **InitTodos** en lui ajoutant un payload :
 
-  
-
-\*store/actions/todo-list.action.ts\*
+*store/actions/todo-list.action.ts*
 
 ```javascript
 
 export  namespace  TodoListModule {
 
-// \[...\]
+// [...]
 
 export  class  InitTodos {
-
-readonly  type = ActionTypes.INIT_TODO;
-
-constructor(public  payload: Todo\[\]){ }
+	readonly  type = ActionTypes.INIT_TODO;
+	constructor(public  payload: Todo\[\]){ }
 
 }
 
-// \[...\]
+// [...]
 
 }
 
@@ -692,5 +685,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1NjIwNTg1NV19
+eyJoaXN0b3J5IjpbLTEwOTcyMTMxNzJdfQ==
 -->
