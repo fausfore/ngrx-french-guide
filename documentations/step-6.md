@@ -492,9 +492,12 @@ this.store.dispatch(new  TodoListModule.LoadInitTodos())
 
   
 
-On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect qui, via le **LoadInitTodos**, va utiliser le service **getTodos** qui dispatchera notre liste de todos via l'action **SuccessInitTodos**.
+Plus besoin d'avoir le service dans le component.
+C'est maintenant l'*effect* qui, via le **LoadInitTodos**, va utiliser le service **getTodos** qui dispatchera notre liste de todos via l'action **SuccessInitTodos**.
+
+### Suite >>
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU5MTU4ODU2XX0=
+eyJoaXN0b3J5IjpbLTIxMzM2MzQ1NV19
 -->
