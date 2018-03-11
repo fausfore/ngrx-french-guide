@@ -133,6 +133,8 @@ import { selectTodos } from  'store/selectors/todo-list.selector';
 
 // [...]
 
+  
+
 this.todos$ = store.pipe(select(selectTodos$));
 
 // On remplace la fonction par le sélecteur
@@ -393,5 +395,5 @@ action.payload
 
 Voilà notre action \*\*createTodo\*\* est terminée, il reste des choses à revoir comme la gestion des ids.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NTk2MDE0NywyMTIyNzQ4MDg5XX0=
+eyJoaXN0b3J5IjpbNzEzNDM2MDQxLDIxMjI3NDgwODldfQ==
 -->
