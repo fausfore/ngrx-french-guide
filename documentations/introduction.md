@@ -129,8 +129,8 @@ import * as Store from './store';
 import * as RootReducer from './reducers';
 
 new Store(RootReducer/*,{}*/);
-// Le store prend en 1er param un objet qui contiendra l'ensemble des reducers
-// 2ème param, un objet qui est l'état du store,
+// Le store prend en 1er param : un objet qui contiendra l'ensemble des reducers,
+// le 2ème param : un objet qui est l'état du store,
 // en général les reducers ont leurs propre valeur par default donc il est inutile de le rajouter.
 ```
 
@@ -242,5 +242,5 @@ store.dispatch(new CounterActions.SetNewValue(6))
 // resultat => { counter : 6 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM0NzQ3NjE1LDM0Nzc5MDcxNl19
+eyJoaXN0b3J5IjpbLTk2MjMxOTA5OCwzNDc3OTA3MTZdfQ==
 -->
