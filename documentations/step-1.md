@@ -10,11 +10,12 @@ Pour Angular  => **NGRX**
 Il est donc inutile de créer un store *from scratch*. 
 Comme nous allons créer une application Angular, nous utiliserons **NGRX**.
 Cette librairie est une implémentation "reduxienne", qui englobe une couche de **RxJS** .
-Tout comme Angular, elle utilise les **Observables** pour communiquer la mise à jour des states dans les composants Angular.
+Tout comme Angular, elle utilise les **Observables** pour communiquer la mise à jour des états dans les composants Angular.
 
 ## Installation
 
-Pour démarrer il faut utiliser la **version 5** d'Angular. Le CLI doit être  au dessus de la version **1.6.0** e doit ie la version **5.5.6** de RxJs pour utliser les derniers opérateurs disponibles.
+Pour démarrer, il faut utiliser la **version 5** d'Angular. 
+Le CLI doit être  au dessus de la version **1.6.0** et doit la version **5.5.6** de RxJs pour utliser les derniers opérateurs disponibles.
 
 Commençons par créer un nouveau projet Angular
 ```shell
@@ -299,5 +300,5 @@ Après ces premières manipulations vous devriez voir apparaître la liste de to
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODY4MzUxMDldfQ==
+eyJoaXN0b3J5IjpbLTIwMTQ4NzQ3NjRdfQ==
 -->
