@@ -105,8 +105,8 @@ class Store {
 		const newState = {}; // objet vide
 
 		/*
-			Boucle sur toutes les clefs des reducers en leur passant l'action,
-			si l'une des conditions d'un reducer match avec le type de l'action,
+			Boucle sur toutes les clefs des reducers en leur passant l'action.
+			Si l'une des conditions d'un reducer match avec le type d'action,
 			il fera la mutation du switch.
 			Popule newState avec les nouveaux states
 		*/
@@ -243,5 +243,5 @@ store.dispatch(new CounterActions.SetNewValue(6))
 // resultat => { counter : 6 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY2NjQ1NjE2LDM0Nzc5MDcxNl19
+eyJoaXN0b3J5IjpbLTIwNjg1MjY0OTEsMzQ3NzkwNzE2XX0=
 -->
