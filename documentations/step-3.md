@@ -88,7 +88,7 @@ this.todos$ = store
 CreateTodo(todo: Todo){
 	const payload = {
 		  ...todo,
-		  userId: 1, // userId au pif
+		  userId: 1
 		  id: this.todoslength + 1
 	};
 ```
@@ -99,5 +99,5 @@ Suppression est terminée.
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-4.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MjI1MjE2MiwyMTc1Nzc1MjJdfQ==
+eyJoaXN0b3J5IjpbLTE2MDczMjU4MTEsMjE3NTc3NTIyXX0=
 -->
