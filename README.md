@@ -15,7 +15,7 @@ Ceci est un tutoriel pour débuter sur **NGRX**, vous verrez les différents con
 ### 0-7 Les actions
 ### 0-8  Action creator
 
-## [1 - De Redux à Ngrx](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-1.md)
+## [1 - De Redux à NGRX](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-1.md)
 ### 1-1 Installation
 ### 1-2 Architecture Folder
 ### 1-3 Commençons ! [ début du tutoriel ]
@@ -74,6 +74,6 @@ Une autre utilitaire intéressant [ngrx-actions](https://github.com/amcdnl/ngrx-
 *Auteur : **@Fausfore / Matias Ljubica***
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyOTY2OTQzOCwxODIwNzMxMTEwLDE1Nj
+eyJoaXN0b3J5IjpbMTkyMTg3OTk3MCwxODIwNzMxMTEwLDE1Nj
 czMzE2NDJdfQ==
 -->
