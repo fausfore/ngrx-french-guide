@@ -59,7 +59,7 @@ Avant de continuer sur nos fonctions getters **select**, un point sur le Pipe RX
 
   
 
-\*exemple de Pipe\*
+*exemple de Pipe*
 
 ```javascript
 
@@ -406,5 +406,5 @@ action.payload
 
 Voilà notre action \*\*createTodo\*\* est terminée, il reste des choses à revoir comme la gestion des ids.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MjQwNTc1OCwyMTIyNzQ4MDg5XX0=
+eyJoaXN0b3J5IjpbNDM2MDgyMzcwLDIxMjI3NDgwODldfQ==
 -->
