@@ -27,7 +27,7 @@ $ npm install @ngrx/store ou yarn add @ngrx/store
 ```
 
 ## Architecture Folder
-Voici un exemple de schéma d'arborescence pour structurer nos dossiers.
+Voici un exemple de schéma d'arborescence pour structurer nos dossiers :
 ```
 app
 │   app.component.ts
@@ -47,7 +47,7 @@ app
 
 ## Commençons ! [ début du tutoriel ]
 
-Pour changer de l'exemple du counter précédent, on va partir cette fois sur une **todolist**.
+Pour changer de l'exemple du counter précédent, on va partir sur une **todolist**.
 
 Avec Redux, uton va penser en actions **utilisateur et serveur**.
 Faisons le point de ce que représente fonctionnellement une todo :
@@ -300,5 +300,5 @@ Après ces premières manipulations vous devriez voir apparaître la liste de to
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4MTUwNDQ0OV19
+eyJoaXN0b3J5IjpbLTI4OTAxMTAxM119
 -->
