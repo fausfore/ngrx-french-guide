@@ -15,7 +15,7 @@ Tout comme Angular, elle utilise les **Observables** pour communiquer la mise à
 ## Installation
 
 Pour démarrer, il faut utiliser la **version 5** d'Angular. 
-Le CLI doit être  au dessus de la version **1.6.0** et doit donc avoir RXJS  la version **5.5.6** de RxJs pour utliser les derniers opérateurs disponibles.
+Le CLI doit être  au dessus de la version **1.6.0** et doit donc avoir RXJS en version **5.5.6** de RxJs pour utliser les derniers opérateurs disponibles.
 
 Commençons par créer un nouveau projet Angular
 ```shell
@@ -300,5 +300,5 @@ Après ces premières manipulations vous devriez voir apparaître la liste de to
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA5NDI1MDgyXX0=
+eyJoaXN0b3J5IjpbMTMyMzQ4NTEzMl19
 -->
