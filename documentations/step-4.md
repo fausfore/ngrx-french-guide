@@ -143,7 +143,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 export class TodoListModule { }
 ```
-Le **TodoListComponent** servira juste de lien entre nos deux autres components avec un autre **router-outlet**.
+Le **TodoListComponent** servira juste de lien entre nos deux autres components avec un autre **router-outlet** :
+
  *modules/todo-list/todo-list.component.ts*  
 ```javascript
 import { Component } from '@angular/core';
@@ -162,7 +163,8 @@ import { Component } from '@angular/core';
 export class TodoListComponent {}
 ```
 
-Le component qui contiendra la liste de todos.
+Le component qui contiendra la liste de todos :
+
  *modules/todo-list/components/all-todos/all-todo.component.ts*  
 ```javascript
 import { Store, select } from '@ngrx/store';
@@ -227,7 +229,7 @@ export class AllTodosComponent implements OnInit {
   createTodo(todo: Todo) {
     const payload = {
       ...todo,
-      userId: 1, // userId au pif
+      userId: 1,
       id: this.todosLength + 1
     };
     this.store.dispatch(new TodoListModule.CreateTodo(payloadtodo));
@@ -241,7 +243,7 @@ export class AllTodosComponent implements OnInit {
 }
 ```
 ## @Alias
-On remarque que dans la nouvelle architecture, le dossier **store/** commence à être vraiment loin de nos composants ce qui créé de long chemins avec tous plein de  "../" 
+On remarque que dans la nouvelle architecture, le dossier **store/** très vraiment loin de nos composants ce qui créé de long chemins avec tous plein de  "../" 
 Pour remédier à cela on utilise des **alias** via le **tsconfig.json** :
 
  *tsconfig.json*  
@@ -271,6 +273,5 @@ Plutôt cool non ! ;-)
 Si votre IDE indique une erreur redémarrer-le. Voilà le point refacto est terminé passons à la mise à jour des todos !
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzIwNjUzNzksLTEwMDk5NDA4NThdfQ
-==
+eyJoaXN0b3J5IjpbNjk0MjgzMjM3LC0xMDA5OTQwODU4XX0=
 -->
