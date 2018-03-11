@@ -350,7 +350,7 @@ case TodoListModule.ActionTypes.INIT_TODOS :
 	};
 */
 
-// \[...]
+// [...]
 
 ```
 
@@ -577,5 +577,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDgxNzM2MzZdfQ==
+eyJoaXN0b3J5IjpbMTcwMDYyNjE3Ml19
 -->
