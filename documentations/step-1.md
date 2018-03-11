@@ -296,10 +296,11 @@ export class AppComponent implements OnInit {
 }
 
 ```
-Après ces premières manipulations vous devriez voir apparaître la liste de todo.
+Après ces premières manipulations, vous devriez voir apparaître la liste de todo.
 
-### Fin de la branche step-1 
+### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-2.md)
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MjI5OTI4Nl19
+eyJoaXN0b3J5IjpbLTQ2MDgyNTJdfQ==
 -->
