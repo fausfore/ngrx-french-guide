@@ -1,26 +1,20 @@
 # Getters & create todo
 
 ### *[Début de la branche step-2]*
-Avant de continuer voici une petite explication de l'utilisation du Pipe **async** :
+oici une petite explication de l'utilisation du Pipe **async** :
 
 > Le **Pipe async** souscrit à un Observable ou une Promise et renvoie la dernière valeur qu'il a émise. Lorsqu'une nouvelle valeur est détectée, le canal asynchrone envoie un signale au component afin qu'il met à jour la donnée. 
 > Lorsque le component est détruit, **le Pipe async se désinscrit automatiquement afin d'éviter les fuites de mémoire potentielles**.
 
-Actuellement, la syntaxe de la liste de todos est :
-```html
-<li *ngFor="let todo of (todos$ | async)?.data">
-```
-
-Cependant, en changeant l'argument du **select('todos')** par une fonction, on peut obtenir une syntaxe plus simplifiée : 
+Actuellement, la syntaxe de la list
 
 ```html
 <li *ngFor="let todo of todos$ | async">
 ```
 
 ```javascript
-this.todos$ = store.pipe(select((state) => state.todos.data)); // On cible directement la propriété data
-```
-
+this.todos$ = store.pipe(select((state) => state.todos.data)); // On cible directement la propriété data``
+**.
 
 ## Le Pipe et les opérateurs RXJS
 
@@ -48,9 +42,9 @@ source$
 	 ).subscribe(console.log); // 50
 	 
 ```
-
-Pour voir un aperçu des différents opérateurs: http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html
-
+ir un 
+Pour voCeci nous offrira un aperçu des différents opérateurs: http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html
+large choix de traitement possible sur **getteurs** qui sont des observables. Maintenant revenons à notre sujet initial.
 
 ## Les States Selectors
 
@@ -72,7 +66,7 @@ export const selectTodos$ =
 ```javascript
 import { selectTodos } from 'store/selectors/todo-list.selector';
 
-// [...]
+// ...]
 
 this.todos$ = store.pipe(select(selectTodos$));
 // On remplace la fonction par le sélecteur
@@ -188,7 +182,7 @@ export namespace TodoListModule {
 }
 ```
 
-Cette action transmet un **payload** qui sera la nouvelle todo à ajouté à notre tableau.
+Cette action transmet un **payload** qui sera la nouvelle todo à ajout à notre tableau.
 
 
 */store/reducers/todo-list.reducer.ts*
@@ -208,5 +202,5 @@ Voilà notre action **createTodo** est terminée, il reste des choses à revoir 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3ODE4Mzg1OSwyMTIyNzQ4MDg5XX0=
+eyJoaXN0b3J5IjpbLTQyNTc5MzI4MSwyMTIyNzQ4MDg5XX0=
 -->
