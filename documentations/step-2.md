@@ -119,27 +119,19 @@ Grâce à la fonction **createSelector**, on pourra composer des sélecteurs à 
 import { createSelector } from  '@ngrx/store';
 
 // La première fonction amène vers le state todos
-export  const  selectTodoListState$ = (state: AppState) =>  state.todos;
+export const selectTodoListState$ = (state: AppState) =>  state.todos;
 
 // Et à partir de celle-ci, on créer une autre fonction qui renverra data
-export  const  selectTodos$ =
-createSelector(selectTodoListState$,(todos) =>  todos.data);
-
+export const selectTodos$ = createSelector(selectTodoListState$,(todos) =>  todos.data);
 ```
-
-  
 
 */app.component.ts*
 
 ```javascript
-
 import { selectTodos } from  'store/selectors/todo-list.selector';
 
-  
 
-// \[...\]
-
-  
+// [...]
 
 this.todos$ = store.pipe(select(selectTodos$));
 
@@ -401,5 +393,5 @@ action.payload
 
 Voilà notre action \*\*createTodo\*\* est terminée, il reste des choses à revoir comme la gestion des ids.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NDkzMTk2OSwyMTIyNzQ4MDg5XX0=
+eyJoaXN0b3J5IjpbLTc5NTk2MDE0NywyMTIyNzQ4MDg5XX0=
 -->
