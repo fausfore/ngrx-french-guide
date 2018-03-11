@@ -68,7 +68,7 @@ HttpClientModule
 
 ],
 
-providers: \[TodoListService\]
+providers: [TodoListService]
 
 })
 
@@ -735,5 +735,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkwMDYxNzQyXX0=
+eyJoaXN0b3J5IjpbMTA3NTE2NjM4Ml19
 -->
