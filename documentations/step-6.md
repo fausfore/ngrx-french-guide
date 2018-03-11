@@ -133,40 +133,27 @@ Et au *resolve* de la requête, passer **InitTodos** :
 *modules/todo-list/components/all-todos/all-todo.component.ts*
 
 ```javascript
-
 // [...]
-
 import { TodoListService } from  '@Services/todo-list';
-
-  
-
-// \[...\]
+// [...]
 
 export  class  AllTodosComponent {
 
-// \[...\]
+	// [...]
 
-constructor(
+	constructor(
+	// [...]
+		private  todoListService: TodoListService
+	) { // [...] }
 
-// \[...\]
-
-private  todoListService: TodoListService
-
-) { // \[...\] }
-
-ngOnInit(){
-
-this.todoListService.getTodos()
-
-.subscribe((todos) => {
-
-this.store.dispatch(new  TodoListModule.InitTodos(todos));
-
-});
-
+	ngOnInit(){
+	this.todoListService.getTodos()
+		.subscribe((todos) => {
+			this.store.dispatch(new  TodoListModule.InitTodos(todos));
+		});
 }
 
-// \[...\]
+// [...]
 
 ```
 
@@ -705,5 +692,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMDkwMzM0M119
+eyJoaXN0b3J5IjpbLTI1NjIwNTg1NV19
 -->
