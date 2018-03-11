@@ -72,7 +72,7 @@ export function todosReducer(
 // [...]      
 ```
 Une fonction sera rattachée à l'événement au clique d'une todo.
-Celle-ci redirigera vers la page **select-todo** tout en modifiant le state **selectTodo**.
+Celle-ci redirigera l'utilisateur vers la page **/select-todo** tout en modifiant le state **selectTodo** :
 
 *all-todos.ts*
 ```javascript
@@ -108,7 +108,7 @@ export class AllTodosComponent implements OnInit {
   // [...]
 }
 ```
-Reste la fonctionnalité de **UpdateTodo** qui sera dans le **SelectTodoComponent**.
+Reste la fonctionnalité de **UpdateTodo** qui sera dans le **SelectTodoComponent** :
 
  *modules/todo-list/components/select-todo/select-todo.component.ts*  
 ```javascript
@@ -187,5 +187,5 @@ export class SelectTodoComponent implements OnInit {
 Maintenant vous pouvez sélectionner et mettre à jour une todo.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk0NDE0NDQ0LC0yNTAwOTQ5NzldfQ==
+eyJoaXN0b3J5IjpbLTEwOTE2MTE5NjcsLTI1MDA5NDk3OV19
 -->
