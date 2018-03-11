@@ -261,7 +261,7 @@ Pour y remédier, utilisez des **alias** via le **tsconfig.json** :
   }
 }
 ```
-Avec cette configuration, écrire :
+Avec cette configuration, plus besoin de "../" :
 
   *modules/todo-list/components/all-todos/all-todo.component.ts*  
 ```javascript
@@ -269,10 +269,9 @@ import { AppState } from '@StoreConfig';
 import { selectTodos$ } from '@Selectors/todo-list.selector';
 import { TodoListModule } from '@Actions/todo-list.action';
 ```
-Plutôt cool non ! ;-)
-Si votre IDE indique une erreur redémarrer-le. Voilà le point refacto est terminé passons à la mise à jour des todos !
+Si votre IDE indique une erreur redémarrer-le
+Le point refacto est terminé passons à la mise à jour des todos !
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjU2NDg1OTAsLTEwMDk5NDA4NThdfQ
-==
+eyJoaXN0b3J5IjpbNzM4NDQwOTcxLC0xMDA5OTQwODU4XX0=
 -->
