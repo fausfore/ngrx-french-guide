@@ -63,11 +63,12 @@ Ajoutons la fonction de suppression :
 
 Jusqu'à présent, à chaque fois que l'on crée une todo, on lui donnait un id "8" par défaut. Nous allons maintenant dynamiser l'attribution d'id.
 
-2 possibilités : 
-- Calculer la longueur du tableau de todo.
-- Utiliser des id uniques via un générateur comme [uuid](https://www.npmjs.com/package/uuid).
+Deux possibilités : 
 
-Nous utiliserons la première option.
+-1 Calculer la longueur du tableau de todo.
+-2 Utiliser des id uniques via un générateur comme [uuid](https://www.npmjs.com/package/uuid).
+
+Première option :
 
 */app.component.ts*
 ```javascript
@@ -96,5 +97,5 @@ CreateTodo(todo: Todo){
 Voilà la suppression est terminée  !
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MDU1NzYzMSwyMTc1Nzc1MjJdfQ==
+eyJoaXN0b3J5IjpbMTUzNDQ5ODAzOSwyMTc1Nzc1MjJdfQ==
 -->
