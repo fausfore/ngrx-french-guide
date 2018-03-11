@@ -454,10 +454,10 @@ import { selectTodoListState$, selectTodosLoading$, selectTodos$ } from  '@Selec
 
 @Component({
 template:  `
-<!--
-Ajoutez votre loader
--->
-`
+	<!--
+	Ajoutez votre loader
+	-->
+	`
 })
 
   
@@ -514,5 +514,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5OTg3Mjc4XX0=
+eyJoaXN0b3J5IjpbLTE5OTUxMjAwNjJdfQ==
 -->
