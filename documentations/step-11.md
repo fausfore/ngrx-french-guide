@@ -2,7 +2,7 @@
 
 ### *[Début de la branche step-11]*
 Dans notre code, on remarque que les actions d'erreurs réalisent la même tâche.
-Dans ce cas on pourrait n'avoir qu'une action et faire du ménage dans le code.
+Dans ce cas, il n'y a qu'une seule action à définir :
 
 *todo-list.action.ts*
 ```javascript
@@ -299,5 +299,5 @@ Voilà le système de log est fonctionnel.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM2OTE0NzkwLC05NTI5NTg4OF19
+eyJoaXN0b3J5IjpbMTYxMjg2ODYzOCwtOTUyOTU4ODhdfQ==
 -->
