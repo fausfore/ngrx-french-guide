@@ -273,11 +273,8 @@ SUCCESS_INIT_TODOS = '[todoList] Success Init Todos',
 ERROR_INIT_TODOS = '[todoList] Error Init Todos',
 // a supprimer INIT_TODOS = '\[todoList\] Init Todos',
 }
-
-// [...\]
-
+// [...]
 /*
-
 \*\* A supprimer
 
 export class InitTodos {
@@ -633,5 +630,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM2NDM1NDg3XX0=
+eyJoaXN0b3J5IjpbLTIwNTgzOTcxNjNdfQ==
 -->
