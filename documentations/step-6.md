@@ -103,7 +103,6 @@ Plus simplement pour les *imports* :
 	"compilerOptions": {
 	"baseUrl": "./src",
 	"paths": {
-		// [...]
 		"@Services/*": ["app/services/*"],
 		"@Env": ["environments/environment.ts"],
 		}
@@ -118,7 +117,7 @@ Dans ce fichier, placer les paramètres d'*API* comme l'*url* :
 
 *environment.ts*
 
-```json
+```javascript
 export const environment = {
 	production: false,
 	apiUrl: 'http://localhost:3000'
@@ -246,7 +245,6 @@ Alias :
 	"compilerOptions": {
 	"baseUrl": "./src",
 	"paths": {
-		// [...]
 		"@Effects/*": ["app/store/effects/*"],
 		}
 	}
@@ -499,5 +497,5 @@ C'est maintenant l'*effect* qui, via le **LoadInitTodos**, va utiliser le servic
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MDY4NTE5NF19
+eyJoaXN0b3J5IjpbMjc1Mjc3MTM1XX0=
 -->
