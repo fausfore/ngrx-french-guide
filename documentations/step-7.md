@@ -14,7 +14,7 @@ Avec un **Guard Angular**, le simple fait d'aller sur l'url */todo-list* nous pe
 ```bash
 ng g guard guards/is-todos-loaded/is-todos-loaded
 ```
-Le déclarer dans le **AppModule** :
+Déclarer dans le **AppModule** :
 
 ```javascript
 // [...]
@@ -69,7 +69,7 @@ export class IsTodosLoadedGuard implements CanActivate {
   }
 }
 ```
-Egalement dans le fichier de routing :
+Ajouter le  *Guard* dans le fichier de *routing* :
 
  *app.routing.ts*  
 ```javascript
@@ -83,7 +83,7 @@ import { IsTodosLoadedGuard } from './guards/is-todos-loaded/is-todos-loaded.gua
 		    },
 // [...]
 ```
-Et pour finir supprimer le **LoadInitTodos** dans le component :
+Supprimer le **LoadInitTodos** dans le component :
 
 ```javascript
 [...]
@@ -129,5 +129,5 @@ export class AppModule { }
 
 L'outils vous permettra de voir chaque changement de state, de conserver un historique, de faire export de vous states et inversement.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU4NzM2MzYzLDc4NDIyMTY0OF19
+eyJoaXN0b3J5IjpbMTQ1NTg2Mzc1OSw3ODQyMjE2NDhdfQ==
 -->
