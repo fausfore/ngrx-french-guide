@@ -26,7 +26,7 @@ Dans le dossier, rajouter **NGRX en version 5.0 et plus** :
 $ npm install @ngrx/store ou yarn add @ngrx/store
 ```
 
-## Architecture Folder
+## Architecture
 Voici un exemple de schéma d'arborescence pour structurer nos dossiers :
 ```
 app
@@ -302,5 +302,5 @@ Après ces premières manipulations, vous devriez voir apparaître la liste de t
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MDgyNTJdfQ==
+eyJoaXN0b3J5IjpbLTQxOTAyNjY1Nl19
 -->
