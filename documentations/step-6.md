@@ -462,23 +462,15 @@ template:  `
 
 // [...]
 export  class  AllTodosComponent {
-
 public  todosLoading: Observable<boolean>;
-
-// [...\]
+// [...]
 
 constructor(
-
-// \[...\]
-
+// [...]
 // a supprimer private todoListService: TodoListService
-
 ) {
-
-// \[...\]
-
+// [...]
 this.todosLoading = store.pipe(select(selectTodosLoading$));
-
 }
 
 ngOnInit(){
@@ -511,5 +503,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDE1MDU0MTZdfQ==
+eyJoaXN0b3J5IjpbLTUwODgwNzM4OF19
 -->
