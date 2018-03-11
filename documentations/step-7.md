@@ -10,7 +10,7 @@ A partir de la branche **step-6**, vous pouvez obtenir le style réalisé à la 
 Actuellement, c'est **AllTodosComponent** qui déclenche le chargement des todos.
 Avec un **Guard Angular**, le simple fait d'aller sur l'url */todo-list* nous permettra de vérifier si elle est chargée ( grâce à la propriété *loaded* ) et dans le cas contraire, il déclenchera l'action **LoadInitTodos**.
 
-*Générer un guard* :
+*Générer un Guard* :
 ```bash
 ng g guard guards/is-todos-loaded/is-todos-loaded
 ```
@@ -129,5 +129,5 @@ export class AppModule { }
 
 L'outils vous permettra de voir chaque changement de state, de conserver un historique, de faire export de vous states et inversement.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY2ODY3OTUsNzg0MjIxNjQ4XX0=
+eyJoaXN0b3J5IjpbMzU4NzM2MzYzLDc4NDIyMTY0OF19
 -->
