@@ -3,7 +3,7 @@
 ### *[Début de la branche step-8]*
 
 Mettre à jour notre action de **CreateTodo** pour inclure une requête serveur de la même façon que **InitTodos**.
- Il n'y aura pas une action **CREATE_TODO** , mais trois :
+ Il n'y aura pas une action **CREATE_TODO**, mais trois :
 - **LOAD_CREATE_TODO** ,
 - **SUCCESS_CREATE_TODO**,
  - **ERROR_CREATE_TODO**.
@@ -168,6 +168,6 @@ createTodo(todo: Todo) {
 ```
 Maintenant l'action de createTodo est connecté avec le serveur.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTU5MTg4MTAsLTE1MDk5NzQ0OTRdfQ
+eyJoaXN0b3J5IjpbLTE2MDYzMjg2NDQsLTE1MDk5NzQ0OTRdfQ
 ==
 -->
