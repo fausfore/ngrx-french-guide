@@ -140,7 +140,7 @@ export class TodoListEffects {
 }
 ```
 Changer l'action lors du clique.
-Ainsi on peut retirer la notion d'id car le serveur définira son propre id à la todo :
+Ainsi, on peut retirer la notion d'id car le serveur définira son propre id à la todo :
 
 *all-todos.ts*
 ```javascript
@@ -168,6 +168,5 @@ createTodo(todo: Todo) {
 ```
 Maintenant l'action de createTodo est connecté avec le serveur.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzYyNDY4NjksLTE1MDk5NzQ0OTRdfQ
-==
+eyJoaXN0b3J5IjpbNjUyNDQ2MjczLC0xNTA5OTc0NDk0XX0=
 -->
