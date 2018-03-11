@@ -200,7 +200,7 @@ const action = {
 ```
 Cette propriété donne la possibilité au reducer de savoir quelle mutation appliquer sur l'état actuel.
 Le nommage du type doit être explicite afin de garder une bonne traçabilité lors d'un changement.
-Une meilleure pratique consiste à utiliser des constantes qui permettent d'écrire des types d'action plus lisibles.
+Une meilleure pratique consiste à utiliser des constantes qui permettent d'écrire des types d'actions plus lisibles.
 
 ```javascript
 const SET_NEW_VALUE = '[counter] Set new value';
@@ -244,5 +244,5 @@ store.dispatch(new CounterActions.SetNewValue(6))
 // resultat => { counter : 6 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxOTUxOTA1NCwzNDc3OTA3MTZdfQ==
+eyJoaXN0b3J5IjpbMTU1ODY2MzU0NywzNDc3OTA3MTZdfQ==
 -->
