@@ -270,8 +270,8 @@ import { selectTodos$ } from '@Selectors/todo-list.selector';
 import { TodoListModule } from '@Actions/todo-list.action';
 ```
 Si votre IDE indique une erreur, redémarrer-le.
-Le point refacto est terminé passons à la mise à jour des todos !
+Le point refacto est terminé passons à la mise à jour des todos.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NTIxNjEwOSwtMTAwOTk0MDg1OF19
+eyJoaXN0b3J5IjpbMjQ3NjM1NzkwLC0xMDA5OTQwODU4XX0=
 -->
