@@ -176,9 +176,10 @@ const counterReducer = (state = initialState, action) => {
 };
 ```
 Les reducers ne fonctionnent qu'avec des fonctions pures.
-Ils ne doivent **jamais** modifier directement l'état mais en renvoyer un nouveau à partir de celui-ci.
+Ils ne doivent **jamais** modifier directement l'état, mais en renvoyer un nouveau à partir de celui-ci.
+
 ## Le schéma
-Les reducers encapsulent les différentes logiques de mutation et le store contient le résultat de chaque reducer comme deux objets miroir synchronisés à chaque action.
+Les reducers encapsulent les différentes logiques de mutation, et le store contient le résultat de chaque reducer comme deux objets miroir synchronisés à chaque action.
 ```javascript
 const store = {
 	counter: 0
@@ -243,5 +244,5 @@ store.dispatch(new CounterActions.SetNewValue(6))
 // resultat => { counter : 6 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0MDY0NTYxMywzNDc3OTA3MTZdfQ==
+eyJoaXN0b3J5IjpbMTQ0ODE5MDIzNSwzNDc3OTA3MTZdfQ==
 -->
