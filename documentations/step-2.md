@@ -189,9 +189,6 @@ this.todoForm = fb.group({
 	title: \['', Validators.required\],
 	completed: \[false, Validators\]
 });
-
-  
-
 }
 
   
@@ -339,5 +336,5 @@ action.payload
 
 Voilà notre action \*\*createTodo\*\* est terminée, il reste des choses à revoir comme la gestion des ids.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NTMzOTA0LDIxMjI3NDgwODldfQ==
+eyJoaXN0b3J5IjpbLTc1NzcyMzk2MiwyMTIyNzQ4MDg5XX0=
 -->
