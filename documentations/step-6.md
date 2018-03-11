@@ -306,7 +306,7 @@ export  type  Actions = DeleteTodo
 
 ```
 
-Nous avons deux étapes lors d'un **LoadinitTodos**, on peut faire un switch sur les propriétés dans le reducer et commencer à jouer avec les booleans **loading** & **loaded** .
+Nous avons deux étapes lors d'un **LoadinitTodos**, on peut donc faire un switch sur les propriétés dans le reducer et commencer à jouer avec les booléens **loading** & **loaded** .
 
 Ce détail permettra de changer votre template lors du chargement des todos en ajoutant un loader et en desactivant les boutons durant la requête de chargement.
 
@@ -613,5 +613,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4NDA4NzAxN119
+eyJoaXN0b3J5IjpbLTQ3Mzg0ODUxNV19
 -->
