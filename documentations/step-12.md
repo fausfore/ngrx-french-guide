@@ -5,7 +5,7 @@
 Cette partie fait un focus sur l'optimisation de performance.
 
 Dans le cas où notre *todo-list* contient des milliers de *todos*, une baisse de performance aura lieu sur chaque action car elles réalisent une itération sur notre tableau.
-Chaque action réalise une itération sur notre liste, 
+Chaque action réalise une itération sur notre liste, dans le cas où celle-ci contient des milliers de *todos*, une baisse de performance aura lieu.
 
 Et si notre todo-list ne soit plus un tableau de todo mais plutôt une **entité** de todo, lors d'une action on ne fera pas une itération dans un tableau, à la place on lui passera directement une clef.
 
@@ -183,6 +183,6 @@ import {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwOTAwODAzMiwxMjA2NjgxNDg1LC0yMD
-E4NzA5NzQ0XX0=
+eyJoaXN0b3J5IjpbLTEwNTg2NjcyNTcsMTIwNjY4MTQ4NSwtMj
+AxODcwOTc0NF19
 -->
