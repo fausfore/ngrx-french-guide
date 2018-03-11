@@ -196,7 +196,7 @@ export  function  todosReducer(
 
 ## Introduction des Effects
 
-On charge bien les todos mais avec NGRX il est possible d'aller plus loin en gérant également la partie \*\*asynchrone\*\* pour le moment impossible dans le reducer **(synchrone only)** .
+Les todos sont bien chargées mais avec NGRX il est possible d'aller plus loin en gérant également la partie **asynchrone** .
 
   
 
@@ -671,5 +671,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUwNDAwNzYzXX0=
+eyJoaXN0b3J5IjpbMTM2NDE4OTE5M119
 -->
