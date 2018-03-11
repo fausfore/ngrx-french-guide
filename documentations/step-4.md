@@ -273,6 +273,8 @@ Si votre IDE indique une erreur, redémarrer-le.
 Le point refacto est terminé.
 Passons à la mise à jour des todos.
 
+### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-5.md)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY0OTQyNzk4LC0xMDA5OTQwODU4XX0=
+eyJoaXN0b3J5IjpbLTc2OTY1MDA5NiwtMTAwOTk0MDg1OF19
 -->
