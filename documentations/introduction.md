@@ -32,11 +32,11 @@ Il conserve la nouvelle instance d’une donnée dans un ou plusieurs stores qui
   <img src="https://julienrenaux.fr/talks-src/2016/redux-angular2/img/flux-simple-f8-diagram-with-client-action-1300w_stores_views.png">
 </p>
 
-L'architecture de Flux ci-dessus peut contenir plusieurs structures de données indépendantes appelées **Store**
-Chaque action passe par le dispatcher qui la transmet au store ciblé par l'action.   
+L'architecture de Flux ci-dessus peut contenir plusieurs structures de données indépendantes appelées **Store**.
+Chaque action passe par le dispatcher, qui la transmet au store ciblé par l'action.   
 
 ## Pourquoi Redux alors ?
-Redux est une version moins compliqué de Flux, il s'en distingue par plusieurs raisons:
+Redux est une version moins complexe de Flux. Il s'en distingue par plusieurs raisons:
 
 - il y a qu’un store donc une seule source de donnée, 
 - des états immuables / immutables
@@ -244,5 +244,5 @@ store.dispatch(new CounterActions.SetNewValue(6))
 // resultat => { counter : 6 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NzI4NzA0NywzNDc3OTA3MTZdfQ==
+eyJoaXN0b3J5IjpbMTg4OTk1MTAwMSwzNDc3OTA3MTZdfQ==
 -->
