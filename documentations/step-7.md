@@ -8,9 +8,7 @@ A partir de la branche **step-6**, vous pouvez obtenir le style réalisé à la 
 ### *[Début de la branche step-7]*
 
 Actuellement, c'est **AllTodosComponent** qui déclenche le chargement des todos.
-Pour 
-Dans certains cas, on voudrait charger cette liste sans attendre le **OnInit** du component.
- Avec un **Guard Angular**, le simple fait d'aller sur l'url */todo-list* nous permettra de vérifier si la liste est chargée ( grâce à la propriété *loaded* ) et dans le cas ou il n'y a pas de données, il déclenchera l'action **LoadInitTodos**.
+Avec un **Guard Angular**, le simple fait d'aller sur l'url */todo-list* nous permettra de vérifier si cette liste est chargée ( grâce à la propriété *loaded* ) et dans le cas où il n'y a pas de données, il déclenchera l'action **LoadInitTodos**.
 
 *Générer un guard*
 ```bash
@@ -131,5 +129,5 @@ export class AppModule { }
 
 L'outils vous permettra de voir chaque changement de state, de conserver un historique, de faire export de vous states et inversement.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNzg3Mzg4LDc4NDIyMTY0OF19
+eyJoaXN0b3J5IjpbLTE1MDQ5MjQ2MTUsNzg0MjIxNjQ4XX0=
 -->
