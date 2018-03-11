@@ -268,15 +268,11 @@ Cette action transmet un **payload** qui sera la nouvelle todo à ajouter à not
 */store/reducers/todo-list.reducer.ts*
 
 ```javascript
-
-// [...\]
-
+// [...]
 case  TodoListModule.ActionTypes.CREATE_TODO:
 
 return {
-
 ...state,
-
 data: \[
 
 ...state.data,
@@ -293,5 +289,5 @@ action.payload
 
 Voilà notre action \*\*createTodo\*\* est terminée, il reste des choses à revoir comme la gestion des ids.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzQ4NDM4MTcsMjEyMjc0ODA4OV19
+eyJoaXN0b3J5IjpbNDE5NTYwODE5LDIxMjI3NDgwODldfQ==
 -->
