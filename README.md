@@ -46,7 +46,7 @@ Ceci est un tutoriel pour débuter sur **NGRX**, vous verrez les différents con
 
 ## [10 - Update Todo v2](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-10.md)
 
-## [11 - Les action de type ERROR](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-11.md)
+## [11 - Les actions de type ERROR](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-11.md)
 ### 11-1 Système de logs
 
 ## [12 - @Ngrx/Entity](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-12.md)
@@ -74,6 +74,6 @@ Une autre utilitaire intéressant [ngrx-actions](https://github.com/amcdnl/ngrx-
 *Auteur : **@Fausfore / Matias Ljubica***
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2NDQ3NDM4MSwxODIwNzMxMTEwLDE1Nj
+eyJoaXN0b3J5IjpbMTc0NDcwODIyNCwxODIwNzMxMTEwLDE1Nj
 czMzE2NDJdfQ==
 -->
