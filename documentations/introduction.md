@@ -205,7 +205,7 @@ Une meilleure pratique consiste à utiliser des constantes qui permettent d'écr
 ```javascript
 const SET_NEW_VALUE = '[counter] Set new value';
 ```
-Comme il s'agit d'un objet on peut lui rajouter autant de propriétés que l'on souhaite :
+Comme il s'agit d'un objet, on peut lui rajouter autant de propriétés que l'on souhaite :
 
 ```javascript
 import { SET_NEW_VALUE } from './constants';
@@ -217,7 +217,7 @@ const action = {
 };
 ```
 ## Action creator
-Il existe une manière différente et préférable de réaliser une action, c'est d'utiliser une classe qui permettra de générer notre objet d'action.
+Il existe une manière différente et préférable de réaliser une action, celle d'utiliser une classe qui permettra de générer notre objet d'action.
 
 ```javascript
 import { SET_NEW_VALUE } from './constants';
@@ -244,5 +244,5 @@ store.dispatch(new CounterActions.SetNewValue(6))
 // resultat => { counter : 6 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1ODY2MzU0NywzNDc3OTA3MTZdfQ==
+eyJoaXN0b3J5IjpbLTExMDY3NDA4NDYsMzQ3NzkwNzE2XX0=
 -->
