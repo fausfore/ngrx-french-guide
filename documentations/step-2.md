@@ -156,24 +156,24 @@ import { selectTodos$ } from  './store/selectors/todo-list.selector';
 
 @Component({
 selector:  'app-root',
-styleUrls: \['./app.component.scss'\],
+styleUrls: ['./app.component.scss'\],
 template:  `
-<h1>la todolist redux style !</h1>
-<form \[formGroup\]="todoForm" (ngSubmit)="createTodo(todoForm.value)">
-<label>Titre :</label>
-<input type="text" formControlName="title" placeholder="Title"/>
-<label>Est-elle terminé ? :</label>
-<input type="checkbox" formControlName="completed"/>
-<button>Créer</button>
-</form>
-<ul>
-<li *ngFor="let todo of todos$ | async">
-<label>{{ todo.title }}</label>
-<input type="checkbox" \[ngModel\]="todo.completed"/>
-<button>Supprimer</button>
-</li>
-</ul>
-`
+	<h1>la todolist redux style !</h1>
+	<form \[formGroup\]="todoForm" (ngSubmit)="createTodo(todoForm.value)">
+		<label>Titre :</label>
+		<input type="text" formControlName="title" placeholder="Title"/>
+		<label>Est-elle terminé ? :</label>
+		<input type="checkbox" formControlName="completed"/>
+		<button>Créer</button>
+	</form>
+	<ul>
+		<li *ngFor="let todo of todos$ | async">
+			<label>{{ todo.title }}</label>
+			<input type="checkbox" \[ngModel\]="todo.completed"/>
+			<button>Supprimer</button>
+		</li>
+	</ul>
+	`
 })
 export  class  AppComponent  implements  OnInit {
 
@@ -181,46 +181,31 @@ todos$: Observable<Todo\[\]>;
 public  todoForm: FormGroup;
 
 constructor(
-private  store: Store<AppState>,
-@Inject(FormBuilder) fb: FormBuilder
+	private  store: Store<AppState>,
+	@Inject(FormBuilder) fb: FormBuilder
 ) {
-this.todos$ = store.Pipe(select(selectTodos$));
-this.todoForm = fb.group({
-	title: \['', Validators.required\],
-	completed: \[false, Validators\]
-});
+	this.todos$ = store.Pipe(select(selectTodos$));
+	this.todoForm = fb.group({
+		title: \['', Validators.required\],
+		completed: \[false, Validators\]
+	});
 }
 
-  
-
 createTodo(todo: Todo) {
-
 const  payload = {
-
-...todo,
-
-userId:  1, // userId au pif
-
-id:  8  // id au pif
-
+	...todo,
+	userId:  1, // userId au pif
+	id:  8  // id au pif
 };
 
 this.store.dispatch(new  TodoListModule.CreateTodo(payload));
-
-this.todoForm.reset();
-
+	this.todoForm.reset();
 }
-
-  
 
 ngOnInit() {
-
-this.store.dispatch(new  TodoListModule.InitTodos());
-
+	this.store.dispatch(new  TodoListModule.InitTodos());
 }
-
-  
-
+ 
 }
 
 ```
@@ -336,5 +321,5 @@ action.payload
 
 Voilà notre action \*\*createTodo\*\* est terminée, il reste des choses à revoir comme la gestion des ids.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NzcyMzk2MiwyMTIyNzQ4MDg5XX0=
+eyJoaXN0b3J5IjpbLTIxMjA1ODYzODIsMjEyMjc0ODA4OV19
 -->
