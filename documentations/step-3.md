@@ -28,7 +28,7 @@ export namespace TodoListModule {
         | DeleteTodo;
 }
 ```
-On va se servir de **filter** pour renvoyer un nouveau tableau sans notre todo.
+Se servir de **filter** pour renvoyer un nouveau tableau sans notre todo :
 
 */store/reducers/todo-list.reducer.ts*
 ```javascript
@@ -40,7 +40,7 @@ On va se servir de **filter** pour renvoyer un nouveau tableau sans notre todo.
         };
 	// [...]
 ```
-Ajoutons la fonction de suppression.
+Ajoutons la fonction de suppression :
 
 */app.component.ts*
 ```javascript
@@ -95,5 +95,5 @@ CreateTodo(todo: Todo){
 Voilà la suppression est terminée  !
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTIwMDQ0NDUsMjE3NTc3NTIyXX0=
+eyJoaXN0b3J5IjpbMTExNTQyNDYzMSwyMTc1Nzc1MjJdfQ==
 -->
