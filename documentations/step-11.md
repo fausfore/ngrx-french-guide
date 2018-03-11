@@ -242,7 +242,8 @@ Créer un sélecteur pour le *log* :
 export const selectTodosErrors$ =
     createSelector(selectTodoListState$, (todos) => todos.logs);
 ```
-Maintenant on installe le module [ngx-toastr](https://github.com/scttcper/ngx-toastr) et une fois que vous aurez tout bien installer allez dans le **TodoListComponent**
+Installer le module [ngx-toastr](https://github.com/scttcper/ngx-toastr).
+ Une fois que tout sera installer, aller dans le **TodoListComponent** :
 
 ```javascript
 import { Component } from '@angular/core';
@@ -299,5 +300,5 @@ Voilà le système de log est fonctionnel.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNjk1MTUzMCwtOTUyOTU4ODhdfQ==
+eyJoaXN0b3J5IjpbLTEyMzEyNDkxNjAsLTk1Mjk1ODg4XX0=
 -->
