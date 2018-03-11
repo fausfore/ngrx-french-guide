@@ -11,7 +11,7 @@ Voici une petite explication de l'utilisation du Pipe **async** :
 
 > Le **Pipe async** souscrit à un Observable ou une Promise et renvoie la dernière valeur qu'il a émise. Lorsqu'une nouvelle valeur est détectée, le canal asynchrone envoie un signale au component afin qu'il mette à jour la donnée.
 
-> Lorsque le component est détruit, **le Pipe async se désinscrit automatiquement afin d'éviter les fuites de mémoire potentielles\*\*.
+> Lorsque le component est détruit, **le Pipe async se désinscrit automatiquement afin d'éviter les fuites de mémoire potentielles**.
 
   
 
@@ -406,5 +406,5 @@ action.payload
 
 Voilà notre action \*\*createTodo\*\* est terminée, il reste des choses à revoir comme la gestion des ids.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NzI2Nzg0NCwyMTIyNzQ4MDg5XX0=
+eyJoaXN0b3J5IjpbLTEwNzAwNjk4OTIsMjEyMjc0ODA4OV19
 -->
