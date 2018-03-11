@@ -137,15 +137,10 @@ this.todos$ = store.pipe(select(selectTodos$));
 
 ```
 
-  
+## Créer une todo
 
-\## Créer une todo
-
-  
-
-On va utiliser un formulaire pour créer une todo grâce au \*\*FormsBuilder\*\* d'Angular, la fonction \*\*createTodo()\*\* renverra la future action de création dans le reducer.
-
-  
+Utiliser un formulaire pour créer une todo grâce au **FormsBuilder** d'Angular. 
+La fonction **createTodo** renverra la future action de création dans le reducer.
 
 */app.component.ts*
 
@@ -390,5 +385,5 @@ action.payload
 
 Voilà notre action \*\*createTodo\*\* est terminée, il reste des choses à revoir comme la gestion des ids.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjM0NTY4NjUsMjEyMjc0ODA4OV19
+eyJoaXN0b3J5IjpbMTU0ODM1MjgzMiwyMTIyNzQ4MDg5XX0=
 -->
