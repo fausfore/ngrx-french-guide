@@ -354,7 +354,7 @@ case TodoListModule.ActionTypes.INIT_TODOS :
 
 ```
 
-pour écrire notre premier **Effect**.C'est un **Observable** donc on peut utiliser tous ce que peut nous fournir RXJS pour faire du traitement, combiner des states etc...
+pour écrire notre premier **Effect** qui est un **Observable** donc on peut utiliser tous ce que peut nous fournir RXJS pour faire du traitement, combiner des states etc...
 
 \*store/effects/todo-list.effect.ts\*
 
@@ -569,5 +569,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwODE2NDI0OV19
+eyJoaXN0b3J5IjpbLTE2MzIwNTUwODhdfQ==
 -->
