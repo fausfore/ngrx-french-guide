@@ -51,13 +51,12 @@ Grâce à la programmation fonctionnelle, le dispatcher est complètement retir�
 | Flux| Redux|
 |--|--|
 | Les stores contiennent les états et leurs logiques de mutations|  Le store et leurs logiques de mutation sont séparés|
-|Plusieurs stores|Un seule Store|
+|Plusieurs stores|Un seul store|
 |Stores indépendants|Store unique avec reducers|
 |Dispatcher|Pas de dispatcher|
 |Etats mutables|Etats immuables|
 
 ## Le Store, la base de tout
-Qu'est-ce qu'est le store au final ?
 Le store est une fonction qui contient l'état des reducers, un getter, une fonction de dispatch et des subscribers.
 
 Voici un exemple de store *from scratch simplifié* :
@@ -244,5 +243,5 @@ store.dispatch(new CounterActions.SetNewValue(6))
 // resultat => { counter : 6 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1ODk0MTM4MCwzNDc3OTA3MTZdfQ==
+eyJoaXN0b3J5IjpbMzE2NzYxNTQ5LDM0Nzc5MDcxNl19
 -->
