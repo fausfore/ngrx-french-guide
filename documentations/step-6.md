@@ -35,23 +35,19 @@ src
 
 ```
 
-Entrer sur le terminal :
+Entrer dans le terminal :
 
 ```bash
-
 json-server path-of-json
-
 ```
 
-Allez sur \*\*localhost:3000/todos\*\* et vous avez une API prête à emploi.
+Allez sur **localhost:3000/todos** et vous avez une API prête à l'emploi.
 
-  
 ## Get Todos
 
 On va générer un service depuis la console :
 
 ```bash
-
 ng g service services/todo-list
 
 ```
@@ -749,5 +745,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzY1OTY5MDhdfQ==
+eyJoaXN0b3J5IjpbNjk2MDgwOTE5XX0=
 -->
