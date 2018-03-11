@@ -106,7 +106,9 @@ Pour voir un aperçu des différents opérateurs: http://reactivex.io/rxjs/class
 
   
 
-La fonction **select** de NGRX peut prendre une fonction en paramètre : on peut déporter cette logique et la stocker dans un fichier dédié et grâce à la fonction **createSelector** on pourra composer des sélecteurs à partir d'autres sélecteurs.
+La fonction **select** de NGRX peut prendre une fonction en paramètre.
+On peut donc déporter cette logique et la stocker dans un fichier dédié.
+Grâce à la fonction **createSelector** on pourra composer des sélecteurs à partir d'autres sélecteurs.
 
   
 
@@ -406,5 +408,5 @@ action.payload
 
 Voilà notre action \*\*createTodo\*\* est terminée, il reste des choses à revoir comme la gestion des ids.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NzY0NTIyMiwyMTIyNzQ4MDg5XX0=
+eyJoaXN0b3J5IjpbMzkzNzE2NDExLDIxMjI3NDgwODldfQ==
 -->
