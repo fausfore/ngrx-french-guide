@@ -421,37 +421,28 @@ export  const  selectTodosLoaded$ =
 
   
 
-Importer le module **EffectsModule** dans le module principal en lui passant notre tableau d'effects :
+Importer le module **EffectsModule** dans le module principal en lui passant notre tableau d'*effect* :
 
 ```javascript
-
-// \[...\]
+// [...]
 
 import { EffectsModule } from  '@NGRX/effects';
-
 import { appEffects, getReducers, REDUCER_TOKEN } from  './store';
-
-  
 
 @NgModule({
 
-// \[...\]
+// [...]
 
-imports: \[
+imports: [
+	// [...]
+	EffectsModule.forRoot(appEffects),
 
-// \[...\]
-
-EffectsModule.forRoot(appEffects),
-
-\],
-
-// \[...\]
-
+],
+// [...]
 export class AppModule { }
-
 ```
 
-\*app.module.ts\*
+*app.module.ts*
 
   
   
@@ -536,5 +527,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NDgwMjY2M119
+eyJoaXN0b3J5IjpbMTk0MDYzNzM1NF19
 -->
