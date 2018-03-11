@@ -205,11 +205,11 @@ Il vous fournit des **listenners d'actions** qui peuvent effectuer des fonctions
 <img  src="https://cdn-images-1.medium.com/max/1600/1*vSadxKWVoAirhVCa8fxiNw.png">
 </p>
 
-Avec un **Effect**, on n'y aura pas une seule action **InitTodos**, mais 3 actions :
+Avec un **Effect**, il n'y aura pas une action **InitTodos**, mais trois :
 
- - **LoadInitTodos** qui chargera les données de l'api et renverra à son tour 2 cas différents possibles :
--  **SuccessInitTodos** : réponse serveur positive
--  **ErrorInitTodos** : réponse serveur négative.
+ - **LoadInitTodos** :  chargera les données de l'API et renverra à son tour 2 cas différents possibles;
+-  **SuccessInitTodos** : réponse serveur positive;
+-  **ErrorInitTodos** : réponse serveur négative;
 
   
 
@@ -662,5 +662,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg4MDg5NDldfQ==
+eyJoaXN0b3J5IjpbLTEwMDUyOTQwMzhdfQ==
 -->
