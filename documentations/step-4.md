@@ -74,13 +74,14 @@ Il ne reste que la balise **router-outlet** :
 import { Component } from '@angular/core';
 
 @Component({
-	// ...reste
+	// [...]
   template: `<router-outlet></router-outlet>`
 })
 
 export class AppComponent{ }
 ```
-Le fichier de routing pour le module **TodoList**.
+Le fichier du *routing* pour le module **TodoList** :
+
  *modules/todo-list/todo-list.routing.ts*  
 ```javascript
 import { Route, RouterModule } from '@angular/router';
@@ -118,7 +119,8 @@ const routes: Route[] = [
 
 export const todoListRouting: ModuleWithProviders = RouterModule.forChild(routes);
 ```
-Et le fichier du module **TodoList**.
+Et le fichier du module **TodoList** :
+
  *modules/todo-list/todo-list.module.ts*  
 ```javascript
 import { NgModule } from '@angular/core';
@@ -141,7 +143,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 export class TodoListModule { }
 ```
-le **TodoListComponent** servira juste de lien entre nos deux autres components avec un autre **router-outlet**.
+e **TodoListComponent** servira juste de lien entre nos deux autres components avec un autre **router-outlet**.
  *modules/todo-list/todo-list.component.ts*  
 ```javascript
 import { Component } from '@angular/core';
@@ -269,5 +271,5 @@ Plutôt cool non ! ;-)
 Si votre IDE indique une erreur redémarrer-le. Voilà le point refacto est terminé passons à la mise à jour des todos !
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNTc3NzE2NiwtMTAwOTk0MDg1OF19
+eyJoaXN0b3J5IjpbNzM3MzAxMTkzLC0xMDA5OTQwODU4XX0=
 -->
