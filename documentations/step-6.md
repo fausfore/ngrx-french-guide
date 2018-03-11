@@ -30,7 +30,7 @@ src
 └───app
 |
 └───server
-
+|
 └───db.json
 
 ```
@@ -762,5 +762,5 @@ this.store.dispatch(new  TodoListModule.LoadInitTodos())
 
 On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect qui, via le \*\*LoadInitTodos\*\*, va utiliser le service \*\*getTodos\*\* qui dispatchera notre liste de todos via l'action \*\*SuccessInitTodos\*\*.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjUyODcyMThdfQ==
+eyJoaXN0b3J5IjpbMTQxNTQ5MzY1MF19
 -->
