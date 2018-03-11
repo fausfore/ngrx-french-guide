@@ -336,11 +336,8 @@ data: action.payload
 case TodoListModule.ActionTypes.ERROR\_INIT\_TODOS:
 // Error rend le loading a false
 return {
-
 ...state,
-
 loading: false
-
 };
 
 /*
@@ -590,5 +587,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4ODQ2MDgzMF19
+eyJoaXN0b3J5IjpbMjcyMjkxODI0XX0=
 -->
