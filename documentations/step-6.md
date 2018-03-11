@@ -170,35 +170,28 @@ export  namespace  TodoListModule {
 
 ```
 
-Et le reducer doit retourner le payload à la place du mock qu'on peut d'ailleurs totalement supprimer ~~/mocks~~
+Le reducer doit retourner le *payload* à la place du *mock* que l'on peut totalement supprimer ~~/mocks~~
 
   
 
-*/store/reducers/todo-list.reducer.ts*
+*store/reducers/todo-list.reducer.ts*
 
 ```javascript
-
-// \[...\]
+// [...]
 
 export  function  todosReducer(
-
-// \[...\]
+// [...]
 
 case TodoListModule.ActionTypes.INIT_TODOS :
-
 return {
-
 ...state,
-
-data: \[
-
+data: [
 ...action.payload
-
-\]
+]
 
 };
 
-// \[...\]
+// [...]
 
 ```
 
@@ -679,5 +672,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0NDAxMTU0OF19
+eyJoaXN0b3J5IjpbLTE5NTA3MDgxMV19
 -->
