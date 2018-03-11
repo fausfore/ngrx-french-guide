@@ -393,7 +393,6 @@ export  class  TodoListEffects {
 	) {}
 
 }
-
 ```
 
 Pour finaliser l'implémentation des effects on déclare un tableau de effect dans l'index du store :
@@ -551,5 +550,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODAzOTUxNDBdfQ==
+eyJoaXN0b3J5IjpbLTIwODUyODkyMDJdfQ==
 -->
