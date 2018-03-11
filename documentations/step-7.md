@@ -1,13 +1,14 @@
 # Load Guard & DevTools
 
-A partir de la branche **step-6**, vous pouvez obtenir le style réalisé à la fin de cette branche.
+A partir de la branche **step-6**, vous pouvez obtenir le style réalisé à la fin de celle-ci.
 
 ![styles](https://github.com/fausfore/ngrx-guide/blob/master/assets/images/styles.png)
 
 
 ### *[Début de la branche step-7]*
 
-Actuellement c'est **AllTodosComponent** qui déclenche le chargement des todos, dans certain cas on voudrai chargé cette liste sans attendre le **OnInit** du component.
+Actuellement, c'est **AllTodosComponent** qui déclenche le chargement des todos.
+Dans certains cas, on voudrait charger cette liste sans attendre le **OnInit** du component.
  Avec un **Guard Angular** le simple fait d'aller sur l'url */todo-list* nous permettra de  vérifier si la liste est chargée ( grâce à la propriété *loaded* ) et dans le cas ou il n'y a pas de données, il déclenchera l'action **LoadInitTodos**.
 
 *Générer un guard*
@@ -129,5 +130,5 @@ export class AppModule { }
 
 L'outils vous permettra de voir chaque changement de state, de conserver un historique, de faire export de vous states et inversement.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM0ODA4MjI1LDc4NDIyMTY0OF19
+eyJoaXN0b3J5IjpbMTkxOTk1MjUzMCw3ODQyMjE2NDhdfQ==
 -->
