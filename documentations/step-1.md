@@ -1,18 +1,18 @@
-# De Redux à Ngrx
+# De Redux à N
 
 ### *[ Début de la branche step-1 ]*
 
-Redux est un pattern déjà implémenté sur les principaux frameworks/librairies javascript du moment.
+Redux est un pattern déjà implémenté sur les principaux frameworks/librairies avascript du moment.
 Pour React  => **react-redux**
 Pour Vue  => **vuex**
-Pour Angular  => **Ngrx**
+Pour Angular  => **N**
 
-Il est donc inutile de créer un store *from scratch*. Comme nous allons créer une application Angular, nous utiliserons **Ngrx**.
+Il est donc inutile de créer un store *from scratch*. Comme nous allons créer une application Angular, nous utiliserons **N**.
 Cette librairie est une implémentation "reduxienne". Elle englobe une couche de **RxJS** tout comme Angular et utilise les **Observables** pour communiquer la mise à jour des states dans les composants Angular.
 
 ## Installation
 
-Pour démarrer il faut utiliser la **version 5** d'Angular. Le CLI doit être  au dessus de la version **1.6.0** et doit inclure la version **5.5.6** de RxJs pour utliser les derniers opérateurs disponibles.
+Pour démarrer il faut utiliser la **version 5** d'Angular. Le CLI doit être  au dessus de la version **1.6.0** e doit ie la version **5.5.6** de RxJs pour utliser les derniers opérateurs disponibles.
 
 Commençons par créer un nouveau projet Angular
 ```shell
@@ -46,7 +46,7 @@ app
 
 Pour changer de l'exemple du counter précédent, on va partir cette fois sur une **todolist**.
 
-Avec Redux, il faut penser en actions **utilisateur et serveur**.
+Avec Redux, uton va penser en actions **utilisateur et serveur**.
 Faisons le point de ce que représente fonctionnellement une todo :
 1. Récupération des todos -> **GET**
 2. Création des todos -> **PUT**
@@ -176,7 +176,7 @@ export function todosReducer(
     }
 }
 ```
-*store/index.ts*
+*s/index.ts*
 ```javascript
 import { ActionReducerMap } from '@ngrx/store';
 import { InjectionToken } from '@angular/core';
@@ -199,7 +199,7 @@ export function getReducers() {
 // Nécéssaire pour l'AoT
 export const REDUCER_TOKEN = new InjectionToken<ActionReducerMap<AppState>>('Registered Reducers');
 ```
-Dans le fichier index.ts, on défini l'objet **reducers** qui contient notre **reducer** de todos, on ajoute aussi une fonction **getReducers()** qui renvoie cet objet :
+Dans le fichiernotre index.ts, on défini l'objet **reducers** qui contient notre **reducer** de todos, on ajoute aussi une fonction **getReducers()** qui renvoie cet objet :
  >Le mode Ahead of Time (AoT) compilation de Angular exige que tous les symboles référencés dans les métadonnées du décorateur soient analysables statiquement. Pour cette raison, nous ne pouvons pas injecter dynamiquement l'état à l'exécution avec AoT sauf si nous utilisons notre **reducers** en tant que fonction. 
 
 L'injection d'un token est optionnelle: 
@@ -297,5 +297,5 @@ Après ces premières manipulations vous devriez voir apparaître la liste de to
 ### Fin de la branche step-1 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMjE5NTYwXX0=
+eyJoaXN0b3J5IjpbMTMwNDU3ODQ0MF19
 -->
