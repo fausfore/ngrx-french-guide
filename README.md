@@ -3,7 +3,7 @@
 
 Ceci est un tutoriel pour débuter sur **NGRX**, vous verrez les différents concepts de cette librairie par le biais d'un exercice de création d'une **todo-list** et comment optimiser notre application par l'utilisation du pattern **Redux** .
 
->A l'heure ou j'écris **Ngrx** est en *version 5* ainsi que **Angular**.
+>Actuellement **Ngrx** est en *version 5* ainsi que **Angular**.
 
 ## [0 - Introduction](https://github.com/fausfore/ngrx-guide/blob/master/documentations/introduction.md)
 ### 0-1 Redux, kesako ?!
@@ -73,6 +73,6 @@ Une autre utilitaire intéressant [ngrx-actions](https://github.com/amcdnl/ngrx-
 Auteur : @Fausfore / Matias Ljubica
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNTc3OTAwNiwxODIwNzMxMTEwLDE1Nj
-czMzE2NDJdfQ==
+eyJoaXN0b3J5IjpbLTI0NzE5ODM1LDE4MjA3MzExMTAsMTU2Nz
+MzMTY0Ml19
 -->
