@@ -59,7 +59,7 @@ Avant de continuer sur nos fonctions getters **select**, un point sur le Pipe RX
 
   
 
-*exemple de Pipe*
+*Exemple de Pipe :*
 
 ```javascript
 
@@ -102,11 +102,11 @@ Pour voir un aperçu des différents opérateurs: http://reactivex.io/rxjs/class
   
   
 
-\## Les States Selectors
+## Les States Selectors
 
   
 
-La fonction \*\*select()\*\* de NGRX peut prendre une fonction en paramètre, on peut déporter cette logique et la stocker dans un fichier dédié et grâce à la fonction \*\*createSelector()\*\* on pourra composer des sélecteurs à partir d'autres sélecteurs.
+La fonction **select** de NGRX peut prendre une fonction en paramètre, on peut déporter cette logique et la stocker dans un fichier dédié et grâce à la fonction \*\*createSelector()\*\* on pourra composer des sélecteurs à partir d'autres sélecteurs.
 
   
 
@@ -406,5 +406,5 @@ action.payload
 
 Voilà notre action \*\*createTodo\*\* est terminée, il reste des choses à revoir comme la gestion des ids.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM2MDgyMzcwLDIxMjI3NDgwODldfQ==
+eyJoaXN0b3J5IjpbNTEzNjA1NTYzLDIxMjI3NDgwODldfQ==
 -->
