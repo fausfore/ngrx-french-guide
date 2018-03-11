@@ -235,7 +235,8 @@ new CounterActions.SetNewValue(6)
 // resultat => { type: '[counter] Set new value', payload: 6 }
 ```
 L'action creator permet également de mieux utiliser le typage pour les valeurs optionnelles.
-Maintenant que nous avons la structure de l'action, nous allons voir comment l'injecter dans le store. Grâce à la méthode **dispatch()** du Store, on va pouvoir mettre à jour l'état du *Counter* avec l'action passée en paramètre.
+Maintenant que nous avons la structure de l'action, nous allons voir comment l'injecter dans le store.
+Grâce à la méthode **dispatch()** du store, on va pouvoir mettre à jour l'état du *Counter* avec l'action passée, en paramètre.
 ```javascript
 import * as CounterActions from './actions';
 import { store } from './store'
@@ -244,5 +245,5 @@ store.dispatch(new CounterActions.SetNewValue(6))
 // resultat => { counter : 6 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDY3NDA4NDYsMzQ3NzkwNzE2XX0=
+eyJoaXN0b3J5IjpbMTYwNzU4NjYwNiwzNDc3OTA3MTZdfQ==
 -->
