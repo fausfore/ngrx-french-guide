@@ -285,6 +285,8 @@ return {
 
 Notre action **createTodo** est terminée.
 Reste à revoir la gestion des *ids*.
+
+### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-3.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NzE4NjUyLDIxMjI3NDgwODldfQ==
+eyJoaXN0b3J5IjpbMTU2NTgwOTg1NiwyMTIyNzQ4MDg5XX0=
 -->
