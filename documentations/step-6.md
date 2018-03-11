@@ -760,7 +760,7 @@ this.store.dispatch(new  TodoListModule.LoadInitTodos())
 
 On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect qui, via le \*\*LoadInitTodos\*\*, va utiliser le service \*\*getTodos\*\* qui dispatchera notre liste de todos via l'action \*\*SuccessInitTodos\*\*.
 
-<button class="">vant</button>
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4NzE5NTk2M119
+eyJoaXN0b3J5IjpbLTE5NDg3OTc0MjJdfQ==
 -->
