@@ -160,14 +160,12 @@ Changer l'action de **InitTodos** en lui ajoutant un payload :
 
 ```javascript
 export  namespace  TodoListModule {
-// [...]
-export  class  InitTodos {
-	readonly  type = ActionTypes.INIT_TODO;
-	constructor(public  payload: Todo[]){ }
-}
-
-// [...]
-
+	// [...]
+	export  class  InitTodos {
+		readonly  type = ActionTypes.INIT_TODO;
+		constructor(public  payload: Todo[]){ }
+	}
+	// [...]
 }
 
 ```
@@ -681,5 +679,5 @@ On a plus besoin d'avoir le service dans le component, c'est maintenant l'effect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA3MDc5MjE2XX0=
+eyJoaXN0b3J5IjpbMTA0NDAxMTU0OF19
 -->
