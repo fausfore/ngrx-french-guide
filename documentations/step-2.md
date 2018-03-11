@@ -245,17 +245,17 @@ export  namespace  TodoListModule {
 
 	export  enum  ActionTypes {
 
-	// [...]
+		// [...]
 
-	CREATE_TODO = '\[todoList\] Create Todo',
+		CREATE_TODO = '\[todoList\] Create Todo',
 
 	}
 
 	// [...]
 
 	export  class  CreateTodo {
-	readonly  type = ActionTypes.CREATE_TODO;
-	constructor(public  payload: Todo) {}
+		readonly  type = ActionTypes.CREATE_TODO;
+		constructor(public  payload: Todo) {}
 	}
 	  
 	export  type  Actions = InitTodos | CreateTodo;
@@ -263,19 +263,13 @@ export  namespace  TodoListModule {
 }
 
 ```
-
-  
-
-Cette action transmet un \*\*payload\*\* qui sera la nouvelle todo à ajouté à notre tableau.
-
-  
-  
+Cette action transmet un **payload** qui sera la nouvelle todo à ajouter à notre tableau :
 
 */store/reducers/todo-list.reducer.ts*
 
 ```javascript
 
-// \[...\]
+// [...\]
 
 case  TodoListModule.ActionTypes.CREATE_TODO:
 
@@ -299,5 +293,5 @@ action.payload
 
 Voilà notre action \*\*createTodo\*\* est terminée, il reste des choses à revoir comme la gestion des ids.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgzODM0NzMzLDIxMjI3NDgwODldfQ==
+eyJoaXN0b3J5IjpbLTE2NzQ4NDM4MTcsMjEyMjc0ODA4OV19
 -->
