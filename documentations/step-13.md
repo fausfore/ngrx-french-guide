@@ -31,7 +31,7 @@ Angular exécutera donc la détection des modifications sur ces composants et le
 Article : https://alligator.io/angular/change-detection-strategy/
 
 
-L'architechure NGRX permet d'appliquer le **OnPush** sur tous vos components.
+L’architecture NGRX permet d'appliquer le **OnPush** sur tous vos components.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczMjcxNjg0MV19
+eyJoaXN0b3J5IjpbLTExNTYzMTg0MDNdfQ==
 -->
