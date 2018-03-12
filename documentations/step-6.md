@@ -285,9 +285,9 @@ export  type  Actions = DeleteTodo
 // [...]
 ```
 
-Nous avons deux étapes lors d'un **LoadinitTodos**, on peut donc faire un switch sur les propriétés dans le reducer et commencer à jouer avec les booléens **loading** & **loaded** .
+Nous avons deux étapes lors d'un **LoadinitTodos**, on peut donc faire un switch sur les propriétés dans le *reducer* et commencer à jouer avec les booléens **loading** & **loaded** .
 
-Ce détail permettra de changer votre *template* lors du chargement des todos en ajoutant un *loader* et en désactivant les boutons durant la requête de chargement.
+Ce détail permettra de changer votre *template* lors du chargement des *todos* en ajoutant un *loader* et en désactivant les boutons durant la requête de chargement.
 
 *store/reducers/todo-list.reducer.ts*
 
@@ -471,5 +471,5 @@ C'est maintenant l'*effect* qui, via le **LoadInitTodos**, va utiliser le servic
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYzNTEyNTEzXX0=
+eyJoaXN0b3J5IjpbLTkyOTE2ODQwNV19
 -->
