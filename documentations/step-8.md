@@ -2,7 +2,7 @@
 
 ### *[Début de la branche step-8]*
 
-Mettre à jour notre action de **CreateTodo** pour inclure une requête serveur de la même façon que **InitTodos**.
+Mettre à jour notre action de **createTodo** pour inclure une requête serveur de la même façon que **InitTodos**.
  Il n'y aura pas une action **CREATE_TODO**, mais trois :
 - **LOAD_CREATE_TODO** ;
 - **SUCCESS_CREATE_TODO** ;
@@ -172,6 +172,5 @@ L'action de **createTodo** est maintenant connectée avec le serveur.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODE2Nzc0MTIsLTE1MDk5NzQ0OTRdfQ
-==
+eyJoaXN0b3J5IjpbMTUxMDA0NDU0MCwtMTUwOTk3NDQ5NF19
 -->
