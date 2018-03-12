@@ -57,7 +57,7 @@ Grâce à la programmation fonctionnelle, le dispatcher est complètement retir�
 |Etats mutables|Etats immuables|
 
 ## Le Store, la base de tout
-Le *store* est une fonction qui contient l'état des reducers, un getter, une fonction de dispatch et des subscribers.
+Le *store* est une fonction qui contient l'état des *reducers*, un *getter*, une fonction de *dispatch* et des *subscribers*.
 
 Voici un exemple de store *from scratch* simplifié :
 
@@ -247,5 +247,5 @@ store.dispatch(new CounterActions.SetNewValue(6))
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-1.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg2NjE4MTcxLDM0Nzc5MDcxNl19
+eyJoaXN0b3J5IjpbLTE3MjEyNTQ3NjMsMzQ3NzkwNzE2XX0=
 -->
