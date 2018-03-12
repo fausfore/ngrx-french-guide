@@ -243,7 +243,7 @@ export class AllTodosComponent implements OnInit {
 }
 ```
 ## @Alias
-On remarque que dans la nouvelle architecture, le dossier **store/** est très loin de nos composants ce qui créé beaucoup de  "../".
+On remarque que dans la nouvelle architecture, le dossier **store/** est très loin de nos composants ce qui crée beaucoup de  "../".
 Pour y remédier, utilisez des **alias** via le **tsconfig.json** :
 
  *tsconfig.json*  
@@ -276,6 +276,5 @@ Passons à la mise à jour des *todos*.
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-5.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzUyODg5NjIsLTEwMDk5NDA4NThdfQ
-==
+eyJoaXN0b3J5IjpbMzcxNDI4MzQ2LC0xMDA5OTQwODU4XX0=
 -->
