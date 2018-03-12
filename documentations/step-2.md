@@ -224,7 +224,7 @@ export  namespace  TodoListModule {
 
 		// [...]
 
-		CREATE_TODO = '\[todoList\] Create Todo',
+		CREATE_TODO = '[todoList] Create Todo',
 
 	}
 
@@ -240,11 +240,11 @@ export  namespace  TodoListModule {
 }
 
 ```
-Cette action transmet un **payload** qui sera la nouvelle todo à ajouter à notre tableau :
+Cette action transmet un **payload** qui sera la nouvelle *todo* à ajouter à notre tableau :
 
 */store/reducers/todo-list.reducer.ts*
 
-```javascript
+```typescript
 // [...]
 case  TodoListModule.ActionTypes.CREATE_TODO:
 
@@ -265,5 +265,5 @@ Reste à revoir la gestion des *ids*.
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-3.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzcxNzExNjQzLDIxMjI3NDgwODldfQ==
+eyJoaXN0b3J5IjpbOTEwODgzNDQ3LDIxMjI3NDgwODldfQ==
 -->
