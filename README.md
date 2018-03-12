@@ -6,10 +6,10 @@ Ceci est un tutoriel pour débuter sur **NGRX**, vous verrez les différents con
 >Actuellement **Ngrx** est en *version 5* ainsi que **Angular**.
 
 ## [0 - Introduction](https://github.com/fausfore/ngrx-guide/blob/master/documentations/introduction.md)
-1.  ###  Redux, kesako ?
-- ### 2 Pourquoi Redux alors ?
-- ### 0-3 Flux vs Redux
-- ### 0-4 Le Store, la base de tout
+1.  #### Redux, kesako ?
+1.  #### Pourquoi Redux alors ?
+1.  #### Flux vs Redux
+1.  #### Le Store, la base de tout
 - ### 0-5  Le root reducer
 - ### 0-6 Le schéma
 - ### 0-7 Les actions
@@ -75,6 +75,6 @@ Il vous permettra de réduire votre code *reduxien* avec des décorateurs.
 *Auteur : **@Fausfore / Matias Ljubica***
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjE0MzEwNjMsMTgyMDczMTExMCwxNT
-Y3MzMxNjQyXX0=
+eyJoaXN0b3J5IjpbMTg3MDkzOTkyMCwxODIwNzMxMTEwLDE1Nj
+czMzE2NDJdfQ==
 -->
