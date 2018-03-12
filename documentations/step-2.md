@@ -119,12 +119,12 @@ this.todos$ = store.pipe(select(selectTodos$));
 
 ## Créer une todo
 
-Utiliser un formulaire pour créer une todo grâce au **FormsBuilder** d'Angular. 
-La fonction **createTodo** renverra la future action de création dans le reducer.
+Utiliser un formulaire pour créer une *todo* grâce au **FormsBuilder** d'Angular. 
+La fonction **createTodo** renverra la future action de création dans le *reducer*.
 
 */app.component.ts*
 
-```javascript
+```typescript
 import { Store, select } from  '@ngrx/store';
 import { OnInit, Component, Inject } from  '@angular/core';
 import { FormBuilder, FormGroup, Validators } from  '@angular/forms';
@@ -268,5 +268,5 @@ Reste à revoir la gestion des *ids*.
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-3.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3Mjk1NDE3NywyMTIyNzQ4MDg5XX0=
+eyJoaXN0b3J5IjpbMTU4MzQyMzU5MywyMTIyNzQ4MDg5XX0=
 -->
