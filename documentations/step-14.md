@@ -596,9 +596,9 @@ describe('Testing Effects', () => {
 ```
 La couverture de nos tests est maintenant optimisée à 100%.
 
-### Fin >>
+### Suite >>
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NDc3NzYzNV19
+eyJoaXN0b3J5IjpbLTE3MTM0MTMxNzRdfQ==
 -->
