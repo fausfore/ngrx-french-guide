@@ -28,11 +28,9 @@ src
 *db.json*
 
 ```json
-
 {
-"todos": []
+	"todos": []
 }
-
 ```
 
 Entrer dans le terminal :
@@ -55,30 +53,25 @@ Déclarer dans le **AppModule** ainsi que le dernier module **HttpClient** de An
 
 *app.module.ts*
 
-```javascript
+```typescript
 // [...]
 import { HttpClientModule } from  '@angular/common/http';
 import { TodoListService } from  './services/todo-list.service';
 
 @NgModule({
-imports: [
-// [...]
-
-HttpClientModule
-
-],
-
-providers: [TodoListService]
-
+	imports: [
+		// [...]
+		HttpClientModule
+	],
+	providers: [TodoListService]
 })
 
 export  class  TodoListModule { }
-
 ```
 
 *services/todo-list.service*
 
-```javascript
+```typescript
 import { HttpClient } from  '@angular/common/http';
 import { Observable } from  'rxjs/Observable';
 import { Todo } from  '@Models/todo';
@@ -92,7 +85,6 @@ export  class  TodoListService {
 	}
 
 }
-
 ```
 Plus simplement pour les *imports* :
 
@@ -108,7 +100,6 @@ Plus simplement pour les *imports* :
 		}
 	}
 }
-
 ```
 
   
@@ -117,7 +108,7 @@ Dans ce fichier, placer les paramètres d'*API* comme l'*url* :
 
 *environment.ts*
 
-```javascript
+```typescript
 export const environment = {
 	production: false,
 	apiUrl: 'http://localhost:3000'
@@ -497,5 +488,5 @@ C'est maintenant l'*effect* qui, via le **LoadInitTodos**, va utiliser le servic
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUyNzMwMzg1XX0=
+eyJoaXN0b3J5IjpbMjAwMTI4OTE5NV19
 -->
