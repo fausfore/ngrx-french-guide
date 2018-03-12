@@ -70,7 +70,7 @@ import { appRouting } from './app.routing';
 Migrer tout le contenu du **AppComponent** vers **AllTodosComponent**.
 Il ne reste que la balise **router-outlet** :
 */app.component.ts*
-```javascript
+```typescript
 import { Component } from '@angular/core';
 
 @Component({
@@ -264,7 +264,7 @@ Pour y remédier, utilisez des **alias** via le **tsconfig.json** :
 Avec cette configuration, plus besoin de "../" :
 
   *modules/todo-list/components/all-todos/all-todo.component.ts*  
-```javascript
+```typescript
 import { AppState } from '@StoreConfig';
 import { selectTodos$ } from '@Selectors/todo-list.selector';
 import { TodoListModule } from '@Actions/todo-list.action';
@@ -276,5 +276,6 @@ Passons à la mise à jour des *todos*.
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-5.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMjg0MzQzOCwtMTAwOTk0MDg1OF19
+eyJoaXN0b3J5IjpbLTE5NzUyODg5NjIsLTEwMDk5NDA4NThdfQ
+==
 -->
