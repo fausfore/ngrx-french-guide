@@ -26,7 +26,7 @@ Comme Angular peut être utilisé avec **Typescript** , NRGX profite également 
 ## Redux, kesako ?
 
 C’est un pattern né de **Flux**, une architecture créée par Facebook. 
-Il apporte un *workflow* de données unidirectionnelles grâce à un dispatcher, qui recueille des actions distribuées par le serveur ou par l’utilisateur. 
+Il apporte un *workflow* de données unidirectionnelles grâce à un *dispatcher*, qui recueil des actions distribuées par le serveur ou par l’utilisateur. 
 Il conserve la nouvelle instance d’une donnée dans un ou plusieurs stores qui mettent à jour la vue.
 <p align="center">
   <img src="https://julienrenaux.fr/talks-src/2016/redux-angular2/img/flux-simple-f8-diagram-with-client-action-1300w_stores_views.png">
@@ -247,5 +247,5 @@ store.dispatch(new CounterActions.SetNewValue(6))
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-1.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDgyMDAzNDAsMzQ3NzkwNzE2XX0=
+eyJoaXN0b3J5IjpbMTk1NDUwOTU5MSwzNDc3OTA3MTZdfQ==
 -->
