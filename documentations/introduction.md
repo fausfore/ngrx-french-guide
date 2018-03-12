@@ -1,7 +1,7 @@
 
 # Introduction
 
-Dans cet article, nous allons voir comment utiliser le pattern Redux dans une application Angular via NGRX.
+Dans cet article, nous allons voir comment utiliser le pattern **Redux** dans une application Angular via NGRX.
 Ce dernier proposant une conception du développement d'application autour d'actions utilisateur et serveur.
 
  Le but étant de supprimer les différentes mutations de données des composants et services Angular pour les centraliser dans un objet global, qui serait mutable uniquement par des actions typées.
@@ -247,5 +247,5 @@ store.dispatch(new CounterActions.SetNewValue(6))
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-1.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI4NTUwOTM1LDM0Nzc5MDcxNl19
+eyJoaXN0b3J5IjpbNTg3MzI1NjcsMzQ3NzkwNzE2XX0=
 -->
