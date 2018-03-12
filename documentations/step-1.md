@@ -209,7 +209,7 @@ Dans le fichier *index.ts*, on définit l'objet **reducers** qui contient notre 
 > Pour insérer les reducers dans votre application, utiliser une **InjectionToken** et un **Providers** pour enregistrer ceux-ci via l'insertion de dépendance.
 
 */app.module.ts*
-```javascript
+```typescript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { StoreModule} from '@ngrx/store';
@@ -300,5 +300,5 @@ Vous devriez voir apparaître la liste des *todos*.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyNzA5OTY2OF19
+eyJoaXN0b3J5IjpbMTM3Njk1NDM2NF19
 -->
