@@ -6,7 +6,7 @@
 Pour mettre à jour **UpdateTodo**, faire exactement la même chose que la **step-8** ou la **step-9**.
 
 *todo-list.action.ts*
-```javascript
+```typescript
 // [...]
 export namespace TodoListModule {
 
@@ -53,7 +53,7 @@ export namespace TodoListModule {
 
 ```
 *todo-list.reducer.ts*
-```javascript
+```typescript
 // [...]
    // PATCH TODO
     /*
@@ -88,7 +88,7 @@ export namespace TodoListModule {
 ```
 
 *todo-list.effect.ts*
-```javascript
+```typescript
 // [...]
  @Effect() LoadUpdateTodo$: Observable<TodoListModule.Actions> = this.actions$
       .pipe(
@@ -103,7 +103,7 @@ export namespace TodoListModule {
 ```
 
 *todo-list.service.ts*
-```javascript
+```typescript
 // [...]
 // Partial vous permet de définir l'interface Todo même si l'objet envoyé n'a pas toutes les propriétés de l'interface.
 patchTodo(changes: Partial<Todo>, id: number): Observable<Todo> {
@@ -111,7 +111,7 @@ patchTodo(changes: Partial<Todo>, id: number): Observable<Todo> {
 }
 ```
 *select-todo.component.ts*
-```javascript
+```typescript
 // [...]
 updateTodo(formValue) {
     const payload = Object.assign(this.selectTodo, formValue);
@@ -125,5 +125,5 @@ La suite du tutoriel sera consacré sur l'optimisation et les tests.
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-11.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTA4MzA0LDI2OTU4NjQ4N119
+eyJoaXN0b3J5IjpbLTMxNTkyNTIwLDI2OTU4NjQ4N119
 -->
