@@ -2,8 +2,8 @@
 
 ### *[Début de la branche step-5]*
 
-Rajouter une propriété dans notre **TodoListState** afin de conserver une todo, ce qui permettra la mise à jour de celle-ci. 
-Cela implique de modifier l'interface, les actions et le reducer.
+Rajouter une propriété dans notre **TodoListState** afin de conserver une *todo*, ce qui permettra la mise à jour de celle-ci. 
+Cela implique de modifier l'interface, les actions et le *reducer*.
 
 *models/todo.ts*
 ```typescript
@@ -38,7 +38,7 @@ export namespace TodoListModule {
 	| DeleteTodo;
 }
 ```
-**SelectTodo** va récupérer le contenu du *payload*, et **UpdateTodo** va changer la todo qui match avec l'id du payload :
+**SelectTodo** va récupérer le contenu du *payload*, et **UpdateTodo** va changer la *todo* qui match avec l'*id* du *payload* :
 
 */store/reducers/todo-list.reducer.ts*
 ```typescript
@@ -71,7 +71,7 @@ export function todosReducer(
 		
 // [...]      
 ```
-Une fonction sera rattachée à l'événement au clique d'une todo.
+Une fonction sera rattachée à l'événement au clique d'une* todo*.
 Celle-ci redirigera l'utilisateur vers la page **/select-todo** tout en modifiant le state **selectTodo** :
 
 *all-todos.ts*
@@ -189,5 +189,5 @@ Vous pouvez maintenant sélectionner et mettre à jour une todo.
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-6.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNTY4MTA5NCwtMjUwMDk0OTc5XX0=
+eyJoaXN0b3J5IjpbLTIxMzA1MzU4NDQsLTI1MDA5NDk3OV19
 -->
