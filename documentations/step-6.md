@@ -422,7 +422,6 @@ export class AppModule { }
 
 ```typescript
 // [...]
-
 import { TodoListService } from  '../services/todo-list';
 import { selectTodoListState$, selectTodosLoading$, selectTodos$ } from  '@Selectors/todo-list.selector';
 
@@ -473,5 +472,5 @@ C'est maintenant l'*effect* qui, via le **LoadInitTodos**, va utiliser le servic
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MzY0OTQwN119
+eyJoaXN0b3J5IjpbLTc4MzYzMDAzNV19
 -->
