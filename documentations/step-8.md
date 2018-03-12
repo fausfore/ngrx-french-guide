@@ -52,7 +52,7 @@ export namespace TodoListModule {
 }
 
 ```
-Ajouter les nouvelles actions dans le reducer :
+Ajouter les nouvelles actions dans le *reducer* :
 ```typescript
 // ...Other
 todosReducer(
@@ -172,5 +172,6 @@ L'action de **createTodo** est maintenant connectée avec le serveur.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzODc4MTYwMCwtMTUwOTk3NDQ5NF19
+eyJoaXN0b3J5IjpbLTEyODE2Nzc0MTIsLTE1MDk5NzQ0OTRdfQ
+==
 -->
