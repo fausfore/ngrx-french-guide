@@ -146,7 +146,7 @@ Le dernier *export* **Actions** servira pour le typage du **reducer** uniquement
 
 
 */store/reducers/todo-list.reducer.ts*
-```javascript
+```typescript
 import { TodoListModule } from '../actions/todo-list.action';
 import { TodoListState  } from '../../models/todo';
 import { todosMock } from '../../mocks/todo-list-data';
@@ -300,5 +300,5 @@ Vous devriez voir apparaître la liste des *todos*.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjEyODI4NDRdfQ==
+eyJoaXN0b3J5IjpbMTE0NDk0MzU2NF19
 -->
