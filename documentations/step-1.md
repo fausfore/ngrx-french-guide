@@ -294,11 +294,11 @@ export class AppComponent implements OnInit {
 }
 
 ```
-Après ces premières manipulations, vous devriez voir apparaître la liste de todo.
+Après ces premières manipulations, vous devriez voir apparaître la liste de *todos*.
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-2.md)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MDQ2MzMyOF19
+eyJoaXN0b3J5IjpbNzY3MjE0MTVdfQ==
 -->
