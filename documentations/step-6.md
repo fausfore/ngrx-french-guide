@@ -143,7 +143,7 @@ export  class  AllTodosComponent {
 // [...]
 ```
 
-Changer l'action de **InitTodos** en lui ajoutant un payload :
+Changer l'action de **InitTodos** en lui ajoutant un *payload* :
 
 *store/actions/todo-list.action.ts*
 
@@ -158,7 +158,7 @@ export namespace TodoListModule {
 }
 ```
 
-Le reducer doit retourner le *payload* à la place du *mock* que l'on peut totalement supprimer ~~/mocks~~
+Le *reducer* doit retourner le *payload* à la place du *mock* que l'on peut totalement supprimer ~~/mocks~~
 
   
 
@@ -183,7 +183,7 @@ export  function  todosReducer(
 
 ## Introduction des Effects
 
-Les todos sont bien chargées mais avec NGRX il est possible d'aller plus loin en gérant également la partie **asynchrone** .
+Les *todos* sont bien chargées mais avec NGRX il est possible d'aller plus loin en gérant également la partie **asynchrone** .
 
 **Effects** est un second module de NGRX.
 Il vous fournit des **listenners d'actions** qui peuvent effectuer des fonctions et retourner une **nouvelle action**.
@@ -471,5 +471,5 @@ C'est maintenant l'*effect* qui, via le **LoadInitTodos**, va utiliser le servic
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5ODE4NzgxM119
+eyJoaXN0b3J5IjpbOTYzNTEyNTEzXX0=
 -->
