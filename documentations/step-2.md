@@ -9,7 +9,7 @@ Voici une petite explication de l'utilisation du Pipe **async** :
 
   
 
-> Le **Pipe async** souscrit à un Observable ou une Promise et renvoie la dernière valeur qu'il a émise. Lorsqu'une nouvelle valeur est détectée, le canal asynchrone envoie un signale au component afin qu'il mette à jour la donnée.
+> Le **Pipe async** souscrit à un *Observable* ou une *Promise* qui renvoie la dernière valeur qu'il a émise. Lorsqu'une nouvelle valeur est détectée, le canal asynchrone envoie un signale au component afin qu'il mette à jour la donnée.
 
 > Lorsque le component est détruit, **le Pipe async se désinscrit automatiquement afin d'éviter les fuites de mémoire potentielles**.
 
@@ -288,5 +288,5 @@ Reste à revoir la gestion des *ids*.
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-3.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NTgwOTg1NiwyMTIyNzQ4MDg5XX0=
+eyJoaXN0b3J5IjpbLTExNTMwNzc5MTQsMjEyMjc0ODA4OV19
 -->
