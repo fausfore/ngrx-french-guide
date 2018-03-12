@@ -359,7 +359,7 @@ describe('Todos reducer', () => {
 ## Selectors
 
 Afin de tester les **selectors**, créer une instance de store accessible depuis le test dans le **beforeEach** .
-Cela nous permet de récupérer le *state* par défaut du *selector* pour ensuite **déclencher une action** dans le test afin de vérifier la valeur du *selector* après une action x.
+Cela nous permet de récupérer le *state* par défaut du *selector* pour ensuite déclencher une action dans le test afin de vérifier la valeur du *selector* après une action x.
 
 *todo-list.selector.spec.ts*
 ```typescript
@@ -600,5 +600,5 @@ La couverture de nos tests est maintenant optimisée à 100%.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4MDE0MjYyOF19
+eyJoaXN0b3J5IjpbMTIxODgxNTM4OF19
 -->
