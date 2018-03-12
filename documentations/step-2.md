@@ -169,11 +169,8 @@ import { ReactiveFormsModule, FormsModule } from  '@angular/forms';
 	],
 
 // [...]
-
 ```
 Créer l'action pour le *reducer* :
-
-  
 
 *store/actions/todo-list.action.ts*
 
@@ -227,5 +224,5 @@ Reste à revoir la gestion des *ids*.
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-3.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NDQxOTMxNSwyMTIyNzQ4MDg5XX0=
+eyJoaXN0b3J5IjpbLTE3MTg1MDc5NjMsMjEyMjc0ODA4OV19
 -->
