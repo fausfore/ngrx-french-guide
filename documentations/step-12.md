@@ -7,7 +7,7 @@ Cette partie fait un focus sur l'optimisation de performance.
 Chaque action réalise une itération sur notre liste.
 Dans le cas où celle-ci contient des milliers de *todos*, une baisse de performance aura lieu.
 
-En changeant le format de notre *todo-list* en  **entité** , les actions ne feront plus d'itération,  mais  clef.
+En changeant le format de notre *todo-list* en  **entité** , les actions ne feront plus d'itération,  mais trouverons directement la clef de la todo.
 
 ```javascript
 const ArrayTodos = [
@@ -183,6 +183,6 @@ import {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTM2NzIyOTUsMTIwNjY4MTQ4NSwtMj
-AxODcwOTc0NF19
+eyJoaXN0b3J5IjpbLTk3ODIwODM2MywxMjA2NjgxNDg1LC0yMD
+E4NzA5NzQ0XX0=
 -->
