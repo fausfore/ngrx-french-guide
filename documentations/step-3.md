@@ -4,10 +4,10 @@
 ### *[Début de la branche step-3]*
 
 
-Même procédé que pour la création, sauf que  l'on passera l'id de la todo à supprimer dans l'action.
+Même procédé que pour la création, sauf que  l'on passera l'id de la *todo* à supprimer dans l'action.
 
 *store/actions/todo-list.action.ts*
-```javascript
+```typescript
 // ... autres
 export namespace TodoListModule {
 
@@ -99,5 +99,5 @@ Suppression terminée.
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-4.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIwNjM4ODY1LDIxNzU3NzUyMl19
+eyJoaXN0b3J5IjpbLTIyOTgxMDg5MSwyMTc1Nzc1MjJdfQ==
 -->
