@@ -483,7 +483,7 @@ describe('Todo selectors', () => {
 
 ```
 ## Effects
-Pour tester les *effects*, utiliser **[jasmine-marbles](https://github.com/synapse-wireless-labs/jasmine-marbles)** pour tester les observables.
+Pour tester les *effects*, utiliser **[jasmine-marbles](https://github.com/synapse-wireless-labs/jasmine-marbles)**.
 
 *todo-list.effect.spec.ts*
 ```javascript
@@ -597,5 +597,5 @@ describe('Testing Effects', () => {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjY2Mzc5MTVdfQ==
+eyJoaXN0b3J5IjpbMjQ3MjE5NDEwXX0=
 -->
