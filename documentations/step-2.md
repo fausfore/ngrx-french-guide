@@ -1,30 +1,18 @@
 
 # Getters & create todo
 
-  
-
 ### *[Début de la branche step-2]*
 
 Voici une petite explication de l'utilisation du Pipe **async** :
-
-  
 
 > Le **Pipe async** souscrit à un *Observable* ou une *Promise* qui renvoie la dernière valeur qu'il a émise. Lorsqu'une nouvelle valeur est détectée, le canal asynchrone envoie un signale au *component* afin qu'il mette à jour la donnée.
 
 > Lorsque le component est détruit, **le Pipe async se désinscrit automatiquement afin d'éviter les fuites de mémoire potentielles**.
 
-  
-
 La syntaxe de la liste de *todos* :
-
 ```html
-
 <li *ngFor="let todo of (todos$ | async)?.data">
-
 ```
-
-  
-
 Cependant, en changeant l'argument du **select('todos')** par une fonction, on peut obtenir une syntaxe plus simplifiée :
 
 ```html
@@ -34,8 +22,6 @@ Cependant, en changeant l'argument du **select('todos')** par une fonction, on p
 this.todos$ = store.pipe(select((state) =>  state.todos.data)); // On cible directement la propriété data
 ```
 ## Le Pipe et les opérateurs RXJS
-
-  
 
 Avant de continuer sur nos fonctions **select**, un point sur le Pipe RXJS s'impose.
 
@@ -61,28 +47,17 @@ source$
 	).subscribe(console.log); // 50
 
 ```
-
-  
-
 Aperçu des différents opérateurs : http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html
 
-  
-  
-
 ## Les States Selectors
-
-  
 
 La fonction **select** de NGRX peut prendre une fonction en paramètre.
 On peut donc déporter cette logique et la stocker dans un fichier dédié.
 Grâce à la fonction **createSelector**, on pourra composer des sélecteurs à partir d'autres sélecteurs.
 
-  
-
 *store/selectors/todo-list.selector.ts*
 
-```javascript
-
+```typescript
 import { createSelector } from  '@ngrx/store';
 
 // La première fonction amène vers le state todos
@@ -94,7 +69,7 @@ export const selectTodos$ = createSelector(selectTodoListState$,(todos) =>  todo
 
 */app.component.ts*
 
-```javascript
+```typescript
 import { selectTodos } from  'store/selectors/todo-list.selector';
 
 // [...]
@@ -252,5 +227,5 @@ Reste à revoir la gestion des *ids*.
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-3.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwMzgzNjY2OSwyMTIyNzQ4MDg5XX0=
+eyJoaXN0b3J5IjpbMTk1NDQxOTMxNSwyMTIyNzQ4MDg5XX0=
 -->
