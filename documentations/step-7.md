@@ -7,7 +7,7 @@ A partir de la branche **step-6**, vous pouvez obtenir le style réalisé à la 
 
 ### *[Début de la branche step-7]*
 
-Actuellement, c'est **AllTodosComponent** qui déclenche le chargement des todos.
+Actuellement, c'est **AllTodosComponent** qui déclenche le chargement des *todos*.
 Avec un **Guard Angular**, le simple fait d'aller sur l'url */todo-list* nous permettra de vérifier si elle est chargée ( grâce à la propriété *loaded* ) et dans le cas contraire, il déclenchera l'action **LoadInitTodos**.
 
 *Générer un Guard* :
@@ -83,7 +83,7 @@ import { IsTodosLoadedGuard } from './guards/is-todos-loaded/is-todos-loaded.gua
 		    },
 // [...]
 ```
-Supprimer le **LoadInitTodos** dans le component :
+Supprimer le **LoadInitTodos** dans le *component* :
 
 ```typescript
 [...]
@@ -95,7 +95,7 @@ Supprimer le **LoadInitTodos** dans le component :
 	  */
 // [...]
 ```
-De cette manière, la donnée sera chargée sans être dépendante du component.
+De cette manière, la donnée sera chargée sans être dépendante du *component*.
 
 ## Redux Devtools
 
@@ -131,5 +131,5 @@ export class AppModule { }
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-8.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTU2ODgyOCw3ODQyMjE2NDhdfQ==
+eyJoaXN0b3J5IjpbLTU4ODI0NTUxNCw3ODQyMjE2NDhdfQ==
 -->
