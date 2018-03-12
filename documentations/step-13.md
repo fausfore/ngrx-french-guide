@@ -21,7 +21,7 @@ Les fichiers **.specs** de test sont mis à jour sur la branche **step-13** ains
 ## Change Detection OnPush
 
 
->Angular effectue la détection des modifications sur tous les components (de haut en bas) chaque fois que quelque chose change dans votre application à partir d'un événement utilisateur ou de données reçues d'une requête.
+>Angular effectue la détection des modifications sur tous les components (de haut en bas) chaque fois que quelque chose change dans votre application, à partir d'un événement utilisateur ou de données reçues d'une requête.
 
 La détection des changements est très performante, mais au fur et à mesure que l'application devient plus complexe et que la quantité de composants augmente, la détection des changements devra effectuer de plus en plus de travail. 
 
@@ -32,5 +32,5 @@ Article : https://alligator.io/angular/change-detection-strategy/
 
 Pour faire simple l'architechure Ngrx permet d'appliquer le **OnPush** sur tous vos components.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjUxNjE1NzQ4XX0=
+eyJoaXN0b3J5IjpbMTE4NzYyMDM0MF19
 -->
