@@ -2,7 +2,7 @@
 *10/03/2018*
 
 Ceci est un tutoriel pour débuter sur **NGRX**.
-Vous verrez les différents concepts de cette librairie par le biais d'un exercice de création d'une **todo-list**, ainsi que l'optimisation de notre application par l'utilisation du pattern **Redux** .
+Vous verrez les différents concepts de cette librairie par le biais d'un exercice de création d'une **todo-list**, ainsi que l'optimisation de notre application par l'utilisation du pattern **Redux**.
 
 >Actuellement **Ngrx** est en *version 5* ainsi que **Angular**.
 
@@ -76,6 +76,6 @@ Il vous permettra de réduire votre code *reduxien* avec des décorateurs.
 *Auteur : **@Fausfore / Matias Ljubica***
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNDA2MTUwNCwxODIwNzMxMTEwLDE1Nj
-czMzE2NDJdfQ==
+eyJoaXN0b3J5IjpbNTkxODU0NTMwLDE4MjA3MzExMTAsMTU2Nz
+MzMTY0Ml19
 -->
