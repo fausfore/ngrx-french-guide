@@ -135,7 +135,7 @@ new Store(RootReducer/*,{}*/);
 ```
 
 ## Le root reducer
-Le root reducer est un simple objet qui a pour propriété des fonctions. Celles-ci représentent l'ensemble des mutations de l'application.
+Le *root reducer* est un simple objet qui a pour propriété des fonctions. Celles-ci représentent l'ensemble des mutations de l'application.
 
 ***Exemple***
 ```javascript
@@ -247,5 +247,5 @@ store.dispatch(new CounterActions.SetNewValue(6))
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-1.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjEyNTQ3NjMsMzQ3NzkwNzE2XX0=
+eyJoaXN0b3J5IjpbMjExNDk2ODI0MSwzNDc3OTA3MTZdfQ==
 -->
