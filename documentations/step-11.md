@@ -164,7 +164,7 @@ export class TodoListEffects {
 ## Système de logs
 
 Une fois le code inutile supprimé, on mettra en place un système de logs avec des *toasters* afin d'informer l'utilisateur en cas de changement ou d'erreur dans le state.
-Le **catchError** peut prendre une **erreur Http** en argument, on peut donc l'a récupérer pour notre state :
+Le **catchError** peut prendre une **erreur Http** en argument. On peut donc l'a récupérer pour notre state :
 
 *todo-list.effect.ts*
 ```typescript
@@ -235,7 +235,7 @@ case TodoListModule.ActionTypes.ERROR_LOAD_ACTION:
         logs: { type: 'ERROR', message: action.payload.message },
     };
 ```
-Créer un sélecteur pour le *log* : 
+Créer un sélecteur pour le *logs* : 
 
 *todo-list.selector.ts*
 ```typescript
@@ -243,7 +243,7 @@ export const selectTodosErrors$ =
     createSelector(selectTodoListState$, (todos) => todos.logs);
 ```
 Installer le module [ngx-toastr](https://github.com/scttcper/ngx-toastr).
- Une fois que tout sera installer, aller dans le **TodoListComponent** :
+ Une fois que tout sera installé, aller dans le **TodoListComponent** :
 
 ```typescript
 import { Component } from '@angular/core';
@@ -302,5 +302,5 @@ Le système de *log* est maintenant fonctionnel.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE5OTg0NTg3LC05NTI5NTg4OF19
+eyJoaXN0b3J5IjpbLTIwMDIzNjgzODYsLTk1Mjk1ODg4XX0=
 -->
