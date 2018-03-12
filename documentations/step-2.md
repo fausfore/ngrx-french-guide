@@ -9,13 +9,13 @@ Voici une petite explication de l'utilisation du Pipe **async** :
 
   
 
-> Le **Pipe async** souscrit à un *Observable* ou une *Promise* qui renvoie la dernière valeur qu'il a émise. Lorsqu'une nouvelle valeur est détectée, le canal asynchrone envoie un signale au component afin qu'il mette à jour la donnée.
+> Le **Pipe async** souscrit à un *Observable* ou une *Promise* qui renvoie la dernière valeur qu'il a émise. Lorsqu'une nouvelle valeur est détectée, le canal asynchrone envoie un signale au *component* afin qu'il mette à jour la donnée.
 
 > Lorsque le component est détruit, **le Pipe async se désinscrit automatiquement afin d'éviter les fuites de mémoire potentielles**.
 
   
 
-La syntaxe de la liste de todos :
+La syntaxe de la liste de *todos* :
 
 ```html
 
@@ -288,5 +288,5 @@ Reste à revoir la gestion des *ids*.
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-3.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTMwNzc5MTQsMjEyMjc0ODA4OV19
+eyJoaXN0b3J5IjpbLTE5ODIwMzYwOTAsMjEyMjc0ODA4OV19
 -->
