@@ -50,48 +50,28 @@ this.todos$ = store.pipe(select((state) =>  state.todos.data)); // On cible dire
 
   
 
-Avant de continuer sur nos fonctions getters **select**, un point sur le Pipe RXJS s'impose.
-
-  
-  
+Avant de continuer sur nos fonctions **select**, un point sur le Pipe RXJS s'impose.
 
 > Le Pipe permet de réaliser un chaînage d'opérateurs RXJS de manière plus lisible.
-
-  
 
 *Exemple de Pipe :*
 
 ```javascript
-
 const { Observable } = require('rxjs/Rx')
-
 const { filter, map, reduce } = require('rxjs/operators')
-
 const { Pipe } = require('rxjs/Rx')
 
-  
-
 const  filterOutEvens = filter(x  =>  x % 2)
-
 const  doubleBy = x  =>  map(value  =>  value \* x);
-
 const  sum = reduce((acc, next) =>  acc \+ next, 0);
-
 const  source$ = Observable.range(0, 10)
 
-  
-
 source$
-
-.Pipe(
-
-filterOutEvens,
-
-doubleBy(2),
-
-sum
-
-).subscribe(console.log); // 50
+	.pipe(
+		filterOutEvens,
+		doubleBy(2),
+		sum
+	).subscribe(console.log); // 50
 
 ```
 
@@ -288,5 +268,5 @@ Reste à revoir la gestion des *ids*.
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-3.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODIwMzYwOTAsMjEyMjc0ODA4OV19
+eyJoaXN0b3J5IjpbLTE3NjQ1NzIzNjIsMjEyMjc0ODA4OV19
 -->
