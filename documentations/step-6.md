@@ -7,7 +7,7 @@ On a maintenant toutes nos fonctionnalités : **Create, Select, Update, Delete**
 Cela reste du local ou du offline.
 Il est temps de mettre en place un serveur et d'y inclure des requêtes **http**.
 
-Pour maximiser le temps, on va créer une *API* avec le module npm **[JsonPlaceholder](https://jsonplaceholder.typicode.com/)** .
+Pour maximiser le temps, on va créer une *API* avec le module *npm* **[JsonPlaceholder](https://jsonplaceholder.typicode.com/)** .
 
 ```bash
 npm install -g json-serve
@@ -49,7 +49,7 @@ Générer un service depuis le terminal :
 ng g service services/todo-list
 ```
 
-Déclarer dans le **AppModule** ainsi que le dernier module **HttpClient** de Angular :
+Déclarer dans le **AppModule** ainsi que le dernier module **HttpClient** d'Angular :
 
 *app.module.ts*
 
@@ -471,5 +471,5 @@ C'est maintenant l'*effect* qui, via le **LoadInitTodos**, va utiliser le servic
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTc0NTg3NTNdfQ==
+eyJoaXN0b3J5IjpbLTY5ODE4NzgxM119
 -->
