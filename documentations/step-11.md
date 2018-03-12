@@ -5,7 +5,7 @@ Dans notre code, on remarque que les actions d'erreurs réalisent la même tâch
 Dans ce cas, il n'y a qu'une seule action à définir :
 
 *todo-list.action.ts*
-```javascript
+```typescript
 // [...]
 export namespace TodoListModule {
 
@@ -69,7 +69,7 @@ export namespace TodoListModule {
 
 ```
 *todo-list.reducer.ts*
-```javascript
+```typescript
 // ... other
   switch (action.type) {
 
@@ -129,7 +129,7 @@ export namespace TodoListModule {
 
 ```
 *todo-list.effect.ts*
-```javascript
+```typescript
 // ... other
 @Injectable()
 export class TodoListEffects {
@@ -167,12 +167,12 @@ Une fois le code inutile supprimé, on mettra en place un système de logs avec 
 Le **catchError** peut prendre une **erreur Http** en argument, on peut donc l'a récupérer pour notre state :
 
 *todo-list.effect.ts*
-```javascript
+```typescript
 // [...]
 catchError((err) => of(new TodoListModule.ErrorLoadAction(err)))
 ```
 *todo-list.action.ts*
-```javascript
+```typescript
 import { HttpErrorResponse } from '@angular/common/http';
 // [...]
 export class ErrorLoadAction {
@@ -184,7 +184,7 @@ export class ErrorLoadAction {
 Ajouter une autre propriété *logs* dans l'interface du state :
 
 *models/todo.ts*
-```javascript
+```typescript
 export interface TodoListState {
     // ... other
     logs: {
@@ -196,7 +196,7 @@ export interface TodoListState {
 Ajouter cette propriété dans le *reducer* : 
 
 *todo-list.reducer.ts*
-```javascript
+```typescript
 const initialState: TodoListState = {
     // [...]
     logs: undefined
@@ -238,14 +238,14 @@ case TodoListModule.ActionTypes.ERROR_LOAD_ACTION:
 Créer un sélecteur pour le *log* : 
 
 *todo-list.selector.ts*
-```javascript
+```typescript
 export const selectTodosErrors$ =
     createSelector(selectTodoListState$, (todos) => todos.logs);
 ```
 Installer le module [ngx-toastr](https://github.com/scttcper/ngx-toastr).
  Une fois que tout sera installer, aller dans le **TodoListComponent** :
 
-```javascript
+```typescript
 import { Component } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
 import { AppState } from '@StoreConfig';
@@ -302,5 +302,5 @@ Le système de *log* est maintenant fonctionnel.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQyOTEwNjQzLC05NTI5NTg4OF19
+eyJoaXN0b3J5IjpbNjE5OTg0NTg3LC05NTI5NTg4OF19
 -->
