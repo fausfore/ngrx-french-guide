@@ -2,12 +2,12 @@
 
 ### *[Début de la branche step-12]*
 
-Cette partie fait un focus sur l'optimisation de performance.
+Cette partie fait un focus sur l'optimisation de performances.
 
 Chaque action réalise une itération sur notre liste.
-Dans le cas où celle-ci contient des milliers de *todos*, une baisse de performance aura lieu.
+Dans le cas où celle-ci contient des milliers de *todos*, une baisse de performances aura lieu.
 
-En changeant le format de notre *todo-list* en  **entité** , les actions ne feront plus d'itération,  mais trouverons directement la clef de la todo.
+En changeant le format de notre *todo-list* en  **entité** , les actions ne feront plus d'itération,  mais trouverons directement la clef de la *todo* ciblée.
 
 ```javascript
 const ArrayTodos = [
@@ -20,7 +20,7 @@ const EntityTodos = {
 };
 
 ```
-C'est là que vient [Ngrx/entity](https://github.com/ngrx/platform/blob/master/docs/entity/README.md), ce module permet facilement de prendre en entrée un tableau, de créer une entité avec un **adapter** puis de rendre un tableau lors du **selector**, de plus il nous fourni des méthodes pour traiter directement avec notre entité comme **AddOne()** ou **AddMany()** .
+C'est là que le module [Ngrx/entity](https://github.com/ngrx/platform/blob/master/docs/entity/README.md), ce module permet facilement de prendre en entrée un tableau, de créer une entité avec un **adapter** puis de rendre un tableau lors du **selector**, de plus il nous fourni des méthodes pour traiter directement avec notre entité comme **AddOne()** ou **AddMany()** .
 
 ```bash
 npm install @ngrx/entity --save OR yarn add @ngrx/entity --dev
@@ -183,6 +183,6 @@ import {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3ODIwODM2MywxMjA2NjgxNDg1LC0yMD
-E4NzA5NzQ0XX0=
+eyJoaXN0b3J5IjpbLTEzOTY5MTQzNTAsMTIwNjY4MTQ4NSwtMj
+AxODcwOTc0NF19
 -->
