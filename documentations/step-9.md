@@ -6,7 +6,7 @@ Pour mettre à jour **DeleteTodo**, faire exactement la même chose que la **ste
 
 *todo-list.action.ts*
 
-```javascript
+```typescript
 import { Todo } from '../../models/todo';
 
 export namespace TodoListModule {
@@ -54,7 +54,7 @@ export namespace TodoListModule {
 }
 
 ``` 
-```javascript
+```typescript
 // [...]
     // DELETE TODO
 
@@ -87,7 +87,7 @@ export namespace TodoListModule {
 // [...]
 ```
 *all-todos.component.ts*
-```javascript
+```typescript
 // [...]
 deleteTodo(id: number) {
 	this.store.dispatch(new TodoListModule.LoadDeleteTodo(id));
@@ -99,7 +99,7 @@ Le serveur, lors d'un **DELETE**, ne nous renvoie aucune information.
 Pour y palier, faire comme ceci :
 
 *todo-list.service.ts*
-```javascript
+```typescript
 // [...]
 deleteTodo(id): Observable<number> {
     return this.http.delete<Todo>(`${environment.apiUrl}/todos/${id}`)
@@ -116,5 +116,5 @@ Suppression terminée.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI2Mzc2NTgsMjI4OTA4NzY2XX0=
+eyJoaXN0b3J5IjpbLTQxODE3MTYwNiwyMjg5MDg3NjZdfQ==
 -->
