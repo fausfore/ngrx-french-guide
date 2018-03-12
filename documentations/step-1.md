@@ -2,14 +2,14 @@
 
 ### *[ Début de la branche step-1 ]*
 
-Redux est un pattern déjà implémenté sur les principaux frameworks/librairies avascript du moment.
+Redux est un pattern déjà implémenté sur les principaux frameworks/librairies Javascript du moment.
 Pour React  => **react-redux**
 Pour Vue  => **vuex**
 Pour Angular  => **NGRX**
 
 Il est donc inutile de créer un store *from scratch*. 
 Comme nous allons créer une application Angular, nous utiliserons **NGRX**.
-Cette librairie est une implémentation "reduxienne", qui englobe une couche de **RxJS** .
+Cette librairie est une implémentation "reduxienne", qui englobe une couche de **RXJS** .
 Tout comme Angular, elle utilise les **Observables** pour communiquer la mise à jour des états dans les composants Angular.
 
 ## Installation
@@ -302,5 +302,5 @@ Après ces premières manipulations, vous devriez voir apparaître la liste de t
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxOTAyNjY1Nl19
+eyJoaXN0b3J5IjpbMTY4NTk2MjkyXX0=
 -->
