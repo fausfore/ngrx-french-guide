@@ -76,7 +76,7 @@ export interface TodoListState {
 ```
 > Model utilisé par **[JsonPlaceholder](https://jsonplaceholder.typicode.com/)**.
 
- On crée ici un fichier pour *mocker* nos valeurs :
+ Créer ici un fichier pour *mocker* nos valeurs :
 
 *mocks/todo-list.ts*
 ```javascript
@@ -124,7 +124,7 @@ export const todosMock = [{
   }]
 ```
 
-On crée l'action pour initialiser notre liste :
+Créer l'action pour initialiser notre liste :
 
 *store/actions/todo-list.action.ts*
 ```javascript
@@ -142,7 +142,7 @@ export namespace TodoListModule {
 }
 ```
 Il est préférable d'encapsuler le tout dans un **namespace** pour simplifier les *imports*.
-Le dernier *export* **Actions** servira pour le typage du **reducer** uniquement.
+Le dernier *export* **Actions** servira pour le typage du **reducer** uniquement :
 
 
 */store/reducers/todo-list.reducer.ts*
@@ -302,5 +302,5 @@ Après ces premières manipulations, vous devriez voir apparaître la liste de t
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NTk2MjkyXX0=
+eyJoaXN0b3J5IjpbODkwOTY0MDQ2XX0=
 -->
