@@ -282,6 +282,7 @@ export  type  Actions = DeleteTodo
 	| SuccessInitTodos
 	| ErrorInitTodos;
 }
+// [...]
 ```
 
 Nous avons deux étapes lors d'un **LoadinitTodos**, on peut donc faire un switch sur les propriétés dans le reducer et commencer à jouer avec les booléens **loading** & **loaded** .
@@ -290,7 +291,7 @@ Ce détail permettra de changer votre *template* lors du chargement des todos en
 
 *store/reducers/todo-list.reducer.ts*
 
-```javascript
+```typescript
 // [...]
 export  function  todosReducer(
 // [...]
@@ -327,16 +328,14 @@ case TodoListModule.ActionTypes.INIT_TODOS :
 		]
 	};
 */
-
 // [...]
-
 ```
 
 Pour écrire notre premier **Effect** qui est un **Observable**, on peut utiliser tout ce que peut nous fournir *RXJS* pour faire du traitement, combiner des states etc... :
 
 *store/effects/todo-list.effect.ts*
 
-```javascript
+```typescript
 import { Injectable } from  '@angular/core';
 import { Actions, Effect, ofType } from  '@NGRX/effects';
 import { Observable } from  'rxjs/Observable';
@@ -366,8 +365,8 @@ export  class  TodoListEffects {
 	);
 
 	constructor(
-	private  todoListService: TodoListService,
-	private  actions$: Actions
+		private  todoListService: TodoListService,
+		private  actions$: Actions
 	) {}
 
 }
@@ -375,7 +374,7 @@ export  class  TodoListEffects {
 
 Pour finaliser l'implémentation des *effects*, déclarer un tableau d'*effect* dans l'index du store :
 
-```javascript
+```typescript
 // [...]
 import { TodoListEffects } from  '@Effects/todo-list.effect';
 // [...]
@@ -384,15 +383,13 @@ export  const  appEffects = [TodoListEffects];
 ```
 Ajouter deux autres sélecteurs pour le **loading** et le **loaded** state :
 
-  
-
 *store/selectors/todo-list.selector.ts*
 
-```javascript
+```typescript
 // [...]
-
 export  const  selectTodosLoading$ =
 	createSelector(selectTodoListState$,(todos) =>  todos.loading);
+	
 export  const  selectTodosLoaded$ =
 	createSelector(selectTodoListState$,(todos) =>  todos.loaded);
 ```
@@ -477,5 +474,5 @@ C'est maintenant l'*effect* qui, via le **LoadInitTodos**, va utiliser le servic
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzkwNjEzMTldfQ==
+eyJoaXN0b3J5IjpbLTExNzQxNjYzNjddfQ==
 -->
