@@ -9,7 +9,7 @@ Mettre à jour notre action de **CreateTodo** pour inclure une requête serveur 
  - **ERROR_CREATE_TODO**.
 
 *todo-list.action.ts*
-```javascript
+```typescript
 import { Todo } from '../../models/todo';
 
 export namespace TodoListModule {
@@ -53,7 +53,7 @@ export namespace TodoListModule {
 
 ```
 Ajouter les nouvelles actions dans le reducer :
-```javascript
+```typescript
 // ...Other
 todosReducer(
     state: TodoListState = initialState,
@@ -108,7 +108,7 @@ todosReducer(
 
 ```
 Créer un service de post : 
-```javascript
+```typescript
 // [...]
 @Injectable()
 export class TodoListService {
@@ -123,7 +123,7 @@ export class TodoListService {
 ```
 Ajouter l'*effect* qui écoutera les actions de type **LOAD_CREATE_TODO** :
 
-```javascript
+```typescript
 // [...]
 @Injectable()
 export class TodoListEffects {
@@ -143,7 +143,7 @@ Changer l'action lors du clique.
 Ainsi, on peut retirer la notion d'*id* car le serveur définira son propre *id* à la *todo* :
 
 *all-todos.ts*
-```javascript
+```typescript
 // private todosLength: number;
 // [...]
 this.todos$ = store
@@ -172,6 +172,5 @@ L'action de **createTodo** est maintenant connectée avec le serveur.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTkwNTA4MjQsLTE1MDk5NzQ0OTRdfQ
-==
+eyJoaXN0b3J5IjpbMjAzODc4MTYwMCwtMTUwOTk3NDQ5NF19
 -->
