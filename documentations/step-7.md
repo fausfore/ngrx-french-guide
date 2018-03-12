@@ -16,7 +16,7 @@ ng g guard guards/is-todos-loaded/is-todos-loaded
 ```
 Déclarer dans le **AppModule** :
 
-```javascript
+```typescript
 // [...]
 import { IsTodosLoadedGuard } from './guards/is-todos-loaded/is-todos-loaded.guard';
 
@@ -36,7 +36,7 @@ import { IsTodosLoadedGuard } from './guards/is-todos-loaded/is-todos-loaded.gua
 
 *guards/is-todos-loaded/is-todos-loaded.guard*
 
-```javascript
+```typescript
 import { Observable } from 'rxjs/Observable';
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot, Router } from '@angular/router';
@@ -72,7 +72,7 @@ export class IsTodosLoadedGuard implements CanActivate {
 Ajouter le  *Guard* dans le fichier de *routing* :
 
  *app.routing.ts*  
-```javascript
+```typescript
 // [...]
 import { IsTodosLoadedGuard } from './guards/is-todos-loaded/is-todos-loaded.guard';
 // [...]
@@ -85,7 +85,7 @@ import { IsTodosLoadedGuard } from './guards/is-todos-loaded/is-todos-loaded.gua
 ```
 Supprimer le **LoadInitTodos** dans le component :
 
-```javascript
+```typescript
 [...]
 	  /*
 	  A supprimer
@@ -103,7 +103,7 @@ Il existe une extension de Chrome pour le développement avec Redux : [Redux Dev
 Pour l'installer sur le projet, il  faut le package [@ngrx/store-devtools](https://github.com/ngrx/platform/blob/master/docs/store-devtools/README.md).
 
 Pour le définir dans le module principale : 
-```javascript
+```typescript
 // [...]
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from 'environments/environment';
@@ -131,5 +131,5 @@ export class AppModule { }
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-8.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU4NTE1MzI0LDc4NDIyMTY0OF19
+eyJoaXN0b3J5IjpbLTE0OTU2ODgyOCw3ODQyMjE2NDhdfQ==
 -->
