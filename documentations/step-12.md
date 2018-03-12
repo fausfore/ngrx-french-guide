@@ -20,7 +20,7 @@ const EntityTodos = {
 };
 
 ```
-C'est là que le module [Ngrx/entity](https://github.com/ngrx/platform/blob/master/docs/entity/README.md), ce module permet facilement de prendre en entrée un tableau, de créer une entité avec un **adapter** puis de rendre un tableau lors du **selector**, de plus il nous fourni des méthodes pour traiter directement avec notre entité comme **AddOne()** ou **AddMany()** .
+Concernant le module [Ngrx/entity](https://github.com/ngrx/platform/blob/master/docs/entity/README.md), il permet de prendre facilement en entrée un tableau, de créer une entité avec un **adapter** puis de rendre un tableau lors du **selector**, de plus il nous fourni des méthodes pour traiter directement avec notre entité comme **AddOne()** ou **AddMany()** .
 
 ```bash
 npm install @ngrx/entity --save OR yarn add @ngrx/entity --dev
@@ -183,6 +183,6 @@ import {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTY5MTQzNTAsMTIwNjY4MTQ4NSwtMj
-AxODcwOTc0NF19
+eyJoaXN0b3J5IjpbNzQ0Njg4ODExLDEyMDY2ODE0ODUsLTIwMT
+g3MDk3NDRdfQ==
 -->
