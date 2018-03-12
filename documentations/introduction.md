@@ -12,9 +12,9 @@ Ce dernier proposant une conception du développement d'application autour d'act
 **Intérêt de NGRX**
 
 - Le 1er avantage est le modèle **unidirectionnel** avec lequel nous travaillerons, ce qui n'est pas le cas du standard MVC qui est **bidirectionnel**.
-- Le 2ème avantage est **"l'historisation"**. Comme tous les changements transitent par le store, chaque update/modification est loggé. Grâce à cela, nous pouvons remonter dans l'historique et trouver quelle mutation a créée un bug : c'est une sorte de **state machine**.
+- Le 2ème avantage est **"l'historisation"**. Comme tous les changements transitent par le store, chaque update/modification est loggé. Grâce à cela, nous pouvons remonter dans l'historique et trouver quelle mutation a créer un bug : c'est une sorte de **state machine**.
 
-Comme Angular peut être utilisé avec **typescript** , NRGX profite également du typage qui va verrouiller nos actions et ainsi lever plus tôt les erreurs en cours de développement.
+Comme Angular peut être utilisé avec **ypescript** , NRGX profite également du typage qui va verrouiller nos actions et ainsi lever plus tôt les erreurs en cours de développement.
 
 
 
@@ -247,5 +247,5 @@ store.dispatch(new CounterActions.SetNewValue(6))
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-1.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg3MzI1NjcsMzQ3NzkwNzE2XX0=
+eyJoaXN0b3J5IjpbLTIyNzA3NDM0LDM0Nzc5MDcxNl19
 -->
