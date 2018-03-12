@@ -2,7 +2,7 @@
 
 ## Schematics
 Dans sa version 5, Angular introduit les **schematics**  (*templates* de fichiers personnalisés).
-NGRX à créer des schémas pour vous permettre d'avoir vos stores, reducers, effects ... en ligne de commande :
+NGRX a crée des schémas pour permettre d'avoir des *stores*, *reducers*, *effects* ... en ligne de commande :
 
 ```javascript
 ng generate effect App --root --module app.module.ts --collection @ngrx/schematics
@@ -32,5 +32,5 @@ Article : https://alligator.io/angular/change-detection-strategy/
 
 Pour faire simple l'architechure Ngrx permet d'appliquer le **OnPush** sur tous vos components.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MTI5ODIxMF19
+eyJoaXN0b3J5IjpbODkxMTEyMzc2XX0=
 -->
