@@ -122,7 +122,7 @@ Et au *resolve* de la requête, passer **InitTodos** :
 
 *modules/todo-list/components/all-todos/all-todo.component.ts*
 
-```javascript
+```typescript
 // [...]
 import { TodoListService } from  '@Services/todo-list';
 
@@ -141,7 +141,6 @@ export  class  AllTodosComponent {
 	}
 	
 // [...]
-
 ```
 
 Changer l'action de **InitTodos** en lui ajoutant un payload :
@@ -157,7 +156,6 @@ export namespace TodoListModule {
 	}
 	// [...]
 }
-
 ```
 
 Le reducer doit retourner le *payload* à la place du *mock* que l'on peut totalement supprimer ~~/mocks~~
@@ -166,7 +164,7 @@ Le reducer doit retourner le *payload* à la place du *mock* que l'on peut total
 
 *store/reducers/todo-list.reducer.ts*
 
-```javascript
+```typescript
 // [...]
 
 export  function  todosReducer(
@@ -181,7 +179,6 @@ export  function  todosReducer(
 		};
 
 	// [...]
-
 ```
 
 ## Introduction des Effects
@@ -201,11 +198,7 @@ Avec un **Effect**, il n'y aura pas une action **InitTodos**, mais trois :
 -  **SuccessInitTodos** : réponse serveur positive ;
 -  **ErrorInitTodos** : réponse serveur négative.
 
-  
-
 >LoadInitTodos => SuccessInitTodos || ErrorInitTodos
-
-  
 
 Installation :
 
@@ -231,7 +224,6 @@ Alias :
 *tsconfig.json*
 
 ```json
-
 {
 	"compilerOptions": {
 	"baseUrl": "./src",
@@ -240,7 +232,6 @@ Alias :
 		}
 	}
 }
-
 ```
 
 Ajouter les trois actions pour l'*effect* : **LOAD_INIT_TODOS, SUCCESS_INIT_TODOS, ERROR_INIT_TODOS**.
@@ -253,7 +244,7 @@ Ajouter les trois actions pour l'*effect* : **LOAD_INIT_TODOS, SUCCESS_INIT_TODO
 
 *store/actions/todo-list.action.ts*
 
-```javascript
+```typescript
 export  namespace  TodoListModule {
 export  enum  ActionTypes {
 	// [...]
@@ -286,13 +277,11 @@ export  class  ErrorInitTodos {
 // [...]
 
 export  type  Actions = DeleteTodo
-// | InitTodos
-| LoadInitTodos
-| SuccessInitTodos
-| ErrorInitTodos;
-
+	// | InitTodos
+	| LoadInitTodos
+	| SuccessInitTodos
+	| ErrorInitTodos;
 }
-
 ```
 
 Nous avons deux étapes lors d'un **LoadinitTodos**, on peut donc faire un switch sur les propriétés dans le reducer et commencer à jouer avec les booléens **loading** & **loaded** .
@@ -488,5 +477,5 @@ C'est maintenant l'*effect* qui, via le **LoadInitTodos**, va utiliser le servic
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMTI4OTE5NV19
+eyJoaXN0b3J5IjpbLTEzNzkwNjEzMTldfQ==
 -->
