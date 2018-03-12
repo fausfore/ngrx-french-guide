@@ -206,7 +206,7 @@ Dans le fichier *index.ts*, on définit l'objet **reducers** qui contient notre 
  >Le mode Ahead of Time (AoT) compilation de Angular exige que tous les symboles référencés dans les métadonnées du décorateur soient analysables statiquement. 
  >Pour cette raison, nous ne pouvons pas insérer l'état à l'exécution avec AOT sauf si nous utilisons notre **reducers** en tant que fonction. 
  >
-> Pour insérer les reducers dans votre application, utiliser une **InjectionToken** et un **roviders** pour enregistrer ceux-ci via l'injection de dépendance.
+> Pour insérer les reducers dans votre application, utiliser une **InjectionToken** et un **Providers** pour enregistrer ceux-ci via l'insertion de dépendance.
 
 */app.module.ts*
 ```javascript
@@ -237,9 +237,9 @@ export class AppModule { }
 ```
 
 
->Pour finaliser la création du **Store**, utiliser le **StoreModule** et lui injecter le token.
+>Pour finaliser la création du **Store**, utiliser le **StoreModule** et insérer le *token*.
 
-Ajouter notre state de todo dans le *app.component.ts* via la fonction **select**.
+Ajouter notre *state* de *todo* dans le *app.component.ts* via la fonction **select**.
 
 */app.component.ts*
 ```javascript
@@ -300,5 +300,5 @@ Après ces premières manipulations, vous devriez voir apparaître la liste de t
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MjA3NDc4NF19
+eyJoaXN0b3J5IjpbMjA1MDQ2MzMyOF19
 -->
