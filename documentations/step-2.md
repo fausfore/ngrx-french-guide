@@ -193,7 +193,7 @@ Ne pas oublier de charger les modules pour utiliser les formulaires d'Angular.
 
 */app.module.ts*
 
-```javascript
+```typescript
 // [...]
 import { ReactiveFormsModule, FormsModule } from  '@angular/forms';
 // [...]
@@ -209,16 +209,13 @@ import { ReactiveFormsModule, FormsModule } from  '@angular/forms';
 // [...]
 
 ```
-
-  
-
-Créer l'action pour le reducer :
+Créer l'action pour le *reducer* :
 
   
 
 *store/actions/todo-list.action.ts*
 
-```javascript
+```typescript
 import { Todo } from  '../../models/todo';
 
 export  namespace  TodoListModule {
@@ -268,5 +265,5 @@ Reste à revoir la gestion des *ids*.
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-3.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NTEwODU2MSwyMTIyNzQ4MDg5XX0=
+eyJoaXN0b3J5IjpbMzcxNzExNjQzLDIxMjI3NDgwODldfQ==
 -->
