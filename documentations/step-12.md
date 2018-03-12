@@ -9,7 +9,7 @@ Dans le cas où celle-ci contient des milliers de *todos*, une baisse de perform
 
 En changeant le format de notre *todo-list* en  **entité** , les actions ne feront plus d'itération,  mais trouverons directement la clef de la *todo* ciblée.
 
-```javascript
+```typescript
 const ArrayTodos = [
 	{ id: 1, title: 'blabla' },
 	// [...]
@@ -27,7 +27,7 @@ Concernant le module [Ngrx/entity](https://github.com/ngrx/platform/blob/master/
 npm install @ngrx/entity --save OR yarn add @ngrx/entity --dev
 ```
 
-```javascript
+```typescript
 // [...]
 import { createEntityAdapter, EntityAdapter, EntityState } from '@ngrx/entity';
 
@@ -113,7 +113,7 @@ export function todosReducer(
 ```
 
 *store/index.ts*
-```javascript
+```typescript
 import { TodoListStateEntity } from './reducers/todo-list.reducer';
 
 // [...]
@@ -127,7 +127,7 @@ export interface AppState {
 
 ```
 *todo-list.selector.ts*
-```javascript
+```typescript
 // [...]
 import * as fromTodos from '@Reducers/todoL-list.reducer';
 
@@ -160,7 +160,7 @@ export const selectTodosErrors$ =
 Changement du **selector** dans le *component* : 
 
 *all-todos.component.ts*
-```javascript
+```typescript
 // [...]
 
 import { 
@@ -185,6 +185,6 @@ Avec ces modifications, les actions auront la même rapidité, peut importe le n
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjEwNTI1ODYsMTIwNjY4MTQ4NSwtMj
-AxODcwOTc0NF19
+eyJoaXN0b3J5IjpbMTk1ODEzMTI2MiwxMjA2NjgxNDg1LC0yMD
+E4NzA5NzQ0XX0=
 -->
