@@ -400,7 +400,7 @@ Importer le module **EffectsModule** dans le module principal en lui passant not
 
 *app.module.ts*
 
-```javascript
+```typescript
 // [...]
 
 import { EffectsModule } from  '@NGRX/effects';
@@ -420,8 +420,7 @@ export class AppModule { }
 
 *modules/todo-list/components/all-todos/all-todo.component.ts*
 
-```javascript
-
+```typescript
 // [...]
 
 import { TodoListService } from  '../services/todo-list';
@@ -474,5 +473,5 @@ C'est maintenant l'*effect* qui, via le **LoadInitTodos**, va utiliser le servic
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzQxNjYzNjddfQ==
+eyJoaXN0b3J5IjpbMTc5MzY0OTQwN119
 -->
