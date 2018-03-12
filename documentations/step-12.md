@@ -133,9 +133,7 @@ import * as fromTodos from '@Reducers/todoL-list.reducer';
 
 export const selectTodoListState$ = (state: AppState) => state.todos;
 
-/*.reducer';
-
-// ... à supprimer
+// à supprimer
 export const selectTodos$ =
     createSelector(selectTodoListState$, (todos) => todos.data);
 */
@@ -159,7 +157,7 @@ export const selectTodosErrors$ =
     createSelector(selectTodoListState$, (todos) => todos.logs);
 
 ```
-Switch du selector dans le component: 
+Changement du **selector** dans le *component* : 
 
 *all-todos.component.ts*
 ```javascript
@@ -184,6 +182,6 @@ import {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODkxMjEwODUsMTIwNjY4MTQ4NSwtMj
-AxODcwOTc0NF19
+eyJoaXN0b3J5IjpbMzAyMzgzMjAwLDEyMDY2ODE0ODUsLTIwMT
+g3MDk3NDRdfQ==
 -->
