@@ -56,7 +56,7 @@ Ceci est un tutoriel pour débuter sur **NGRX**, vous verrez les différents con
 2.  #### Testings basics
 3.  #### Change Detection OnPush
 
-### [14 - Testings Advanced](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-14.md)
+### [14 - Advanced testing ](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-14.md)
 1.  #### Mocks
 2.  #### Actions
 3.  #### Reducers
@@ -75,6 +75,6 @@ Il vous permettra de réduire votre code *reduxien* avec des décorateurs.
 *Auteur : **@Fausfore / Matias Ljubica***
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTQxNjUyNDUsMTgyMDczMTExMCwxNT
-Y3MzMxNjQyXX0=
+eyJoaXN0b3J5IjpbNjU3MTU0NDIsMTgyMDczMTExMCwxNTY3Mz
+MxNjQyXX0=
 -->
