@@ -127,7 +127,7 @@ export const todosMock = [{
 Créer l'action pour initialiser notre liste :
 
 *store/actions/todo-list.action.ts*
-```javascript
+```typescript
 export namespace TodoListModule {
 
     export enum ActionTypes {
@@ -300,5 +300,5 @@ Vous devriez voir apparaître la liste des *todos*.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0NDk0MzU2NF19
+eyJoaXN0b3J5IjpbMTgwODcwNzMwMF19
 -->
