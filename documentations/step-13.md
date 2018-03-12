@@ -1,4 +1,4 @@
-# Petit Bonus
+# Bonus stage
 
 ## Schematics
 Dans sa version 5, Angular introduit les **schematics**  (*templates* de fichiers personnalisés).
@@ -11,7 +11,7 @@ Disponible sur ce lien : **[@ngrx/schematics](https://github.com/ngrx/platform/b
 
 
 
-## Testings basics
+## Basics testing
 
 Les fichiers **.specs** de test sont mis à jour sur la branche **step-13** ainsi que les *imports* des modules, pour faciliter la gestion des dépendances.
 
@@ -34,5 +34,5 @@ L’architecture NGRX permet d'appliquer le **OnPush** sur tous vos components.
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-14.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNDQ5NDY1OF19
+eyJoaXN0b3J5IjpbLTIxOTc1NjI1N119
 -->
