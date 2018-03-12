@@ -179,9 +179,10 @@ import {
 //  [...]
 
 ```
+Avec ces modifications, les actions auront la même rapidité, peut importe le nombre de todo.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAyMzgzMjAwLDEyMDY2ODE0ODUsLTIwMT
+eyJoaXN0b3J5IjpbNTA0MzI5ODQwLDEyMDY2ODE0ODUsLTIwMT
 g3MDk3NDRdfQ==
 -->
