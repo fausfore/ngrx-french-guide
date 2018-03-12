@@ -57,11 +57,11 @@ Ceci est un tutoriel pour débuter sur **NGRX**, vous verrez les différents con
 3.  #### Change Detection OnPush
 
 ## [14 - Testings Advanced](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-14.md)
-4.  #### Mocks
-4.  #### Actions
-4.  #### Reducers
+1.  #### Mocks
+2.  #### Actions
+3.  #### Reducers
 4.  #### Selectors
-### 14-5 Effects
+5.  #### Effects
 
 ## Conclusion 
 
@@ -75,6 +75,6 @@ Il vous permettra de réduire votre code *reduxien* avec des décorateurs.
 *Auteur : **@Fausfore / Matias Ljubica***
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDQ5NTI3OTksMTgyMDczMTExMCwxNT
-Y3MzMxNjQyXX0=
+eyJoaXN0b3J5IjpbLTUwNjU0OTc4MCwxODIwNzMxMTEwLDE1Nj
+czMzE2NDJdfQ==
 -->
