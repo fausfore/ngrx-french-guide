@@ -4,7 +4,7 @@
 Concernant les tests, voici les valeurs pour traiter les différents cas  :
 
 *store/mock-value.ts*
-```javascript
+```typescript
 import { Todo } from '@Models/todo';
 import * as fromReducer from '@Reducers/todo-list.reducer';
 
@@ -37,7 +37,7 @@ export const singleTodo: Todo = { id: 2, userId: 5, title: 'for testing 2', comp
 Tester nos actions reste relativement simple.
 Créer une instance de l'action et vérifier le type ainsi que le *payload* si besoin :
 
-```javascript
+```typescript
 const action = new TodoListModule.ErrorLoadAction(message);
 // Attention dans le expect 
 expect({...action}). // GOOD
@@ -46,7 +46,7 @@ expect(action). // BAD
 ```
 *todo-list.actions.spec.ts*
 
-```javascript
+```typescript
 import { Todo } from '@Models/todo';
 
 import { TodoListModule } from './todo-list.action';
@@ -207,7 +207,7 @@ describe('Todos actions', () => {
 Concernant les tests de *reducer*, c'est également très simple :
 
 *todo-list.reducer.spec.ts*
-```javascript
+```typescript
 import { TodoListModule } from '@Actions/todo-list.action';
 
 import { arrayOfTodos, initialState, singleTodo, stateWithData } from '../mock-value';
@@ -362,7 +362,7 @@ Afin de tester les **selectors**, créer une instance de store accessible depuis
 Cela nous permet de récupérer le *state* par défaut du *selector* pour ensuite **déclencher une action** dans le test afin de vérifier la valeur du *selector* après une action x.
 
 *todo-list.selector.spec.ts*
-```javascript
+```typescript
 import { TodoListModule } from '@Actions/todo-list.action';
 import { TestBed } from '@angular/core/testing';
 import { Store, StoreModule } from '@ngrx/store';
@@ -486,7 +486,7 @@ describe('Todo selectors', () => {
 Pour tester les *effects*, utiliser **[jasmine-marbles](https://github.com/synapse-wireless-labs/jasmine-marbles)**.
 
 *todo-list.effect.spec.ts*
-```javascript
+```typescript
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
 import { Actions } from '@ngrx/effects';
@@ -600,5 +600,5 @@ La couverture de nos tests est maintenant optimisée à 100%.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDEwNzQ0MDldfQ==
+eyJoaXN0b3J5IjpbLTEwODY4MjQxMjFdfQ==
 -->
