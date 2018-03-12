@@ -14,7 +14,7 @@ Disponible sur ce lien : **[@ngrx/schematics](https://github.com/ngrx/platform/b
 
 ## Testings basics
 
-Les fichiers **specs** de tests sont mis à jour sur la branche step-13 ainsi que les imports des modules pour faciliter la gestion de dépendances.
+Les fichiers **.specs** de test sont mis à jour sur la branche **step-13** ainsi que les *imports* des modules pour faciliter la gestion de dépendances.
 
 ![Karma](https://github.com/fausfore/ngrx-guide/blob/master/assets/images/karma.png)
 
@@ -32,5 +32,5 @@ Article : https://alligator.io/angular/change-detection-strategy/
 
 Pour faire simple l'architechure Ngrx permet d'appliquer le **OnPush** sur tous vos components.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkxMTEyMzc2XX0=
+eyJoaXN0b3J5IjpbLTMzNzcxNTg1XX0=
 -->
