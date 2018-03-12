@@ -204,11 +204,11 @@ export const REDUCER_TOKEN = new InjectionToken<ActionReducerMap<AppState>>('Reg
 ```
 Dans le fichier *index.ts*, on définit l'objet **reducers** qui contient notre **reducer** de todos, puis on ajoute une fonction **getReducers** qui renvoie cet objet :
  >Le mode Ahead of Time (AoT) compilation de Angular exige que tous les symboles référencés dans les métadonnées du décorateur soient analysables statiquement. 
- >Pour cette raison, nous ne pouvons pas injecter dynamiquement l'état à l'exécution avec AOT sauf si nous utilisons notre **reducers** en tant que fonction. 
+ >Pour cette raison, nous ne pouvons pas insérer l'état à l'exécution avec AOT sauf si nous utilisons notre **reducers** en tant que fonction. 
 
 L'injection d'un token est optionnelle : 
 
-> Pour injecter les reduceurs dans votre application, utilisez une **InjectionToken** et un **providers** pour enregistrer ceux-ci via l'injection de dépendance.
+> Pour insérer les reduceurs dans votre application, utilisez une **InjectionToken** et un **providers** pour enregistrer ceux-ci via l'injection de dépendance.
 
 */app.module.ts*
 ```javascript
@@ -302,5 +302,5 @@ Après ces premières manipulations, vous devriez voir apparaître la liste de t
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkwOTY0MDQ2XX0=
+eyJoaXN0b3J5IjpbLTE1NzkyNTI5MzddfQ==
 -->
