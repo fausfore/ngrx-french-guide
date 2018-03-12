@@ -27,16 +27,10 @@ La syntaxe de la liste de *todos* :
 
 Cependant, en changeant l'argument du **select('todos')** par une fonction, on peut obtenir une syntaxe plus simplifiée :
 
-  
-
+ 
 ```html
-
 <li *ngFor="let todo of todos$ | async">
-
 ```
-
-  
-
 ```typescript
 this.todos$ = store.pipe(select((state) =>  state.todos.data)); // On cible directement la propriété data
 ```
@@ -259,5 +253,5 @@ Reste à revoir la gestion des *ids*.
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-3.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExNTA2MjI3OSwyMTIyNzQ4MDg5XX0=
+eyJoaXN0b3J5IjpbLTEyMzE5MDQwMDcsMjEyMjc0ODA4OV19
 -->
