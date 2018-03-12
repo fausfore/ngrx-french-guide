@@ -460,7 +460,6 @@ this.store.dispatch(new  TodoListModule.LoadInitTodos())
 }
 
 // [...]
-
 ```
 
   
@@ -472,5 +471,5 @@ C'est maintenant l'*effect* qui, via le **LoadInitTodos**, va utiliser le servic
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4MzYzMDAzNV19
+eyJoaXN0b3J5IjpbLTE1NTc0NTg3NTNdfQ==
 -->
