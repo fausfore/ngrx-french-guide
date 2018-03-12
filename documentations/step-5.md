@@ -6,7 +6,7 @@ Rajouter une propriété dans notre **TodoListState** afin de conserver une todo
 Cela implique de modifier l'interface, les actions et le reducer.
 
 *models/todo.ts*
-```javascript
+```typescript
 export interface TodoListState {
 	// [...]
 	selectTodo: Todo
@@ -15,7 +15,7 @@ export interface TodoListState {
 Ajouter les actions **SELECT** & **UPDATE** qui ont un paramètre de type *Todo*.
 
 *store/actions/todo-list.action.ts*
-```javascript
+```typescript
 export namespace TodoListModule {
 	export enum ActionTypes {
 		// [...]
@@ -41,7 +41,7 @@ export namespace TodoListModule {
 **SelectTodo** va récupérer le contenu du *payload*, et **UpdateTodo** va changer la todo qui match avec l'id du payload :
 
 */store/reducers/todo-list.reducer.ts*
-```javascript
+```typescript
 import { TodoListModule } from '../actions/todo-list.action';
 import { TodoListState  } from '../../models/todo';
 import { todosMock } from '../../mocks/todo-list';
@@ -75,7 +75,7 @@ Une fonction sera rattachée à l'événement au clique d'une todo.
 Celle-ci redirigera l'utilisateur vers la page **/select-todo** tout en modifiant le state **selectTodo** :
 
 *all-todos.ts*
-```javascript
+```typescript
 // [...]
 import { Router } from '@angular/router';
 
@@ -111,7 +111,7 @@ export class AllTodosComponent implements OnInit {
 Reste la fonctionnalité de **UpdateTodo** qui sera dans le **SelectTodoComponent** :
 
  *modules/todo-list/components/select-todo/select-todo.component.ts*  
-```javascript
+```typescript
 import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 import { tap } from 'rxjs/operators';
@@ -189,5 +189,5 @@ Vous pouvez maintenant sélectionner et mettre à jour une todo.
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-6.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTUzNTg2MjYsLTI1MDA5NDk3OV19
+eyJoaXN0b3J5IjpbMTkzNTY4MTA5NCwtMjUwMDk0OTc5XX0=
 -->
