@@ -69,12 +69,12 @@ J’espère que ce tutoriel vous aura permis de comprendre NGRX et son implémen
 Il reste des points comme les **Meta-reducers** ou le **router-store** que vous pouvez retrouver sur le [gitHub officelle de NGRX](https://github.com/ngrx/platform).
 
 Un autre utilitaire intéressant, le module [ngrx-actions](https://github.com/amcdnl/ngrx-actions).
-Il vous permettra de réduire votre code *reduxien* avec l'aide de décorateurs.
+Il vous permettra de réduire votre code *reduxien* avec des décorateurs.
 
 
 *Auteur : **@Fausfore / Matias Ljubica***
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU0ODY2NDc0LDE4MjA3MzExMTAsMTU2Nz
-MzMTY0Ml19
+eyJoaXN0b3J5IjpbLTE5ODk2Nzc3MDcsMTgyMDczMTExMCwxNT
+Y3MzMxNjQyXX0=
 -->
