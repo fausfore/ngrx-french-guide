@@ -138,7 +138,7 @@ new Store(RootReducer/*,{}*/);
 Le *root reducer* est un simple objet qui a pour propriété des fonctions. Celles-ci représentent l'ensemble des mutations de l'application.
 
 ***Exemple***
-```javascript
+```typescript
 import counterReducer from './counter-reducer';
 
 const rootReducer = {
@@ -219,7 +219,7 @@ const action = {
 ## Action creator
 Il existe une manière différente et préférable de réaliser une action, celle d'utiliser une classe qui permettra de générer notre objet d'action.
 
-```javascript
+```typescript
 import { SET_NEW_VALUE } from './constants';
 
 class SetNewValue {
@@ -247,5 +247,5 @@ store.dispatch(new CounterActions.SetNewValue(6))
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-1.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNDcxNjk3MCwzNDc3OTA3MTZdfQ==
+eyJoaXN0b3J5IjpbMTEzODYzMTI1NCwzNDc3OTA3MTZdfQ==
 -->
