@@ -594,8 +594,9 @@ describe('Testing Effects', () => {
 
 });
 ```
+La couverture de nos tests sont de 100%
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ3MjE5NDEwXX0=
+eyJoaXN0b3J5IjpbLTY4NzkxNDk5MF19
 -->
