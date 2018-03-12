@@ -191,7 +191,7 @@ const rootReducer = {
 ```
 
 ## Les actions
-Les actions sont des objets. Elles contiennent au minimum une propriété **type**.
+Les *actions* sont des objets. Elles contiennent au minimum une propriété **type**.
 
 ```javascript
 const action = {
@@ -247,5 +247,5 @@ store.dispatch(new CounterActions.SetNewValue(6))
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-1.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNDk2ODI0MSwzNDc3OTA3MTZdfQ==
+eyJoaXN0b3J5IjpbMzMyOTQzMjc1LDM0Nzc5MDcxNl19
 -->
