@@ -37,15 +37,13 @@ Cependant, en changeant l'argument du **select('todos')** par une fonction, on p
 
   
 
-```javascript
+```typescript
 
 this.todos$ = store.pipe(select((state) =>  state.todos.data)); // On cible directement la propriété data
 
 ```
 
   
-  
-
 ## Le Pipe et les opérateurs RXJS
 
   
@@ -265,5 +263,5 @@ Reste à revoir la gestion des *ids*.
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-3.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEwODgzNDQ3LDIxMjI3NDgwODldfQ==
+eyJoaXN0b3J5IjpbMTkxNTY0NzQ2NywyMTIyNzQ4MDg5XX0=
 -->
