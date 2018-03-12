@@ -180,7 +180,7 @@ export function todosReducer(
 }
 ```
 *store/index.ts*
-```javascript
+```typescript
 import { ActionReducerMap } from '@ngrx/store';
 import { InjectionToken } from '@angular/core';
 
@@ -300,5 +300,5 @@ Vous devriez voir apparaître la liste des *todos*.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3Njk1NDM2NF19
+eyJoaXN0b3J5IjpbLTEwMjEyODI4NDRdfQ==
 -->
