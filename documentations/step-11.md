@@ -295,12 +295,12 @@ export class TodoListComponent {
 }
 
 ```
-Le système de *log* est maintenant fonctionnel.
+Le système de *logs* est maintenant fonctionnel.
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-12.md)
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDIzNjgzODYsLTk1Mjk1ODg4XX0=
+eyJoaXN0b3J5IjpbLTIwMzE3MzI1MzcsLTk1Mjk1ODg4XX0=
 -->
