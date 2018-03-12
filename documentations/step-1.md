@@ -242,7 +242,7 @@ export class AppModule { }
 Ajouter notre *state* de *todo* dans le *app.component.ts* via la fonction **select**.
 
 */app.component.ts*
-```javascript
+```typescript
 import { Store, select } from '@ngrx/store';
 import { OnInit, Component } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
@@ -300,5 +300,5 @@ Vous devriez voir apparaître la liste des *todos*.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4ODk3OTUwOF19
+eyJoaXN0b3J5IjpbLTE4MjE4MzA5ODhdfQ==
 -->
