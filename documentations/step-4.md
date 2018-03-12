@@ -83,7 +83,7 @@ export class AppComponent{ }
 Le fichier du *routing* pour le module **TodoList** :
 
  *modules/todo-list/todo-list.routing.ts*  
-```javascript
+```typescript
 import { Route, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 import { TodoListComponent } from './todo-list.component';
@@ -122,7 +122,7 @@ export const todoListRouting: ModuleWithProviders = RouterModule.forChild(routes
 Et le fichier du module **TodoList** :
 
  *modules/todo-list/todo-list.module.ts*  
-```javascript
+```typescript
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TodoListComponent } from './todo-list.component';
@@ -143,10 +143,10 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 export class TodoListModule { }
 ```
-Le **TodoListComponent** servira juste de lien entre nos deux autres components avec un autre **router-outlet** :
+Le **TodoListComponent** servira juste de lien entre nos deux autres *components* avec un autre **router-outlet** :
 
  *modules/todo-list/todo-list.component.ts*  
-```javascript
+```typescript
 import { Component } from '@angular/core';
 
 @Component({
@@ -163,10 +163,10 @@ import { Component } from '@angular/core';
 export class TodoListComponent {}
 ```
 
-Le component qui contiendra la liste de todos :
+Le *component* qui contiendra la liste de *todos* :
 
  *modules/todo-list/components/all-todos/all-todo.component.ts*  
-```javascript
+```typescript
 import { Store, select } from '@ngrx/store';
 import { OnInit, Component, Inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -276,6 +276,5 @@ Passons à la mise à jour des todos.
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-5.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzUzMTU4NjAsLTEwMDk5NDA4NThdfQ
-==
+eyJoaXN0b3J5IjpbMjAyMzE1MzEwNCwtMTAwOTk0MDg1OF19
 -->
