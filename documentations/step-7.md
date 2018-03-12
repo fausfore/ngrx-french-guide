@@ -127,9 +127,9 @@ export class AppModule { }
   <img src="https://d33wubrfki0l68.cloudfront.net/595e2922eee1bf85b801cdc86b8f7e135cc46ee0/0fd92/images/angular/store-devtools/store-devtools-screen.jpg">
 </p>
 
-**Redux DevTools** vous permettra de voir chaque changements de state, de conserver un historique et de faire un export de vos states (et inversement).
+**Redux DevTools** vous permettra de voir chaque changement de state, de conserver un historique et de faire un export de vos states (et inversement).
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-8.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4ODI0NTUxNCw3ODQyMjE2NDhdfQ==
+eyJoaXN0b3J5IjpbLTE5OTc1NzgxNTksNzg0MjIxNjQ4XX0=
 -->
