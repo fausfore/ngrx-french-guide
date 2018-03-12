@@ -204,7 +204,7 @@ describe('Todos actions', () => {
 ```
 ## Reducers
 
-Pour les tests de reducer c'est également très simple :
+Concernant les tests de *reducer*, c'est également très simple :
 
 *todo-list.reducer.spec.ts*
 ```javascript
@@ -596,5 +596,5 @@ describe('Testing Effects', () => {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYzMDQyNzcyXX0=
+eyJoaXN0b3J5IjpbMTMyNDE3NDAxN119
 -->
