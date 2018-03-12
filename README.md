@@ -26,19 +26,19 @@ Ceci est un tutoriel pour débuter sur **NGRX**, vous verrez les différents con
 3.  #### Créer une todo
 
 ## [3 - Delete todo](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-3.md)
-### 3-1 Gérer les ids
+1.  #### Gérer les ids
 
 ## [4 - Un peu de refacto !](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-4.md)
-### 4-1 @Alias
+1.  #### @Alias
 
 ## [5 - Select & Update Todo](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-5.md)
 
 ## [6 - Créer une API](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-6.md)
-### 6-1 Service Angular Get Todo
-### 6-2 Introduction de Effects
+1.  #### Service Angular Get Todo
+2.  #### Introduction de Effects
 
 ## [7 - Load Guard & DevTools](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-7.md)
-### 7-1 Redux Devtools
+1.  #### Redux Devtools
 
 ## [8 - Create Todo v2](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-8.md)
 
@@ -47,20 +47,20 @@ Ceci est un tutoriel pour débuter sur **NGRX**, vous verrez les différents con
 ## [10 - Update Todo v2](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-10.md)
 
 ## [11 - Les actions de type ERROR](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-11.md)
-### 11-1 Système de logs
+1.  #### Système de logs
 
 ## [12 - @Ngrx/Entity](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-12.md)
 
 ## [13 - Petit Bonus](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-13.md)
-### 13-1 Schematics
-### 13-2 Testings basics
-### 13-3 Change Detection OnPush
+1.  #### Schematics
+2.  #### Testings basics
+3.  #### Change Detection OnPush
 
 ## [14 - Testings Advanced](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-14.md)
-### 14-1 Mocks
-### 14-2 Actions
-### 14-3 Reducers
-### 14-4 Selectors
+4.  #### Mocks
+4.  #### Actions
+4.  #### Reducers
+4.  #### Selectors
 ### 14-5 Effects
 
 ## Conclusion 
@@ -75,6 +75,6 @@ Il vous permettra de réduire votre code *reduxien* avec des décorateurs.
 *Auteur : **@Fausfore / Matias Ljubica***
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzU4NDE3MDEsMTgyMDczMTExMCwxNT
+eyJoaXN0b3J5IjpbLTEzNDQ5NTI3OTksMTgyMDczMTExMCwxNT
 Y3MzMxNjQyXX0=
 -->
