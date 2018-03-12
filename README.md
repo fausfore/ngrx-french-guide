@@ -51,9 +51,9 @@ Ceci est un tutoriel pour débuter sur **NGRX**, vous verrez les différents con
 
 ### [12 - @Ngrx/Entity](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-12.md)
 
-### [13 - Petit Bonus](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-13.md)
+### [13 - Bonus Stage](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-13.md)
 1.  #### Schematics
-2.  #### Testings basics
+2.  #### Basics testing 
 3.  #### Change Detection OnPush
 
 ### [14 - Advanced testing ](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-14.md)
@@ -75,6 +75,6 @@ Il vous permettra de réduire votre code *reduxien* avec des décorateurs.
 *Auteur : **@Fausfore / Matias Ljubica***
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU3MTU0NDIsMTgyMDczMTExMCwxNTY3Mz
-MxNjQyXX0=
+eyJoaXN0b3J5IjpbLTE5ODk2Nzc3MDcsMTgyMDczMTExMCwxNT
+Y3MzMxNjQyXX0=
 -->
