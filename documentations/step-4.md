@@ -270,11 +270,11 @@ import { selectTodos$ } from '@Selectors/todo-list.selector';
 import { TodoListModule } from '@Actions/todo-list.action';
 ```
 Si votre *IDE* indique une erreur, redémarrez-le.
-Le point refacto est terminé.
+Le point *refacto* est terminé.
 Passons à la mise à jour des *todos*.
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-5.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MTUyMTc2MiwtMTAwOTk0MDg1OF19
+eyJoaXN0b3J5IjpbMjAxMjg0MzQzOCwtMTAwOTk0MDg1OF19
 -->
