@@ -4,9 +4,8 @@
 Dans sa version 5, Angular introduit les **schematics**  (*templates* de fichiers personnalisés).
 NGRX a crée des schémas pour permettre d'avoir des *stores*, *reducers*, *effects* ... en ligne de commande :
 
-```javascript
+```bash
 ng generate effect App --root --module app.module.ts --collection @ngrx/schematics
-
 ```
 Disponible sur ce lien : **[@ngrx/schematics](https://github.com/ngrx/platform/blob/master/docs/schematics/README.md)**  .
 
@@ -35,5 +34,5 @@ L’architecture NGRX permet d'appliquer le **OnPush** sur tous vos components.
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-14.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMDA1NDc5N119
+eyJoaXN0b3J5IjpbLTkzNDQ5NDY1OF19
 -->
