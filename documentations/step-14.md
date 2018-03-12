@@ -34,7 +34,8 @@ export const singleTodo: Todo = { id: 2, userId: 5, title: 'for testing 2', comp
 ```
 ## Actions
 
-Tester nos actions reste relativement simple, on créer une instance de l'action et on vérifie le type ainsi que le payload si besoin.
+Tester nos actions reste relativement simple.
+Créer une instance de l'action et vérifier le type ainsi que le *payload* si besoin :
 
 ```javascript
 const action = new TodoListModule.ErrorLoadAction(message);
@@ -595,5 +596,5 @@ describe('Testing Effects', () => {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NjA2MjM3Ml19
+eyJoaXN0b3J5IjpbODYzMDQyNzcyXX0=
 -->
