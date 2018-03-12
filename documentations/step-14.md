@@ -1,4 +1,4 @@
-# Testings Advanced
+# Advanced testing
 
 ## Mocks
 Concernant les tests, voici les valeurs pour traiter les différents cas  :
@@ -600,5 +600,5 @@ La couverture de nos tests est maintenant optimisée à 100%.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODY4MjQxMjFdfQ==
+eyJoaXN0b3J5IjpbLTk4MDE0MjYyOF19
 -->
