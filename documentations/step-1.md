@@ -58,7 +58,7 @@ Faisons le point de ce que représente fonctionnellement une todo :
 Tout d'abord, commençons par définir l'interface :
 
 *models/todo.ts*
-```javascript
+```typescript
 // Interface de la todo
 export interface Todo {
 	userId: number;
@@ -300,5 +300,5 @@ Vous devriez voir apparaître la liste des *todos*.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwODcwNzMwMF19
+eyJoaXN0b3J5IjpbLTU4ODk3OTUwOF19
 -->
