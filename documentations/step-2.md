@@ -189,7 +189,7 @@ ngOnInit() {
 }
 
 ```
-N'oubliez pas de charger les modules pour utiliser les formulaires d'Angular.
+Ne pas oublier de charger les modules pour utiliser les formulaires d'Angular.
 
 */app.module.ts*
 
@@ -268,5 +268,5 @@ Reste à revoir la gestion des *ids*.
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-3.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4MzQyMzU5MywyMTIyNzQ4MDg5XX0=
+eyJoaXN0b3J5IjpbMTE2NTEwODU2MSwyMTIyNzQ4MDg5XX0=
 -->
