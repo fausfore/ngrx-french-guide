@@ -25,13 +25,13 @@ Les fichiers **.specs** de test sont mis à jour sur la branche **step-13** ains
 
 La détection des changements est très performante, mais au fur et à mesure que l'application devient plus complexe et que la quantité de composants augmentent, la détection des changements devra effectuer de plus en plus de travail. 
 
-Il existe cependant un moyen de le contourner, en définissant la stratégie de détections de modification sur **OnPush**. 
-Angular exécutera donc les détections de modification sur les composants et leur sous-arborescence, uniquement lorsque de nouvelles références leur seront transmises.
+Il existe cependant un moyen de le contourner, en définissant la stratégie de détection de modifications sur **OnPush**. 
+Angular exécutera donc la détection de modifications sur les composants et leurs sous-arborescences, uniquement lorsque de nouvelles références leurs seront transmises.
 
 Article : https://alligator.io/angular/change-detection-strategy/
 
 
 L’architecture NGRX permet d'appliquer le **OnPush** sur tous vos components.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MjQ1NDM4NV19
+eyJoaXN0b3J5IjpbMTA0NDY3MTk5OV19
 -->
