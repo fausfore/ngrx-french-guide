@@ -4,7 +4,7 @@
 ### *[Début de la branche step-3]*
 
 
-Même procédé que pour la création, sauf que  l'on passera l'id de la *todo* à supprimer dans l'action.
+Même procédé que pour la création, sauf que  l'on passera l'*id* de la *todo* à supprimer dans l'action.
 
 *store/actions/todo-list.action.ts*
 ```typescript
@@ -28,10 +28,10 @@ export namespace TodoListModule {
         | DeleteTodo;
 }
 ```
-Se servir de **filter** pour renvoyer un nouveau tableau sans notre todo :
+Se servir de **filter** pour renvoyer un nouveau tableau sans notre *todo* :
 
 */store/reducers/todo-list.reducer.ts*
-```javascript
+```typescript
 	// [...]
     case TodoListModule.ActionTypes.DELETE_TODO:
         return {
@@ -43,7 +43,7 @@ Se servir de **filter** pour renvoyer un nouveau tableau sans notre todo :
 Ajoutons la fonction de suppression :
 
 */app.component.ts*
-```javascript
+```typescript
 // ...]
  template: `
     <!-- reste -->
@@ -61,7 +61,7 @@ Ajoutons la fonction de suppression :
 
 ## Gérer les ids
 
-Jusqu'à présent, à chaque fois que l'on crée une todo, on lui donnait un id "8" par défaut. Nous allons maintenant dynamiser l'attribution d'id.
+Jusqu'à présent, à chaque fois que l'on ajoute une *todo*, on lui donnait un *id* "8" par défaut. Nous allons maintenant dynamiser l'attribution d'id.
 
 Deux possibilités : 
 
@@ -99,5 +99,5 @@ Suppression terminée.
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-4.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyOTgxMDg5MSwyMTc1Nzc1MjJdfQ==
+eyJoaXN0b3J5IjpbLTQ4MDQxNTU2NCwyMTc1Nzc1MjJdfQ==
 -->
