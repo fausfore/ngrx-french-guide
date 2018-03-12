@@ -77,7 +77,7 @@ source$
 
   
 
-Pour voir un aperçu des différents opérateurs: http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html
+Aperçu des différents opérateurs : http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html
 
   
   
@@ -268,5 +268,5 @@ Reste à revoir la gestion des *ids*.
 
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-3.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjQ1NzIzNjIsMjEyMjc0ODA4OV19
+eyJoaXN0b3J5IjpbMTA3Mjk1NDE3NywyMTIyNzQ4MDg5XX0=
 -->
