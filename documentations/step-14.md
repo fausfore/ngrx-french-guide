@@ -1,7 +1,7 @@
 # Testings Advanced
 
 ## Mocks
-Pour nos tests on aura besoin de valeur pour traiter les différents cas  :
+Concernant les tests, voici les valeurs pour traiter les différents cas  :
 
 *store/mock-value.ts*
 ```javascript
@@ -595,5 +595,5 @@ describe('Testing Effects', () => {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNTY1NTQ1N119
+eyJoaXN0b3J5IjpbLTk3NjA2MjM3Ml19
 -->
