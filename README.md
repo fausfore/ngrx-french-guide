@@ -7,23 +7,23 @@ Ceci est un tutoriel pour débuter sur **NGRX**, vous verrez les différents con
 
 ## [0 - Introduction](https://github.com/fausfore/ngrx-guide/blob/master/documentations/introduction.md)
 1.  #### Redux, kesako ?
-1.  #### Pourquoi Redux alors ?
-1.  #### Flux vs Redux
-1.  #### Le Store, la base de tout
-- ### 0-5  Le root reducer
-- ### 0-6 Le schéma
-- ### 0-7 Les actions
-- ### 0-8  Action creator
+2.  #### Pourquoi Redux alors ?
+3.  #### Flux vs Redux
+4.  #### Le Store, la base de tout
+5.  ####  Le root reducer
+6.  #### Le schéma
+7.  #### Les actions
+8.  ####  Action creator
 
 ## [1 - De Redux à NGRX](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-1.md)
-### 1-1 Installation
-### 1-2 Architecture Folder
-### 1-3 Commençons ! [ début du tutoriel ]
+1.  #### Installation
+2.  #### Architecture Folder
+3.  #### Commençons ! [ début du tutoriel ]
 
 ## [2 - Getters & create todo](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-2.md)
-### 2-1 Le Pipe et les opérateurs RXJS
-### 2-2 Les States Selectors
-### 2-3 Créer une todo
+1.  #### Le Pipe et les opérateurs RXJS
+2.  #### Les States Selectors
+3.  #### Créer une todo
 
 ## [3 - Delete todo](https://github.com/fausfore/ngrx-guide/blob/master/documentations/step-3.md)
 ### 3-1 Gérer les ids
@@ -75,6 +75,6 @@ Il vous permettra de réduire votre code *reduxien* avec des décorateurs.
 *Auteur : **@Fausfore / Matias Ljubica***
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3MDkzOTkyMCwxODIwNzMxMTEwLDE1Nj
-czMzE2NDJdfQ==
+eyJoaXN0b3J5IjpbLTE1NzU4NDE3MDEsMTgyMDczMTExMCwxNT
+Y3MzMxNjQyXX0=
 -->
