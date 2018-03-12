@@ -61,17 +61,17 @@ Ajoutons la fonction de suppression :
 
 ## Gérer les ids
 
-Jusqu'à présent, à chaque fois que l'on ajoute une *todo*, on lui donnait un *id* "8" par défaut. Nous allons maintenant dynamiser l'attribution d'id.
+Jusqu'à présent, à chaque fois que l'on ajoute une *todo*, on lui donnait un *id* "8" par défaut. Nous allons maintenant dynamiser l'attribution d'*id*.
 
 Deux possibilités : 
 
--1 Calculer la longueur du tableau de todo.
--2 Utiliser des id uniques via un générateur comme [uuid](https://www.npmjs.com/package/uuid).
+-1 Calculer la longueur du tableau de *todo*.
+-2 Utiliser des *id* uniques via un générateur comme [uuid](https://www.npmjs.com/package/uuid).
 
 Première option :
 
 */app.component.ts*
-```javascript
+```typescript
 //[...]
 import { tap } from 'rxjs/operators';
 //[...]
@@ -99,5 +99,5 @@ Suppression terminée.
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-4.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4MDQxNTU2NCwyMTc1Nzc1MjJdfQ==
+eyJoaXN0b3J5IjpbMjYzOTgwNCwyMTc1Nzc1MjJdfQ==
 -->
