@@ -28,7 +28,7 @@ app
 Ci-dessous, une configuration de *routing* afin de charger notre module **TodoListModule** en *lazy-loading* avec le **loadChildren**.
 
  *app.routing.ts*  
-```javascript
+```typescript
 import { Route, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 
@@ -53,7 +53,7 @@ export const appRouting: ModuleWithProviders = RouterModule.forRoot(routes);
 Dans le **AppModule**, on peut déplacer les dépendances des formulaires vers **TodoListModule** :
 
 *app.module.ts*
-```javascript
+```typescript
 // [...]
 // import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { appRouting } from './app.routing';
@@ -67,7 +67,7 @@ import { appRouting } from './app.routing';
 // [...]
 ```
 
-On va migrer tout le contenu du **AppComponent** vers **AllTodosComponent**.
+Migrer tout le contenu du **AppComponent** vers **AllTodosComponent**.
 Il ne reste que la balise **router-outlet** :
 */app.component.ts*
 ```javascript
@@ -276,5 +276,6 @@ Passons à la mise à jour des todos.
 ### [Suite >>](https://github.com/fausfore/ngrx-french-guide/blob/master/documentations/step-5.md)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2OTY1MDA5NiwtMTAwOTk0MDg1OF19
+eyJoaXN0b3J5IjpbLTE4MzUzMTU4NjAsLTEwMDk5NDA4NThdfQ
+==
 -->
