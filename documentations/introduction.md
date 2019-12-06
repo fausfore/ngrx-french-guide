@@ -7,7 +7,7 @@ Ce dernier proposant une conception du développement d'application autour d'act
  Le but étant de supprimer les différentes mutations de données des composants et services Angular pour les centraliser dans un objet global, qui serait mutable uniquement par des actions typées.
 
 > Pour le développement sur Angular, **Visual studio code** est fortement recommandé. 
-> Vous devrez aussi installer Angular sur votre machine avec la commande **npm i -g @angular/cli**.
+> Vous devrez aussi installer Angular CLI sur votre machine avec la commande **npm i -g @angular/cli**.
 
 **Intérêt de NGRX**
 
